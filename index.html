@@ -395,6 +395,8 @@
   <div class="toast" id="toast"></div>
 
 <script>
+  const APP_VERSION = "2025.12.13-01";
+
 (() => {
   const $ = (id) => document.getElementById(id);
 
@@ -573,7 +575,7 @@ function popStickerForStreak(streak){
 const tt = $("appTitle");
     if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
   if (bd) bd.style.display = (which === "screenQuiz" ? "block" : "none");
-  if (which !== "screenQuiz") clearStickerBoard();
+  if (which !== "screenQuiz") { try { clearStickerBoard(); } catch(e){} }
 if (tt) {
     // 퀴즈 화면에서는 타이틀 자리는 유지하고 글자만 숨김(배지 위치 고정)
     tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
@@ -624,7 +626,7 @@ const tt = $("appTitle");
     if (vb) {
       const v = meta && meta.version ? String(meta.version) : "no-meta";
       const u = meta && meta.updated ? ` ${meta.updated}` : "";
-      vb.textContent = `v${v}`;
+      vb.textContent = `v${APP_VERSION}`;
     }
 
     return qs;
@@ -645,6 +647,12 @@ const tt = $("appTitle");
     }
     return Math.floor(Math.random() * maxExclusive);
   }
+
+  function clearStickerBoard(){
+    const b = $("stickerBoard");
+    if (b) b.innerHTML = "";
+  }
+
   async function loadStickers(){
     try{
       const res = await fetch("assets/cats/stickers.json?v=" + Date.now(), { cache: "no-store" });
