@@ -1,366 +1,10129 @@
 {
-  "version": 1,
-  "updated_at": "2025-12-12",
+  "meta": {
+    "version": "2025.12.12-03",
+    "updated": "2025-12-12",
+    "note": "Add +100 humanities(H361~H460) general knowledge, +100 science(S361~S460) general knowledge. Total 920."
+  },
   "questions": [
     {
       "id": "H001",
       "mode": "humanities",
-      "type": "two",
       "q": "대한민국의 수도는 서울이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "서울특별시가 수도야."
+      "explain": "대한민국의 수도는 서울이야."
     },
     {
       "id": "H002",
       "mode": "humanities",
-      "type": "two",
-      "q": "태평양은 세계에서 가장 큰 океан(대양)이다.",
+      "q": "일본의 수도는 도쿄이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "태평양이 면적 1등."
+      "explain": "일본의 수도는 도쿄이야."
     },
     {
       "id": "H003",
       "mode": "humanities",
-      "type": "two",
-      "q": "유럽연합(EU) 본부가 있는 도시는 브뤼셀이다.",
+      "q": "중국의 수도는 베이징이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "주요 기관이 브뤼셀에 모여 있어."
+      "explain": "중국의 수도는 베이징이야."
     },
     {
       "id": "H004",
       "mode": "humanities",
-      "type": "two",
-      "q": "한글을 만든 왕은 세종대왕이다.",
+      "q": "미국의 수도는 워싱턴 D.C.이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "훈민정음을 창제했지."
+      "explain": "미국의 수도는 워싱턴 D.C.이야."
     },
     {
       "id": "H005",
       "mode": "humanities",
-      "type": "two",
-      "q": "프랑스의 공식 언어는 프랑스어이다.",
+      "q": "캐나다의 수도는 오타와이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "국가 공용어가 프랑스어."
+      "explain": "캐나다의 수도는 오타와이야."
     },
     {
       "id": "H006",
       "mode": "humanities",
-      "type": "two",
-      "q": "아마존 강은 아프리카에 있다.",
+      "q": "영국의 수도는 런던이다.",
       "choices": [
         "O",
         "X"
       ],
-      "answer": 1,
-      "explain": "아마존은 남아메리카."
+      "answer": 0,
+      "explain": "영국의 수도는 런던이야."
     },
     {
       "id": "H007",
       "mode": "humanities",
-      "type": "two",
-      "q": "2차 세계대전은 1914년에 시작했다.",
+      "q": "프랑스의 수도는 파리이다.",
       "choices": [
         "O",
         "X"
       ],
-      "answer": 1,
-      "explain": "1914년은 1차 세계대전 시작."
+      "answer": 0,
+      "explain": "프랑스의 수도는 파리이야."
     },
     {
       "id": "H008",
       "mode": "humanities",
-      "type": "two",
-      "q": "피라미드는 주로 고대 이집트 문명과 관련이 있다.",
+      "q": "독일의 수도는 베를린이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "대표적으로 기자의 피라미드."
+      "explain": "독일의 수도는 베를린이야."
     },
     {
       "id": "H009",
       "mode": "humanities",
-      "type": "two",
-      "q": "‘대한민국’의 영어 표기는 Republic of Korea이다.",
+      "q": "이탈리아의 수도는 로마이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "공식 영문 표기야."
+      "explain": "이탈리아의 수도는 로마이야."
     },
     {
       "id": "H010",
       "mode": "humanities",
-      "type": "two",
-      "q": "로마는 이탈리아의 수도이다.",
+      "q": "스페인의 수도는 마드리드이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "수도는 Rome(로마)."
+      "explain": "스페인의 수도는 마드리드이야."
     },
     {
       "id": "H011",
       "mode": "humanities",
-      "type": "two",
-      "q": "세계 4대 문명에 ‘인더스 문명’이 포함된다.",
+      "q": "러시아의 수도는 모스크바이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "인더스·이집트·메소포타미아·황하."
+      "explain": "러시아의 수도는 모스크바이야."
     },
     {
       "id": "H012",
       "mode": "humanities",
-      "type": "two",
-      "q": "올림픽의 상징인 오륜기는 다섯 대륙의 화합을 뜻한다.",
+      "q": "호주의 수도는 캔버라이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "대륙 간 연대를 상징해."
+      "explain": "호주의 수도는 캔버라이야."
     },
     {
       "id": "H013",
       "mode": "humanities",
-      "type": "two",
-      "q": "스페인의 수도는 바르셀로나다.",
+      "q": "뉴질랜드의 수도는 웰링턴이다.",
       "choices": [
         "O",
         "X"
       ],
-      "answer": 1,
-      "explain": "수도는 마드리드."
+      "answer": 0,
+      "explain": "뉴질랜드의 수도는 웰링턴이야."
     },
     {
       "id": "H014",
       "mode": "humanities",
-      "type": "two",
-      "q": "그리니치 천문대는 영국 런던에 있다.",
+      "q": "브라질의 수도는 브라질리아이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "본초자오선으로 유명하지."
+      "explain": "브라질의 수도는 브라질리아이야."
     },
     {
       "id": "H015",
       "mode": "humanities",
-      "type": "two",
-      "q": "‘모나리자’는 레오나르도 다 빈치의 작품이다.",
+      "q": "멕시코의 수도는 멕시코시티이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "루브르에 있는 그 그림."
+      "explain": "멕시코의 수도는 멕시코시티이야."
+    },
+    {
+      "id": "H016",
+      "mode": "humanities",
+      "q": "아르헨티나의 수도는 부에노스아이레스이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아르헨티나의 수도는 부에노스아이레스이야."
+    },
+    {
+      "id": "H017",
+      "mode": "humanities",
+      "q": "칠레의 수도는 산티아고이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "칠레의 수도는 산티아고이야."
+    },
+    {
+      "id": "H018",
+      "mode": "humanities",
+      "q": "페루의 수도는 리마이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "페루의 수도는 리마이야."
+    },
+    {
+      "id": "H019",
+      "mode": "humanities",
+      "q": "콜롬비아의 수도는 보고타이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "콜롬비아의 수도는 보고타이야."
+    },
+    {
+      "id": "H020",
+      "mode": "humanities",
+      "q": "쿠바의 수도는 아바나이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "쿠바의 수도는 아바나이야."
+    },
+    {
+      "id": "H021",
+      "mode": "humanities",
+      "q": "그리스의 수도는 아테네이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "그리스의 수도는 아테네이야."
+    },
+    {
+      "id": "H022",
+      "mode": "humanities",
+      "q": "포르투갈의 수도는 리스본이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "포르투갈의 수도는 리스본이야."
+    },
+    {
+      "id": "H023",
+      "mode": "humanities",
+      "q": "아일랜드의 수도는 더블린이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아일랜드의 수도는 더블린이야."
+    },
+    {
+      "id": "H024",
+      "mode": "humanities",
+      "q": "네덜란드의 수도는 암스테르담이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "네덜란드의 수도는 암스테르담이야."
+    },
+    {
+      "id": "H025",
+      "mode": "humanities",
+      "q": "벨기에의 수도는 브뤼셀이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "벨기에의 수도는 브뤼셀이야."
+    },
+    {
+      "id": "H026",
+      "mode": "humanities",
+      "q": "스위스의 수도는 베른이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "스위스의 수도는 베른이야."
+    },
+    {
+      "id": "H027",
+      "mode": "humanities",
+      "q": "스웨덴의 수도는 스톡홀름이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "스웨덴의 수도는 스톡홀름이야."
+    },
+    {
+      "id": "H028",
+      "mode": "humanities",
+      "q": "노르웨이의 수도는 오슬로이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "노르웨이의 수도는 오슬로이야."
+    },
+    {
+      "id": "H029",
+      "mode": "humanities",
+      "q": "핀란드의 수도는 헬싱키이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "핀란드의 수도는 헬싱키이야."
+    },
+    {
+      "id": "H030",
+      "mode": "humanities",
+      "q": "덴마크의 수도는 코펜하겐이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "덴마크의 수도는 코펜하겐이야."
+    },
+    {
+      "id": "H031",
+      "mode": "humanities",
+      "q": "오스트리아의 수도는 비엔나이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "오스트리아의 수도는 비엔나이야."
+    },
+    {
+      "id": "H032",
+      "mode": "humanities",
+      "q": "폴란드의 수도는 바르샤바이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "폴란드의 수도는 바르샤바이야."
+    },
+    {
+      "id": "H033",
+      "mode": "humanities",
+      "q": "체코의 수도는 프라하이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "체코의 수도는 프라하이야."
+    },
+    {
+      "id": "H034",
+      "mode": "humanities",
+      "q": "헝가리의 수도는 부다페스트이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "헝가리의 수도는 부다페스트이야."
+    },
+    {
+      "id": "H035",
+      "mode": "humanities",
+      "q": "루마니아의 수도는 부쿠레슈티이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "루마니아의 수도는 부쿠레슈티이야."
+    },
+    {
+      "id": "H036",
+      "mode": "humanities",
+      "q": "불가리아의 수도는 소피아이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "불가리아의 수도는 소피아이야."
+    },
+    {
+      "id": "H037",
+      "mode": "humanities",
+      "q": "크로아티아의 수도는 자그레브이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "크로아티아의 수도는 자그레브이야."
+    },
+    {
+      "id": "H038",
+      "mode": "humanities",
+      "q": "세르비아의 수도는 베오그라드이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "세르비아의 수도는 베오그라드이야."
+    },
+    {
+      "id": "H039",
+      "mode": "humanities",
+      "q": "우크라이나의 수도는 키이우이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "우크라이나의 수도는 키이우이야."
+    },
+    {
+      "id": "H040",
+      "mode": "humanities",
+      "q": "터키의 수도는 앙카라이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "터키의 수도는 앙카라이야."
+    },
+    {
+      "id": "H041",
+      "mode": "humanities",
+      "q": "이집트의 수도는 카이로이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이집트의 수도는 카이로이야."
+    },
+    {
+      "id": "H042",
+      "mode": "humanities",
+      "q": "모로코의 수도는 라바트이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "모로코의 수도는 라바트이야."
+    },
+    {
+      "id": "H043",
+      "mode": "humanities",
+      "q": "튀니지의 수도는 튀니스이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "튀니지의 수도는 튀니스이야."
+    },
+    {
+      "id": "H044",
+      "mode": "humanities",
+      "q": "알제리의 수도는 알제이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "알제리의 수도는 알제이야."
+    },
+    {
+      "id": "H045",
+      "mode": "humanities",
+      "q": "나이지리아의 수도는 아부자이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "나이지리아의 수도는 아부자이야."
+    },
+    {
+      "id": "H046",
+      "mode": "humanities",
+      "q": "가나의 수도는 아크라이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "가나의 수도는 아크라이야."
+    },
+    {
+      "id": "H047",
+      "mode": "humanities",
+      "q": "케냐의 수도는 나이로비이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "케냐의 수도는 나이로비이야."
+    },
+    {
+      "id": "H048",
+      "mode": "humanities",
+      "q": "에티오피아의 수도는 아디스아바바이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "에티오피아의 수도는 아디스아바바이야."
+    },
+    {
+      "id": "H049",
+      "mode": "humanities",
+      "q": "탄자니아의 수도는 도도마이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "탄자니아의 수도는 도도마이야."
+    },
+    {
+      "id": "H050",
+      "mode": "humanities",
+      "q": "인도의 수도는 뉴델리이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "인도의 수도는 뉴델리이야."
+    },
+    {
+      "id": "H051",
+      "mode": "humanities",
+      "q": "태국의 수도는 방콕이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "태국의 수도는 방콕이야."
+    },
+    {
+      "id": "H052",
+      "mode": "humanities",
+      "q": "베트남의 수도는 하노이이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "베트남의 수도는 하노이이야."
+    },
+    {
+      "id": "H053",
+      "mode": "humanities",
+      "q": "인도네시아의 수도는 자카르타이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "인도네시아의 수도는 자카르타이야."
+    },
+    {
+      "id": "H054",
+      "mode": "humanities",
+      "q": "필리핀의 수도는 마닐라이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "필리핀의 수도는 마닐라이야."
+    },
+    {
+      "id": "H055",
+      "mode": "humanities",
+      "q": "말레이시아의 수도는 쿠알라룸푸르이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "말레이시아의 수도는 쿠알라룸푸르이야."
+    },
+    {
+      "id": "H056",
+      "mode": "humanities",
+      "q": "싱가포르의 수도는 싱가포르이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "싱가포르의 수도는 싱가포르이야."
+    },
+    {
+      "id": "H057",
+      "mode": "humanities",
+      "q": "사우디아라비아의 수도는 리야드이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "사우디아라비아의 수도는 리야드이야."
+    },
+    {
+      "id": "H058",
+      "mode": "humanities",
+      "q": "아랍에미리트의 수도는 아부다비이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아랍에미리트의 수도는 아부다비이야."
+    },
+    {
+      "id": "H059",
+      "mode": "humanities",
+      "q": "이란의 수도는 테헤란이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이란의 수도는 테헤란이야."
+    },
+    {
+      "id": "H060",
+      "mode": "humanities",
+      "q": "이라크의 수도는 바그다드이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이라크의 수도는 바그다드이야."
+    },
+    {
+      "id": "H061",
+      "mode": "humanities",
+      "q": "호주의 수도는 시드니이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "호주의 수도는 캔버라야."
+    },
+    {
+      "id": "H062",
+      "mode": "humanities",
+      "q": "캐나다의 수도는 토론토이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "캐나다의 수도는 오타와야."
+    },
+    {
+      "id": "H063",
+      "mode": "humanities",
+      "q": "브라질의 수도는 리우데자네이루이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "브라질의 수도는 브라질리아야."
+    },
+    {
+      "id": "H064",
+      "mode": "humanities",
+      "q": "터키의 수도는 이스탄불이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "터키의 수도는 앙카라야."
+    },
+    {
+      "id": "H065",
+      "mode": "humanities",
+      "q": "미국의 수도는 뉴욕이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "미국의 수도는 워싱턴 D.C.야."
+    },
+    {
+      "id": "H066",
+      "mode": "humanities",
+      "q": "독일의 수도는 뮌헨이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "독일의 수도는 베를린이야."
+    },
+    {
+      "id": "H067",
+      "mode": "humanities",
+      "q": "스위스의 수도는 취리히이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "스위스의 수도는 베른이야."
+    },
+    {
+      "id": "H068",
+      "mode": "humanities",
+      "q": "네덜란드의 수도는 로테르담이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "네덜란드의 수도는 암스테르담이야."
+    },
+    {
+      "id": "H069",
+      "mode": "humanities",
+      "q": "스페인의 수도는 바르셀로나이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "스페인의 수도는 마드리드야."
+    },
+    {
+      "id": "H070",
+      "mode": "humanities",
+      "q": "러시아의 수도는 상트페테르부르크이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "러시아의 수도는 모스크바야."
+    },
+    {
+      "id": "H071",
+      "mode": "humanities",
+      "q": "프랑스의 수도는 마르세유이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "프랑스의 수도는 파리야."
+    },
+    {
+      "id": "H072",
+      "mode": "humanities",
+      "q": "이탈리아의 수도는 밀라노이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "이탈리아의 수도는 로마야."
+    },
+    {
+      "id": "H073",
+      "mode": "humanities",
+      "q": "일본의 수도는 오사카이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "일본의 수도는 도쿄야."
+    },
+    {
+      "id": "H074",
+      "mode": "humanities",
+      "q": "중국의 수도는 상하이이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "중국의 수도는 베이징이야."
+    },
+    {
+      "id": "H075",
+      "mode": "humanities",
+      "q": "인도의 수도는 뭄바이이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "인도의 수도는 뉴델리야."
+    },
+    {
+      "id": "H076",
+      "mode": "humanities",
+      "q": "태국의 수도는 푸껫이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "태국의 수도는 방콕이야."
+    },
+    {
+      "id": "H077",
+      "mode": "humanities",
+      "q": "베트남의 수도는 호치민이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "베트남의 수도는 하노이야."
+    },
+    {
+      "id": "H078",
+      "mode": "humanities",
+      "q": "그리스의 수도는 테살로니키이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "그리스의 수도는 아테네야."
+    },
+    {
+      "id": "H079",
+      "mode": "humanities",
+      "q": "포르투갈의 수도는 포르투이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "포르투갈의 수도는 리스본이야."
+    },
+    {
+      "id": "H080",
+      "mode": "humanities",
+      "q": "아일랜드의 수도는 코크이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "아일랜드의 수도는 더블린이야."
+    },
+    {
+      "id": "H081",
+      "mode": "humanities",
+      "q": "오스트리아의 수도는 잘츠부르크이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "오스트리아의 수도는 비엔나야."
+    },
+    {
+      "id": "H082",
+      "mode": "humanities",
+      "q": "폴란드의 수도는 크라쿠프이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "폴란드의 수도는 바르샤바야."
+    },
+    {
+      "id": "H083",
+      "mode": "humanities",
+      "q": "체코의 수도는 브르노이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "체코의 수도는 프라하야."
+    },
+    {
+      "id": "H084",
+      "mode": "humanities",
+      "q": "헝가리의 수도는 데브레첸이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "헝가리의 수도는 부다페스트야."
+    },
+    {
+      "id": "H085",
+      "mode": "humanities",
+      "q": "이집트의 수도는 알렉산드리아이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "이집트의 수도는 카이로야."
+    },
+    {
+      "id": "H086",
+      "mode": "humanities",
+      "q": "모로코의 수도는 카사블랑카이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "모로코의 수도는 라바트야."
+    },
+    {
+      "id": "H087",
+      "mode": "humanities",
+      "q": "나이지리아의 수도는 라고스이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "나이지리아의 수도는 아부자야."
+    },
+    {
+      "id": "H088",
+      "mode": "humanities",
+      "q": "케냐의 수도는 몸바사이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "케냐의 수도는 나이로비야."
+    },
+    {
+      "id": "H089",
+      "mode": "humanities",
+      "q": "뉴질랜드의 수도는 오클랜드이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "뉴질랜드의 수도는 웰링턴이야."
+    },
+    {
+      "id": "H090",
+      "mode": "humanities",
+      "q": "멕시코의 수도는 과달라하라이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "멕시코의 수도는 멕시코시티야."
+    },
+    {
+      "id": "H091",
+      "mode": "humanities",
+      "q": "모나리자의 작가는 레오나르도 다 빈치다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "르네상스 화가 다 빈치의 대표작이야."
+    },
+    {
+      "id": "H092",
+      "mode": "humanities",
+      "q": "빈센트 반 고흐는 '별이 빛나는 밤'을 그렸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "반 고흐의 대표작으로 유명해."
+    },
+    {
+      "id": "H093",
+      "mode": "humanities",
+      "q": "피카소의 '게르니카'는 전쟁의 참상을 주제로 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "스페인 내전의 비극을 다뤄."
+    },
+    {
+      "id": "H094",
+      "mode": "humanities",
+      "q": "'절규(The Scream)'의 작가는 에드바르 뭉크다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "뭉크의 상징적 작품이야."
+    },
+    {
+      "id": "H095",
+      "mode": "humanities",
+      "q": "'백조의 호수'는 발레 작품으로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "차이콥스키 음악의 대표 발레야."
+    },
+    {
+      "id": "H096",
+      "mode": "humanities",
+      "q": "셰익스피어는 '햄릿'을 썼다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "비극으로 유명한 작품이야."
+    },
+    {
+      "id": "H097",
+      "mode": "humanities",
+      "q": "르네상스는 이탈리아에서 먼저 꽃피었다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이탈리아 도시국가에서 발전."
+    },
+    {
+      "id": "H098",
+      "mode": "humanities",
+      "q": "올림픽은 고대 그리스에서 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고대 올림피아 제전이 기원."
+    },
+    {
+      "id": "H099",
+      "mode": "humanities",
+      "q": "UN 본부는 미국 뉴욕에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "UN 본부는 뉴욕에 있어."
+    },
+    {
+      "id": "H100",
+      "mode": "humanities",
+      "q": "마그나 카르타는 1215년에 체결됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "잉글랜드에서 체결된 문서야."
+    },
+    {
+      "id": "H101",
+      "mode": "humanities",
+      "q": "인상주의는 19세기 프랑스에서 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "모네 등 프랑스 화가들로 확산."
+    },
+    {
+      "id": "H102",
+      "mode": "humanities",
+      "q": "베토벤은 고전주의와 낭만주의를 잇는 작곡가로 평가된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "후기 작품이 낭만주의에 영향."
+    },
+    {
+      "id": "H103",
+      "mode": "humanities",
+      "q": "한글은 음소문자(소리글자)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "자음·모음으로 소리를 적어."
+    },
+    {
+      "id": "H104",
+      "mode": "humanities",
+      "q": "세종대왕은 훈민정음(한글) 창제와 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "훈민정음 창제의 중심 인물이야."
+    },
+    {
+      "id": "H105",
+      "mode": "humanities",
+      "q": "'돈키호테'의 저자는 세르반테스다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "스페인 작가 세르반테스 작품."
+    },
+    {
+      "id": "H106",
+      "mode": "humanities",
+      "q": "'백조의 호수'는 오페라 작품이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "발레 작품으로 유명해."
+    },
+    {
+      "id": "H107",
+      "mode": "humanities",
+      "q": "모나리자의 작가는 미켈란젤로다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "모나리자는 다 빈치 작품이야."
+    },
+    {
+      "id": "H108",
+      "mode": "humanities",
+      "q": "인상주의는 17세기 이탈리아에서 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "19세기 프랑스에서 시작으로 알려져."
+    },
+    {
+      "id": "H109",
+      "mode": "humanities",
+      "q": "UN 본부는 스위스 제네바에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "UN 본부는 미국 뉴욕에 있어."
+    },
+    {
+      "id": "H110",
+      "mode": "humanities",
+      "q": "올림픽은 중세 유럽에서 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "고대 그리스가 기원으로 알려져."
+    },
+    {
+      "id": "H111",
+      "mode": "humanities",
+      "q": "지구에는 7개의 대륙이 있다고 흔히 배운다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아시아·유럽·아프리카·오세아니아·북미·남미·남극."
+    },
+    {
+      "id": "H112",
+      "mode": "humanities",
+      "q": "적도는 지구를 남북으로 나누는 가상의 선이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "적도는 남북반구 경계야."
+    },
+    {
+      "id": "H113",
+      "mode": "humanities",
+      "q": "경도는 동서 방향의 위치를 나타낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "경도는 동서 위치야."
+    },
+    {
+      "id": "H114",
+      "mode": "humanities",
+      "q": "위도는 남북 방향의 위치를 나타낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "위도는 남북 위치야."
+    },
+    {
+      "id": "H115",
+      "mode": "humanities",
+      "q": "세계에서 가장 큰 대양은 태평양이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "면적이 가장 큰 대양이야."
+    },
+    {
+      "id": "H116",
+      "mode": "humanities",
+      "q": "아마존강은 남아메리카에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "남아메리카 대표 강."
+    },
+    {
+      "id": "H117",
+      "mode": "humanities",
+      "q": "알프스 산맥은 유럽에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유럽 대표 산맥."
+    },
+    {
+      "id": "H118",
+      "mode": "humanities",
+      "q": "히말라야 산맥은 아시아에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "세계 최고봉들이 있는 산맥."
+    },
+    {
+      "id": "H119",
+      "mode": "humanities",
+      "q": "사하라 사막은 아프리카에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아프리카 북부에 위치."
+    },
+    {
+      "id": "H120",
+      "mode": "humanities",
+      "q": "로마 숫자에서 V는 5를 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "I=1, V=5, X=10."
+    },
+    {
+      "id": "H121",
+      "mode": "humanities",
+      "q": "로마 숫자에서 C는 100을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "C=100, L=50."
+    },
+    {
+      "id": "H122",
+      "mode": "humanities",
+      "q": "바흐는 바로크 시대 작곡가로 분류된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "바로크 대표 작곡가로 알려져."
+    },
+    {
+      "id": "H123",
+      "mode": "humanities",
+      "q": "미술에서 '정물화'는 움직이지 않는 대상을 그린 그림을 말한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "과일·꽃·그릇 같은 대상."
+    },
+    {
+      "id": "H124",
+      "mode": "humanities",
+      "q": "연극은 공연 예술의 한 분야다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "무대에서 배우가 연기해."
+    },
+    {
+      "id": "H125",
+      "mode": "humanities",
+      "q": "영화는 사진(프레임)의 연속으로 움직임을 만든다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "연속된 프레임으로 움직임처럼 보여."
+    },
+    {
+      "id": "H126",
+      "mode": "humanities",
+      "q": "그레고리력은 현재 널리 쓰이는 달력이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "오늘날 국제적으로 가장 보편적이야."
+    },
+    {
+      "id": "H127",
+      "mode": "humanities",
+      "q": "한반도는 동아시아에 위치한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동아시아 지역으로 분류돼."
+    },
+    {
+      "id": "H128",
+      "mode": "humanities",
+      "q": "지중해는 대서양과 연결되어 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지브롤터 해협을 통해 연결돼."
+    },
+    {
+      "id": "H129",
+      "mode": "humanities",
+      "q": "나일강은 아프리카에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아프리카의 대표적 강이야."
+    },
+    {
+      "id": "H130",
+      "mode": "humanities",
+      "q": "그리스 신화는 고대 그리스 문화권과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "그리스 문화권의 신화 체계."
+    },
+    {
+      "id": "H131",
+      "mode": "humanities",
+      "q": "모차르트는 작곡가로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고전주의 대표 작곡가."
+    },
+    {
+      "id": "H132",
+      "mode": "humanities",
+      "q": "바다도 개울에서부터 시작된다는 말이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "작은 시작이 쌓인다는 뜻으로 쓰여."
+    },
+    {
+      "id": "H133",
+      "mode": "humanities",
+      "q": "유럽에는 여러 나라가 모여 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유럽은 다양한 국가로 구성돼."
+    },
+    {
+      "id": "H134",
+      "mode": "humanities",
+      "q": "아시아는 대륙 중 면적이 큰 편이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "면적·인구 모두 큰 편이야."
+    },
+    {
+      "id": "H135",
+      "mode": "humanities",
+      "q": "한반도는 동아시아에 위치한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동아시아 지역으로 분류돼."
+    },
+    {
+      "id": "H136",
+      "mode": "humanities",
+      "q": "지중해는 대서양과 연결되어 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지브롤터 해협을 통해 연결돼."
+    },
+    {
+      "id": "H137",
+      "mode": "humanities",
+      "q": "나일강은 아프리카에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아프리카의 대표적 강이야."
+    },
+    {
+      "id": "H138",
+      "mode": "humanities",
+      "q": "그리스 신화는 고대 그리스 문화권과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "그리스 문화권의 신화 체계."
+    },
+    {
+      "id": "H139",
+      "mode": "humanities",
+      "q": "모차르트는 작곡가로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고전주의 대표 작곡가."
+    },
+    {
+      "id": "H140",
+      "mode": "humanities",
+      "q": "바다도 개울에서부터 시작된다는 말이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "작은 시작이 쌓인다는 뜻으로 쓰여."
+    },
+    {
+      "id": "H141",
+      "mode": "humanities",
+      "q": "유럽에는 여러 나라가 모여 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유럽은 다양한 국가로 구성돼."
+    },
+    {
+      "id": "H142",
+      "mode": "humanities",
+      "q": "아시아는 대륙 중 면적이 큰 편이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "면적·인구 모두 큰 편이야."
+    },
+    {
+      "id": "H143",
+      "mode": "humanities",
+      "q": "한반도는 동아시아에 위치한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동아시아 지역으로 분류돼."
+    },
+    {
+      "id": "H144",
+      "mode": "humanities",
+      "q": "지중해는 대서양과 연결되어 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지브롤터 해협을 통해 연결돼."
+    },
+    {
+      "id": "H145",
+      "mode": "humanities",
+      "q": "나일강은 아프리카에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아프리카의 대표적 강이야."
+    },
+    {
+      "id": "H146",
+      "mode": "humanities",
+      "q": "그리스 신화는 고대 그리스 문화권과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "그리스 문화권의 신화 체계."
+    },
+    {
+      "id": "H147",
+      "mode": "humanities",
+      "q": "모차르트는 작곡가로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고전주의 대표 작곡가."
+    },
+    {
+      "id": "H148",
+      "mode": "humanities",
+      "q": "바다도 개울에서부터 시작된다는 말이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "작은 시작이 쌓인다는 뜻으로 쓰여."
+    },
+    {
+      "id": "H149",
+      "mode": "humanities",
+      "q": "유럽에는 여러 나라가 모여 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유럽은 다양한 국가로 구성돼."
+    },
+    {
+      "id": "H150",
+      "mode": "humanities",
+      "q": "아시아는 대륙 중 면적이 큰 편이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "면적·인구 모두 큰 편이야."
+    },
+    {
+      "id": "H151",
+      "mode": "humanities",
+      "q": "고래 싸움에 ____ 등 터진다.",
+      "choices": [
+        "별",
+        "새우"
+      ],
+      "answer": 1,
+      "explain": "정답: “새우”"
+    },
+    {
+      "id": "H152",
+      "mode": "humanities",
+      "q": "가는 말이 고와야 오는 말이 ____.",
+      "choices": [
+        "고래",
+        "곱다"
+      ],
+      "answer": 1,
+      "explain": "정답: “곱다”"
+    },
+    {
+      "id": "H153",
+      "mode": "humanities",
+      "q": "등잔 밑이 ____.",
+      "choices": [
+        "구름",
+        "어둡다"
+      ],
+      "answer": 1,
+      "explain": "정답: “어둡다”"
+    },
+    {
+      "id": "H154",
+      "mode": "humanities",
+      "q": "꿩 대신 ____.",
+      "choices": [
+        "연필",
+        "닭"
+      ],
+      "answer": 1,
+      "explain": "정답: “닭”"
+    },
+    {
+      "id": "H155",
+      "mode": "humanities",
+      "q": "원숭이도 ____에서 떨어진다.",
+      "choices": [
+        "우산",
+        "나무"
+      ],
+      "answer": 1,
+      "explain": "정답: “나무”"
+    },
+    {
+      "id": "H156",
+      "mode": "humanities",
+      "q": "낫 놓고 ____ 자도 모른다.",
+      "choices": [
+        "별",
+        "기역"
+      ],
+      "answer": 1,
+      "explain": "정답: “기역”"
+    },
+    {
+      "id": "H157",
+      "mode": "humanities",
+      "q": "티끌 모아 ____.",
+      "choices": [
+        "별",
+        "태산"
+      ],
+      "answer": 1,
+      "explain": "정답: “태산”"
+    },
+    {
+      "id": "H158",
+      "mode": "humanities",
+      "q": "세 살 버릇 여든까지 ____.",
+      "choices": [
+        "간다",
+        "구름"
+      ],
+      "answer": 0,
+      "explain": "정답: “간다”"
+    },
+    {
+      "id": "H159",
+      "mode": "humanities",
+      "q": "금강산도 ____.",
+      "choices": [
+        "식후경",
+        "토끼"
+      ],
+      "answer": 0,
+      "explain": "정답: “식후경”"
+    },
+    {
+      "id": "H160",
+      "mode": "humanities",
+      "q": "바늘 도둑이 ____ 도둑 된다.",
+      "choices": [
+        "문",
+        "소"
+      ],
+      "answer": 1,
+      "explain": "정답: “소”"
+    },
+    {
+      "id": "H161",
+      "mode": "humanities",
+      "q": "아는 길도 ____ 가라.",
+      "choices": [
+        "물어",
+        "강"
+      ],
+      "answer": 0,
+      "explain": "정답: “물어”"
+    },
+    {
+      "id": "H162",
+      "mode": "humanities",
+      "q": "백지장도 맞들면 ____.",
+      "choices": [
+        "연필",
+        "낫다"
+      ],
+      "answer": 1,
+      "explain": "정답: “낫다”"
+    },
+    {
+      "id": "H163",
+      "mode": "humanities",
+      "q": "소 잃고 ____ 고친다.",
+      "choices": [
+        "나비",
+        "외양간"
+      ],
+      "answer": 1,
+      "explain": "정답: “외양간”"
+    },
+    {
+      "id": "H164",
+      "mode": "humanities",
+      "q": "하늘의 별 따기처럼 ____.",
+      "choices": [
+        "어렵다",
+        "빛"
+      ],
+      "answer": 0,
+      "explain": "정답: “어렵다”"
+    },
+    {
+      "id": "H165",
+      "mode": "humanities",
+      "q": "돌다리도 두들겨 보고 ____.",
+      "choices": [
+        "건너라",
+        "강"
+      ],
+      "answer": 0,
+      "explain": "정답: “건너라”"
+    },
+    {
+      "id": "H166",
+      "mode": "humanities",
+      "q": "말 한마디로 천 냥 ____.",
+      "choices": [
+        "빚",
+        "문"
+      ],
+      "answer": 0,
+      "explain": "정답: “빚”"
+    },
+    {
+      "id": "H167",
+      "mode": "humanities",
+      "q": "우물 안 ____.",
+      "choices": [
+        "나비",
+        "개구리"
+      ],
+      "answer": 1,
+      "explain": "정답: “개구리”"
+    },
+    {
+      "id": "H168",
+      "mode": "humanities",
+      "q": "바람 앞의 ____.",
+      "choices": [
+        "촛불",
+        "문"
+      ],
+      "answer": 0,
+      "explain": "정답: “촛불”"
+    },
+    {
+      "id": "H169",
+      "mode": "humanities",
+      "q": "개천에서 ____ 난다.",
+      "choices": [
+        "소나무",
+        "용"
+      ],
+      "answer": 1,
+      "explain": "정답: “용”"
+    },
+    {
+      "id": "H170",
+      "mode": "humanities",
+      "q": "뛰는 놈 위에 ____ 있다.",
+      "choices": [
+        "나는 놈",
+        "바다"
+      ],
+      "answer": 0,
+      "explain": "정답: “나는 놈”"
+    },
+    {
+      "id": "H171",
+      "mode": "humanities",
+      "q": "소문난 잔치에 먹을 것 ____.",
+      "choices": [
+        "연필",
+        "없다"
+      ],
+      "answer": 1,
+      "explain": "정답: “없다”"
+    },
+    {
+      "id": "H172",
+      "mode": "humanities",
+      "q": "고생 끝에 ____ 온다.",
+      "choices": [
+        "낙",
+        "산"
+      ],
+      "answer": 0,
+      "explain": "정답: “낙”"
+    },
+    {
+      "id": "H173",
+      "mode": "humanities",
+      "q": "빈 수레가 ____.",
+      "choices": [
+        "요란하다",
+        "문"
+      ],
+      "answer": 0,
+      "explain": "정답: “요란하다”"
+    },
+    {
+      "id": "H174",
+      "mode": "humanities",
+      "q": "믿는 도끼에 ____ 찍힌다.",
+      "choices": [
+        "모래",
+        "발등"
+      ],
+      "answer": 1,
+      "explain": "정답: “발등”"
+    },
+    {
+      "id": "H175",
+      "mode": "humanities",
+      "q": "콩 심은 데 콩 나고 ____ 심은 데 팥 난다.",
+      "choices": [
+        "산",
+        "팥"
+      ],
+      "answer": 1,
+      "explain": "정답: “팥”"
+    },
+    {
+      "id": "H176",
+      "mode": "humanities",
+      "q": "가는 날이 ____.",
+      "choices": [
+        "장날",
+        "연필"
+      ],
+      "answer": 0,
+      "explain": "정답: “장날”"
+    },
+    {
+      "id": "H177",
+      "mode": "humanities",
+      "q": "벼는 익을수록 고개를 ____.",
+      "choices": [
+        "숙인다",
+        "별"
+      ],
+      "answer": 0,
+      "explain": "정답: “숙인다”"
+    },
+    {
+      "id": "H178",
+      "mode": "humanities",
+      "q": "낮말은 새가 듣고 밤말은 ____가 듣는다.",
+      "choices": [
+        "산",
+        "쥐"
+      ],
+      "answer": 1,
+      "explain": "정답: “쥐”"
+    },
+    {
+      "id": "H179",
+      "mode": "humanities",
+      "q": "물에 빠진 사람은 ____라도 잡는다.",
+      "choices": [
+        "지푸라기",
+        "빛"
+      ],
+      "answer": 0,
+      "explain": "정답: “지푸라기”"
+    },
+    {
+      "id": "H180",
+      "mode": "humanities",
+      "q": "호랑이 굴에 들어가야 ____ 잡는다.",
+      "choices": [
+        "호랑이",
+        "연필"
+      ],
+      "answer": 0,
+      "explain": "정답: “호랑이”"
+    },
+    {
+      "id": "H181",
+      "mode": "humanities",
+      "q": "도둑이 ____ 저리다.",
+      "choices": [
+        "제 발",
+        "문"
+      ],
+      "answer": 0,
+      "explain": "정답: “제 발”"
+    },
+    {
+      "id": "H182",
+      "mode": "humanities",
+      "q": "서당 개 삼 년이면 풍월을 ____.",
+      "choices": [
+        "읊는다",
+        "산"
+      ],
+      "answer": 0,
+      "explain": "정답: “읊는다”"
+    },
+    {
+      "id": "H183",
+      "mode": "humanities",
+      "q": "열 번 찍어 안 넘어가는 나무 ____.",
+      "choices": [
+        "바다",
+        "없다"
+      ],
+      "answer": 1,
+      "explain": "정답: “없다”"
+    },
+    {
+      "id": "H184",
+      "mode": "humanities",
+      "q": "천 리 길도 ____부터.",
+      "choices": [
+        "한 걸음",
+        "바위"
+      ],
+      "answer": 0,
+      "explain": "정답: “한 걸음”"
+    },
+    {
+      "id": "H185",
+      "mode": "humanities",
+      "q": "친구 따라 강남 ____.",
+      "choices": [
+        "간다",
+        "구름"
+      ],
+      "answer": 0,
+      "explain": "정답: “간다”"
+    },
+    {
+      "id": "H186",
+      "mode": "humanities",
+      "q": "쇠뿔도 단김에 ____.",
+      "choices": [
+        "빼라",
+        "별"
+      ],
+      "answer": 0,
+      "explain": "정답: “빼라”"
+    },
+    {
+      "id": "H187",
+      "mode": "humanities",
+      "q": "모로 가도 ____만 가면 된다.",
+      "choices": [
+        "강",
+        "서울"
+      ],
+      "answer": 1,
+      "explain": "정답: “서울”"
+    },
+    {
+      "id": "H188",
+      "mode": "humanities",
+      "q": "손바닥으로 하늘을 ____.",
+      "choices": [
+        "가린다",
+        "고래"
+      ],
+      "answer": 0,
+      "explain": "정답: “가린다”"
+    },
+    {
+      "id": "H189",
+      "mode": "humanities",
+      "q": "웃는 얼굴에 ____ 못 뱉는다.",
+      "choices": [
+        "침",
+        "소나무"
+      ],
+      "answer": 0,
+      "explain": "정답: “침”"
+    },
+    {
+      "id": "H190",
+      "mode": "humanities",
+      "q": "비 온 뒤에 땅이 더 ____.",
+      "choices": [
+        "굳는다",
+        "별"
+      ],
+      "answer": 0,
+      "explain": "정답: “굳는다”"
+    },
+    {
+      "id": "H191",
+      "mode": "humanities",
+      "q": "고양이 목에 ____ 달기.",
+      "choices": [
+        "나비",
+        "방울"
+      ],
+      "answer": 1,
+      "explain": "정답: “방울”"
+    },
+    {
+      "id": "H192",
+      "mode": "humanities",
+      "q": "식은 죽 먹기처럼 ____.",
+      "choices": [
+        "쉽다",
+        "우산"
+      ],
+      "answer": 0,
+      "explain": "정답: “쉽다”"
+    },
+    {
+      "id": "H193",
+      "mode": "humanities",
+      "q": "시작이 ____.",
+      "choices": [
+        "반이다",
+        "연필"
+      ],
+      "answer": 0,
+      "explain": "정답: “반이다”"
+    },
+    {
+      "id": "H194",
+      "mode": "humanities",
+      "q": "끝이 좋아야 다 ____.",
+      "choices": [
+        "좋다",
+        "소나무"
+      ],
+      "answer": 0,
+      "explain": "정답: “좋다”"
+    },
+    {
+      "id": "H195",
+      "mode": "humanities",
+      "q": "불난 집에 ____ 뿌린다.",
+      "choices": [
+        "나비",
+        "부채질"
+      ],
+      "answer": 1,
+      "explain": "정답: “부채질”"
+    },
+    {
+      "id": "H196",
+      "mode": "humanities",
+      "q": "남의 떡이 더 ____.",
+      "choices": [
+        "하늘",
+        "커 보인다"
+      ],
+      "answer": 1,
+      "explain": "정답: “커 보인다”"
+    },
+    {
+      "id": "H197",
+      "mode": "humanities",
+      "q": "호미로 막을 것을 ____로 막는다.",
+      "choices": [
+        "바위",
+        "가래"
+      ],
+      "answer": 1,
+      "explain": "정답: “가래”"
+    },
+    {
+      "id": "H198",
+      "mode": "humanities",
+      "q": "하늘이 무너져도 솟아날 ____이 있다.",
+      "choices": [
+        "구멍",
+        "하늘"
+      ],
+      "answer": 0,
+      "explain": "정답: “구멍”"
+    },
+    {
+      "id": "H199",
+      "mode": "humanities",
+      "q": "고양이에게 생선을 ____.",
+      "choices": [
+        "맡긴다",
+        "별"
+      ],
+      "answer": 0,
+      "explain": "정답: “맡긴다”"
+    },
+    {
+      "id": "H200",
+      "mode": "humanities",
+      "q": "우는 아이 떡 하나 더 ____.",
+      "choices": [
+        "준다",
+        "강"
+      ],
+      "answer": 0,
+      "explain": "정답: “준다”"
+    },
+    {
+      "id": "H201",
+      "mode": "humanities",
+      "q": "마른하늘에 ____ 떨어진다.",
+      "choices": [
+        "바다",
+        "날벼락"
+      ],
+      "answer": 1,
+      "explain": "정답: “날벼락”"
+    },
+    {
+      "id": "H202",
+      "mode": "humanities",
+      "q": "호박이 ____ 굴러 들어온다.",
+      "choices": [
+        "바위",
+        "넝쿨째"
+      ],
+      "answer": 1,
+      "explain": "정답: “넝쿨째”"
+    },
+    {
+      "id": "H203",
+      "mode": "humanities",
+      "q": "배보다 ____이 더 크다.",
+      "choices": [
+        "우산",
+        "배꼽"
+      ],
+      "answer": 1,
+      "explain": "정답: “배꼽”"
+    },
+    {
+      "id": "H204",
+      "mode": "humanities",
+      "q": "눈 가리고 ____ 아웅.",
+      "choices": [
+        "아웅",
+        "별"
+      ],
+      "answer": 0,
+      "explain": "정답: “아웅”"
+    },
+    {
+      "id": "H205",
+      "mode": "humanities",
+      "q": "열 길 물속은 알아도 한 길 ____은 모른다.",
+      "choices": [
+        "하늘",
+        "속"
+      ],
+      "answer": 1,
+      "explain": "정답: “속”"
+    },
+    {
+      "id": "H206",
+      "mode": "humanities",
+      "q": "누워서 ____ 먹기.",
+      "choices": [
+        "침",
+        "구름"
+      ],
+      "answer": 0,
+      "explain": "정답: “침”"
+    },
+    {
+      "id": "H207",
+      "mode": "humanities",
+      "q": "닭 쫓던 개 지붕 쳐다보듯 ____.",
+      "choices": [
+        "한다",
+        "우산"
+      ],
+      "answer": 0,
+      "explain": "정답: “한다”"
+    },
+    {
+      "id": "H208",
+      "mode": "humanities",
+      "q": "말이 씨가 ____.",
+      "choices": [
+        "된다",
+        "우산"
+      ],
+      "answer": 0,
+      "explain": "정답: “된다”"
+    },
+    {
+      "id": "H209",
+      "mode": "humanities",
+      "q": "보기 좋은 떡이 먹기도 ____.",
+      "choices": [
+        "좋다",
+        "모래"
+      ],
+      "answer": 0,
+      "explain": "정답: “좋다”"
+    },
+    {
+      "id": "H210",
+      "mode": "humanities",
+      "q": "인내는 쓰고 열매는 ____.",
+      "choices": [
+        "빛",
+        "달다"
+      ],
+      "answer": 1,
+      "explain": "정답: “달다”"
+    },
+    {
+      "id": "H211",
+      "mode": "humanities",
+      "q": "하나를 보면 열을 ____.",
+      "choices": [
+        "안다",
+        "하늘"
+      ],
+      "answer": 0,
+      "explain": "정답: “안다”"
+    },
+    {
+      "id": "H212",
+      "mode": "humanities",
+      "q": "아홉 번 넘어져도 열 번 ____.",
+      "choices": [
+        "하늘",
+        "일어난다"
+      ],
+      "answer": 1,
+      "explain": "정답: “일어난다”"
+    },
+    {
+      "id": "H213",
+      "mode": "humanities",
+      "q": "물은 건너봐야 알고 사람은 ____ 봐야 안다.",
+      "choices": [
+        "겪어",
+        "토끼"
+      ],
+      "answer": 0,
+      "explain": "정답: “겪어”"
+    },
+    {
+      "id": "H214",
+      "mode": "humanities",
+      "q": "가재는 ____ 편.",
+      "choices": [
+        "게",
+        "토끼"
+      ],
+      "answer": 0,
+      "explain": "정답: “게”"
+    },
+    {
+      "id": "H215",
+      "mode": "humanities",
+      "q": "호랑이도 ____ 말은 한다.",
+      "choices": [
+        "문",
+        "제"
+      ],
+      "answer": 1,
+      "explain": "정답: “제”"
+    },
+    {
+      "id": "H216",
+      "mode": "humanities",
+      "q": "티끌 모아 ____.",
+      "choices": [
+        "강",
+        "태산"
+      ],
+      "answer": 1,
+      "explain": "정답: “태산”"
+    },
+    {
+      "id": "H217",
+      "mode": "humanities",
+      "q": "티끌 모아 ____.",
+      "choices": [
+        "소나무",
+        "태산"
+      ],
+      "answer": 1,
+      "explain": "정답: “태산”"
+    },
+    {
+      "id": "H218",
+      "mode": "humanities",
+      "q": "티끌 모아 ____.",
+      "choices": [
+        "태산",
+        "토끼"
+      ],
+      "answer": 0,
+      "explain": "정답: “태산”"
+    },
+    {
+      "id": "H219",
+      "mode": "humanities",
+      "q": "티끌 모아 ____.",
+      "choices": [
+        "태산",
+        "구름"
+      ],
+      "answer": 0,
+      "explain": "정답: “태산”"
+    },
+    {
+      "id": "H220",
+      "mode": "humanities",
+      "q": "티끌 모아 ____.",
+      "choices": [
+        "강",
+        "태산"
+      ],
+      "answer": 1,
+      "explain": "정답: “태산”"
+    },
+    {
+      "id": "H221",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈山〉",
+      "choices": [
+        "산",
+        "상"
+      ],
+      "answer": 0,
+      "explain": "정답: “산”"
+    },
+    {
+      "id": "H222",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈水〉",
+      "choices": [
+        "천",
+        "수"
+      ],
+      "answer": 1,
+      "explain": "정답: “수”"
+    },
+    {
+      "id": "H223",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈火〉",
+      "choices": [
+        "춘",
+        "화"
+      ],
+      "answer": 1,
+      "explain": "정답: “화”"
+    },
+    {
+      "id": "H224",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈木〉",
+      "choices": [
+        "목",
+        "국"
+      ],
+      "answer": 0,
+      "explain": "정답: “목”"
+    },
+    {
+      "id": "H225",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈金〉",
+      "choices": [
+        "금",
+        "토"
+      ],
+      "answer": 0,
+      "explain": "정답: “금”"
+    },
+    {
+      "id": "H226",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈土〉",
+      "choices": [
+        "사",
+        "토"
+      ],
+      "answer": 1,
+      "explain": "정답: “토”"
+    },
+    {
+      "id": "H227",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈日〉",
+      "choices": [
+        "일",
+        "학"
+      ],
+      "answer": 0,
+      "explain": "정답: “일”"
+    },
+    {
+      "id": "H228",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈月〉",
+      "choices": [
+        "월",
+        "모"
+      ],
+      "answer": 0,
+      "explain": "정답: “월”"
+    },
+    {
+      "id": "H229",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈天〉",
+      "choices": [
+        "양",
+        "천"
+      ],
+      "answer": 1,
+      "explain": "정답: “천”"
+    },
+    {
+      "id": "H230",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈地〉",
+      "choices": [
+        "지",
+        "사"
+      ],
+      "answer": 0,
+      "explain": "정답: “지”"
+    },
+    {
+      "id": "H231",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈人〉",
+      "choices": [
+        "우",
+        "인"
+      ],
+      "answer": 1,
+      "explain": "정답: “인”"
+    },
+    {
+      "id": "H232",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈大〉",
+      "choices": [
+        "양",
+        "대"
+      ],
+      "answer": 1,
+      "explain": "정답: “대”"
+    },
+    {
+      "id": "H233",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈小〉",
+      "choices": [
+        "해",
+        "소"
+      ],
+      "answer": 1,
+      "explain": "정답: “소”"
+    },
+    {
+      "id": "H234",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈中〉",
+      "choices": [
+        "풍",
+        "중"
+      ],
+      "answer": 1,
+      "explain": "정답: “중”"
+    },
+    {
+      "id": "H235",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈上〉",
+      "choices": [
+        "상",
+        "춘"
+      ],
+      "answer": 0,
+      "explain": "정답: “상”"
+    },
+    {
+      "id": "H236",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈下〉",
+      "choices": [
+        "녀",
+        "하"
+      ],
+      "answer": 1,
+      "explain": "정답: “하”"
+    },
+    {
+      "id": "H237",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈東〉",
+      "choices": [
+        "동",
+        "금"
+      ],
+      "answer": 0,
+      "explain": "정답: “동”"
+    },
+    {
+      "id": "H238",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈西〉",
+      "choices": [
+        "수",
+        "서"
+      ],
+      "answer": 1,
+      "explain": "정답: “서”"
+    },
+    {
+      "id": "H239",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈南〉",
+      "choices": [
+        "조",
+        "남"
+      ],
+      "answer": 1,
+      "explain": "정답: “남”"
+    },
+    {
+      "id": "H240",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈北〉",
+      "choices": [
+        "천",
+        "북"
+      ],
+      "answer": 1,
+      "explain": "정답: “북”"
+    },
+    {
+      "id": "H241",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈學〉",
+      "choices": [
+        "일",
+        "학"
+      ],
+      "answer": 1,
+      "explain": "정답: “학”"
+    },
+    {
+      "id": "H242",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈校〉",
+      "choices": [
+        "애",
+        "교"
+      ],
+      "answer": 1,
+      "explain": "정답: “교”"
+    },
+    {
+      "id": "H243",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈國〉",
+      "choices": [
+        "국",
+        "동"
+      ],
+      "answer": 0,
+      "explain": "정답: “국”"
+    },
+    {
+      "id": "H244",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈民〉",
+      "choices": [
+        "관",
+        "민"
+      ],
+      "answer": 1,
+      "explain": "정답: “민”"
+    },
+    {
+      "id": "H245",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈文〉",
+      "choices": [
+        "분",
+        "문"
+      ],
+      "answer": 1,
+      "explain": "정답: “문”"
+    },
+    {
+      "id": "H246",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈史〉",
+      "choices": [
+        "사",
+        "동"
+      ],
+      "answer": 0,
+      "explain": "정답: “사”"
+    },
+    {
+      "id": "H247",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈心〉",
+      "choices": [
+        "심",
+        "국"
+      ],
+      "answer": 0,
+      "explain": "정답: “심”"
+    },
+    {
+      "id": "H248",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈手〉",
+      "choices": [
+        "토",
+        "수"
+      ],
+      "answer": 1,
+      "explain": "정답: “수”"
+    },
+    {
+      "id": "H249",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈口〉",
+      "choices": [
+        "구",
+        "청"
+      ],
+      "answer": 0,
+      "explain": "정답: “구”"
+    },
+    {
+      "id": "H250",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈目〉",
+      "choices": [
+        "락",
+        "목"
+      ],
+      "answer": 1,
+      "explain": "정답: “목”"
+    },
+    {
+      "id": "H251",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈耳〉",
+      "choices": [
+        "화",
+        "이"
+      ],
+      "answer": 1,
+      "explain": "정답: “이”"
+    },
+    {
+      "id": "H252",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈足〉",
+      "choices": [
+        "족",
+        "해"
+      ],
+      "answer": 0,
+      "explain": "정답: “족”"
+    },
+    {
+      "id": "H253",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈車〉",
+      "choices": [
+        "단",
+        "차"
+      ],
+      "answer": 1,
+      "explain": "정답: “차”"
+    },
+    {
+      "id": "H254",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈電〉",
+      "choices": [
+        "년",
+        "전"
+      ],
+      "answer": 1,
+      "explain": "정답: “전”"
+    },
+    {
+      "id": "H255",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈力〉",
+      "choices": [
+        "력",
+        "애"
+      ],
+      "answer": 0,
+      "explain": "정답: “력”"
+    },
+    {
+      "id": "H256",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈友〉",
+      "choices": [
+        "선",
+        "우"
+      ],
+      "answer": 1,
+      "explain": "정답: “우”"
+    },
+    {
+      "id": "H257",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈愛〉",
+      "choices": [
+        "애",
+        "분"
+      ],
+      "answer": 0,
+      "explain": "정답: “애”"
+    },
+    {
+      "id": "H258",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈家〉",
+      "choices": [
+        "차",
+        "가"
+      ],
+      "answer": 1,
+      "explain": "정답: “가”"
+    },
+    {
+      "id": "H259",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈父〉",
+      "choices": [
+        "부",
+        "위"
+      ],
+      "answer": 0,
+      "explain": "정답: “부”"
+    },
+    {
+      "id": "H260",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈母〉",
+      "choices": [
+        "녀",
+        "모"
+      ],
+      "answer": 1,
+      "explain": "정답: “모”"
+    },
+    {
+      "id": "H261",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈子〉",
+      "choices": [
+        "흑",
+        "자"
+      ],
+      "answer": 1,
+      "explain": "정답: “자”"
+    },
+    {
+      "id": "H262",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈女〉",
+      "choices": [
+        "녀",
+        "성"
+      ],
+      "answer": 0,
+      "explain": "정답: “녀”"
+    },
+    {
+      "id": "H263",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈男〉",
+      "choices": [
+        "차",
+        "남"
+      ],
+      "answer": 1,
+      "explain": "정답: “남”"
+    },
+    {
+      "id": "H264",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈年〉",
+      "choices": [
+        "구",
+        "년"
+      ],
+      "answer": 1,
+      "explain": "정답: “년”"
+    },
+    {
+      "id": "H265",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈時〉",
+      "choices": [
+        "시",
+        "사"
+      ],
+      "answer": 0,
+      "explain": "정답: “시”"
+    },
+    {
+      "id": "H266",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈分〉",
+      "choices": [
+        "분",
+        "심"
+      ],
+      "answer": 0,
+      "explain": "정답: “분”"
+    },
+    {
+      "id": "H267",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈秒〉",
+      "choices": [
+        "조",
+        "초"
+      ],
+      "answer": 1,
+      "explain": "정답: “초”"
+    },
+    {
+      "id": "H268",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈白〉",
+      "choices": [
+        "사",
+        "백"
+      ],
+      "answer": 1,
+      "explain": "정답: “백”"
+    },
+    {
+      "id": "H269",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈黑〉",
+      "choices": [
+        "점",
+        "흑"
+      ],
+      "answer": 1,
+      "explain": "정답: “흑”"
+    },
+    {
+      "id": "H270",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈青〉",
+      "choices": [
+        "자",
+        "청"
+      ],
+      "answer": 1,
+      "explain": "정답: “청”"
+    },
+    {
+      "id": "H271",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈紅〉",
+      "choices": [
+        "홍",
+        "사"
+      ],
+      "answer": 0,
+      "explain": "정답: “홍”"
+    },
+    {
+      "id": "H272",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈春〉",
+      "choices": [
+        "춘",
+        "위"
+      ],
+      "answer": 0,
+      "explain": "정답: “춘”"
+    },
+    {
+      "id": "H273",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈夏〉",
+      "choices": [
+        "소",
+        "하"
+      ],
+      "answer": 1,
+      "explain": "정답: “하”"
+    },
+    {
+      "id": "H274",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈秋〉",
+      "choices": [
+        "추",
+        "청"
+      ],
+      "answer": 0,
+      "explain": "정답: “추”"
+    },
+    {
+      "id": "H275",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈冬〉",
+      "choices": [
+        "동",
+        "대"
+      ],
+      "answer": 0,
+      "explain": "정답: “동”"
+    },
+    {
+      "id": "H276",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈雨〉",
+      "choices": [
+        "우",
+        "년"
+      ],
+      "answer": 0,
+      "explain": "정답: “우”"
+    },
+    {
+      "id": "H277",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈雪〉",
+      "choices": [
+        "설",
+        "월"
+      ],
+      "answer": 0,
+      "explain": "정답: “설”"
+    },
+    {
+      "id": "H278",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈花〉",
+      "choices": [
+        "자",
+        "화"
+      ],
+      "answer": 1,
+      "explain": "정답: “화”"
+    },
+    {
+      "id": "H279",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈海〉",
+      "choices": [
+        "화",
+        "해"
+      ],
+      "answer": 1,
+      "explain": "정답: “해”"
+    },
+    {
+      "id": "H280",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈川〉",
+      "choices": [
+        "안",
+        "천"
+      ],
+      "answer": 1,
+      "explain": "정답: “천”"
+    },
+    {
+      "id": "H281",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈空〉",
+      "choices": [
+        "고",
+        "공"
+      ],
+      "answer": 1,
+      "explain": "정답: “공”"
+    },
+    {
+      "id": "H282",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈風〉",
+      "choices": [
+        "풍",
+        "춘"
+      ],
+      "answer": 0,
+      "explain": "정답: “풍”"
+    },
+    {
+      "id": "H283",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈星〉",
+      "choices": [
+        "성",
+        "천"
+      ],
+      "answer": 0,
+      "explain": "정답: “성”"
+    },
+    {
+      "id": "H284",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈書〉",
+      "choices": [
+        "식",
+        "서"
+      ],
+      "answer": 1,
+      "explain": "정답: “서”"
+    },
+    {
+      "id": "H285",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈館〉",
+      "choices": [
+        "녀",
+        "관"
+      ],
+      "answer": 1,
+      "explain": "정답: “관”"
+    },
+    {
+      "id": "H286",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈道〉",
+      "choices": [
+        "교",
+        "도"
+      ],
+      "answer": 1,
+      "explain": "정답: “도”"
+    },
+    {
+      "id": "H287",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈路〉",
+      "choices": [
+        "미",
+        "로"
+      ],
+      "answer": 1,
+      "explain": "정답: “로”"
+    },
+    {
+      "id": "H288",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈市〉",
+      "choices": [
+        "시",
+        "위"
+      ],
+      "answer": 0,
+      "explain": "정답: “시”"
+    },
+    {
+      "id": "H289",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈場〉",
+      "choices": [
+        "고",
+        "장"
+      ],
+      "answer": 1,
+      "explain": "정답: “장”"
+    },
+    {
+      "id": "H290",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈店〉",
+      "choices": [
+        "수",
+        "점"
+      ],
+      "answer": 1,
+      "explain": "정답: “점”"
+    },
+    {
+      "id": "H291",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈食〉",
+      "choices": [
+        "상",
+        "식"
+      ],
+      "answer": 1,
+      "explain": "정답: “식”"
+    },
+    {
+      "id": "H292",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈米〉",
+      "choices": [
+        "미",
+        "학"
+      ],
+      "answer": 0,
+      "explain": "정답: “미”"
+    },
+    {
+      "id": "H293",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈肉〉",
+      "choices": [
+        "육",
+        "안"
+      ],
+      "answer": 0,
+      "explain": "정답: “육”"
+    },
+    {
+      "id": "H294",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈魚〉",
+      "choices": [
+        "민",
+        "어"
+      ],
+      "answer": 1,
+      "explain": "정답: “어”"
+    },
+    {
+      "id": "H295",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈鳥〉",
+      "choices": [
+        "조",
+        "선"
+      ],
+      "answer": 0,
+      "explain": "정답: “조”"
+    },
+    {
+      "id": "H296",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈犬〉",
+      "choices": [
+        "견",
+        "목"
+      ],
+      "answer": 0,
+      "explain": "정답: “견”"
+    },
+    {
+      "id": "H297",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈馬〉",
+      "choices": [
+        "춘",
+        "마"
+      ],
+      "answer": 1,
+      "explain": "정답: “마”"
+    },
+    {
+      "id": "H298",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈牛〉",
+      "choices": [
+        "우",
+        "단"
+      ],
+      "answer": 0,
+      "explain": "정답: “우”"
+    },
+    {
+      "id": "H299",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈羊〉",
+      "choices": [
+        "양",
+        "자"
+      ],
+      "answer": 0,
+      "explain": "정답: “양”"
+    },
+    {
+      "id": "H300",
+      "mode": "humanities",
+      "q": "다음 한자의 음(독음)은? 〈王〉",
+      "choices": [
+        "왕",
+        "풍"
+      ],
+      "answer": 0,
+      "explain": "정답: “왕”"
     },
     {
       "id": "S001",
       "mode": "science",
-      "type": "two",
-      "q": "물의 화학식은 H2O이다.",
+      "q": "물(H2O)은 수소 2개와 산소 1개로 이루어진다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "수소 2 + 산소 1."
+      "explain": "H2O는 수소 2, 산소 1이야."
     },
     {
       "id": "S002",
       "mode": "science",
-      "type": "two",
-      "q": "지구는 태양 주위를 공전한다.",
+      "q": "지구는 태양을 공전한다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "지구가 태양을 한 바퀴 돌아."
+      "explain": "지구는 1년 주기로 태양을 돌아."
     },
     {
       "id": "S003",
       "mode": "science",
-      "type": "two",
-      "q": "빛의 속도는 소리의 속도보다 느리다.",
+      "q": "전자는 음전하를 띤다.",
       "choices": [
         "O",
         "X"
       ],
-      "answer": 1,
-      "explain": "빛이 훨씬 빠름."
+      "answer": 0,
+      "explain": "전자(-), 양성자(+)로 알려져."
     },
     {
       "id": "S004",
       "mode": "science",
-      "type": "two",
-      "q": "사람의 심장은 보통 4개의 방으로 이루어진다.",
+      "q": "소리는 진공에서 전달될 수 있다.",
       "choices": [
         "O",
         "X"
       ],
-      "answer": 0,
-      "explain": "좌심방·좌심실·우심방·우심실."
+      "answer": 1,
+      "explain": "소리는 매질이 필요해서 진공에서는 못 가."
     },
     {
       "id": "S005",
       "mode": "science",
-      "type": "two",
-      "q": "DNA는 유전 정보를 담고 있다.",
+      "q": "빛은 진공에서도 전달될 수 있다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "유전물질의 핵심."
+      "explain": "빛(전자기파)은 진공에서도 전파돼."
     },
     {
       "id": "S006",
       "mode": "science",
-      "type": "two",
-      "q": "대기 중 가장 많은 기체는 산소이다.",
+      "q": "산성 용액의 pH는 보통 7보다 작다.",
       "choices": [
         "O",
         "X"
       ],
-      "answer": 1,
-      "explain": "질소(N2)가 가장 많아."
+      "answer": 0,
+      "explain": "산성은 pH 7 미만."
     },
     {
       "id": "S007",
       "mode": "science",
-      "type": "two",
-      "q": "지구의 위성은 달이다.",
+      "q": "염기성 용액의 pH는 보통 7보다 크다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "자연위성 1개가 달."
+      "explain": "염기성은 pH 7 초과."
     },
     {
       "id": "S008",
       "mode": "science",
-      "type": "two",
-      "q": "0°C는 물이 끓는 온도이다.",
+      "q": "섭씨 0도는 물의 어는점이다(1기압).",
       "choices": [
         "O",
         "X"
       ],
-      "answer": 1,
-      "explain": "물은 보통 100°C에서 끓어."
+      "answer": 0,
+      "explain": "0℃는 어는점."
     },
     {
       "id": "S009",
       "mode": "science",
-      "type": "two",
-      "q": "전류의 단위는 암페어(A)이다.",
+      "q": "섭씨 100도는 물의 끓는점이다(1기압).",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "전류 단위 A."
+      "explain": "100℃는 끓는점."
     },
     {
       "id": "S010",
       "mode": "science",
-      "type": "two",
-      "q": "식물은 광합성을 통해 산소를 생성할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "광합성 부산물로 O2가 나와."
-    },
-    {
-      "id": "S011",
-      "mode": "science",
-      "type": "two",
-      "q": "원자핵은 양성자와 중성자로 이루어진다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전자(음전하)는 바깥."
-    },
-    {
-      "id": "S012",
-      "mode": "science",
-      "type": "two",
-      "q": "산(酸)은 pH가 7보다 크다.",
+      "q": "태양은 행성이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 1,
-      "explain": "산은 pH < 7."
+      "explain": "태양은 별(항성)이야."
+    },
+    {
+      "id": "S011",
+      "mode": "science",
+      "q": "달은 지구의 자연위성이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지구의 자연위성은 달이야."
+    },
+    {
+      "id": "S012",
+      "mode": "science",
+      "q": "뉴턴의 제3법칙은 작용-반작용 법칙이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "힘은 쌍으로 나타나."
     },
     {
       "id": "S013",
       "mode": "science",
-      "type": "two",
-      "q": "지구의 자전 주기는 약 24시간이다.",
+      "q": "전류의 단위는 암페어(A)다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "하루가 약 24시간."
+      "explain": "A는 전류 단위."
     },
     {
       "id": "S014",
       "mode": "science",
-      "type": "two",
-      "q": "인체의 주요 장기인 간은 해독 작용을 한다.",
+      "q": "전압의 단위는 볼트(V)다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
-      "explain": "독성 물질 처리에 관여."
+      "explain": "V는 전압 단위."
     },
     {
       "id": "S015",
       "mode": "science",
-      "type": "two",
-      "q": "진공에서는 소리가 전달되지 않는다.",
+      "q": "저항의 단위는 옴(Ω)이다.",
       "choices": [
         "O",
         "X"
       ],
       "answer": 0,
+      "explain": "Ω는 저항 단위."
+    },
+    {
+      "id": "S016",
+      "mode": "science",
+      "q": "전력의 단위는 와트(W)다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위."
+    },
+    {
+      "id": "S017",
+      "mode": "science",
+      "q": "에너지의 단위로 줄(J)을 쓴다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지/일."
+    },
+    {
+      "id": "S018",
+      "mode": "science",
+      "q": "주파수의 단위는 헤르츠(Hz)다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "Hz는 1초당 진동수."
+    },
+    {
+      "id": "S019",
+      "mode": "science",
+      "q": "힘의 단위는 줄(J)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "힘은 N(뉴턴), 줄은 에너지."
+    },
+    {
+      "id": "S020",
+      "mode": "science",
+      "q": "빛은 소리보다 느리다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "빛이 훨씬 빨라."
+    },
+    {
+      "id": "S021",
+      "mode": "science",
+      "q": "지구는 자전한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "자전으로 낮과 밤이 생겨."
+    },
+    {
+      "id": "S022",
+      "mode": "science",
+      "q": "대기의 주성분은 질소다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "질소가 가장 많아."
+    },
+    {
+      "id": "S023",
+      "mode": "science",
+      "q": "광합성은 산소를 방출할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "광합성 부산물로 O₂가 나와."
+    },
+    {
+      "id": "S024",
+      "mode": "science",
+      "q": "식물의 기공은 기체 교환에 관여한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "CO₂ 흡수·O₂ 방출 등."
+    },
+    {
+      "id": "S025",
+      "mode": "science",
+      "q": "바이러스는 숙주 세포를 이용해 증식한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "자체 증식이 어려워."
+    },
+    {
+      "id": "S026",
+      "mode": "science",
+      "q": "세포는 생물의 기본 단위로 여겨진다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "세포설의 핵심."
+    },
+    {
+      "id": "S027",
+      "mode": "science",
+      "q": "번개를 본 뒤 천둥이 늦게 들리는 건 소리가 더 느려서다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛이 소리보다 훨씬 빨라."
+    },
+    {
+      "id": "S028",
+      "mode": "science",
+      "q": "질소는 대기에서 가장 적은 성분이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "질소가 가장 많아."
+    },
+    {
+      "id": "S029",
+      "mode": "science",
+      "q": "전류의 단위는 볼트(V)다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "전류는 A, 전압은 V."
+    },
+    {
+      "id": "S030",
+      "mode": "science",
+      "q": "빛은 진공에서 전달될 수 없다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "빛은 진공에서도 전파돼."
+    },
+    {
+      "id": "S031",
+      "mode": "science",
+      "q": "DNA는 단일 나선 구조로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "DNA는 이중 나선으로 알려져."
+    },
+    {
+      "id": "S032",
+      "mode": "science",
+      "q": "소리는 빛보다 빠르다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "빛이 소리보다 훨씬 빨라."
+    },
+    {
+      "id": "S033",
+      "mode": "science",
+      "q": "접두사 킬로(k)는 10의 3제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "킬로(k)는 10^3."
+    },
+    {
+      "id": "S034",
+      "mode": "science",
+      "q": "접두사 메가(M)는 10의 6제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "메가(M)는 10^6."
+    },
+    {
+      "id": "S035",
+      "mode": "science",
+      "q": "접두사 기가(G)는 10의 9제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기가(G)는 10^9."
+    },
+    {
+      "id": "S036",
+      "mode": "science",
+      "q": "접두사 밀리(m)는 10의 -3제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "밀리(m)는 10^-3."
+    },
+    {
+      "id": "S037",
+      "mode": "science",
+      "q": "접두사 마이크로(µ)는 10의 -6제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "마이크로(µ)는 10^-6."
+    },
+    {
+      "id": "S038",
+      "mode": "science",
+      "q": "접두사 나노(n)는 10의 -9제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "나노(n)는 10^-9."
+    },
+    {
+      "id": "S039",
+      "mode": "science",
+      "q": "접두사 킬로(k)는 10의 -3제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "킬로(k)는 10^3."
+    },
+    {
+      "id": "S040",
+      "mode": "science",
+      "q": "접두사 밀리(m)는 10의 3제곱을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "밀리(m)는 10^-3."
+    },
+    {
+      "id": "S041",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S042",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S043",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S044",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S045",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S046",
+      "mode": "science",
+      "q": "중성자는 전하를 띠지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 0."
+    },
+    {
+      "id": "S047",
+      "mode": "science",
+      "q": "식물 세포에는 세포벽이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동물세포와 차이."
+    },
+    {
+      "id": "S048",
+      "mode": "science",
+      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대략적인 층 구조."
+    },
+    {
+      "id": "S049",
+      "mode": "science",
+      "q": "증발은 액체가 기체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액→기 변화."
+    },
+    {
+      "id": "S050",
+      "mode": "science",
+      "q": "응결은 기체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기→액 변화."
+    },
+    {
+      "id": "S051",
+      "mode": "science",
+      "q": "융해는 고체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고→액 변화."
+    },
+    {
+      "id": "S052",
+      "mode": "science",
+      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "승화는 고→기."
+    },
+    {
+      "id": "S053",
+      "mode": "science",
+      "q": "전자기파는 진공에서도 전파될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛도 전자기파."
+    },
+    {
+      "id": "S054",
+      "mode": "science",
+      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "구급차 소리 예시."
+    },
+    {
+      "id": "S055",
+      "mode": "science",
+      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이온이 전류를 운반."
+    },
+    {
+      "id": "S056",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S057",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S058",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S059",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S060",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S061",
+      "mode": "science",
+      "q": "중성자는 전하를 띠지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 0."
+    },
+    {
+      "id": "S062",
+      "mode": "science",
+      "q": "식물 세포에는 세포벽이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동물세포와 차이."
+    },
+    {
+      "id": "S063",
+      "mode": "science",
+      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대략적인 층 구조."
+    },
+    {
+      "id": "S064",
+      "mode": "science",
+      "q": "증발은 액체가 기체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액→기 변화."
+    },
+    {
+      "id": "S065",
+      "mode": "science",
+      "q": "응결은 기체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기→액 변화."
+    },
+    {
+      "id": "S066",
+      "mode": "science",
+      "q": "융해는 고체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고→액 변화."
+    },
+    {
+      "id": "S067",
+      "mode": "science",
+      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "승화는 고→기."
+    },
+    {
+      "id": "S068",
+      "mode": "science",
+      "q": "전자기파는 진공에서도 전파될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛도 전자기파."
+    },
+    {
+      "id": "S069",
+      "mode": "science",
+      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "구급차 소리 예시."
+    },
+    {
+      "id": "S070",
+      "mode": "science",
+      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이온이 전류를 운반."
+    },
+    {
+      "id": "S071",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S072",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S073",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S074",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S075",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S076",
+      "mode": "science",
+      "q": "중성자는 전하를 띠지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 0."
+    },
+    {
+      "id": "S077",
+      "mode": "science",
+      "q": "식물 세포에는 세포벽이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동물세포와 차이."
+    },
+    {
+      "id": "S078",
+      "mode": "science",
+      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대략적인 층 구조."
+    },
+    {
+      "id": "S079",
+      "mode": "science",
+      "q": "증발은 액체가 기체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액→기 변화."
+    },
+    {
+      "id": "S080",
+      "mode": "science",
+      "q": "응결은 기체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기→액 변화."
+    },
+    {
+      "id": "S081",
+      "mode": "science",
+      "q": "융해는 고체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고→액 변화."
+    },
+    {
+      "id": "S082",
+      "mode": "science",
+      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "승화는 고→기."
+    },
+    {
+      "id": "S083",
+      "mode": "science",
+      "q": "전자기파는 진공에서도 전파될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛도 전자기파."
+    },
+    {
+      "id": "S084",
+      "mode": "science",
+      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "구급차 소리 예시."
+    },
+    {
+      "id": "S085",
+      "mode": "science",
+      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이온이 전류를 운반."
+    },
+    {
+      "id": "S086",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S087",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S088",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S089",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S090",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S091",
+      "mode": "science",
+      "q": "중성자는 전하를 띠지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 0."
+    },
+    {
+      "id": "S092",
+      "mode": "science",
+      "q": "식물 세포에는 세포벽이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동물세포와 차이."
+    },
+    {
+      "id": "S093",
+      "mode": "science",
+      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대략적인 층 구조."
+    },
+    {
+      "id": "S094",
+      "mode": "science",
+      "q": "증발은 액체가 기체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액→기 변화."
+    },
+    {
+      "id": "S095",
+      "mode": "science",
+      "q": "응결은 기체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기→액 변화."
+    },
+    {
+      "id": "S096",
+      "mode": "science",
+      "q": "융해는 고체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고→액 변화."
+    },
+    {
+      "id": "S097",
+      "mode": "science",
+      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "승화는 고→기."
+    },
+    {
+      "id": "S098",
+      "mode": "science",
+      "q": "전자기파는 진공에서도 전파될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛도 전자기파."
+    },
+    {
+      "id": "S099",
+      "mode": "science",
+      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "구급차 소리 예시."
+    },
+    {
+      "id": "S100",
+      "mode": "science",
+      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이온이 전류를 운반."
+    },
+    {
+      "id": "S101",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S102",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S103",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S104",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S105",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S106",
+      "mode": "science",
+      "q": "중성자는 전하를 띠지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 0."
+    },
+    {
+      "id": "S107",
+      "mode": "science",
+      "q": "식물 세포에는 세포벽이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동물세포와 차이."
+    },
+    {
+      "id": "S108",
+      "mode": "science",
+      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대략적인 층 구조."
+    },
+    {
+      "id": "S109",
+      "mode": "science",
+      "q": "증발은 액체가 기체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액→기 변화."
+    },
+    {
+      "id": "S110",
+      "mode": "science",
+      "q": "응결은 기체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기→액 변화."
+    },
+    {
+      "id": "S111",
+      "mode": "science",
+      "q": "융해는 고체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고→액 변화."
+    },
+    {
+      "id": "S112",
+      "mode": "science",
+      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "승화는 고→기."
+    },
+    {
+      "id": "S113",
+      "mode": "science",
+      "q": "전자기파는 진공에서도 전파될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛도 전자기파."
+    },
+    {
+      "id": "S114",
+      "mode": "science",
+      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "구급차 소리 예시."
+    },
+    {
+      "id": "S115",
+      "mode": "science",
+      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이온이 전류를 운반."
+    },
+    {
+      "id": "S116",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S117",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S118",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S119",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S120",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S121",
+      "mode": "science",
+      "q": "중성자는 전하를 띠지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 0."
+    },
+    {
+      "id": "S122",
+      "mode": "science",
+      "q": "식물 세포에는 세포벽이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동물세포와 차이."
+    },
+    {
+      "id": "S123",
+      "mode": "science",
+      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대략적인 층 구조."
+    },
+    {
+      "id": "S124",
+      "mode": "science",
+      "q": "증발은 액체가 기체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액→기 변화."
+    },
+    {
+      "id": "S125",
+      "mode": "science",
+      "q": "응결은 기체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기→액 변화."
+    },
+    {
+      "id": "S126",
+      "mode": "science",
+      "q": "융해는 고체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고→액 변화."
+    },
+    {
+      "id": "S127",
+      "mode": "science",
+      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "승화는 고→기."
+    },
+    {
+      "id": "S128",
+      "mode": "science",
+      "q": "전자기파는 진공에서도 전파될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛도 전자기파."
+    },
+    {
+      "id": "S129",
+      "mode": "science",
+      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "구급차 소리 예시."
+    },
+    {
+      "id": "S130",
+      "mode": "science",
+      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이온이 전류를 운반."
+    },
+    {
+      "id": "S131",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S132",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S133",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S134",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S135",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S136",
+      "mode": "science",
+      "q": "중성자는 전하를 띠지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 0."
+    },
+    {
+      "id": "S137",
+      "mode": "science",
+      "q": "식물 세포에는 세포벽이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동물세포와 차이."
+    },
+    {
+      "id": "S138",
+      "mode": "science",
+      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대략적인 층 구조."
+    },
+    {
+      "id": "S139",
+      "mode": "science",
+      "q": "증발은 액체가 기체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액→기 변화."
+    },
+    {
+      "id": "S140",
+      "mode": "science",
+      "q": "응결은 기체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기→액 변화."
+    },
+    {
+      "id": "S141",
+      "mode": "science",
+      "q": "융해는 고체가 액체로 되는 상태변화다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고→액 변화."
+    },
+    {
+      "id": "S142",
+      "mode": "science",
+      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "승화는 고→기."
+    },
+    {
+      "id": "S143",
+      "mode": "science",
+      "q": "전자기파는 진공에서도 전파될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛도 전자기파."
+    },
+    {
+      "id": "S144",
+      "mode": "science",
+      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "구급차 소리 예시."
+    },
+    {
+      "id": "S145",
+      "mode": "science",
+      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이온이 전류를 운반."
+    },
+    {
+      "id": "S146",
+      "mode": "science",
+      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표적인 물질의 상태 3가지."
+    },
+    {
+      "id": "S147",
+      "mode": "science",
+      "q": "온도는 분자의 평균 운동과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도가 높을수록 운동이 활발해."
+    },
+    {
+      "id": "S148",
+      "mode": "science",
+      "q": "도체는 전기가 잘 통하는 물질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "금속 등이 대표적."
+    },
+    {
+      "id": "S149",
+      "mode": "science",
+      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유체에서 받는 힘."
+    },
+    {
+      "id": "S150",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S151",
+      "mode": "science",
+      "q": "길이의 SI 기본단위는?",
+      "choices": [
+        "미터(m)",
+        "킬로그램(kg)"
+      ],
+      "answer": 0,
+      "explain": "길이 기본단위는 m(미터)."
+    },
+    {
+      "id": "S152",
+      "mode": "science",
+      "q": "질량의 SI 기본단위는?",
+      "choices": [
+        "킬로그램(kg)",
+        "초(s)"
+      ],
+      "answer": 0,
+      "explain": "질량 기본단위는 kg."
+    },
+    {
+      "id": "S153",
+      "mode": "science",
+      "q": "시간의 SI 기본단위는?",
+      "choices": [
+        "몰(mol)",
+        "초(s)"
+      ],
+      "answer": 1,
+      "explain": "시간 기본단위는 s."
+    },
+    {
+      "id": "S154",
+      "mode": "science",
+      "q": "전류의 SI 기본단위는?",
+      "choices": [
+        "암페어(A)",
+        "볼트(V)"
+      ],
+      "answer": 0,
+      "explain": "전류는 A."
+    },
+    {
+      "id": "S155",
+      "mode": "science",
+      "q": "온도의 SI 기본단위는?",
+      "choices": [
+        "켈빈(K)",
+        "섭씨(℃)"
+      ],
+      "answer": 0,
+      "explain": "SI 기본단위는 K."
+    },
+    {
+      "id": "S156",
+      "mode": "science",
+      "q": "물질량의 SI 기본단위는?",
+      "choices": [
+        "몰(mol)",
+        "룩스(lx)"
+      ],
+      "answer": 0,
+      "explain": "물질량은 mol."
+    },
+    {
+      "id": "S157",
+      "mode": "science",
+      "q": "광도의 SI 기본단위는?",
+      "choices": [
+        "칸델라(cd)",
+        "파스칼(Pa)"
+      ],
+      "answer": 0,
+      "explain": "광도는 cd."
+    },
+    {
+      "id": "S158",
+      "mode": "science",
+      "q": "힘의 단위는?",
+      "choices": [
+        "줄(J)",
+        "뉴턴(N)"
+      ],
+      "answer": 1,
+      "explain": "힘은 N, 에너지는 J."
+    },
+    {
+      "id": "S159",
+      "mode": "science",
+      "q": "압력의 단위는?",
+      "choices": [
+        "와트(W)",
+        "파스칼(Pa)"
+      ],
+      "answer": 1,
+      "explain": "압력은 Pa."
+    },
+    {
+      "id": "S160",
+      "mode": "science",
+      "q": "전력의 단위는?",
+      "choices": [
+        "와트(W)",
+        "옴(Ω)"
+      ],
+      "answer": 0,
+      "explain": "전력은 W, 저항은 Ω."
+    },
+    {
+      "id": "S161",
+      "mode": "science",
+      "q": "주파수의 단위는?",
+      "choices": [
+        "테슬라(T)",
+        "헤르츠(Hz)"
+      ],
+      "answer": 1,
+      "explain": "Hz는 주파수."
+    },
+    {
+      "id": "S162",
+      "mode": "science",
+      "q": "전하의 단위는?",
+      "choices": [
+        "암페어(A)",
+        "쿨롬(C)"
+      ],
+      "answer": 1,
+      "explain": "전하는 C."
+    },
+    {
+      "id": "S163",
+      "mode": "science",
+      "q": "전압의 단위는?",
+      "choices": [
+        "암페어(A)",
+        "볼트(V)"
+      ],
+      "answer": 1,
+      "explain": "전압은 V."
+    },
+    {
+      "id": "S164",
+      "mode": "science",
+      "q": "저항의 단위는?",
+      "choices": [
+        "볼트(V)",
+        "옴(Ω)"
+      ],
+      "answer": 1,
+      "explain": "저항은 Ω."
+    },
+    {
+      "id": "S165",
+      "mode": "science",
+      "q": "에너지의 단위는?",
+      "choices": [
+        "줄(J)",
+        "헤르츠(Hz)"
+      ],
+      "answer": 0,
+      "explain": "에너지는 J."
+    },
+    {
+      "id": "S166",
+      "mode": "science",
+      "q": "단위 기호 kHz를 읽으면?",
+      "choices": [
+        "밀리헤르츠",
+        "킬로헤르츠"
+      ],
+      "answer": 1,
+      "explain": "k=10^3 → 킬로."
+    },
+    {
+      "id": "S167",
+      "mode": "science",
+      "q": "단위 기호 mA를 읽으면?",
+      "choices": [
+        "메가암페어",
+        "밀리암페어"
+      ],
+      "answer": 1,
+      "explain": "m=10^-3 → 밀리."
+    },
+    {
+      "id": "S168",
+      "mode": "science",
+      "q": "단위 기호 µm를 읽으면?",
+      "choices": [
+        "마이크로미터",
+        "밀리미터"
+      ],
+      "answer": 0,
+      "explain": "µ=10^-6 → 마이크로."
+    },
+    {
+      "id": "S169",
+      "mode": "science",
+      "q": "단위 기호 nm를 읽으면?",
+      "choices": [
+        "나노미터",
+        "밀리미터"
+      ],
+      "answer": 0,
+      "explain": "n=10^-9 → 나노."
+    },
+    {
+      "id": "S170",
+      "mode": "science",
+      "q": "단위 기호 MW를 읽으면?",
+      "choices": [
+        "메가와트",
+        "밀리와트"
+      ],
+      "answer": 0,
+      "explain": "M=10^6 → 메가."
+    },
+    {
+      "id": "S171",
+      "mode": "science",
+      "q": "단위 기호 kV를 읽으면?",
+      "choices": [
+        "킬로볼트",
+        "나노볼트"
+      ],
+      "answer": 0,
+      "explain": "k=10^3 → 킬로."
+    },
+    {
+      "id": "S172",
+      "mode": "science",
+      "q": "단위 기호 mm를 읽으면?",
+      "choices": [
+        "밀리미터",
+        "메가미터"
+      ],
+      "answer": 0,
+      "explain": "m=10^-3 → 밀리."
+    },
+    {
+      "id": "S173",
+      "mode": "science",
+      "q": "단위 기호 µs를 읽으면?",
+      "choices": [
+        "마이크로초",
+        "밀리초"
+      ],
+      "answer": 0,
+      "explain": "µ=10^-6 → 마이크로."
+    },
+    {
+      "id": "S174",
+      "mode": "science",
+      "q": "단위 기호 ns를 읽으면?",
+      "choices": [
+        "나노초",
+        "마이크로초"
+      ],
+      "answer": 0,
+      "explain": "n=10^-9 → 나노."
+    },
+    {
+      "id": "S175",
+      "mode": "science",
+      "q": "단위 기호 GHz를 읽으면?",
+      "choices": [
+        "메가헤르츠",
+        "기가헤르츠"
+      ],
+      "answer": 1,
+      "explain": "G=10^9 → 기가."
+    },
+    {
+      "id": "S176",
+      "mode": "science",
+      "q": "m/s는 보통 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "초당 미터",
+        "미터당 초"
+      ],
+      "answer": 0,
+      "explain": "m/s는 속도 단위로 보통 '초당 미터'."
+    },
+    {
+      "id": "S177",
+      "mode": "science",
+      "q": "km/h는 보통 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "킬로미터당 시간",
+        "시간당 킬로미터"
+      ],
+      "answer": 1,
+      "explain": "km/h는 '시간당 킬로미터'."
+    },
+    {
+      "id": "S178",
+      "mode": "science",
+      "q": "g/cm³는 보통 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "그램당 세제곱센티미터",
+        "세제곱센티미터당 그램"
+      ],
+      "answer": 1,
+      "explain": "밀도는 '부피당 질량'."
+    },
+    {
+      "id": "S179",
+      "mode": "science",
+      "q": "N·m는 보통 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "뉴턴미터",
+        "미터뉴턴"
+      ],
+      "answer": 0,
+      "explain": "N·m은 '뉴턴미터'."
+    },
+    {
+      "id": "S180",
+      "mode": "science",
+      "q": "m²는 보통 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "세제곱미터",
+        "제곱미터"
+      ],
+      "answer": 1,
+      "explain": "m²는 넓이 단위."
+    },
+    {
+      "id": "S181",
+      "mode": "science",
+      "q": "m³는 보통 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "세제곱미터",
+        "제곱미터"
+      ],
+      "answer": 0,
+      "explain": "m³는 부피 단위."
+    },
+    {
+      "id": "S182",
+      "mode": "science",
+      "q": "원소기호 H는 무엇일까?",
+      "choices": [
+        "헬륨",
+        "수소"
+      ],
+      "answer": 1,
+      "explain": "H는 수소."
+    },
+    {
+      "id": "S183",
+      "mode": "science",
+      "q": "원소기호 He는 무엇일까?",
+      "choices": [
+        "헬륨",
+        "수은"
+      ],
+      "answer": 0,
+      "explain": "He는 헬륨."
+    },
+    {
+      "id": "S184",
+      "mode": "science",
+      "q": "원소기호 O는 무엇일까?",
+      "choices": [
+        "금",
+        "산소"
+      ],
+      "answer": 1,
+      "explain": "O는 산소."
+    },
+    {
+      "id": "S185",
+      "mode": "science",
+      "q": "원소기호 N는 무엇일까?",
+      "choices": [
+        "질소",
+        "나트륨"
+      ],
+      "answer": 0,
+      "explain": "N은 질소."
+    },
+    {
+      "id": "S186",
+      "mode": "science",
+      "q": "원소기호 C는 무엇일까?",
+      "choices": [
+        "칼슘",
+        "탄소"
+      ],
+      "answer": 1,
+      "explain": "C는 탄소."
+    },
+    {
+      "id": "S187",
+      "mode": "science",
+      "q": "원소기호 Na는 무엇일까?",
+      "choices": [
+        "나트륨",
+        "질소"
+      ],
+      "answer": 0,
+      "explain": "Na는 나트륨."
+    },
+    {
+      "id": "S188",
+      "mode": "science",
+      "q": "원소기호 K는 무엇일까?",
+      "choices": [
+        "칼슘",
+        "칼륨"
+      ],
+      "answer": 1,
+      "explain": "K는 칼륨."
+    },
+    {
+      "id": "S189",
+      "mode": "science",
+      "q": "원소기호 Ca는 무엇일까?",
+      "choices": [
+        "칼슘",
+        "탄소"
+      ],
+      "answer": 0,
+      "explain": "Ca는 칼슘."
+    },
+    {
+      "id": "S190",
+      "mode": "science",
+      "q": "원소기호 Fe는 무엇일까?",
+      "choices": [
+        "철",
+        "불소"
+      ],
+      "answer": 0,
+      "explain": "Fe는 철."
+    },
+    {
+      "id": "S191",
+      "mode": "science",
+      "q": "원소기호 Cu는 무엇일까?",
+      "choices": [
+        "구리",
+        "칼슘"
+      ],
+      "answer": 0,
+      "explain": "Cu는 구리."
+    },
+    {
+      "id": "S192",
+      "mode": "science",
+      "q": "원소기호 Ag는 무엇일까?",
+      "choices": [
+        "은",
+        "아연"
+      ],
+      "answer": 0,
+      "explain": "Ag는 은."
+    },
+    {
+      "id": "S193",
+      "mode": "science",
+      "q": "원소기호 Au는 무엇일까?",
+      "choices": [
+        "은",
+        "금"
+      ],
+      "answer": 1,
+      "explain": "Au는 금."
+    },
+    {
+      "id": "S194",
+      "mode": "science",
+      "q": "원소기호 Cl는 무엇일까?",
+      "choices": [
+        "염소",
+        "탄소"
+      ],
+      "answer": 0,
+      "explain": "Cl은 염소."
+    },
+    {
+      "id": "S195",
+      "mode": "science",
+      "q": "원소기호 S는 무엇일까?",
+      "choices": [
+        "규소",
+        "황"
+      ],
+      "answer": 1,
+      "explain": "S는 황."
+    },
+    {
+      "id": "S196",
+      "mode": "science",
+      "q": "원소기호 Si는 무엇일까?",
+      "choices": [
+        "규소",
+        "은"
+      ],
+      "answer": 0,
+      "explain": "Si는 규소."
+    },
+    {
+      "id": "S197",
+      "mode": "science",
+      "q": "원소기호 Mg는 무엇일까?",
+      "choices": [
+        "망간",
+        "마그네슘"
+      ],
+      "answer": 1,
+      "explain": "Mg는 마그네슘."
+    },
+    {
+      "id": "S198",
+      "mode": "science",
+      "q": "원소기호 Zn는 무엇일까?",
+      "choices": [
+        "아연",
+        "은"
+      ],
+      "answer": 0,
+      "explain": "Zn은 아연."
+    },
+    {
+      "id": "S199",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨(도)"
+      ],
+      "answer": 1,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S200",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨"
+      ],
+      "answer": 0,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S201",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파스칼",
+        "파"
+      ],
+      "answer": 0,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S202",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "줄",
+        "주"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S203",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "와트",
+        "월트"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S204",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "볼트",
+        "발트"
+      ],
+      "answer": 0,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S205",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "움",
+        "옴"
+      ],
+      "answer": 1,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S206",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "헤르츠",
+        "허즈"
+      ],
+      "answer": 0,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S207",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페어",
+        "암페르(오답 표기)"
+      ],
+      "answer": 0,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S208",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "뉴턴",
+        "나노턴(오답)"
+      ],
+      "answer": 0,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S209",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨(도)"
+      ],
+      "answer": 1,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S210",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨",
+        "켈빈"
+      ],
+      "answer": 1,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S211",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파",
+        "파스칼"
+      ],
+      "answer": 1,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S212",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "줄",
+        "주"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S213",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "월트",
+        "와트"
+      ],
+      "answer": 1,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S214",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "발트",
+        "볼트"
+      ],
+      "answer": 1,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S215",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "옴",
+        "움"
+      ],
+      "answer": 0,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S216",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "헤르츠",
+        "허즈"
+      ],
+      "answer": 0,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S217",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페어",
+        "암페르(오답 표기)"
+      ],
+      "answer": 0,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S218",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "뉴턴",
+        "나노턴(오답)"
+      ],
+      "answer": 0,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S219",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨(도)",
+        "켈빈"
+      ],
+      "answer": 0,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S220",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨",
+        "켈빈"
+      ],
+      "answer": 1,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S221",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파스칼",
+        "파"
+      ],
+      "answer": 0,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S222",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "주",
+        "줄"
+      ],
+      "answer": 1,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S223",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "와트",
+        "월트"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S224",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "볼트",
+        "발트"
+      ],
+      "answer": 0,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S225",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "움",
+        "옴"
+      ],
+      "answer": 1,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S226",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "허즈",
+        "헤르츠"
+      ],
+      "answer": 1,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S227",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페어",
+        "암페르(오답 표기)"
+      ],
+      "answer": 0,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S228",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "나노턴(오답)",
+        "뉴턴"
+      ],
+      "answer": 1,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S229",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨(도)",
+        "켈빈"
+      ],
+      "answer": 0,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S230",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨",
+        "켈빈"
+      ],
+      "answer": 1,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S231",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파",
+        "파스칼"
+      ],
+      "answer": 1,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S232",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "줄",
+        "주"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S233",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "월트",
+        "와트"
+      ],
+      "answer": 1,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S234",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "볼트",
+        "발트"
+      ],
+      "answer": 0,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S235",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "옴",
+        "움"
+      ],
+      "answer": 0,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S236",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "허즈",
+        "헤르츠"
+      ],
+      "answer": 1,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S237",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페르(오답 표기)",
+        "암페어"
+      ],
+      "answer": 1,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S238",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "나노턴(오답)",
+        "뉴턴"
+      ],
+      "answer": 1,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S239",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨(도)"
+      ],
+      "answer": 1,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S240",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨"
+      ],
+      "answer": 0,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S241",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파스칼",
+        "파"
+      ],
+      "answer": 0,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S242",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "주",
+        "줄"
+      ],
+      "answer": 1,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S243",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "와트",
+        "월트"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S244",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "볼트",
+        "발트"
+      ],
+      "answer": 0,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S245",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "움",
+        "옴"
+      ],
+      "answer": 1,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S246",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "헤르츠",
+        "허즈"
+      ],
+      "answer": 0,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S247",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페어",
+        "암페르(오답 표기)"
+      ],
+      "answer": 0,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S248",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "나노턴(오답)",
+        "뉴턴"
+      ],
+      "answer": 1,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S249",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨(도)",
+        "켈빈"
+      ],
+      "answer": 0,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S250",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨",
+        "켈빈"
+      ],
+      "answer": 1,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S251",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파스칼",
+        "파"
+      ],
+      "answer": 0,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S252",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "주",
+        "줄"
+      ],
+      "answer": 1,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S253",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "와트",
+        "월트"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S254",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "발트",
+        "볼트"
+      ],
+      "answer": 1,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S255",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "옴",
+        "움"
+      ],
+      "answer": 0,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S256",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "헤르츠",
+        "허즈"
+      ],
+      "answer": 0,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S257",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페르(오답 표기)",
+        "암페어"
+      ],
+      "answer": 1,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S258",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "나노턴(오답)",
+        "뉴턴"
+      ],
+      "answer": 1,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S259",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨(도)",
+        "켈빈"
+      ],
+      "answer": 0,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S260",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨"
+      ],
+      "answer": 0,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S261",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파",
+        "파스칼"
+      ],
+      "answer": 1,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S262",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "줄",
+        "주"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S263",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "와트",
+        "월트"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S264",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "발트",
+        "볼트"
+      ],
+      "answer": 1,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S265",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "움",
+        "옴"
+      ],
+      "answer": 1,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S266",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "헤르츠",
+        "허즈"
+      ],
+      "answer": 0,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S267",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페어",
+        "암페르(오답 표기)"
+      ],
+      "answer": 0,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S268",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "뉴턴",
+        "나노턴(오답)"
+      ],
+      "answer": 0,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S269",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨(도)"
+      ],
+      "answer": 1,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S270",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨",
+        "켈빈"
+      ],
+      "answer": 1,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S271",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파",
+        "파스칼"
+      ],
+      "answer": 1,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S272",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "줄",
+        "주"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S273",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "월트",
+        "와트"
+      ],
+      "answer": 1,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S274",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "볼트",
+        "발트"
+      ],
+      "answer": 0,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S275",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "움",
+        "옴"
+      ],
+      "answer": 1,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S276",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "허즈",
+        "헤르츠"
+      ],
+      "answer": 1,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S277",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페어",
+        "암페르(오답 표기)"
+      ],
+      "answer": 0,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S278",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "나노턴(오답)",
+        "뉴턴"
+      ],
+      "answer": 1,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S279",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨(도)"
+      ],
+      "answer": 1,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S280",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨"
+      ],
+      "answer": 0,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S281",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파스칼",
+        "파"
+      ],
+      "answer": 0,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S282",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "주",
+        "줄"
+      ],
+      "answer": 1,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S283",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "월트",
+        "와트"
+      ],
+      "answer": 1,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S284",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "발트",
+        "볼트"
+      ],
+      "answer": 1,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S285",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "움",
+        "옴"
+      ],
+      "answer": 1,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S286",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "허즈",
+        "헤르츠"
+      ],
+      "answer": 1,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S287",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페어",
+        "암페르(오답 표기)"
+      ],
+      "answer": 0,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S288",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "나노턴(오답)",
+        "뉴턴"
+      ],
+      "answer": 1,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S289",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨(도)",
+        "켈빈"
+      ],
+      "answer": 0,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S290",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨"
+      ],
+      "answer": 0,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S291",
+      "mode": "science",
+      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "파스칼",
+        "파"
+      ],
+      "answer": 0,
+      "explain": "Pa는 압력 단위 파스칼."
+    },
+    {
+      "id": "S292",
+      "mode": "science",
+      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "줄",
+        "주"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지 단위 줄."
+    },
+    {
+      "id": "S293",
+      "mode": "science",
+      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "와트",
+        "월트"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위 와트."
+    },
+    {
+      "id": "S294",
+      "mode": "science",
+      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "발트",
+        "볼트"
+      ],
+      "answer": 1,
+      "explain": "V는 전압 단위 볼트."
+    },
+    {
+      "id": "S295",
+      "mode": "science",
+      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "옴",
+        "움"
+      ],
+      "answer": 0,
+      "explain": "Ω는 저항 단위 옴."
+    },
+    {
+      "id": "S296",
+      "mode": "science",
+      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "허즈",
+        "헤르츠"
+      ],
+      "answer": 1,
+      "explain": "Hz는 주파수 단위 헤르츠."
+    },
+    {
+      "id": "S297",
+      "mode": "science",
+      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "암페르(오답 표기)",
+        "암페어"
+      ],
+      "answer": 1,
+      "explain": "A는 전류 단위 암페어."
+    },
+    {
+      "id": "S298",
+      "mode": "science",
+      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "뉴턴",
+        "나노턴(오답)"
+      ],
+      "answer": 0,
+      "explain": "N은 힘의 단위 뉴턴."
+    },
+    {
+      "id": "S299",
+      "mode": "science",
+      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "켈빈",
+        "섭씨(도)"
+      ],
+      "answer": 1,
+      "explain": "℃는 섭씨 온도 표기야."
+    },
+    {
+      "id": "S300",
+      "mode": "science",
+      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
+      "choices": [
+        "섭씨",
+        "켈빈"
+      ],
+      "answer": 1,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "H301",
+      "mode": "humanities",
+      "q": "제2차 세계대전은 1939년에 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1939년(독일의 폴란드 침공)으로 시작으로 본다."
+    },
+    {
+      "id": "H302",
+      "mode": "humanities",
+      "q": "제2차 세계대전은 1945년에 끝났다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유럽(5월)·태평양(9월) 전선 모두 1945년 종전."
+    },
+    {
+      "id": "H303",
+      "mode": "humanities",
+      "q": "베를린 장벽 붕괴는 1989년이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1989년 11월로 알려져."
+    },
+    {
+      "id": "H304",
+      "mode": "humanities",
+      "q": "미국 독립선언은 1776년이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1776년 7월 4일로 유명해."
+    },
+    {
+      "id": "H305",
+      "mode": "humanities",
+      "q": "프랑스 혁명은 1789년에 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1789년 바스티유 감옥 습격이 상징적."
+    },
+    {
+      "id": "H306",
+      "mode": "humanities",
+      "q": "제1차 세계대전은 1914년에 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1914~1918로 배워."
+    },
+    {
+      "id": "H307",
+      "mode": "humanities",
+      "q": "인류가 달에 처음 착륙한 해는 1969년이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아폴로 11호(1969)로 알려져."
+    },
+    {
+      "id": "H308",
+      "mode": "humanities",
+      "q": "콘스탄티노폴리스 함락은 1453년이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "동로마 제국이 1453년에 멸망."
+    },
+    {
+      "id": "H309",
+      "mode": "humanities",
+      "q": "콜럼버스의 첫 항해는 1492년이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1492년 대서양 항해로 알려져."
+    },
+    {
+      "id": "H310",
+      "mode": "humanities",
+      "q": "삼일운동은 1919년에 일어났다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1919년 3월 1일."
+    },
+    {
+      "id": "H311",
+      "mode": "humanities",
+      "q": "한반도는 북반구에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "북반구 중위도에 있어."
+    },
+    {
+      "id": "H312",
+      "mode": "humanities",
+      "q": "이집트는 아프리카 대륙에 속한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이집트 본토는 아프리카, 시나이 반도는 아시아에 걸쳐."
+    },
+    {
+      "id": "H313",
+      "mode": "humanities",
+      "q": "수에즈 운하는 지중해와 홍해를 잇는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지중해-홍해를 연결해."
+    },
+    {
+      "id": "H314",
+      "mode": "humanities",
+      "q": "파나마 운하는 대서양과 태평양을 잇는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "카리브해(대서양)와 태평양을 연결해."
+    },
+    {
+      "id": "H315",
+      "mode": "humanities",
+      "q": "남극 대륙에는 사람이 살지 않는다(상주 인구 기준).",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기지 연구원은 있지만 상주 인구는 없어."
+    },
+    {
+      "id": "H316",
+      "mode": "humanities",
+      "q": "아프리카에서 면적이 가장 큰 사막은 사하라다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "사하라 사막이 가장 커."
+    },
+    {
+      "id": "H317",
+      "mode": "humanities",
+      "q": "유럽 연합(EU)은 유럽에 있는 국가들의 연합체다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유럽의 다수 국가가 참여해."
+    },
+    {
+      "id": "H318",
+      "mode": "humanities",
+      "q": "피라미드는 이집트에만 존재한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "이집트가 유명하지만 다른 지역에도 피라미드형 유적이 있어."
+    },
+    {
+      "id": "H319",
+      "mode": "humanities",
+      "q": "세종대왕은 고려의 왕이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "세종은 조선의 왕이야."
+    },
+    {
+      "id": "H320",
+      "mode": "humanities",
+      "q": "UN 본부는 런던에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "UN 본부는 뉴욕에 있어."
+    },
+    {
+      "id": "H321",
+      "mode": "humanities",
+      "q": "오세아니아의 대표 국가는 호주다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "오세아니아 하면 호주가 대표적이야."
+    },
+    {
+      "id": "H322",
+      "mode": "humanities",
+      "q": "나이아가라 폭포는 유럽에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "미국·캐나다 국경에 있어."
+    },
+    {
+      "id": "H323",
+      "mode": "humanities",
+      "q": "아마존강은 아프리카에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "아마존강은 남아메리카에 있어."
+    },
+    {
+      "id": "H324",
+      "mode": "humanities",
+      "q": "인상주의는 19세기 후반 미술 흐름으로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "모네 등으로 유명해."
+    },
+    {
+      "id": "H325",
+      "mode": "humanities",
+      "q": "바로크 음악 작곡가로 바흐가 자주 언급된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "바흐는 바로크 대표 작곡가야."
+    },
+    {
+      "id": "H326",
+      "mode": "humanities",
+      "q": "고딕 양식은 르네상스 이후에 먼저 등장했다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "고딕은 중세, 르네상스는 그 이후야."
+    },
+    {
+      "id": "H327",
+      "mode": "humanities",
+      "q": "'라 트라비아타'는 베르디의 오페라로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "베르디 오페라로 유명해."
+    },
+    {
+      "id": "H328",
+      "mode": "humanities",
+      "q": "'봄의 제전'은 스트라빈스키 작품으로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "20세기 초 혁신적 작품으로 유명해."
+    },
+    {
+      "id": "H329",
+      "mode": "humanities",
+      "q": "르네상스는 대체로 중세 이후의 문화 부흥을 가리킨다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "중세 이후 유럽 문화 흐름으로 배워."
+    },
+    {
+      "id": "H330",
+      "mode": "humanities",
+      "q": "대서양은 태평양보다 면적이 크다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "보통 태평양이 가장 큰 대양이야."
+    },
+    {
+      "id": "H331",
+      "mode": "humanities",
+      "q": "이집트의 수도는?",
+      "choices": [
+        "카이로",
+        "라바트"
+      ],
+      "answer": 0,
+      "explain": "이집트 수도는 카이로야."
+    },
+    {
+      "id": "H332",
+      "mode": "humanities",
+      "q": "프랑스의 수도는?",
+      "choices": [
+        "브뤼셀",
+        "파리"
+      ],
+      "answer": 1,
+      "explain": "프랑스 수도는 파리야."
+    },
+    {
+      "id": "H333",
+      "mode": "humanities",
+      "q": "사하라 사막이 있는 대륙은?",
+      "choices": [
+        "남아메리카",
+        "아프리카"
+      ],
+      "answer": 1,
+      "explain": "사하라는 아프리카 북부야."
+    },
+    {
+      "id": "H334",
+      "mode": "humanities",
+      "q": "아마존강이 있는 대륙은?",
+      "choices": [
+        "아프리카",
+        "남아메리카"
+      ],
+      "answer": 1,
+      "explain": "아마존강은 남아메리카야."
+    },
+    {
+      "id": "H335",
+      "mode": "humanities",
+      "q": "그리스의 수도는?",
+      "choices": [
+        "리마",
+        "아테네"
+      ],
+      "answer": 1,
+      "explain": "그리스 수도는 아테네야."
+    },
+    {
+      "id": "H336",
+      "mode": "humanities",
+      "q": "스위스의 수도는?",
+      "choices": [
+        "취리히",
+        "베른"
+      ],
+      "answer": 1,
+      "explain": "스위스 수도는 베른이야."
+    },
+    {
+      "id": "H337",
+      "mode": "humanities",
+      "q": "UN 본부가 있는 도시는?",
+      "choices": [
+        "제네바",
+        "뉴욕"
+      ],
+      "answer": 1,
+      "explain": "UN 본부는 뉴욕에 있어."
+    },
+    {
+      "id": "H338",
+      "mode": "humanities",
+      "q": "수에즈 운하는 어떤 바다를 잇나?",
+      "choices": [
+        "지중해-홍해",
+        "흑해-지중해"
+      ],
+      "answer": 0,
+      "explain": "수에즈는 지중해와 홍해를 이어."
+    },
+    {
+      "id": "H339",
+      "mode": "humanities",
+      "q": "파나마 운하는 어떤 바다를 잇나?",
+      "choices": [
+        "대서양-태평양",
+        "인도양-태평양"
+      ],
+      "answer": 0,
+      "explain": "파나마는 대서양과 태평양을 연결해."
+    },
+    {
+      "id": "H340",
+      "mode": "humanities",
+      "q": "베를린 장벽 붕괴 연도는?",
+      "choices": [
+        "1999",
+        "1989"
+      ],
+      "answer": 1,
+      "explain": "1989년 11월로 알려져."
+    },
+    {
+      "id": "H341",
+      "mode": "humanities",
+      "q": "인류 첫 달 착륙 연도는?",
+      "choices": [
+        "1969",
+        "1959"
+      ],
+      "answer": 0,
+      "explain": "아폴로 11호(1969)."
+    },
+    {
+      "id": "H342",
+      "mode": "humanities",
+      "q": "미국 독립선언 연도는?",
+      "choices": [
+        "1776",
+        "1876"
+      ],
+      "answer": 0,
+      "explain": "1776년이야."
+    },
+    {
+      "id": "H343",
+      "mode": "humanities",
+      "q": "프랑스 혁명 시작 연도는?",
+      "choices": [
+        "1789",
+        "1689"
+      ],
+      "answer": 0,
+      "explain": "1789년이 상징적."
+    },
+    {
+      "id": "H344",
+      "mode": "humanities",
+      "q": "제1차 세계대전 시작 연도는?",
+      "choices": [
+        "1904",
+        "1914"
+      ],
+      "answer": 1,
+      "explain": "1914~1918."
+    },
+    {
+      "id": "H345",
+      "mode": "humanities",
+      "q": "제2차 세계대전 종전 연도는?",
+      "choices": [
+        "1945",
+        "1935"
+      ],
+      "answer": 0,
+      "explain": "1945년 종전."
+    },
+    {
+      "id": "H346",
+      "mode": "humanities",
+      "q": "콘스탄티노폴리스 함락 연도는?",
+      "choices": [
+        "1553",
+        "1453"
+      ],
+      "answer": 1,
+      "explain": "1453년으로 배워."
+    },
+    {
+      "id": "H347",
+      "mode": "humanities",
+      "q": "콜럼버스 첫 항해 연도는?",
+      "choices": [
+        "1592",
+        "1492"
+      ],
+      "answer": 1,
+      "explain": "1492년이야."
+    },
+    {
+      "id": "H348",
+      "mode": "humanities",
+      "q": "삼일운동 연도는?",
+      "choices": [
+        "1919",
+        "1909"
+      ],
+      "answer": 0,
+      "explain": "1919년 3월 1일."
+    },
+    {
+      "id": "H349",
+      "mode": "humanities",
+      "q": "바흐는 어느 시대 음악가로 분류되나?",
+      "choices": [
+        "낭만",
+        "바로크"
+      ],
+      "answer": 1,
+      "explain": "바흐는 바로크로 분류돼."
+    },
+    {
+      "id": "H350",
+      "mode": "humanities",
+      "q": "인상주의 화가로 가장 자주 언급되는 인물은?",
+      "choices": [
+        "모네",
+        "카라바조"
+      ],
+      "answer": 0,
+      "explain": "모네는 인상주의 대표야."
+    },
+    {
+      "id": "H351",
+      "mode": "humanities",
+      "q": "'모나리자' 작가는?",
+      "choices": [
+        "레오나르도 다 빈치",
+        "미켈란젤로"
+      ],
+      "answer": 0,
+      "explain": "모나리자는 다 빈치 작품이야."
+    },
+    {
+      "id": "H352",
+      "mode": "humanities",
+      "q": "'절규'의 작가는?",
+      "choices": [
+        "클림트",
+        "에드바르 뭉크"
+      ],
+      "answer": 1,
+      "explain": "절규는 뭉크로 유명해."
+    },
+    {
+      "id": "H353",
+      "mode": "humanities",
+      "q": "'게르니카' 작가는?",
+      "choices": [
+        "고야",
+        "피카소"
+      ],
+      "answer": 1,
+      "explain": "게르니카는 피카소 작품이야."
+    },
+    {
+      "id": "H354",
+      "mode": "humanities",
+      "q": "'라 트라비아타' 작곡가는?",
+      "choices": [
+        "베르디",
+        "모차르트"
+      ],
+      "answer": 0,
+      "explain": "베르디 오페라로 유명해."
+    },
+    {
+      "id": "H355",
+      "mode": "humanities",
+      "q": "'봄의 제전' 작곡가는?",
+      "choices": [
+        "스트라빈스키",
+        "쇼팽"
+      ],
+      "answer": 0,
+      "explain": "스트라빈스키 작품이야."
+    },
+    {
+      "id": "H356",
+      "mode": "humanities",
+      "q": "대양 중 가장 큰 것은?",
+      "choices": [
+        "태평양",
+        "대서양"
+      ],
+      "answer": 0,
+      "explain": "태평양이 가장 커."
+    },
+    {
+      "id": "H357",
+      "mode": "humanities",
+      "q": "유럽에서 사용 비중이 큰 통화는?",
+      "choices": [
+        "유로",
+        "달러"
+      ],
+      "answer": 0,
+      "explain": "유럽 여러 나라가 유로를 써."
+    },
+    {
+      "id": "H358",
+      "mode": "humanities",
+      "q": "한반도는 어느 쪽 반구에 있나?",
+      "choices": [
+        "남반구",
+        "북반구"
+      ],
+      "answer": 1,
+      "explain": "한반도는 북반구야."
+    },
+    {
+      "id": "H359",
+      "mode": "humanities",
+      "q": "호주의 수도는?",
+      "choices": [
+        "시드니",
+        "캔버라"
+      ],
+      "answer": 1,
+      "explain": "호주 수도는 캔버라야."
+    },
+    {
+      "id": "H360",
+      "mode": "humanities",
+      "q": "캐나다의 수도는?",
+      "choices": [
+        "토론토",
+        "오타와"
+      ],
+      "answer": 1,
+      "explain": "캐나다 수도는 오타와야."
+    },
+    {
+      "id": "S301",
+      "mode": "science",
+      "q": "지구의 대기는 주로 질소와 산소로 이루어진다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "질소가 가장 많고 산소가 그 다음이야."
+    },
+    {
+      "id": "S302",
+      "mode": "science",
+      "q": "물은 1기압에서 0℃에서 언다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "0℃가 어는점(1기압)."
+    },
+    {
+      "id": "S303",
+      "mode": "science",
+      "q": "물은 1기압에서 100℃에서 끓는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "100℃가 끓는점(1기압)."
+    },
+    {
+      "id": "S304",
+      "mode": "science",
+      "q": "빛은 진공에서도 전달될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전자기파라서 진공에서도 전파돼."
+    },
+    {
+      "id": "S305",
+      "mode": "science",
+      "q": "소리는 진공에서도 전달될 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
       "explain": "소리는 매질이 필요해."
+    },
+    {
+      "id": "S306",
+      "mode": "science",
+      "q": "지구의 자전은 낮과 밤을 만든다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "자전으로 낮밤이 생겨."
+    },
+    {
+      "id": "S307",
+      "mode": "science",
+      "q": "지구의 공전은 계절 변화와 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "공전+자전축 기울기와 함께 작용해."
+    },
+    {
+      "id": "S308",
+      "mode": "science",
+      "q": "번개를 먼저 보고 천둥을 나중에 듣는 건 소리가 더 느려서다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛이 소리보다 빨라."
+    },
+    {
+      "id": "S309",
+      "mode": "science",
+      "q": "지구의 평균 반지름은 대략 6,371km로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "교과서·자료에서 자주 쓰는 값이야."
+    },
+    {
+      "id": "S310",
+      "mode": "science",
+      "q": "물질의 상태변화에서 증발은 기체가 액체로 되는 것이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "증발은 액→기, 기→액은 응결."
+    },
+    {
+      "id": "S311",
+      "mode": "science",
+      "q": "압력의 SI 단위는 파스칼(Pa)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "Pa가 압력 단위야."
+    },
+    {
+      "id": "S312",
+      "mode": "science",
+      "q": "전류의 SI 단위는 볼트(V)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "전류는 A, 전압은 V."
+    },
+    {
+      "id": "S313",
+      "mode": "science",
+      "q": "전력의 단위는 와트(W)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "W는 전력 단위."
+    },
+    {
+      "id": "S314",
+      "mode": "science",
+      "q": "에너지의 단위로 줄(J)을 쓴다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "J는 에너지 단위."
+    },
+    {
+      "id": "S315",
+      "mode": "science",
+      "q": "주파수의 단위는 헤르츠(Hz)다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "Hz는 1초당 진동수."
+    },
+    {
+      "id": "S316",
+      "mode": "science",
+      "q": "저항의 단위는 옴(Ω)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "Ω는 저항 단위."
+    },
+    {
+      "id": "S317",
+      "mode": "science",
+      "q": "전하의 단위는 쿨롬(C)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하는 C."
+    },
+    {
+      "id": "S318",
+      "mode": "science",
+      "q": "지구의 핵은 주로 철과 니켈로 이루어진 것으로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "철-니켈 핵 모델이 널리 알려져."
+    },
+    {
+      "id": "S319",
+      "mode": "science",
+      "q": "지구의 지각은 맨틀보다 밀도가 낮다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지각이 상대적으로 가벼워."
+    },
+    {
+      "id": "S320",
+      "mode": "science",
+      "q": "대류는 주로 유체 내부에서 일어난다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액체·기체에서 잘 나타나."
+    },
+    {
+      "id": "S321",
+      "mode": "science",
+      "q": "세포막은 물질의 출입을 조절한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "세포막은 선택적 투과성을 가져."
+    },
+    {
+      "id": "S322",
+      "mode": "science",
+      "q": "DNA는 이중 나선 구조로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이중나선이 대표적."
+    },
+    {
+      "id": "S323",
+      "mode": "science",
+      "q": "광합성은 식물이 에너지를 얻는 데 중요하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛 에너지를 화학 에너지로 바꿔."
+    },
+    {
+      "id": "S324",
+      "mode": "science",
+      "q": "염기성 용액의 pH는 보통 7보다 작다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "염기성은 pH 7 초과."
+    },
+    {
+      "id": "S325",
+      "mode": "science",
+      "q": "산성 용액의 pH는 보통 7보다 작다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "산성은 pH 7 미만."
+    },
+    {
+      "id": "S326",
+      "mode": "science",
+      "q": "마찰력은 물체의 운동을 방해하는 방향으로 작용하는 경우가 많다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "보통 상대 운동을 막는 방향."
+    },
+    {
+      "id": "S327",
+      "mode": "science",
+      "q": "관성은 물체가 운동 상태를 유지하려는 성질이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "뉴턴 제1법칙과 연결돼."
+    },
+    {
+      "id": "S328",
+      "mode": "science",
+      "q": "열은 온도와 무조건 같은 개념이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "열(에너지 전달)과 온도(상태)는 구분해."
+    },
+    {
+      "id": "S329",
+      "mode": "science",
+      "q": "질량은 장소가 바뀌어도 크게 변하지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "질량은 물체 고유량으로 봐."
+    },
+    {
+      "id": "S330",
+      "mode": "science",
+      "q": "무게는 중력의 영향을 받는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "중력이 달라지면 무게도 달라져."
+    },
+    {
+      "id": "S331",
+      "mode": "science",
+      "q": "길이의 SI 기본단위는?",
+      "choices": [
+        "미터(m)",
+        "초(s)"
+      ],
+      "answer": 0,
+      "explain": "길이 기본단위는 m."
+    },
+    {
+      "id": "S332",
+      "mode": "science",
+      "q": "질량의 SI 기본단위는?",
+      "choices": [
+        "킬로그램(kg)",
+        "그램(g)"
+      ],
+      "answer": 0,
+      "explain": "SI 기본단위는 kg."
+    },
+    {
+      "id": "S333",
+      "mode": "science",
+      "q": "시간의 SI 기본단위는?",
+      "choices": [
+        "분(min)",
+        "초(s)"
+      ],
+      "answer": 1,
+      "explain": "시간 기본단위는 s."
+    },
+    {
+      "id": "S334",
+      "mode": "science",
+      "q": "전류의 SI 기본단위는?",
+      "choices": [
+        "볼트(V)",
+        "암페어(A)"
+      ],
+      "answer": 1,
+      "explain": "전류는 A."
+    },
+    {
+      "id": "S335",
+      "mode": "science",
+      "q": "전압의 단위는?",
+      "choices": [
+        "볼트(V)",
+        "옴(Ω)"
+      ],
+      "answer": 0,
+      "explain": "전압은 V."
+    },
+    {
+      "id": "S336",
+      "mode": "science",
+      "q": "저항의 단위는?",
+      "choices": [
+        "옴(Ω)",
+        "와트(W)"
+      ],
+      "answer": 0,
+      "explain": "저항은 Ω."
+    },
+    {
+      "id": "S337",
+      "mode": "science",
+      "q": "압력의 단위는?",
+      "choices": [
+        "파스칼(Pa)",
+        "줄(J)"
+      ],
+      "answer": 0,
+      "explain": "압력은 Pa."
+    },
+    {
+      "id": "S338",
+      "mode": "science",
+      "q": "에너지의 단위는?",
+      "choices": [
+        "줄(J)",
+        "뉴턴(N)"
+      ],
+      "answer": 0,
+      "explain": "에너지는 J."
+    },
+    {
+      "id": "S339",
+      "mode": "science",
+      "q": "힘의 단위는?",
+      "choices": [
+        "뉴턴(N)",
+        "파스칼(Pa)"
+      ],
+      "answer": 0,
+      "explain": "힘은 N."
+    },
+    {
+      "id": "S340",
+      "mode": "science",
+      "q": "주파수의 단위는?",
+      "choices": [
+        "헤르츠(Hz)",
+        "칸델라(cd)"
+      ],
+      "answer": 0,
+      "explain": "주파수는 Hz."
+    },
+    {
+      "id": "S341",
+      "mode": "science",
+      "q": "kW는 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "밀리와트",
+        "킬로와트"
+      ],
+      "answer": 1,
+      "explain": "k=10^3 → 킬로."
+    },
+    {
+      "id": "S342",
+      "mode": "science",
+      "q": "mA는 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "밀리암페어",
+        "메가암페어"
+      ],
+      "answer": 0,
+      "explain": "m=10^-3 → 밀리."
+    },
+    {
+      "id": "S343",
+      "mode": "science",
+      "q": "µm는 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "나노미터",
+        "마이크로미터"
+      ],
+      "answer": 1,
+      "explain": "µ=10^-6 → 마이크로."
+    },
+    {
+      "id": "S344",
+      "mode": "science",
+      "q": "nm는 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "나노미터",
+        "밀리미터"
+      ],
+      "answer": 0,
+      "explain": "n=10^-9 → 나노."
+    },
+    {
+      "id": "S345",
+      "mode": "science",
+      "q": "GHz는 어떻게 읽는 게 자연스러울까?",
+      "choices": [
+        "기가헤르츠",
+        "킬로헤르츠"
+      ],
+      "answer": 0,
+      "explain": "G=10^9 → 기가."
+    },
+    {
+      "id": "S346",
+      "mode": "science",
+      "q": "m/s는 보통 어떻게 읽나?",
+      "choices": [
+        "초당 미터",
+        "미터당 초"
+      ],
+      "answer": 0,
+      "explain": "m/s는 속도 단위로 '초당 미터'."
+    },
+    {
+      "id": "S347",
+      "mode": "science",
+      "q": "km/h는 보통 어떻게 읽나?",
+      "choices": [
+        "킬로미터당 시간",
+        "시간당 킬로미터"
+      ],
+      "answer": 1,
+      "explain": "km/h는 '시간당 킬로미터'."
+    },
+    {
+      "id": "S348",
+      "mode": "science",
+      "q": "m²는 무엇을 뜻하는 단위일까?",
+      "choices": [
+        "세제곱미터(부피)",
+        "제곱미터(넓이)"
+      ],
+      "answer": 1,
+      "explain": "m²는 넓이 단위."
+    },
+    {
+      "id": "S349",
+      "mode": "science",
+      "q": "m³는 무엇을 뜻하는 단위일까?",
+      "choices": [
+        "세제곱미터(부피)",
+        "제곱미터(넓이)"
+      ],
+      "answer": 0,
+      "explain": "m³는 부피 단위."
+    },
+    {
+      "id": "S350",
+      "mode": "science",
+      "q": "원소기호 Fe는?",
+      "choices": [
+        "철",
+        "불소"
+      ],
+      "answer": 0,
+      "explain": "Fe는 철."
+    },
+    {
+      "id": "S351",
+      "mode": "science",
+      "q": "원소기호 O는?",
+      "choices": [
+        "금",
+        "산소"
+      ],
+      "answer": 1,
+      "explain": "O는 산소."
+    },
+    {
+      "id": "S352",
+      "mode": "science",
+      "q": "원소기호 Na는?",
+      "choices": [
+        "나트륨",
+        "질소"
+      ],
+      "answer": 0,
+      "explain": "Na는 나트륨."
+    },
+    {
+      "id": "S353",
+      "mode": "science",
+      "q": "원소기호 He는?",
+      "choices": [
+        "수은",
+        "헬륨"
+      ],
+      "answer": 1,
+      "explain": "He는 헬륨."
+    },
+    {
+      "id": "S354",
+      "mode": "science",
+      "q": "원소기호 Au는?",
+      "choices": [
+        "은",
+        "금"
+      ],
+      "answer": 1,
+      "explain": "Au는 금."
+    },
+    {
+      "id": "S355",
+      "mode": "science",
+      "q": "원소기호 Ag는?",
+      "choices": [
+        "은",
+        "아연"
+      ],
+      "answer": 0,
+      "explain": "Ag는 은."
+    },
+    {
+      "id": "S356",
+      "mode": "science",
+      "q": "℃는 무엇을 뜻할까?",
+      "choices": [
+        "켈빈",
+        "섭씨"
+      ],
+      "answer": 1,
+      "explain": "℃는 섭씨 표기야."
+    },
+    {
+      "id": "S357",
+      "mode": "science",
+      "q": "K는 무엇을 뜻할까?",
+      "choices": [
+        "켈빈",
+        "섭씨"
+      ],
+      "answer": 0,
+      "explain": "K는 절대온도 단위."
+    },
+    {
+      "id": "S358",
+      "mode": "science",
+      "q": "Ω는 무엇을 뜻할까?",
+      "choices": [
+        "저항(옴)",
+        "전압(볼트)"
+      ],
+      "answer": 0,
+      "explain": "Ω는 저항 단위."
+    },
+    {
+      "id": "S359",
+      "mode": "science",
+      "q": "V는 무엇을 뜻할까?",
+      "choices": [
+        "전압(볼트)",
+        "전류(암페어)"
+      ],
+      "answer": 0,
+      "explain": "V는 전압 단위."
+    },
+    {
+      "id": "S360",
+      "mode": "science",
+      "q": "W는 무엇을 뜻할까?",
+      "choices": [
+        "에너지(줄)",
+        "전력(와트)"
+      ],
+      "answer": 1,
+      "explain": "W는 전력 단위."
+    },
+    {
+      "id": "H361",
+      "mode": "humanities",
+      "q": "대한민국의 법정 화폐 단위는 원(WON)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "한국의 화폐 단위는 원이야."
+    },
+    {
+      "id": "H362",
+      "mode": "humanities",
+      "q": "현대 올림픽은 1896년에 시작됐다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1896년 아테네 대회가 첫 근대 올림픽이야."
+    },
+    {
+      "id": "H363",
+      "mode": "humanities",
+      "q": "유네스코(UNESCO)는 교육·과학·문화를 다루는 유엔 기구다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "교육·과학·문화 분야를 맡아."
+    },
+    {
+      "id": "H364",
+      "mode": "humanities",
+      "q": "위도는 동서 방향의 위치를 나타낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "위도는 남북, 경도는 동서야."
+    },
+    {
+      "id": "H365",
+      "mode": "humanities",
+      "q": "세계에서 면적이 가장 큰 대륙은 아시아다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "아시아가 가장 넓어."
+    },
+    {
+      "id": "H366",
+      "mode": "humanities",
+      "q": "대서양은 태평양보다 넓다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "태평양이 가장 큰 대양이야."
+    },
+    {
+      "id": "H367",
+      "mode": "humanities",
+      "q": "적도는 지구를 동서로 나누는 선이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "적도는 남북반구를 나눠."
+    },
+    {
+      "id": "H368",
+      "mode": "humanities",
+      "q": "프랑스의 수도는 파리다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "프랑스 수도는 파리."
+    },
+    {
+      "id": "H369",
+      "mode": "humanities",
+      "q": "이탈리아의 수도는 로마다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "이탈리아 수도는 로마."
+    },
+    {
+      "id": "H370",
+      "mode": "humanities",
+      "q": "브라질의 수도는 브라질리아다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "브라질 수도는 브라질리아."
+    },
+    {
+      "id": "H371",
+      "mode": "humanities",
+      "q": "호주의 수도는 시드니다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "호주 수도는 캔버라야."
+    },
+    {
+      "id": "H372",
+      "mode": "humanities",
+      "q": "캐나다의 수도는 오타와다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "캐나다 수도는 오타와."
+    },
+    {
+      "id": "H373",
+      "mode": "humanities",
+      "q": "인도의 수도는 뭄바이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "인도 수도는 뉴델리야."
+    },
+    {
+      "id": "H374",
+      "mode": "humanities",
+      "q": "한글은 자음과 모음으로 이루어진 문자다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "자음·모음으로 소리를 적어."
+    },
+    {
+      "id": "H375",
+      "mode": "humanities",
+      "q": "대한민국의 국기는 태극기다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "국기는 태극기."
+    },
+    {
+      "id": "H376",
+      "mode": "humanities",
+      "q": "UN의 약자는 United Nations이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "국제연합을 뜻해."
+    },
+    {
+      "id": "H377",
+      "mode": "humanities",
+      "q": "지중해는 유럽과 아프리카 사이에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유럽 남부와 아프리카 북부 사이."
+    },
+    {
+      "id": "H378",
+      "mode": "humanities",
+      "q": "사하라 사막은 남아메리카에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "사하라는 아프리카 북부야."
+    },
+    {
+      "id": "H379",
+      "mode": "humanities",
+      "q": "아프리카에서 인구가 가장 많은 국가는 나이지리아로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "나이지리아가 인구가 많아."
+    },
+    {
+      "id": "H380",
+      "mode": "humanities",
+      "q": "유럽에서 가장 긴 강으로 볼가강이 자주 언급된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "볼가강은 유럽 최장급으로 알려져."
+    },
+    {
+      "id": "H381",
+      "mode": "humanities",
+      "q": "이집트의 피라미드는 고대 문명 유적이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기원전 이집트 문명 유적으로 유명해."
+    },
+    {
+      "id": "H382",
+      "mode": "humanities",
+      "q": "로마 숫자에서 X는 10을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "X=10."
+    },
+    {
+      "id": "H383",
+      "mode": "humanities",
+      "q": "로마 숫자에서 L은 100을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "L은 50, C가 100이야."
+    },
+    {
+      "id": "H384",
+      "mode": "humanities",
+      "q": "세계 3대 종교 중 하나로 불교가 자주 언급된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "불교·기독교·이슬람을 3대 종교로 말하곤 해."
+    },
+    {
+      "id": "H385",
+      "mode": "humanities",
+      "q": "아라비아 숫자는 0~9를 포함한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "0부터 9까지 사용해."
+    },
+    {
+      "id": "H386",
+      "mode": "humanities",
+      "q": "그레고리력은 오늘날 널리 쓰이는 달력이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "국제적으로 가장 보편적이야."
+    },
+    {
+      "id": "H387",
+      "mode": "humanities",
+      "q": "1년은 보통 12개월이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "일반 달력 기준 12개월."
+    },
+    {
+      "id": "H388",
+      "mode": "humanities",
+      "q": "윤년은 보통 4로 나누어떨어지는 해를 말한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기본 규칙은 4의 배수(세부 예외는 있어)."
+    },
+    {
+      "id": "H389",
+      "mode": "humanities",
+      "q": "사과는 과일이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "과일 맞아."
+    },
+    {
+      "id": "H390",
+      "mode": "humanities",
+      "q": "바다의 소금물은 일반적으로 민물보다 밀도가 크다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "염분 때문에 밀도가 커지는 편이야."
+    },
+    {
+      "id": "H391",
+      "mode": "humanities",
+      "q": "무지개는 보통 7가지 색으로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "흔히 7색으로 말해."
+    },
+    {
+      "id": "H392",
+      "mode": "humanities",
+      "q": "인터넷의 www는 World Wide Web을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "웹을 뜻하는 약자야."
+    },
+    {
+      "id": "H393",
+      "mode": "humanities",
+      "q": "대한민국의 표준시는 UTC+9이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "한국 표준시 KST는 UTC+9."
+    },
+    {
+      "id": "H394",
+      "mode": "humanities",
+      "q": "서울은 대한민국의 수도다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "수도는 서울."
+    },
+    {
+      "id": "H395",
+      "mode": "humanities",
+      "q": "뉴욕은 미국의 수도다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "미국 수도는 워싱턴 D.C."
+    },
+    {
+      "id": "H396",
+      "mode": "humanities",
+      "q": "해는 동쪽에서 뜨고 서쪽으로 진다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지구 자전 때문에 그렇게 보여."
+    },
+    {
+      "id": "H397",
+      "mode": "humanities",
+      "q": "북반구에서 여름은 보통 6~8월이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "계절 구분의 일반적인 기준."
+    },
+    {
+      "id": "H398",
+      "mode": "humanities",
+      "q": "아프리카는 7대륙 중 하나다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대륙 중 하나야."
+    },
+    {
+      "id": "H399",
+      "mode": "humanities",
+      "q": "남극은 북반구에 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "남극은 남반구에 있어."
+    },
+    {
+      "id": "H400",
+      "mode": "humanities",
+      "q": "태평양은 대양이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "태평양은 세계 최대 대양."
+    },
+    {
+      "id": "H401",
+      "mode": "humanities",
+      "q": "피카소는 화가로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "피카소는 화가로 잘 알려져."
+    },
+    {
+      "id": "H402",
+      "mode": "humanities",
+      "q": "셰익스피어는 작곡가다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "셰익스피어는 극작가로 유명해."
+    },
+    {
+      "id": "H403",
+      "mode": "humanities",
+      "q": "오페라는 음악과 연극이 결합된 공연 예술이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "노래·연기·무대가 결합돼."
+    },
+    {
+      "id": "H404",
+      "mode": "humanities",
+      "q": "발레는 무용(춤) 중심의 공연 예술이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "춤 중심 공연 예술."
+    },
+    {
+      "id": "H405",
+      "mode": "humanities",
+      "q": "영화는 보통 연속된 영상 프레임으로 움직임을 표현한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "프레임의 연속으로 움직임처럼 보여."
+    },
+    {
+      "id": "H406",
+      "mode": "humanities",
+      "q": "지도에서 북쪽은 일반적으로 위쪽으로 표시된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "일반적인 지도 관례야."
+    },
+    {
+      "id": "H407",
+      "mode": "humanities",
+      "q": "한강은 서울을 가로지르는 강이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "서울을 관통해 흐르는 강이야."
+    },
+    {
+      "id": "H408",
+      "mode": "humanities",
+      "q": "제주도는 대한민국의 섬이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대한민국 최대 섬으로 알려져."
+    },
+    {
+      "id": "H409",
+      "mode": "humanities",
+      "q": "부산은 대한민국에서 인구가 많은 도시 중 하나다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대도시로 알려져."
+    },
+    {
+      "id": "H410",
+      "mode": "humanities",
+      "q": "대한민국의 국경일 중 광복절은 8월 15일이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "8월 15일."
+    },
+    {
+      "id": "H411",
+      "mode": "humanities",
+      "q": "대한민국의 수도는?",
+      "choices": [
+        "서울",
+        "부산"
+      ],
+      "answer": 0,
+      "explain": "수도는 서울이야."
+    },
+    {
+      "id": "H412",
+      "mode": "humanities",
+      "q": "대한민국의 국기는?",
+      "choices": [
+        "성조기",
+        "태극기"
+      ],
+      "answer": 1,
+      "explain": "국기는 태극기야."
+    },
+    {
+      "id": "H413",
+      "mode": "humanities",
+      "q": "UN의 약자는 무엇일까?",
+      "choices": [
+        "Union Network",
+        "United Nations"
+      ],
+      "answer": 1,
+      "explain": "UN은 United Nations."
+    },
+    {
+      "id": "H414",
+      "mode": "humanities",
+      "q": "WWW는 무엇의 약자일까?",
+      "choices": [
+        "Wide World Web",
+        "World Wide Web"
+      ],
+      "answer": 1,
+      "explain": "WWW는 World Wide Web."
+    },
+    {
+      "id": "H415",
+      "mode": "humanities",
+      "q": "윤년의 기본 규칙에 가장 가까운 것은?",
+      "choices": [
+        "7로 나누어떨어지는 해",
+        "4로 나누어떨어지는 해"
+      ],
+      "answer": 1,
+      "explain": "기본은 4의 배수야(예외 규칙은 따로 있어)."
+    },
+    {
+      "id": "H416",
+      "mode": "humanities",
+      "q": "로마 숫자 V는?",
+      "choices": [
+        "50",
+        "5"
+      ],
+      "answer": 1,
+      "explain": "V는 5."
+    },
+    {
+      "id": "H417",
+      "mode": "humanities",
+      "q": "로마 숫자 X는?",
+      "choices": [
+        "100",
+        "10"
+      ],
+      "answer": 1,
+      "explain": "X는 10."
+    },
+    {
+      "id": "H418",
+      "mode": "humanities",
+      "q": "지중해는 주로 어느 대륙 사이에 있나?",
+      "choices": [
+        "유럽-아프리카",
+        "아시아-오세아니아"
+      ],
+      "answer": 0,
+      "explain": "유럽과 아프리카 사이 바다야."
+    },
+    {
+      "id": "H419",
+      "mode": "humanities",
+      "q": "사하라 사막은 어디에 있나?",
+      "choices": [
+        "아프리카",
+        "유럽"
+      ],
+      "answer": 0,
+      "explain": "사하라는 아프리카 북부야."
+    },
+    {
+      "id": "H420",
+      "mode": "humanities",
+      "q": "아마존강은 어디에 있나?",
+      "choices": [
+        "아프리카",
+        "남아메리카"
+      ],
+      "answer": 1,
+      "explain": "아마존강은 남아메리카야."
+    },
+    {
+      "id": "H421",
+      "mode": "humanities",
+      "q": "브라질의 수도는?",
+      "choices": [
+        "브라질리아",
+        "리우데자네이루"
+      ],
+      "answer": 0,
+      "explain": "브라질 수도는 브라질리아야."
+    },
+    {
+      "id": "H422",
+      "mode": "humanities",
+      "q": "인도의 수도는?",
+      "choices": [
+        "뭄바이",
+        "뉴델리"
+      ],
+      "answer": 1,
+      "explain": "인도 수도는 뉴델리야."
+    },
+    {
+      "id": "H423",
+      "mode": "humanities",
+      "q": "일본의 수도는?",
+      "choices": [
+        "도쿄",
+        "오사카"
+      ],
+      "answer": 0,
+      "explain": "일본 수도는 도쿄야."
+    },
+    {
+      "id": "H424",
+      "mode": "humanities",
+      "q": "이탈리아의 수도는?",
+      "choices": [
+        "밀라노",
+        "로마"
+      ],
+      "answer": 1,
+      "explain": "이탈리아 수도는 로마야."
+    },
+    {
+      "id": "H425",
+      "mode": "humanities",
+      "q": "미국의 수도는?",
+      "choices": [
+        "워싱턴 D.C.",
+        "뉴욕"
+      ],
+      "answer": 0,
+      "explain": "미국 수도는 워싱턴 D.C."
+    },
+    {
+      "id": "H426",
+      "mode": "humanities",
+      "q": "태평양은 무엇일까?",
+      "choices": [
+        "사막",
+        "대양"
+      ],
+      "answer": 1,
+      "explain": "태평양은 대양이야."
+    },
+    {
+      "id": "H427",
+      "mode": "humanities",
+      "q": "오페라는 어떤 예술에 가까울까?",
+      "choices": [
+        "음악+연극",
+        "조각"
+      ],
+      "answer": 0,
+      "explain": "노래·연기가 결합된 공연 예술."
+    },
+    {
+      "id": "H428",
+      "mode": "humanities",
+      "q": "발레는 어떤 예술에 가까울까?",
+      "choices": [
+        "무용",
+        "건축"
+      ],
+      "answer": 0,
+      "explain": "발레는 무용(춤) 중심."
+    },
+    {
+      "id": "H429",
+      "mode": "humanities",
+      "q": "모차르트는 무엇으로 유명할까?",
+      "choices": [
+        "화가",
+        "작곡가"
+      ],
+      "answer": 1,
+      "explain": "작곡가로 유명해."
+    },
+    {
+      "id": "H430",
+      "mode": "humanities",
+      "q": "셰익스피어는 무엇으로 유명할까?",
+      "choices": [
+        "과학자",
+        "극작가"
+      ],
+      "answer": 1,
+      "explain": "극작가로 유명해."
+    },
+    {
+      "id": "H431",
+      "mode": "humanities",
+      "q": "피카소는 무엇으로 유명할까?",
+      "choices": [
+        "화가",
+        "천문학자"
+      ],
+      "answer": 0,
+      "explain": "화가로 유명해."
+    },
+    {
+      "id": "H432",
+      "mode": "humanities",
+      "q": "적도는 지구를 어떻게 나눌까?",
+      "choices": [
+        "남북반구",
+        "동서반구"
+      ],
+      "answer": 0,
+      "explain": "적도는 남·북반구 경계야."
+    },
+    {
+      "id": "H433",
+      "mode": "humanities",
+      "q": "위도는 무엇을 나타낼까?",
+      "choices": [
+        "남북 위치",
+        "동서 위치"
+      ],
+      "answer": 0,
+      "explain": "위도는 남북 위치야."
+    },
+    {
+      "id": "H434",
+      "mode": "humanities",
+      "q": "경도는 무엇을 나타낼까?",
+      "choices": [
+        "동서 위치",
+        "남북 위치"
+      ],
+      "answer": 0,
+      "explain": "경도는 동서 위치야."
+    },
+    {
+      "id": "H435",
+      "mode": "humanities",
+      "q": "그레고리력은 무엇에 가까울까?",
+      "choices": [
+        "기차 종류",
+        "달력 체계"
+      ],
+      "answer": 1,
+      "explain": "오늘날 널리 쓰는 달력이야."
+    },
+    {
+      "id": "H436",
+      "mode": "humanities",
+      "q": "광복절은 몇 월 며칠?",
+      "choices": [
+        "3월 1일",
+        "8월 15일"
+      ],
+      "answer": 1,
+      "explain": "광복절은 8월 15일."
+    },
+    {
+      "id": "H437",
+      "mode": "humanities",
+      "q": "삼일절은 몇 월 며칠?",
+      "choices": [
+        "6월 6일",
+        "3월 1일"
+      ],
+      "answer": 1,
+      "explain": "삼일절은 3월 1일."
+    },
+    {
+      "id": "H438",
+      "mode": "humanities",
+      "q": "현충일은 몇 월 며칠?",
+      "choices": [
+        "6월 6일",
+        "8월 15일"
+      ],
+      "answer": 0,
+      "explain": "현충일은 6월 6일."
+    },
+    {
+      "id": "H439",
+      "mode": "humanities",
+      "q": "한글은 어떤 문자 체계에 가까울까?",
+      "choices": [
+        "자음·모음(음소) 문자",
+        "그림 문자"
+      ],
+      "answer": 0,
+      "explain": "자음·모음으로 소리를 적어."
+    },
+    {
+      "id": "H440",
+      "mode": "humanities",
+      "q": "지도의 북쪽은 보통 어디로 표시될까?",
+      "choices": [
+        "아래쪽",
+        "위쪽"
+      ],
+      "answer": 1,
+      "explain": "일반적으로 북쪽이 위쪽이야."
+    },
+    {
+      "id": "H441",
+      "mode": "humanities",
+      "q": "서울은 어느 나라의 수도?",
+      "choices": [
+        "일본",
+        "대한민국"
+      ],
+      "answer": 1,
+      "explain": "대한민국 수도는 서울."
+    },
+    {
+      "id": "H442",
+      "mode": "humanities",
+      "q": "제주도는 무엇일까?",
+      "choices": [
+        "섬",
+        "사막"
+      ],
+      "answer": 0,
+      "explain": "제주도는 섬이야."
+    },
+    {
+      "id": "H443",
+      "mode": "humanities",
+      "q": "도서관은 주로 무엇을 하는 곳일까?",
+      "choices": [
+        "책을 읽고 빌림",
+        "운동 경기"
+      ],
+      "answer": 0,
+      "explain": "책과 자료를 이용해."
+    },
+    {
+      "id": "H444",
+      "mode": "humanities",
+      "q": "신문의 역할에 가까운 것은?",
+      "choices": [
+        "정보 전달",
+        "기온 조절"
+      ],
+      "answer": 0,
+      "explain": "뉴스·정보를 전달해."
+    },
+    {
+      "id": "H445",
+      "mode": "humanities",
+      "q": "국회는 주로 무엇을 할까?",
+      "choices": [
+        "법을 만드는 곳",
+        "전기를 만드는 곳"
+      ],
+      "answer": 0,
+      "explain": "입법(법 제정) 기능이 대표적."
+    },
+    {
+      "id": "H446",
+      "mode": "humanities",
+      "q": "은행은 주로 무엇을 할까?",
+      "choices": [
+        "돈을 맡기고 빌림",
+        "약을 처방"
+      ],
+      "answer": 0,
+      "explain": "금융 서비스를 해."
+    },
+    {
+      "id": "H447",
+      "mode": "humanities",
+      "q": "우체국은 주로 무엇을 할까?",
+      "choices": [
+        "우편/택배",
+        "비행기 정비"
+      ],
+      "answer": 0,
+      "explain": "우편 업무를 해."
+    },
+    {
+      "id": "H448",
+      "mode": "humanities",
+      "q": "신호등의 빨간불은?",
+      "choices": [
+        "출발",
+        "정지"
+      ],
+      "answer": 1,
+      "explain": "빨간불은 멈춤."
+    },
+    {
+      "id": "H449",
+      "mode": "humanities",
+      "q": "신호등의 초록불은?",
+      "choices": [
+        "진행",
+        "정지"
+      ],
+      "answer": 0,
+      "explain": "초록불은 진행."
+    },
+    {
+      "id": "H450",
+      "mode": "humanities",
+      "q": "영수증은 주로 무엇을 기록할까?",
+      "choices": [
+        "혈압",
+        "구매 내역"
+      ],
+      "answer": 1,
+      "explain": "산 물건과 금액 기록."
+    },
+    {
+      "id": "H451",
+      "mode": "humanities",
+      "q": "지갑은 주로 무엇을 담을까?",
+      "choices": [
+        "현금/카드",
+        "모래"
+      ],
+      "answer": 0,
+      "explain": "돈과 카드를 넣어."
+    },
+    {
+      "id": "H452",
+      "mode": "humanities",
+      "q": "계약서는 보통 무엇을 적을까?",
+      "choices": [
+        "약속/조건",
+        "날씨"
+      ],
+      "answer": 0,
+      "explain": "거래 조건과 약속을 적어."
+    },
+    {
+      "id": "H453",
+      "mode": "humanities",
+      "q": "비상구 표지는 무엇을 안내할까?",
+      "choices": [
+        "탈출 경로",
+        "식당 위치"
+      ],
+      "answer": 0,
+      "explain": "위급할 때 나가는 길."
+    },
+    {
+      "id": "H454",
+      "mode": "humanities",
+      "q": "소화기는 무엇에 쓰일까?",
+      "choices": [
+        "물 정화",
+        "불을 끄기"
+      ],
+      "answer": 1,
+      "explain": "초기 화재 진압용."
+    },
+    {
+      "id": "H455",
+      "mode": "humanities",
+      "q": "지도 앱은 무엇을 도와줄까?",
+      "choices": [
+        "혈액 검사",
+        "길찾기"
+      ],
+      "answer": 1,
+      "explain": "경로 안내를 해."
+    },
+    {
+      "id": "H456",
+      "mode": "humanities",
+      "q": "비밀번호는 왜 필요할까?",
+      "choices": [
+        "계정 보호",
+        "전기 절약"
+      ],
+      "answer": 0,
+      "explain": "접근을 막아 보안을 지켜."
+    },
+    {
+      "id": "H457",
+      "mode": "humanities",
+      "q": "와이파이(Wi‑Fi)는 주로 무엇을 연결할까?",
+      "choices": [
+        "무선 인터넷",
+        "수도 배관"
+      ],
+      "answer": 0,
+      "explain": "무선으로 인터넷을 연결해."
+    },
+    {
+      "id": "H458",
+      "mode": "humanities",
+      "q": "블루투스는 주로 무엇에 쓰일까?",
+      "choices": [
+        "장거리 위성통신",
+        "무선 근거리 연결"
+      ],
+      "answer": 1,
+      "explain": "근거리 무선 연결 기술이야."
+    },
+    {
+      "id": "H459",
+      "mode": "humanities",
+      "q": "엘리베이터는 무엇을 위해 쓰일까?",
+      "choices": [
+        "층 사이 이동",
+        "온도 측정"
+      ],
+      "answer": 0,
+      "explain": "건물 층을 오르내릴 때 써."
+    },
+    {
+      "id": "H460",
+      "mode": "humanities",
+      "q": "지하철은 어떤 교통수단일까?",
+      "choices": [
+        "항공기",
+        "도시 철도"
+      ],
+      "answer": 1,
+      "explain": "도시 철도 교통수단이야."
+    },
+    {
+      "id": "S361",
+      "mode": "science",
+      "q": "얼음이 녹는 것은 융해(고체→액체)다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고체가 액체로 변하는 것."
+    },
+    {
+      "id": "S362",
+      "mode": "science",
+      "q": "물이 수증기가 되는 것은 증발(액체→기체)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "액체가 기체로 변해."
+    },
+    {
+      "id": "S363",
+      "mode": "science",
+      "q": "수증기가 물방울이 되는 것은 응결(기체→액체)이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기체가 액체로 변해."
+    },
+    {
+      "id": "S364",
+      "mode": "science",
+      "q": "같은 부피라면 일반적으로 공기보다 물이 더 무겁다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "물의 밀도가 더 커."
+    },
+    {
+      "id": "S365",
+      "mode": "science",
+      "q": "금속은 전기가 잘 통하는 경우가 많다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "도체인 경우가 많아."
+    },
+    {
+      "id": "S366",
+      "mode": "science",
+      "q": "플라스틱은 전기가 잘 통하는 경우가 많다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "대체로 절연체야."
+    },
+    {
+      "id": "S367",
+      "mode": "science",
+      "q": "자석의 다른 극끼리는 서로 끌어당긴다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "다른 극은 인력."
+    },
+    {
+      "id": "S368",
+      "mode": "science",
+      "q": "kg는 질량 단위로 쓰인다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "킬로그램은 질량 단위."
+    },
+    {
+      "id": "S369",
+      "mode": "science",
+      "q": "m는 길이 단위로 쓰인다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "미터는 길이 단위."
+    },
+    {
+      "id": "S370",
+      "mode": "science",
+      "q": "s는 시간 단위로 쓰인다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "초는 시간 단위."
+    },
+    {
+      "id": "S371",
+      "mode": "science",
+      "q": "이산화탄소(CO2)는 탄소 1개와 산소 2개로 이루어진다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "CO2는 C 1, O 2."
+    },
+    {
+      "id": "S372",
+      "mode": "science",
+      "q": "몸의 체온은 보통 36.5℃ 안팎으로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "평균적으로 그 정도로 알려져."
+    },
+    {
+      "id": "S373",
+      "mode": "science",
+      "q": "사람의 혈액형은 ABO식으로 4가지가 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "A,B,O,AB."
+    },
+    {
+      "id": "S374",
+      "mode": "science",
+      "q": "광합성은 식물이 빛 에너지를 이용해 양분을 만든다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛→화학 에너지 전환."
+    },
+    {
+      "id": "S375",
+      "mode": "science",
+      "q": "지진의 규모는 보통 규모(매그니튜드)로 표현한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "지진 크기를 나타내."
+    },
+    {
+      "id": "S376",
+      "mode": "science",
+      "q": "태풍은 열대 저기압의 한 종류다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "강한 열대 저기압을 말해."
+    },
+    {
+      "id": "S377",
+      "mode": "science",
+      "q": "구름은 공기 중의 물방울이나 얼음 결정으로 이루어진다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "응결로 생겨."
+    },
+    {
+      "id": "S378",
+      "mode": "science",
+      "q": "번개는 전기적 방전 현상이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대기 중 방전."
+    },
+    {
+      "id": "S379",
+      "mode": "science",
+      "q": "전기는 물에서만 흐른다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "물질/상태에 따라 달라(금속도 잘 통해)."
+    },
+    {
+      "id": "S380",
+      "mode": "science",
+      "q": "유리컵은 전기가 잘 통한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "유리는 절연체 쪽."
+    },
+    {
+      "id": "S381",
+      "mode": "science",
+      "q": "마찰력은 보통 운동을 방해하는 방향으로 작용한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "상대 운동을 막는 방향."
+    },
+    {
+      "id": "S382",
+      "mode": "science",
+      "q": "가속도는 속도의 변화율이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "속도가 얼마나 빨리 바뀌는지."
+    },
+    {
+      "id": "S383",
+      "mode": "science",
+      "q": "속력의 단위로 m/s를 쓸 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "속도/속력 단위로 써."
+    },
+    {
+      "id": "S384",
+      "mode": "science",
+      "q": "1분은 100초다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "1분은 60초야."
+    },
+    {
+      "id": "S385",
+      "mode": "science",
+      "q": "1시간은 60분이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "60분=1시간."
+    },
+    {
+      "id": "S386",
+      "mode": "science",
+      "q": "1km는 1000m다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "킬로는 1000배."
+    },
+    {
+      "id": "S387",
+      "mode": "science",
+      "q": "1L는 1000mL다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "리터와 밀리리터 관계."
+    },
+    {
+      "id": "S388",
+      "mode": "science",
+      "q": "0으로 나누는 것은 수학에서 정의되지 않는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "0으로 나눗셈은 정의되지 않아."
+    },
+    {
+      "id": "S389",
+      "mode": "science",
+      "q": "음수는 0보다 작은 수를 말한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "0보다 작은 수야."
+    },
+    {
+      "id": "S390",
+      "mode": "science",
+      "q": "삼각형의 내각의 합은 180도다(평면 기하).",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "평면에서 180°."
+    },
+    {
+      "id": "S391",
+      "mode": "science",
+      "q": "사각형의 내각의 합은 360도다(평면 기하).",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "평면에서 360°."
+    },
+    {
+      "id": "S392",
+      "mode": "science",
+      "q": "직각은 90도다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "90°가 직각."
+    },
+    {
+      "id": "S393",
+      "mode": "science",
+      "q": "1분은 몇 초?",
+      "choices": [
+        "100초",
+        "60초"
+      ],
+      "answer": 1,
+      "explain": "1분=60초."
+    },
+    {
+      "id": "S394",
+      "mode": "science",
+      "q": "1시간은 몇 분?",
+      "choices": [
+        "60분",
+        "100분"
+      ],
+      "answer": 0,
+      "explain": "1시간=60분."
+    },
+    {
+      "id": "S395",
+      "mode": "science",
+      "q": "1km는 몇 m?",
+      "choices": [
+        "100m",
+        "1000m"
+      ],
+      "answer": 1,
+      "explain": "1km=1000m."
+    },
+    {
+      "id": "S396",
+      "mode": "science",
+      "q": "1L는 몇 mL?",
+      "choices": [
+        "1000mL",
+        "100mL"
+      ],
+      "answer": 0,
+      "explain": "1L=1000mL."
+    },
+    {
+      "id": "S397",
+      "mode": "science",
+      "q": "빛이 소리보다 빠른 이유로 가까운 것은?",
+      "choices": [
+        "빛은 전자기파",
+        "빛은 액체"
+      ],
+      "answer": 0,
+      "explain": "빛은 전자기파라 진공에서도 전파돼."
+    },
+    {
+      "id": "S398",
+      "mode": "science",
+      "q": "소리가 진공에서 못 가는 이유로 가까운 것은?",
+      "choices": [
+        "매질이 필요함",
+        "빛이 막음"
+      ],
+      "answer": 0,
+      "explain": "소리는 매질이 필요해."
+    },
+    {
+      "id": "S399",
+      "mode": "science",
+      "q": "전류의 단위는?",
+      "choices": [
+        "볼트(V)",
+        "암페어(A)"
+      ],
+      "answer": 1,
+      "explain": "전류는 A."
+    },
+    {
+      "id": "S400",
+      "mode": "science",
+      "q": "H2O는 무엇일까?",
+      "choices": [
+        "물",
+        "이산화탄소"
+      ],
+      "answer": 0,
+      "explain": "H2O는 물."
+    },
+    {
+      "id": "S401",
+      "mode": "science",
+      "q": "CO2는 무엇일까?",
+      "choices": [
+        "이산화탄소",
+        "산소"
+      ],
+      "answer": 0,
+      "explain": "CO2는 이산화탄소."
+    },
+    {
+      "id": "S402",
+      "mode": "science",
+      "q": "pH가 7보다 작은 용액은?",
+      "choices": [
+        "산성",
+        "염기성"
+      ],
+      "answer": 0,
+      "explain": "pH<7은 산성."
+    },
+    {
+      "id": "S403",
+      "mode": "science",
+      "q": "pH가 7보다 큰 용액은?",
+      "choices": [
+        "산성",
+        "염기성"
+      ],
+      "answer": 1,
+      "explain": "pH>7은 염기성."
+    },
+    {
+      "id": "S404",
+      "mode": "science",
+      "q": "얼음이 녹는 상태변화는?",
+      "choices": [
+        "융해",
+        "응결"
+      ],
+      "answer": 0,
+      "explain": "고체→액체는 융해."
+    },
+    {
+      "id": "S405",
+      "mode": "science",
+      "q": "물이 수증기가 되는 상태변화는?",
+      "choices": [
+        "승화",
+        "증발"
+      ],
+      "answer": 1,
+      "explain": "액체→기체는 증발."
+    },
+    {
+      "id": "S406",
+      "mode": "science",
+      "q": "수증기가 물방울이 되는 상태변화는?",
+      "choices": [
+        "융해",
+        "응결"
+      ],
+      "answer": 1,
+      "explain": "기체→액체는 응결."
+    },
+    {
+      "id": "S407",
+      "mode": "science",
+      "q": "사람의 DNA는 주로 어디에 있을까?",
+      "choices": [
+        "세포벽",
+        "세포핵"
+      ],
+      "answer": 1,
+      "explain": "진핵세포는 주로 핵에 있어."
+    },
+    {
+      "id": "S408",
+      "mode": "science",
+      "q": "자석의 같은 극끼리는?",
+      "choices": [
+        "밀어낸다",
+        "끌어당긴다"
+      ],
+      "answer": 0,
+      "explain": "같은 극은 척력."
+    },
+    {
+      "id": "S409",
+      "mode": "science",
+      "q": "자석의 다른 극끼리는?",
+      "choices": [
+        "밀어낸다",
+        "끌어당긴다"
+      ],
+      "answer": 1,
+      "explain": "다른 극은 인력."
+    },
+    {
+      "id": "S410",
+      "mode": "science",
+      "q": "삼각형 내각의 합은?",
+      "choices": [
+        "360도",
+        "180도"
+      ],
+      "answer": 1,
+      "explain": "평면 삼각형은 180°."
+    },
+    {
+      "id": "S411",
+      "mode": "science",
+      "q": "사각형 내각의 합은?",
+      "choices": [
+        "360도",
+        "180도"
+      ],
+      "answer": 0,
+      "explain": "평면 사각형은 360°."
+    },
+    {
+      "id": "S412",
+      "mode": "science",
+      "q": "직각은 몇 도?",
+      "choices": [
+        "90도",
+        "45도"
+      ],
+      "answer": 0,
+      "explain": "직각은 90°."
+    },
+    {
+      "id": "S413",
+      "mode": "science",
+      "q": "0으로 나누기(예: 1/0)는?",
+      "choices": [
+        "항상 0",
+        "정의되지 않음"
+      ],
+      "answer": 1,
+      "explain": "0으로 나누기는 정의되지 않아."
+    },
+    {
+      "id": "S414",
+      "mode": "science",
+      "q": "온도와 관련이 큰 것은?",
+      "choices": [
+        "분자 운동",
+        "색깔"
+      ],
+      "answer": 0,
+      "explain": "온도는 평균 운동과 관련."
+    },
+    {
+      "id": "S415",
+      "mode": "science",
+      "q": "전기는 무엇에서 잘 흐를까?",
+      "choices": [
+        "유리(절연체)",
+        "금속(도체)"
+      ],
+      "answer": 1,
+      "explain": "금속은 도체인 경우가 많아."
+    },
+    {
+      "id": "S416",
+      "mode": "science",
+      "q": "구름은 주로 무엇으로 이루어질까?",
+      "choices": [
+        "모래",
+        "물방울/얼음 결정"
+      ],
+      "answer": 1,
+      "explain": "응결된 물방울/얼음."
+    },
+    {
+      "id": "S417",
+      "mode": "science",
+      "q": "번개는 어떤 현상일까?",
+      "choices": [
+        "자기 부상",
+        "전기 방전"
+      ],
+      "answer": 1,
+      "explain": "대기 중 방전."
+    },
+    {
+      "id": "S418",
+      "mode": "science",
+      "q": "지구가 도는 운동(태양 주위)은?",
+      "choices": [
+        "자전",
+        "공전"
+      ],
+      "answer": 1,
+      "explain": "태양 주위를 도는 건 공전."
+    },
+    {
+      "id": "S419",
+      "mode": "science",
+      "q": "지구가 도는 운동(스스로 회전)은?",
+      "choices": [
+        "공전",
+        "자전"
+      ],
+      "answer": 1,
+      "explain": "스스로 회전하는 건 자전."
+    },
+    {
+      "id": "S420",
+      "mode": "science",
+      "q": "체온을 재는 도구는?",
+      "choices": [
+        "나침반",
+        "체온계"
+      ],
+      "answer": 1,
+      "explain": "체온계로 잰다."
+    },
+    {
+      "id": "S421",
+      "mode": "science",
+      "q": "시간을 재는 도구는?",
+      "choices": [
+        "시계",
+        "온도계"
+      ],
+      "answer": 0,
+      "explain": "시계로 시간 확인."
+    },
+    {
+      "id": "S422",
+      "mode": "science",
+      "q": "길이를 재는 도구는?",
+      "choices": [
+        "체중계",
+        "자/줄자"
+      ],
+      "answer": 1,
+      "explain": "자나 줄자로 잰다."
+    },
+    {
+      "id": "S423",
+      "mode": "science",
+      "q": "무게(힘)에 가까운 것은?",
+      "choices": [
+        "중력의 영향",
+        "색상의 영향"
+      ],
+      "answer": 0,
+      "explain": "무게는 중력에 좌우돼."
+    },
+    {
+      "id": "S424",
+      "mode": "science",
+      "q": "질량에 가까운 것은?",
+      "choices": [
+        "물체 고유량",
+        "중력에 따라 변함"
+      ],
+      "answer": 0,
+      "explain": "질량은 고유량으로 봐."
+    },
+    {
+      "id": "S425",
+      "mode": "science",
+      "q": "컴퓨터에서 RAM은 대체로 무엇에 가까울까?",
+      "choices": [
+        "영구 저장",
+        "작업 메모리"
+      ],
+      "answer": 1,
+      "explain": "RAM은 작업용 메모리."
+    },
+    {
+      "id": "S426",
+      "mode": "science",
+      "q": "저장장치(SSD/HDD)는 대체로 무엇에 가까울까?",
+      "choices": [
+        "영구 저장",
+        "순간 속도"
+      ],
+      "answer": 0,
+      "explain": "데이터를 저장해."
+    },
+    {
+      "id": "S427",
+      "mode": "science",
+      "q": "웹 브라우저는 무엇을 할까?",
+      "choices": [
+        "웹 페이지 보기",
+        "혈압 측정"
+      ],
+      "answer": 0,
+      "explain": "웹을 보는 프로그램."
+    },
+    {
+      "id": "S428",
+      "mode": "science",
+      "q": "링크(URL)는 주로 무엇을 가리킬까?",
+      "choices": [
+        "우편번호",
+        "웹 주소"
+      ],
+      "answer": 1,
+      "explain": "웹 주소를 뜻해."
+    },
+    {
+      "id": "S429",
+      "mode": "science",
+      "q": "바이러스(생물학)는 보통 무엇이 필요할까?",
+      "choices": [
+        "숙주 세포",
+        "햇빛만"
+      ],
+      "answer": 0,
+      "explain": "숙주를 이용해 증식해."
+    },
+    {
+      "id": "S430",
+      "mode": "science",
+      "q": "지구의 대기는 여러 기체의 혼합물이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "질소·산소 등 여러 기체가 섞여 있어."
+    },
+    {
+      "id": "S431",
+      "mode": "science",
+      "q": "수면은 몸의 회복에 도움이 된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "휴식과 회복에 중요해."
+    },
+    {
+      "id": "S432",
+      "mode": "science",
+      "q": "사람은 숨을 쉬며 산소를 들이마신다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "호흡으로 산소를 흡수해."
+    },
+    {
+      "id": "S433",
+      "mode": "science",
+      "q": "식물은 광합성에 이산화탄소를 사용할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "CO₂를 이용해 유기물을 만들어."
+    },
+    {
+      "id": "S434",
+      "mode": "science",
+      "q": "금속은 열을 잘 전달하는 경우가 많다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "열전도도가 큰 편."
+    },
+    {
+      "id": "S435",
+      "mode": "science",
+      "q": "나무는 금속보다 열을 덜 전달하는 편이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "상대적으로 단열 성질이 있어."
+    },
+    {
+      "id": "S436",
+      "mode": "science",
+      "q": "물은 얼 때 부피가 늘어나는 성질로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "얼음이 물보다 덜 조밀해."
+    },
+    {
+      "id": "S437",
+      "mode": "science",
+      "q": "얼음은 물에 뜬다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "밀도가 물보다 작아서 떠."
+    },
+    {
+      "id": "S438",
+      "mode": "science",
+      "q": "공기는 무게가 없다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 1,
+      "explain": "공기도 질량과 무게가 있어."
+    },
+    {
+      "id": "S439",
+      "mode": "science",
+      "q": "진공청소기는 주로 공기 흐름(압력 차)로 먼지를 빨아들인다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "압력 차로 공기가 흐르며 흡입돼."
+    },
+    {
+      "id": "S440",
+      "mode": "science",
+      "q": "자동차 안전벨트는 관성 때문에 중요하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "급정지 때 몸이 앞으로 쏠려."
+    },
+    {
+      "id": "S441",
+      "mode": "science",
+      "q": "헬멧은 충격을 분산해 머리를 보호한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "충격 흡수·분산 역할."
+    },
+    {
+      "id": "S442",
+      "mode": "science",
+      "q": "마이크는 소리를 전기 신호로 바꿀 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "음→전기 신호 변환."
+    },
+    {
+      "id": "S443",
+      "mode": "science",
+      "q": "스피커는 전기 신호를 소리로 바꿀 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전기→음 변환."
+    },
+    {
+      "id": "S444",
+      "mode": "science",
+      "q": "렌즈는 빛을 굴절시킨다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "굴절로 초점이 생겨."
+    },
+    {
+      "id": "S445",
+      "mode": "science",
+      "q": "거울은 빛을 반사시킨다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "반사로 상이 생겨."
+    },
+    {
+      "id": "S446",
+      "mode": "science",
+      "q": "무지개는 빛의 굴절과 분산과 관련이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "물방울에서 분산돼."
+    },
+    {
+      "id": "S447",
+      "mode": "science",
+      "q": "온도계는 온도를 재는 도구다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도를 측정해."
+    },
+    {
+      "id": "S448",
+      "mode": "science",
+      "q": "가시광선은 무엇일까?",
+      "choices": [
+        "사람 눈에 보이지 않는 빛만",
+        "사람 눈에 보이는 빛"
+      ],
+      "answer": 1,
+      "explain": "가시광선은 눈에 보이는 빛이야."
+    },
+    {
+      "id": "S449",
+      "mode": "science",
+      "q": "적외선은 무엇일까?",
+      "choices": [
+        "눈에 보이는 파란빛",
+        "눈에 보이지 않는 빛(복사)"
+      ],
+      "answer": 1,
+      "explain": "적외선은 가시광선 밖."
+    },
+    {
+      "id": "S450",
+      "mode": "science",
+      "q": "자외선은 무엇일까?",
+      "choices": [
+        "가시광선보다 파장이 긴 빛",
+        "가시광선보다 파장이 짧은 빛"
+      ],
+      "answer": 1,
+      "explain": "자외선은 파장이 더 짧아."
+    },
+    {
+      "id": "S451",
+      "mode": "science",
+      "q": "헬멧을 쓰는 이유는?",
+      "choices": [
+        "충격 흡수/분산",
+        "시력 향상"
+      ],
+      "answer": 0,
+      "explain": "충격을 줄여 보호해."
+    },
+    {
+      "id": "S452",
+      "mode": "science",
+      "q": "안전벨트가 중요한 이유로 가까운 것은?",
+      "choices": [
+        "관성",
+        "증발"
+      ],
+      "answer": 0,
+      "explain": "급정지 때 관성으로 몸이 쏠려."
+    },
+    {
+      "id": "S453",
+      "mode": "science",
+      "q": "거울은 빛을 주로 어떻게 할까?",
+      "choices": [
+        "흡수",
+        "반사"
+      ],
+      "answer": 1,
+      "explain": "거울은 반사."
+    },
+    {
+      "id": "S454",
+      "mode": "science",
+      "q": "렌즈는 빛을 주로 어떻게 할까?",
+      "choices": [
+        "굴절",
+        "전도"
+      ],
+      "answer": 0,
+      "explain": "렌즈는 굴절."
+    },
+    {
+      "id": "S455",
+      "mode": "science",
+      "q": "스피커의 역할은?",
+      "choices": [
+        "소리→전기",
+        "전기→소리"
+      ],
+      "answer": 1,
+      "explain": "스피커는 소리를 내."
+    },
+    {
+      "id": "S456",
+      "mode": "science",
+      "q": "마이크의 역할은?",
+      "choices": [
+        "전기→소리",
+        "소리→전기"
+      ],
+      "answer": 1,
+      "explain": "마이크는 소리를 신호로."
+    },
+    {
+      "id": "S457",
+      "mode": "science",
+      "q": "바람은 무엇일까?",
+      "choices": [
+        "물의 이동",
+        "공기의 이동"
+      ],
+      "answer": 1,
+      "explain": "공기가 움직이는 것."
+    },
+    {
+      "id": "S458",
+      "mode": "science",
+      "q": "진공청소기의 원리로 가까운 것은?",
+      "choices": [
+        "자력으로 먼지 끌기",
+        "압력 차로 공기 흐름"
+      ],
+      "answer": 1,
+      "explain": "압력 차로 흡입돼."
+    },
+    {
+      "id": "S459",
+      "mode": "science",
+      "q": "나침반은 무엇을 이용할까?",
+      "choices": [
+        "자석/지구 자기장",
+        "중력"
+      ],
+      "answer": 0,
+      "explain": "자기장을 이용해 방향을 봐."
+    },
+    {
+      "id": "S460",
+      "mode": "science",
+      "q": "공기는 무게가 있을까?",
+      "choices": [
+        "있다",
+        "없다"
+      ],
+      "answer": 0,
+      "explain": "공기도 질량이 있어."
     }
   ]
 }
