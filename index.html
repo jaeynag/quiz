@@ -549,8 +549,11 @@ function popStickerForStreak(streak){
       right: avoid.right + 6,
       bottom: avoid.bottom + 6
     };
-      return false;
+
+    function intersects(a,b){
+      return !(a.right < b.left || a.left > b.right || a.bottom < b.top || a.top > b.bottom);
     }
+
 
     let x = pad, y = pad;
     let ok = false;
