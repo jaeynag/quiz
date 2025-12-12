@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "2025.12.12-04",
+    "version": "2025.12.13-02",
     "updated": "2025-12-12",
-    "note": "Remove '(오답...)' labels in choices. Total 920."
+    "note": "Deduped questions by (mode,q). Restored total 920 with new general-knowledge items."
   },
   "questions": [
     {
@@ -1480,182 +1480,6 @@
       "explain": "면적·인구 모두 큰 편이야."
     },
     {
-      "id": "H135",
-      "mode": "humanities",
-      "q": "한반도는 동아시아에 위치한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동아시아 지역으로 분류돼."
-    },
-    {
-      "id": "H136",
-      "mode": "humanities",
-      "q": "지중해는 대서양과 연결되어 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "지브롤터 해협을 통해 연결돼."
-    },
-    {
-      "id": "H137",
-      "mode": "humanities",
-      "q": "나일강은 아프리카에 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "아프리카의 대표적 강이야."
-    },
-    {
-      "id": "H138",
-      "mode": "humanities",
-      "q": "그리스 신화는 고대 그리스 문화권과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "그리스 문화권의 신화 체계."
-    },
-    {
-      "id": "H139",
-      "mode": "humanities",
-      "q": "모차르트는 작곡가로 유명하다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고전주의 대표 작곡가."
-    },
-    {
-      "id": "H140",
-      "mode": "humanities",
-      "q": "바다도 개울에서부터 시작된다는 말이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "작은 시작이 쌓인다는 뜻으로 쓰여."
-    },
-    {
-      "id": "H141",
-      "mode": "humanities",
-      "q": "유럽에는 여러 나라가 모여 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유럽은 다양한 국가로 구성돼."
-    },
-    {
-      "id": "H142",
-      "mode": "humanities",
-      "q": "아시아는 대륙 중 면적이 큰 편이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "면적·인구 모두 큰 편이야."
-    },
-    {
-      "id": "H143",
-      "mode": "humanities",
-      "q": "한반도는 동아시아에 위치한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동아시아 지역으로 분류돼."
-    },
-    {
-      "id": "H144",
-      "mode": "humanities",
-      "q": "지중해는 대서양과 연결되어 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "지브롤터 해협을 통해 연결돼."
-    },
-    {
-      "id": "H145",
-      "mode": "humanities",
-      "q": "나일강은 아프리카에 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "아프리카의 대표적 강이야."
-    },
-    {
-      "id": "H146",
-      "mode": "humanities",
-      "q": "그리스 신화는 고대 그리스 문화권과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "그리스 문화권의 신화 체계."
-    },
-    {
-      "id": "H147",
-      "mode": "humanities",
-      "q": "모차르트는 작곡가로 유명하다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고전주의 대표 작곡가."
-    },
-    {
-      "id": "H148",
-      "mode": "humanities",
-      "q": "바다도 개울에서부터 시작된다는 말이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "작은 시작이 쌓인다는 뜻으로 쓰여."
-    },
-    {
-      "id": "H149",
-      "mode": "humanities",
-      "q": "유럽에는 여러 나라가 모여 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유럽은 다양한 국가로 구성돼."
-    },
-    {
-      "id": "H150",
-      "mode": "humanities",
-      "q": "아시아는 대륙 중 면적이 큰 편이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "면적·인구 모두 큰 편이야."
-    },
-    {
       "id": "H151",
       "mode": "humanities",
       "q": "고래 싸움에 ____ 등 터진다.",
@@ -2369,61 +2193,6 @@
       ],
       "answer": 1,
       "explain": "정답: “제”"
-    },
-    {
-      "id": "H216",
-      "mode": "humanities",
-      "q": "티끌 모아 ____.",
-      "choices": [
-        "강",
-        "태산"
-      ],
-      "answer": 1,
-      "explain": "정답: “태산”"
-    },
-    {
-      "id": "H217",
-      "mode": "humanities",
-      "q": "티끌 모아 ____.",
-      "choices": [
-        "소나무",
-        "태산"
-      ],
-      "answer": 1,
-      "explain": "정답: “태산”"
-    },
-    {
-      "id": "H218",
-      "mode": "humanities",
-      "q": "티끌 모아 ____.",
-      "choices": [
-        "태산",
-        "토끼"
-      ],
-      "answer": 0,
-      "explain": "정답: “태산”"
-    },
-    {
-      "id": "H219",
-      "mode": "humanities",
-      "q": "티끌 모아 ____.",
-      "choices": [
-        "태산",
-        "구름"
-      ],
-      "answer": 0,
-      "explain": "정답: “태산”"
-    },
-    {
-      "id": "H220",
-      "mode": "humanities",
-      "q": "티끌 모아 ____.",
-      "choices": [
-        "강",
-        "태산"
-      ],
-      "answer": 1,
-      "explain": "정답: “태산”"
     },
     {
       "id": "H221",
@@ -3911,1051 +3680,6 @@
       "explain": "이온이 전류를 운반."
     },
     {
-      "id": "S056",
-      "mode": "science",
-      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대표적인 물질의 상태 3가지."
-    },
-    {
-      "id": "S057",
-      "mode": "science",
-      "q": "온도는 분자의 평균 운동과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "온도가 높을수록 운동이 활발해."
-    },
-    {
-      "id": "S058",
-      "mode": "science",
-      "q": "도체는 전기가 잘 통하는 물질이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "금속 등이 대표적."
-    },
-    {
-      "id": "S059",
-      "mode": "science",
-      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유체에서 받는 힘."
-    },
-    {
-      "id": "S060",
-      "mode": "science",
-      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "같은 극은 척력."
-    },
-    {
-      "id": "S061",
-      "mode": "science",
-      "q": "중성자는 전하를 띠지 않는다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전하 0."
-    },
-    {
-      "id": "S062",
-      "mode": "science",
-      "q": "식물 세포에는 세포벽이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동물세포와 차이."
-    },
-    {
-      "id": "S063",
-      "mode": "science",
-      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대략적인 층 구조."
-    },
-    {
-      "id": "S064",
-      "mode": "science",
-      "q": "증발은 액체가 기체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "액→기 변화."
-    },
-    {
-      "id": "S065",
-      "mode": "science",
-      "q": "응결은 기체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "기→액 변화."
-    },
-    {
-      "id": "S066",
-      "mode": "science",
-      "q": "융해는 고체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고→액 변화."
-    },
-    {
-      "id": "S067",
-      "mode": "science",
-      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "승화는 고→기."
-    },
-    {
-      "id": "S068",
-      "mode": "science",
-      "q": "전자기파는 진공에서도 전파될 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "빛도 전자기파."
-    },
-    {
-      "id": "S069",
-      "mode": "science",
-      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "구급차 소리 예시."
-    },
-    {
-      "id": "S070",
-      "mode": "science",
-      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "이온이 전류를 운반."
-    },
-    {
-      "id": "S071",
-      "mode": "science",
-      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대표적인 물질의 상태 3가지."
-    },
-    {
-      "id": "S072",
-      "mode": "science",
-      "q": "온도는 분자의 평균 운동과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "온도가 높을수록 운동이 활발해."
-    },
-    {
-      "id": "S073",
-      "mode": "science",
-      "q": "도체는 전기가 잘 통하는 물질이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "금속 등이 대표적."
-    },
-    {
-      "id": "S074",
-      "mode": "science",
-      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유체에서 받는 힘."
-    },
-    {
-      "id": "S075",
-      "mode": "science",
-      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "같은 극은 척력."
-    },
-    {
-      "id": "S076",
-      "mode": "science",
-      "q": "중성자는 전하를 띠지 않는다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전하 0."
-    },
-    {
-      "id": "S077",
-      "mode": "science",
-      "q": "식물 세포에는 세포벽이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동물세포와 차이."
-    },
-    {
-      "id": "S078",
-      "mode": "science",
-      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대략적인 층 구조."
-    },
-    {
-      "id": "S079",
-      "mode": "science",
-      "q": "증발은 액체가 기체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "액→기 변화."
-    },
-    {
-      "id": "S080",
-      "mode": "science",
-      "q": "응결은 기체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "기→액 변화."
-    },
-    {
-      "id": "S081",
-      "mode": "science",
-      "q": "융해는 고체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고→액 변화."
-    },
-    {
-      "id": "S082",
-      "mode": "science",
-      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "승화는 고→기."
-    },
-    {
-      "id": "S083",
-      "mode": "science",
-      "q": "전자기파는 진공에서도 전파될 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "빛도 전자기파."
-    },
-    {
-      "id": "S084",
-      "mode": "science",
-      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "구급차 소리 예시."
-    },
-    {
-      "id": "S085",
-      "mode": "science",
-      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "이온이 전류를 운반."
-    },
-    {
-      "id": "S086",
-      "mode": "science",
-      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대표적인 물질의 상태 3가지."
-    },
-    {
-      "id": "S087",
-      "mode": "science",
-      "q": "온도는 분자의 평균 운동과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "온도가 높을수록 운동이 활발해."
-    },
-    {
-      "id": "S088",
-      "mode": "science",
-      "q": "도체는 전기가 잘 통하는 물질이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "금속 등이 대표적."
-    },
-    {
-      "id": "S089",
-      "mode": "science",
-      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유체에서 받는 힘."
-    },
-    {
-      "id": "S090",
-      "mode": "science",
-      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "같은 극은 척력."
-    },
-    {
-      "id": "S091",
-      "mode": "science",
-      "q": "중성자는 전하를 띠지 않는다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전하 0."
-    },
-    {
-      "id": "S092",
-      "mode": "science",
-      "q": "식물 세포에는 세포벽이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동물세포와 차이."
-    },
-    {
-      "id": "S093",
-      "mode": "science",
-      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대략적인 층 구조."
-    },
-    {
-      "id": "S094",
-      "mode": "science",
-      "q": "증발은 액체가 기체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "액→기 변화."
-    },
-    {
-      "id": "S095",
-      "mode": "science",
-      "q": "응결은 기체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "기→액 변화."
-    },
-    {
-      "id": "S096",
-      "mode": "science",
-      "q": "융해는 고체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고→액 변화."
-    },
-    {
-      "id": "S097",
-      "mode": "science",
-      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "승화는 고→기."
-    },
-    {
-      "id": "S098",
-      "mode": "science",
-      "q": "전자기파는 진공에서도 전파될 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "빛도 전자기파."
-    },
-    {
-      "id": "S099",
-      "mode": "science",
-      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "구급차 소리 예시."
-    },
-    {
-      "id": "S100",
-      "mode": "science",
-      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "이온이 전류를 운반."
-    },
-    {
-      "id": "S101",
-      "mode": "science",
-      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대표적인 물질의 상태 3가지."
-    },
-    {
-      "id": "S102",
-      "mode": "science",
-      "q": "온도는 분자의 평균 운동과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "온도가 높을수록 운동이 활발해."
-    },
-    {
-      "id": "S103",
-      "mode": "science",
-      "q": "도체는 전기가 잘 통하는 물질이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "금속 등이 대표적."
-    },
-    {
-      "id": "S104",
-      "mode": "science",
-      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유체에서 받는 힘."
-    },
-    {
-      "id": "S105",
-      "mode": "science",
-      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "같은 극은 척력."
-    },
-    {
-      "id": "S106",
-      "mode": "science",
-      "q": "중성자는 전하를 띠지 않는다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전하 0."
-    },
-    {
-      "id": "S107",
-      "mode": "science",
-      "q": "식물 세포에는 세포벽이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동물세포와 차이."
-    },
-    {
-      "id": "S108",
-      "mode": "science",
-      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대략적인 층 구조."
-    },
-    {
-      "id": "S109",
-      "mode": "science",
-      "q": "증발은 액체가 기체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "액→기 변화."
-    },
-    {
-      "id": "S110",
-      "mode": "science",
-      "q": "응결은 기체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "기→액 변화."
-    },
-    {
-      "id": "S111",
-      "mode": "science",
-      "q": "융해는 고체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고→액 변화."
-    },
-    {
-      "id": "S112",
-      "mode": "science",
-      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "승화는 고→기."
-    },
-    {
-      "id": "S113",
-      "mode": "science",
-      "q": "전자기파는 진공에서도 전파될 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "빛도 전자기파."
-    },
-    {
-      "id": "S114",
-      "mode": "science",
-      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "구급차 소리 예시."
-    },
-    {
-      "id": "S115",
-      "mode": "science",
-      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "이온이 전류를 운반."
-    },
-    {
-      "id": "S116",
-      "mode": "science",
-      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대표적인 물질의 상태 3가지."
-    },
-    {
-      "id": "S117",
-      "mode": "science",
-      "q": "온도는 분자의 평균 운동과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "온도가 높을수록 운동이 활발해."
-    },
-    {
-      "id": "S118",
-      "mode": "science",
-      "q": "도체는 전기가 잘 통하는 물질이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "금속 등이 대표적."
-    },
-    {
-      "id": "S119",
-      "mode": "science",
-      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유체에서 받는 힘."
-    },
-    {
-      "id": "S120",
-      "mode": "science",
-      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "같은 극은 척력."
-    },
-    {
-      "id": "S121",
-      "mode": "science",
-      "q": "중성자는 전하를 띠지 않는다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전하 0."
-    },
-    {
-      "id": "S122",
-      "mode": "science",
-      "q": "식물 세포에는 세포벽이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동물세포와 차이."
-    },
-    {
-      "id": "S123",
-      "mode": "science",
-      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대략적인 층 구조."
-    },
-    {
-      "id": "S124",
-      "mode": "science",
-      "q": "증발은 액체가 기체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "액→기 변화."
-    },
-    {
-      "id": "S125",
-      "mode": "science",
-      "q": "응결은 기체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "기→액 변화."
-    },
-    {
-      "id": "S126",
-      "mode": "science",
-      "q": "융해는 고체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고→액 변화."
-    },
-    {
-      "id": "S127",
-      "mode": "science",
-      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "승화는 고→기."
-    },
-    {
-      "id": "S128",
-      "mode": "science",
-      "q": "전자기파는 진공에서도 전파될 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "빛도 전자기파."
-    },
-    {
-      "id": "S129",
-      "mode": "science",
-      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "구급차 소리 예시."
-    },
-    {
-      "id": "S130",
-      "mode": "science",
-      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "이온이 전류를 운반."
-    },
-    {
-      "id": "S131",
-      "mode": "science",
-      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대표적인 물질의 상태 3가지."
-    },
-    {
-      "id": "S132",
-      "mode": "science",
-      "q": "온도는 분자의 평균 운동과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "온도가 높을수록 운동이 활발해."
-    },
-    {
-      "id": "S133",
-      "mode": "science",
-      "q": "도체는 전기가 잘 통하는 물질이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "금속 등이 대표적."
-    },
-    {
-      "id": "S134",
-      "mode": "science",
-      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유체에서 받는 힘."
-    },
-    {
-      "id": "S135",
-      "mode": "science",
-      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "같은 극은 척력."
-    },
-    {
-      "id": "S136",
-      "mode": "science",
-      "q": "중성자는 전하를 띠지 않는다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전하 0."
-    },
-    {
-      "id": "S137",
-      "mode": "science",
-      "q": "식물 세포에는 세포벽이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "동물세포와 차이."
-    },
-    {
-      "id": "S138",
-      "mode": "science",
-      "q": "지구 내부는 지각-맨틀-핵으로 나뉜다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대략적인 층 구조."
-    },
-    {
-      "id": "S139",
-      "mode": "science",
-      "q": "증발은 액체가 기체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "액→기 변화."
-    },
-    {
-      "id": "S140",
-      "mode": "science",
-      "q": "응결은 기체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "기→액 변화."
-    },
-    {
-      "id": "S141",
-      "mode": "science",
-      "q": "융해는 고체가 액체로 되는 상태변화다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "고→액 변화."
-    },
-    {
-      "id": "S142",
-      "mode": "science",
-      "q": "고체가 바로 기체가 되는 현상을 승화라고 한다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "승화는 고→기."
-    },
-    {
-      "id": "S143",
-      "mode": "science",
-      "q": "전자기파는 진공에서도 전파될 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "빛도 전자기파."
-    },
-    {
-      "id": "S144",
-      "mode": "science",
-      "q": "도플러 효과는 상대 운동으로 파장이 변해 보이는 현상이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "구급차 소리 예시."
-    },
-    {
-      "id": "S145",
-      "mode": "science",
-      "q": "전해질은 용액에서 이온을 만들어 전류가 흐르기 쉽다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "이온이 전류를 운반."
-    },
-    {
-      "id": "S146",
-      "mode": "science",
-      "q": "물질은 고체, 액체, 기체 상태로 존재할 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "대표적인 물질의 상태 3가지."
-    },
-    {
-      "id": "S147",
-      "mode": "science",
-      "q": "온도는 분자의 평균 운동과 관련이 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "온도가 높을수록 운동이 활발해."
-    },
-    {
-      "id": "S148",
-      "mode": "science",
-      "q": "도체는 전기가 잘 통하는 물질이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "금속 등이 대표적."
-    },
-    {
-      "id": "S149",
-      "mode": "science",
-      "q": "부력은 유체가 물체를 위로 밀어 올리는 힘이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "유체에서 받는 힘."
-    },
-    {
-      "id": "S150",
-      "mode": "science",
-      "q": "자석의 같은 극끼리는 서로 밀어낸다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "같은 극은 척력."
-    },
-    {
       "id": "S151",
       "mode": "science",
       "q": "길이의 SI 기본단위는?",
@@ -5592,1018 +4316,6 @@
       ],
       "answer": 0,
       "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S209",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨(도)"
-      ],
-      "answer": 1,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S210",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨",
-        "켈빈"
-      ],
-      "answer": 1,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S211",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파",
-        "파스칼"
-      ],
-      "answer": 1,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S212",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "줄",
-        "주"
-      ],
-      "answer": 0,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S213",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "월트",
-        "와트"
-      ],
-      "answer": 1,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S214",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "발트",
-        "볼트"
-      ],
-      "answer": 1,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S215",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "옴",
-        "움"
-      ],
-      "answer": 0,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S216",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "헤르츠",
-        "허즈"
-      ],
-      "answer": 0,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S217",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페어",
-        "암페르"
-      ],
-      "answer": 0,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S218",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "뉴턴",
-        "나노턴"
-      ],
-      "answer": 0,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S219",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨(도)",
-        "켈빈"
-      ],
-      "answer": 0,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S220",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨",
-        "켈빈"
-      ],
-      "answer": 1,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S221",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파스칼",
-        "파"
-      ],
-      "answer": 0,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S222",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "주",
-        "줄"
-      ],
-      "answer": 1,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S223",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "와트",
-        "월트"
-      ],
-      "answer": 0,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S224",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "볼트",
-        "발트"
-      ],
-      "answer": 0,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S225",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "움",
-        "옴"
-      ],
-      "answer": 1,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S226",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "허즈",
-        "헤르츠"
-      ],
-      "answer": 1,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S227",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페어",
-        "암페르"
-      ],
-      "answer": 0,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S228",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "나노턴",
-        "뉴턴"
-      ],
-      "answer": 1,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S229",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨(도)",
-        "켈빈"
-      ],
-      "answer": 0,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S230",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨",
-        "켈빈"
-      ],
-      "answer": 1,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S231",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파",
-        "파스칼"
-      ],
-      "answer": 1,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S232",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "줄",
-        "주"
-      ],
-      "answer": 0,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S233",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "월트",
-        "와트"
-      ],
-      "answer": 1,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S234",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "볼트",
-        "발트"
-      ],
-      "answer": 0,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S235",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "옴",
-        "움"
-      ],
-      "answer": 0,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S236",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "허즈",
-        "헤르츠"
-      ],
-      "answer": 1,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S237",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페르",
-        "암페어"
-      ],
-      "answer": 1,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S238",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "나노턴",
-        "뉴턴"
-      ],
-      "answer": 1,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S239",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨(도)"
-      ],
-      "answer": 1,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S240",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨"
-      ],
-      "answer": 0,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S241",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파스칼",
-        "파"
-      ],
-      "answer": 0,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S242",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "주",
-        "줄"
-      ],
-      "answer": 1,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S243",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "와트",
-        "월트"
-      ],
-      "answer": 0,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S244",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "볼트",
-        "발트"
-      ],
-      "answer": 0,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S245",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "움",
-        "옴"
-      ],
-      "answer": 1,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S246",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "헤르츠",
-        "허즈"
-      ],
-      "answer": 0,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S247",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페어",
-        "암페르"
-      ],
-      "answer": 0,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S248",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "나노턴",
-        "뉴턴"
-      ],
-      "answer": 1,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S249",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨(도)",
-        "켈빈"
-      ],
-      "answer": 0,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S250",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨",
-        "켈빈"
-      ],
-      "answer": 1,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S251",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파스칼",
-        "파"
-      ],
-      "answer": 0,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S252",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "주",
-        "줄"
-      ],
-      "answer": 1,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S253",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "와트",
-        "월트"
-      ],
-      "answer": 0,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S254",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "발트",
-        "볼트"
-      ],
-      "answer": 1,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S255",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "옴",
-        "움"
-      ],
-      "answer": 0,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S256",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "헤르츠",
-        "허즈"
-      ],
-      "answer": 0,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S257",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페르",
-        "암페어"
-      ],
-      "answer": 1,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S258",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "나노턴",
-        "뉴턴"
-      ],
-      "answer": 1,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S259",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨(도)",
-        "켈빈"
-      ],
-      "answer": 0,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S260",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨"
-      ],
-      "answer": 0,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S261",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파",
-        "파스칼"
-      ],
-      "answer": 1,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S262",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "줄",
-        "주"
-      ],
-      "answer": 0,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S263",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "와트",
-        "월트"
-      ],
-      "answer": 0,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S264",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "발트",
-        "볼트"
-      ],
-      "answer": 1,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S265",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "움",
-        "옴"
-      ],
-      "answer": 1,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S266",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "헤르츠",
-        "허즈"
-      ],
-      "answer": 0,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S267",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페어",
-        "암페르"
-      ],
-      "answer": 0,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S268",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "뉴턴",
-        "나노턴"
-      ],
-      "answer": 0,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S269",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨(도)"
-      ],
-      "answer": 1,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S270",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨",
-        "켈빈"
-      ],
-      "answer": 1,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S271",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파",
-        "파스칼"
-      ],
-      "answer": 1,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S272",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "줄",
-        "주"
-      ],
-      "answer": 0,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S273",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "월트",
-        "와트"
-      ],
-      "answer": 1,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S274",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "볼트",
-        "발트"
-      ],
-      "answer": 0,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S275",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "움",
-        "옴"
-      ],
-      "answer": 1,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S276",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "허즈",
-        "헤르츠"
-      ],
-      "answer": 1,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S277",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페어",
-        "암페르"
-      ],
-      "answer": 0,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S278",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "나노턴",
-        "뉴턴"
-      ],
-      "answer": 1,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S279",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨(도)"
-      ],
-      "answer": 1,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S280",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨"
-      ],
-      "answer": 0,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S281",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파스칼",
-        "파"
-      ],
-      "answer": 0,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S282",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "주",
-        "줄"
-      ],
-      "answer": 1,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S283",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "월트",
-        "와트"
-      ],
-      "answer": 1,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S284",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "발트",
-        "볼트"
-      ],
-      "answer": 1,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S285",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "움",
-        "옴"
-      ],
-      "answer": 1,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S286",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "허즈",
-        "헤르츠"
-      ],
-      "answer": 1,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S287",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페어",
-        "암페르"
-      ],
-      "answer": 0,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S288",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "나노턴",
-        "뉴턴"
-      ],
-      "answer": 1,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S289",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨(도)",
-        "켈빈"
-      ],
-      "answer": 0,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S290",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨"
-      ],
-      "answer": 0,
-      "explain": "K는 절대온도 단위."
-    },
-    {
-      "id": "S291",
-      "mode": "science",
-      "q": "단위 기호 Pa의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "파스칼",
-        "파"
-      ],
-      "answer": 0,
-      "explain": "Pa는 압력 단위 파스칼."
-    },
-    {
-      "id": "S292",
-      "mode": "science",
-      "q": "단위 기호 J의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "줄",
-        "주"
-      ],
-      "answer": 0,
-      "explain": "J는 에너지 단위 줄."
-    },
-    {
-      "id": "S293",
-      "mode": "science",
-      "q": "단위 기호 W의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "와트",
-        "월트"
-      ],
-      "answer": 0,
-      "explain": "W는 전력 단위 와트."
-    },
-    {
-      "id": "S294",
-      "mode": "science",
-      "q": "단위 기호 V의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "발트",
-        "볼트"
-      ],
-      "answer": 1,
-      "explain": "V는 전압 단위 볼트."
-    },
-    {
-      "id": "S295",
-      "mode": "science",
-      "q": "단위 기호 Ω의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "옴",
-        "움"
-      ],
-      "answer": 0,
-      "explain": "Ω는 저항 단위 옴."
-    },
-    {
-      "id": "S296",
-      "mode": "science",
-      "q": "단위 기호 Hz의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "허즈",
-        "헤르츠"
-      ],
-      "answer": 1,
-      "explain": "Hz는 주파수 단위 헤르츠."
-    },
-    {
-      "id": "S297",
-      "mode": "science",
-      "q": "단위 기호 A의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "암페르",
-        "암페어"
-      ],
-      "answer": 1,
-      "explain": "A는 전류 단위 암페어."
-    },
-    {
-      "id": "S298",
-      "mode": "science",
-      "q": "단위 기호 N의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "뉴턴",
-        "나노턴"
-      ],
-      "answer": 0,
-      "explain": "N은 힘의 단위 뉴턴."
-    },
-    {
-      "id": "S299",
-      "mode": "science",
-      "q": "단위 기호 ℃의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "켈빈",
-        "섭씨(도)"
-      ],
-      "answer": 1,
-      "explain": "℃는 섭씨 온도 표기야."
-    },
-    {
-      "id": "S300",
-      "mode": "science",
-      "q": "단위 기호 K의 읽는 법으로 맞는 것은?",
-      "choices": [
-        "섭씨",
-        "켈빈"
-      ],
-      "answer": 1,
-      "explain": "K는 절대온도 단위."
     },
     {
       "id": "H301",
@@ -7299,17 +5011,6 @@
       "explain": "100℃가 끓는점(1기압)."
     },
     {
-      "id": "S304",
-      "mode": "science",
-      "q": "빛은 진공에서도 전달될 수 있다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "전자기파라서 진공에서도 전파돼."
-    },
-    {
       "id": "S305",
       "mode": "science",
       "q": "소리는 진공에서도 전달될 수 있다.",
@@ -7409,39 +5110,6 @@
       "explain": "W는 전력 단위."
     },
     {
-      "id": "S314",
-      "mode": "science",
-      "q": "에너지의 단위로 줄(J)을 쓴다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "J는 에너지 단위."
-    },
-    {
-      "id": "S315",
-      "mode": "science",
-      "q": "주파수의 단위는 헤르츠(Hz)다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "Hz는 1초당 진동수."
-    },
-    {
-      "id": "S316",
-      "mode": "science",
-      "q": "저항의 단위는 옴(Ω)이다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "Ω는 저항 단위."
-    },
-    {
       "id": "S317",
       "mode": "science",
       "q": "전하의 단위는 쿨롬(C)이다.",
@@ -7530,17 +5198,6 @@
       "explain": "염기성은 pH 7 초과."
     },
     {
-      "id": "S325",
-      "mode": "science",
-      "q": "산성 용액의 pH는 보통 7보다 작다.",
-      "choices": [
-        "O",
-        "X"
-      ],
-      "answer": 0,
-      "explain": "산성은 pH 7 미만."
-    },
-    {
       "id": "S326",
       "mode": "science",
       "q": "마찰력은 물체의 운동을 방해하는 방향으로 작용하는 경우가 많다.",
@@ -7594,116 +5251,6 @@
       ],
       "answer": 0,
       "explain": "중력이 달라지면 무게도 달라져."
-    },
-    {
-      "id": "S331",
-      "mode": "science",
-      "q": "길이의 SI 기본단위는?",
-      "choices": [
-        "미터(m)",
-        "초(s)"
-      ],
-      "answer": 0,
-      "explain": "길이 기본단위는 m."
-    },
-    {
-      "id": "S332",
-      "mode": "science",
-      "q": "질량의 SI 기본단위는?",
-      "choices": [
-        "킬로그램(kg)",
-        "그램(g)"
-      ],
-      "answer": 0,
-      "explain": "SI 기본단위는 kg."
-    },
-    {
-      "id": "S333",
-      "mode": "science",
-      "q": "시간의 SI 기본단위는?",
-      "choices": [
-        "분(min)",
-        "초(s)"
-      ],
-      "answer": 1,
-      "explain": "시간 기본단위는 s."
-    },
-    {
-      "id": "S334",
-      "mode": "science",
-      "q": "전류의 SI 기본단위는?",
-      "choices": [
-        "볼트(V)",
-        "암페어(A)"
-      ],
-      "answer": 1,
-      "explain": "전류는 A."
-    },
-    {
-      "id": "S335",
-      "mode": "science",
-      "q": "전압의 단위는?",
-      "choices": [
-        "볼트(V)",
-        "옴(Ω)"
-      ],
-      "answer": 0,
-      "explain": "전압은 V."
-    },
-    {
-      "id": "S336",
-      "mode": "science",
-      "q": "저항의 단위는?",
-      "choices": [
-        "옴(Ω)",
-        "와트(W)"
-      ],
-      "answer": 0,
-      "explain": "저항은 Ω."
-    },
-    {
-      "id": "S337",
-      "mode": "science",
-      "q": "압력의 단위는?",
-      "choices": [
-        "파스칼(Pa)",
-        "줄(J)"
-      ],
-      "answer": 0,
-      "explain": "압력은 Pa."
-    },
-    {
-      "id": "S338",
-      "mode": "science",
-      "q": "에너지의 단위는?",
-      "choices": [
-        "줄(J)",
-        "뉴턴(N)"
-      ],
-      "answer": 0,
-      "explain": "에너지는 J."
-    },
-    {
-      "id": "S339",
-      "mode": "science",
-      "q": "힘의 단위는?",
-      "choices": [
-        "뉴턴(N)",
-        "파스칼(Pa)"
-      ],
-      "answer": 0,
-      "explain": "힘은 N."
-    },
-    {
-      "id": "S340",
-      "mode": "science",
-      "q": "주파수의 단위는?",
-      "choices": [
-        "헤르츠(Hz)",
-        "칸델라(cd)"
-      ],
-      "answer": 0,
-      "explain": "주파수는 Hz."
     },
     {
       "id": "S341",
@@ -10124,6 +7671,2459 @@
       ],
       "answer": 0,
       "explain": "공기도 질량이 있어."
+    },
+    {
+      "id": "H555",
+      "mode": "humanities",
+      "q": "우크라이나의 수도는?",
+      "choices": [
+        "리스본",
+        "키이우"
+      ],
+      "answer": 1,
+      "explain": "우크라이나 수도는 키이우."
+    },
+    {
+      "id": "H556",
+      "mode": "humanities",
+      "q": "행정을 담당하는 기관은?",
+      "choices": [
+        "미술관",
+        "정부"
+      ],
+      "answer": 1,
+      "explain": "정부가 행정을 해."
+    },
+    {
+      "id": "H557",
+      "mode": "humanities",
+      "q": "터키의 수도는?",
+      "choices": [
+        "앙카라",
+        "서울"
+      ],
+      "answer": 0,
+      "explain": "터키 수도는 앙카라."
+    },
+    {
+      "id": "S549",
+      "mode": "science",
+      "q": "산소 분자는?",
+      "choices": [
+        "N2",
+        "O2"
+      ],
+      "answer": 1,
+      "explain": "O2."
+    },
+    {
+      "id": "S550",
+      "mode": "science",
+      "q": "산소 분자는 O2로 쓴다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "O2."
+    },
+    {
+      "id": "S551",
+      "mode": "science",
+      "q": "저장장치는?",
+      "choices": [
+        "SSD",
+        "CPU"
+      ],
+      "answer": 0,
+      "explain": "SSD는 저장."
+    },
+    {
+      "id": "H558",
+      "mode": "humanities",
+      "q": "우편번호는 주소를 구분하는 데 도움이 된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "주소 구분."
+    },
+    {
+      "id": "H559",
+      "mode": "humanities",
+      "q": "오케스트라는 여러 악기가 함께 연주한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "여러 악기가 함께해."
+    },
+    {
+      "id": "H560",
+      "mode": "humanities",
+      "q": "고려는 조선보다 먼저 있었던 왕조다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "고려 다음이 조선."
+    },
+    {
+      "id": "S552",
+      "mode": "science",
+      "q": "원소기호 Au는 금이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "Au=금."
+    },
+    {
+      "id": "S553",
+      "mode": "science",
+      "q": "질소 분자는?",
+      "choices": [
+        "N2",
+        "O2"
+      ],
+      "answer": 0,
+      "explain": "N2."
+    },
+    {
+      "id": "H561",
+      "mode": "humanities",
+      "q": "재판을 담당하는 기관은?",
+      "choices": [
+        "법원",
+        "정부"
+      ],
+      "answer": 0,
+      "explain": "법원이 재판해."
+    },
+    {
+      "id": "H562",
+      "mode": "humanities",
+      "q": "인구밀도는 면적당 인구 수를 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "면적 대비 인구."
+    },
+    {
+      "id": "H563",
+      "mode": "humanities",
+      "q": "칠레의 수도는?",
+      "choices": [
+        "산티아고",
+        "리마"
+      ],
+      "answer": 0,
+      "explain": "칠레 수도는 산티아고."
+    },
+    {
+      "id": "S554",
+      "mode": "science",
+      "q": "전하의 단위로 배우는 것은?",
+      "choices": [
+        "쿨롬(C)",
+        "헤르츠(Hz)"
+      ],
+      "answer": 0,
+      "explain": "전하 단위 예시야."
+    },
+    {
+      "id": "H564",
+      "mode": "humanities",
+      "q": "‘별이 빛나는 밤’은 반 고흐의 작품으로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "반 고흐 대표작 중 하나."
+    },
+    {
+      "id": "S555",
+      "mode": "science",
+      "q": "휘발성 메모리는?",
+      "choices": [
+        "RAM",
+        "SSD"
+      ],
+      "answer": 0,
+      "explain": "RAM은 휘발."
+    },
+    {
+      "id": "H565",
+      "mode": "humanities",
+      "q": "셰익스피어는 희곡 작가로 널리 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "희곡 작가로 유명."
+    },
+    {
+      "id": "H566",
+      "mode": "humanities",
+      "q": "중국의 수도는?",
+      "choices": [
+        "서울",
+        "베이징"
+      ],
+      "answer": 1,
+      "explain": "중국 수도는 베이징."
+    },
+    {
+      "id": "S556",
+      "mode": "science",
+      "q": "밝기의 단위로 배우는 것은?",
+      "choices": [
+        "헤르츠(Hz)",
+        "칸델라(cd)"
+      ],
+      "answer": 1,
+      "explain": "밝기 단위 예시야."
+    },
+    {
+      "id": "S557",
+      "mode": "science",
+      "q": "URL은 웹 주소와 관련 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "웹 주소."
+    },
+    {
+      "id": "S558",
+      "mode": "science",
+      "q": "RAM은 전원이 꺼지면 내용이 사라지는 메모리다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "휘발성 메모리."
+    },
+    {
+      "id": "H567",
+      "mode": "humanities",
+      "q": "헝가리의 수도는?",
+      "choices": [
+        "자카르타",
+        "부다페스트"
+      ],
+      "answer": 1,
+      "explain": "헝가리 수도는 부다페스트."
+    },
+    {
+      "id": "S559",
+      "mode": "science",
+      "q": "물의 화학식은?",
+      "choices": [
+        "H2O",
+        "CO2"
+      ],
+      "answer": 0,
+      "explain": "물=H2O."
+    },
+    {
+      "id": "S560",
+      "mode": "science",
+      "q": "길이의 단위로 배우는 것은?",
+      "choices": [
+        "헤르츠(Hz)",
+        "미터(m)"
+      ],
+      "answer": 1,
+      "explain": "길이 단위 예시야."
+    },
+    {
+      "id": "H568",
+      "mode": "humanities",
+      "q": "7일 단위로 반복되는 것은?",
+      "choices": [
+        "계절",
+        "요일"
+      ],
+      "answer": 1,
+      "explain": "요일은 7일 주기."
+    },
+    {
+      "id": "S561",
+      "mode": "science",
+      "q": "이산화탄소의 화학식은?",
+      "choices": [
+        "CO2",
+        "H2O"
+      ],
+      "answer": 0,
+      "explain": "CO2."
+    },
+    {
+      "id": "S562",
+      "mode": "science",
+      "q": "작은 것을 확대하는 도구는?",
+      "choices": [
+        "스피커",
+        "현미경"
+      ],
+      "answer": 1,
+      "explain": "현미경."
+    },
+    {
+      "id": "S563",
+      "mode": "science",
+      "q": "투명 배경을 지원하는 이미지 형식은?",
+      "choices": [
+        "PNG",
+        "JPG"
+      ],
+      "answer": 0,
+      "explain": "PNG는 투명 지원."
+    },
+    {
+      "id": "S564",
+      "mode": "science",
+      "q": "빛은 진공에서도 전파된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "빛은 진공에서도 진행."
+    },
+    {
+      "id": "S565",
+      "mode": "science",
+      "q": "전압 단위는?",
+      "choices": [
+        "볼트(V)",
+        "옴(Ω)"
+      ],
+      "answer": 0,
+      "explain": "전압=V."
+    },
+    {
+      "id": "H569",
+      "mode": "humanities",
+      "q": "폴란드의 수도는?",
+      "choices": [
+        "바르샤바",
+        "베를린"
+      ],
+      "answer": 0,
+      "explain": "폴란드 수도는 바르샤바."
+    },
+    {
+      "id": "S566",
+      "mode": "science",
+      "q": "1m는 100cm다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1m=100cm."
+    },
+    {
+      "id": "H570",
+      "mode": "humanities",
+      "q": "필리핀의 수도는?",
+      "choices": [
+        "자카르타",
+        "마닐라"
+      ],
+      "answer": 1,
+      "explain": "필리핀 수도는 마닐라."
+    },
+    {
+      "id": "H571",
+      "mode": "humanities",
+      "q": "기호 뜻을 설명하는 것은?",
+      "choices": [
+        "우편번호",
+        "범례"
+      ],
+      "answer": 1,
+      "explain": "범례가 설명해."
+    },
+    {
+      "id": "H572",
+      "mode": "humanities",
+      "q": "속담은 교훈을 담은 짧은 표현이 많다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "교훈/경험."
+    },
+    {
+      "id": "H573",
+      "mode": "humanities",
+      "q": "미술에서 '추상'은 대상을 그대로 재현하지 않을 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "형태 변형/단순화."
+    },
+    {
+      "id": "S567",
+      "mode": "science",
+      "q": "1분은 60초다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "60초."
+    },
+    {
+      "id": "S568",
+      "mode": "science",
+      "q": "PNG는 투명 배경을 지원할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "투명 지원."
+    },
+    {
+      "id": "H574",
+      "mode": "humanities",
+      "q": "아일랜드의 수도는?",
+      "choices": [
+        "뉴델리",
+        "더블린"
+      ],
+      "answer": 1,
+      "explain": "아일랜드 수도는 더블린."
+    },
+    {
+      "id": "S569",
+      "mode": "science",
+      "q": "파스칼(Pa)은 압력의 단위다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "압력 단위 Pa."
+    },
+    {
+      "id": "H575",
+      "mode": "humanities",
+      "q": "스웨덴의 수도는?",
+      "choices": [
+        "캔버라",
+        "스톡홀름"
+      ],
+      "answer": 1,
+      "explain": "스웨덴 수도는 스톡홀름."
+    },
+    {
+      "id": "H576",
+      "mode": "humanities",
+      "q": "오스트레일리아의 수도는?",
+      "choices": [
+        "다카",
+        "캔버라"
+      ],
+      "answer": 1,
+      "explain": "오스트레일리아 수도는 캔버라."
+    },
+    {
+      "id": "H577",
+      "mode": "humanities",
+      "q": "개인정보는 함부로 공개하면 안 된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "보호가 필요해."
+    },
+    {
+      "id": "H578",
+      "mode": "humanities",
+      "q": "위도는 남북 위치를 나타낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "위도=남북."
+    },
+    {
+      "id": "H579",
+      "mode": "humanities",
+      "q": "달력의 요일은 7일 단위로 반복된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "7일 주기."
+    },
+    {
+      "id": "H580",
+      "mode": "humanities",
+      "q": "올림픽은 국제 스포츠 대회로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "국제 대회."
+    },
+    {
+      "id": "S570",
+      "mode": "science",
+      "q": "거울은 빛을 반사한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "반사."
+    },
+    {
+      "id": "H581",
+      "mode": "humanities",
+      "q": "인도네시아의 수도는?",
+      "choices": [
+        "부다페스트",
+        "자카르타"
+      ],
+      "answer": 1,
+      "explain": "인도네시아 수도는 자카르타."
+    },
+    {
+      "id": "S571",
+      "mode": "science",
+      "q": "물질량의 단위로 배우는 것은?",
+      "choices": [
+        "몰(mol)",
+        "헤르츠(Hz)"
+      ],
+      "answer": 0,
+      "explain": "물질량 단위 예시야."
+    },
+    {
+      "id": "S572",
+      "mode": "science",
+      "q": "킬로(kilo-)는 1000배를 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "10^3."
+    },
+    {
+      "id": "S573",
+      "mode": "science",
+      "q": "'kilo'는 몇 배?",
+      "choices": [
+        "1/1000배",
+        "1000배"
+      ],
+      "answer": 1,
+      "explain": "kilo=1000배."
+    },
+    {
+      "id": "H582",
+      "mode": "humanities",
+      "q": "대한민국의 국기 이름은?",
+      "choices": [
+        "태극기",
+        "무궁화"
+      ],
+      "answer": 0,
+      "explain": "국기=태극기."
+    },
+    {
+      "id": "S574",
+      "mode": "science",
+      "q": "1g는 1000mg이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1g=1000mg."
+    },
+    {
+      "id": "H583",
+      "mode": "humanities",
+      "q": "로마자는 라틴 알파벳을 이용한 표기다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "라틴 문자 기반."
+    },
+    {
+      "id": "S575",
+      "mode": "science",
+      "q": "물의 화학식은 H2O로 쓴다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "물=H2O."
+    },
+    {
+      "id": "S576",
+      "mode": "science",
+      "q": "철을 끌어당길 수 있는 것은?",
+      "choices": [
+        "자석",
+        "종이"
+      ],
+      "answer": 0,
+      "explain": "자석은 철."
+    },
+    {
+      "id": "S577",
+      "mode": "science",
+      "q": "전류 단위는?",
+      "choices": [
+        "암페어(A)",
+        "와트(W)"
+      ],
+      "answer": 0,
+      "explain": "전류=A."
+    },
+    {
+      "id": "H584",
+      "mode": "humanities",
+      "q": "인구밀도의 의미는?",
+      "choices": [
+        "시간당 거리",
+        "면적당 인구"
+      ],
+      "answer": 1,
+      "explain": "면적 대비 인구."
+    },
+    {
+      "id": "S578",
+      "mode": "science",
+      "q": "나노(nano-)는 1/1,000,000,000을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "10^-9."
+    },
+    {
+      "id": "S579",
+      "mode": "science",
+      "q": "밀리(milli-)는 1/1000을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "10^-3."
+    },
+    {
+      "id": "H585",
+      "mode": "humanities",
+      "q": "사전은 단어의 뜻을 찾는 데 도움을 준다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "단어 뜻을 찾아."
+    },
+    {
+      "id": "S580",
+      "mode": "science",
+      "q": "섭씨 온도는 ℃로 표시한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "℃를 써."
+    },
+    {
+      "id": "H586",
+      "mode": "humanities",
+      "q": "파키스탄의 수도는?",
+      "choices": [
+        "오타와",
+        "이슬라마바드"
+      ],
+      "answer": 1,
+      "explain": "파키스탄 수도는 이슬라마바드."
+    },
+    {
+      "id": "S581",
+      "mode": "science",
+      "q": "질소 분자는 N2로 쓴다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "N2."
+    },
+    {
+      "id": "S582",
+      "mode": "science",
+      "q": "1kg는 몇 g?",
+      "choices": [
+        "100g",
+        "1000g"
+      ],
+      "answer": 1,
+      "explain": "1kg=1000g."
+    },
+    {
+      "id": "H587",
+      "mode": "humanities",
+      "q": "피카소는 20세기 미술가로 자주 언급된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "현대미술에서 유명."
+    },
+    {
+      "id": "S583",
+      "mode": "science",
+      "q": "먼 것을 관찰하는 도구는?",
+      "choices": [
+        "저울",
+        "망원경"
+      ],
+      "answer": 1,
+      "explain": "망원경."
+    },
+    {
+      "id": "H588",
+      "mode": "humanities",
+      "q": "적도는 지구를 남반구와 북반구로 나누는 기준선이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "적도는 남북을 나눠."
+    },
+    {
+      "id": "H589",
+      "mode": "humanities",
+      "q": "박물관은 유물·자료를 전시하기도 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "유물/자료 전시."
+    },
+    {
+      "id": "H590",
+      "mode": "humanities",
+      "q": "러시아의 수도는?",
+      "choices": [
+        "모스크바",
+        "서울"
+      ],
+      "answer": 0,
+      "explain": "러시아 수도는 모스크바."
+    },
+    {
+      "id": "S584",
+      "mode": "science",
+      "q": "자외선은 가시광선보다 파장이 짧다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "자외선=짧음."
+    },
+    {
+      "id": "H591",
+      "mode": "humanities",
+      "q": "유럽의 예술사에서 르네상스는 중요한 흐름 중 하나다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "예술사 흐름."
+    },
+    {
+      "id": "H592",
+      "mode": "humanities",
+      "q": "오스트리아의 수도는 빈이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "오스트리아 수도는 빈."
+    },
+    {
+      "id": "H593",
+      "mode": "humanities",
+      "q": "약속을 문서로 남긴 것은?",
+      "choices": [
+        "지도",
+        "계약서"
+      ],
+      "answer": 1,
+      "explain": "계약서."
+    },
+    {
+      "id": "H594",
+      "mode": "humanities",
+      "q": "단어 뜻을 찾는 책은?",
+      "choices": [
+        "악보",
+        "사전"
+      ],
+      "answer": 1,
+      "explain": "사전에서 뜻을 찾아."
+    },
+    {
+      "id": "S585",
+      "mode": "science",
+      "q": "헤르츠(Hz)는 주파수의 단위다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "주파수 단위 Hz."
+    },
+    {
+      "id": "S586",
+      "mode": "science",
+      "q": "망원경은 먼 물체를 보기 좋게 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "원거리 관측."
+    },
+    {
+      "id": "S587",
+      "mode": "science",
+      "q": "적외선은 가시광선보다?",
+      "choices": [
+        "파장이 길다",
+        "파장이 짧다"
+      ],
+      "answer": 0,
+      "explain": "적외선은 더 길어."
+    },
+    {
+      "id": "H595",
+      "mode": "humanities",
+      "q": "다음 중 문학 장르는?",
+      "choices": [
+        "소설",
+        "전압"
+      ],
+      "answer": 0,
+      "explain": "문학 장르야."
+    },
+    {
+      "id": "S588",
+      "mode": "science",
+      "q": "기체는 보통 일정한 모양이 없다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "용기 따라."
+    },
+    {
+      "id": "H596",
+      "mode": "humanities",
+      "q": "신문은 시사 정보를 전달하는 매체다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "뉴스 전달."
+    },
+    {
+      "id": "S589",
+      "mode": "science",
+      "q": "전기량는 쿨롬(C) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전기량 단위 예시로 쿨롬(C)."
+    },
+    {
+      "id": "S590",
+      "mode": "science",
+      "q": "소리는 매질이 있어야 전파된다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "진공에선 안 돼."
+    },
+    {
+      "id": "S591",
+      "mode": "science",
+      "q": "MP3는 오디오 파일 형식이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "오디오 형식."
+    },
+    {
+      "id": "S592",
+      "mode": "science",
+      "q": "고체는 보통 일정한 모양을 유지하려는 성질이 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "모양 유지."
+    },
+    {
+      "id": "S593",
+      "mode": "science",
+      "q": "질량의 단위로 배우는 것은?",
+      "choices": [
+        "킬로그램(kg)",
+        "헤르츠(Hz)"
+      ],
+      "answer": 0,
+      "explain": "질량 단위 예시야."
+    },
+    {
+      "id": "H597",
+      "mode": "humanities",
+      "q": "노르웨이의 수도는?",
+      "choices": [
+        "자카르타",
+        "오슬로"
+      ],
+      "answer": 1,
+      "explain": "노르웨이 수도는 오슬로."
+    },
+    {
+      "id": "H598",
+      "mode": "humanities",
+      "q": "국제 스포츠 대회로 유명한 것은?",
+      "choices": [
+        "정기검진",
+        "올림픽"
+      ],
+      "answer": 1,
+      "explain": "국제 대회."
+    },
+    {
+      "id": "S594",
+      "mode": "science",
+      "q": "시간의 단위로 배우는 것은?",
+      "choices": [
+        "헤르츠(Hz)",
+        "초(s)"
+      ],
+      "answer": 1,
+      "explain": "시간 단위 예시야."
+    },
+    {
+      "id": "H599",
+      "mode": "humanities",
+      "q": "페루의 수도는?",
+      "choices": [
+        "산티아고",
+        "리마"
+      ],
+      "answer": 1,
+      "explain": "페루 수도는 리마."
+    },
+    {
+      "id": "H600",
+      "mode": "humanities",
+      "q": "뉴스를 전달하는 매체는?",
+      "choices": [
+        "신문",
+        "온도계"
+      ],
+      "answer": 0,
+      "explain": "시사 전달."
+    },
+    {
+      "id": "S595",
+      "mode": "science",
+      "q": "물질량는 몰(mol) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "물질량 단위 예시로 몰(mol)."
+    },
+    {
+      "id": "H601",
+      "mode": "humanities",
+      "q": "영화의 '감독'은 작품의 연출을 맡는다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "연출 역할."
+    },
+    {
+      "id": "H602",
+      "mode": "humanities",
+      "q": "라틴 알파벳 표기와 관련된 것은?",
+      "choices": [
+        "유전자",
+        "로마자"
+      ],
+      "answer": 1,
+      "explain": "라틴 문자."
+    },
+    {
+      "id": "S596",
+      "mode": "science",
+      "q": "마이크로(micro-)는 1/1,000,000을 뜻한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "10^-6."
+    },
+    {
+      "id": "S597",
+      "mode": "science",
+      "q": "현미경은 작은 것을 확대해 관찰한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "확대 관찰."
+    },
+    {
+      "id": "H603",
+      "mode": "humanities",
+      "q": "국민이 주권을 가지는 정치 형태는?",
+      "choices": [
+        "군주제",
+        "민주주의"
+      ],
+      "answer": 1,
+      "explain": "민주주의."
+    },
+    {
+      "id": "H604",
+      "mode": "humanities",
+      "q": "남북 위치를 나타내는 것은?",
+      "choices": [
+        "경도",
+        "위도"
+      ],
+      "answer": 1,
+      "explain": "위도=남북."
+    },
+    {
+      "id": "H605",
+      "mode": "humanities",
+      "q": "판소리는 소리꾼과 고수가 함께 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "북 치는 고수와 소리꾼."
+    },
+    {
+      "id": "S598",
+      "mode": "science",
+      "q": "1바(bar)는 대기압과 비슷한 크기로 쓰이기도 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "bar는 압력 단위 중 하나야."
+    },
+    {
+      "id": "S599",
+      "mode": "science",
+      "q": "저항 단위는?",
+      "choices": [
+        "뉴턴(N)",
+        "옴(Ω)"
+      ],
+      "answer": 1,
+      "explain": "저항=Ω."
+    },
+    {
+      "id": "S600",
+      "mode": "science",
+      "q": "뉴턴(N)은 힘의 단위다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "힘 단위 N."
+    },
+    {
+      "id": "S601",
+      "mode": "science",
+      "q": "밝기는 칸델라(cd) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "밝기 단위 예시로 칸델라(cd)."
+    },
+    {
+      "id": "H606",
+      "mode": "humanities",
+      "q": "윤년의 2월은 29일까지 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "윤년엔 29일."
+    },
+    {
+      "id": "S602",
+      "mode": "science",
+      "q": "1kg는 1000g이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1kg=1000g."
+    },
+    {
+      "id": "H607",
+      "mode": "humanities",
+      "q": "파키스탄의 수도는 이슬라마바드이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "파키스탄 수도는 이슬라마바드."
+    },
+    {
+      "id": "S603",
+      "mode": "science",
+      "q": "1g는 몇 mg?",
+      "choices": [
+        "1000mg",
+        "100mg"
+      ],
+      "answer": 0,
+      "explain": "1g=1000mg."
+    },
+    {
+      "id": "S604",
+      "mode": "science",
+      "q": "pH 7은 중성이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "pH 7 중성."
+    },
+    {
+      "id": "S605",
+      "mode": "science",
+      "q": "pH 7은 어떤 성질?",
+      "choices": [
+        "중성",
+        "산성"
+      ],
+      "answer": 0,
+      "explain": "pH 7 중성."
+    },
+    {
+      "id": "H608",
+      "mode": "humanities",
+      "q": "물음표(?)는 질문을 나타낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "질문 표지."
+    },
+    {
+      "id": "S606",
+      "mode": "science",
+      "q": "원소기호 Fe는 철이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "Fe=철."
+    },
+    {
+      "id": "H609",
+      "mode": "humanities",
+      "q": "독일의 수도는?",
+      "choices": [
+        "서울",
+        "베를린"
+      ],
+      "answer": 1,
+      "explain": "독일 수도는 베를린."
+    },
+    {
+      "id": "H610",
+      "mode": "humanities",
+      "q": "포르투갈의 수도는?",
+      "choices": [
+        "리스본",
+        "브라질리아"
+      ],
+      "answer": 0,
+      "explain": "포르투갈 수도는 리스본."
+    },
+    {
+      "id": "H611",
+      "mode": "humanities",
+      "q": "저작권이 보호하는 것은?",
+      "choices": [
+        "기온",
+        "창작물"
+      ],
+      "answer": 1,
+      "explain": "창작물 권리."
+    },
+    {
+      "id": "H612",
+      "mode": "humanities",
+      "q": "방글라데시의 수도는 다카이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "방글라데시 수도는 다카."
+    },
+    {
+      "id": "H613",
+      "mode": "humanities",
+      "q": "오스트리아의 수도는?",
+      "choices": [
+        "암스테르담",
+        "빈"
+      ],
+      "answer": 1,
+      "explain": "오스트리아 수도는 빈."
+    },
+    {
+      "id": "S607",
+      "mode": "science",
+      "q": "원소기호 Ag는 은이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "Ag=은."
+    },
+    {
+      "id": "H614",
+      "mode": "humanities",
+      "q": "‘별이 빛나는 밤’의 작가로 알려진 인물은?",
+      "choices": [
+        "빈센트 반 고흐",
+        "클로드 모네"
+      ],
+      "answer": 0,
+      "explain": "반 고흐 작품으로 알려져 있어."
+    },
+    {
+      "id": "H615",
+      "mode": "humanities",
+      "q": "다음 중 문장 부호는?",
+      "choices": [
+        "나침반",
+        "쉼표(,)"
+      ],
+      "answer": 1,
+      "explain": "쉼표는 부호."
+    },
+    {
+      "id": "H616",
+      "mode": "humanities",
+      "q": "소설은 이야기를 글로 풀어낸 문학 형식이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "문학 장르."
+    },
+    {
+      "id": "S608",
+      "mode": "science",
+      "q": "물의 어는점(1기압)은?",
+      "choices": [
+        "0℃",
+        "100℃"
+      ],
+      "answer": 0,
+      "explain": "0℃는 어는점."
+    },
+    {
+      "id": "H617",
+      "mode": "humanities",
+      "q": "방글라데시의 수도는?",
+      "choices": [
+        "다카",
+        "싱가포르"
+      ],
+      "answer": 0,
+      "explain": "방글라데시 수도는 다카."
+    },
+    {
+      "id": "S609",
+      "mode": "science",
+      "q": "줄(J)은 에너지의 단위다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "에너지 단위 J."
+    },
+    {
+      "id": "H618",
+      "mode": "humanities",
+      "q": "경도는 동서 위치를 나타낸다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "경도=동서."
+    },
+    {
+      "id": "S610",
+      "mode": "science",
+      "q": "섭씨 0℃는 물의 어는점(1기압)으로 배운다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "0℃는 어는점."
+    },
+    {
+      "id": "H619",
+      "mode": "humanities",
+      "q": "국회는 법을 만드는 기관이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "입법 기관."
+    },
+    {
+      "id": "H620",
+      "mode": "humanities",
+      "q": "몽골의 수도는?",
+      "choices": [
+        "울란바토르",
+        "하노이"
+      ],
+      "answer": 0,
+      "explain": "몽골 수도는 울란바토르."
+    },
+    {
+      "id": "H621",
+      "mode": "humanities",
+      "q": "핀란드의 수도는?",
+      "choices": [
+        "베를린",
+        "헬싱키"
+      ],
+      "answer": 1,
+      "explain": "핀란드 수도는 헬싱키."
+    },
+    {
+      "id": "H622",
+      "mode": "humanities",
+      "q": "한글은 세종대왕 때 창제되었다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "훈민정음(한글)은 세종대왕 때 만들어졌어."
+    },
+    {
+      "id": "H623",
+      "mode": "humanities",
+      "q": "회의 내용을 기록한 문서는?",
+      "choices": [
+        "회의록",
+        "시간표"
+      ],
+      "answer": 0,
+      "explain": "회의록."
+    },
+    {
+      "id": "H624",
+      "mode": "humanities",
+      "q": "발레는 어떤 공연에 가까울까?",
+      "choices": [
+        "무용",
+        "용접"
+      ],
+      "answer": 0,
+      "explain": "무용 공연."
+    },
+    {
+      "id": "S611",
+      "mode": "science",
+      "q": "SSD는 저장장치의 한 종류다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "저장장치."
+    },
+    {
+      "id": "H625",
+      "mode": "humanities",
+      "q": "오스트레일리아의 수도는 캔버라이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "오스트레일리아 수도는 캔버라."
+    },
+    {
+      "id": "S612",
+      "mode": "science",
+      "q": "이산화탄소의 화학식은 CO2로 쓴다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "CO2."
+    },
+    {
+      "id": "H626",
+      "mode": "humanities",
+      "q": "발레는 공연 예술의 한 장르다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "무용 공연."
+    },
+    {
+      "id": "H627",
+      "mode": "humanities",
+      "q": "조선의 수도로 알려진 곳은?",
+      "choices": [
+        "한양",
+        "도쿄"
+      ],
+      "answer": 0,
+      "explain": "한양(서울)."
+    },
+    {
+      "id": "H628",
+      "mode": "humanities",
+      "q": "아르헨티나의 수도는?",
+      "choices": [
+        "부에노스아이레스",
+        "암스테르담"
+      ],
+      "answer": 0,
+      "explain": "아르헨티나 수도는 부에노스아이레스."
+    },
+    {
+      "id": "S613",
+      "mode": "science",
+      "q": "CPU는 컴퓨터의 처리 장치로 불린다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "중앙처리장치."
+    },
+    {
+      "id": "S614",
+      "mode": "science",
+      "q": "온도는 섭씨(℃) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "온도 단위 예시로 섭씨(℃)."
+    },
+    {
+      "id": "S615",
+      "mode": "science",
+      "q": "1m는 몇 cm?",
+      "choices": [
+        "10cm",
+        "100cm"
+      ],
+      "answer": 1,
+      "explain": "1m=100cm."
+    },
+    {
+      "id": "H629",
+      "mode": "humanities",
+      "q": "주소 구분에 도움이 되는 것은?",
+      "choices": [
+        "우편번호",
+        "주파수"
+      ],
+      "answer": 0,
+      "explain": "주소 구분."
+    },
+    {
+      "id": "H630",
+      "mode": "humanities",
+      "q": "느낌표(!)는 무엇에 가까울까?",
+      "choices": [
+        "부피",
+        "강조/감탄"
+      ],
+      "answer": 1,
+      "explain": "강조 표시."
+    },
+    {
+      "id": "H631",
+      "mode": "humanities",
+      "q": "콜롬비아의 수도는?",
+      "choices": [
+        "보고타",
+        "리마"
+      ],
+      "answer": 0,
+      "explain": "콜롬비아 수도는 보고타."
+    },
+    {
+      "id": "H632",
+      "mode": "humanities",
+      "q": "입법을 담당하는 기관은?",
+      "choices": [
+        "법원",
+        "국회"
+      ],
+      "answer": 1,
+      "explain": "국회가 법을 만들어."
+    },
+    {
+      "id": "S616",
+      "mode": "science",
+      "q": "영상/음성 전송 규격은?",
+      "choices": [
+        "Hz",
+        "HDMI"
+      ],
+      "answer": 1,
+      "explain": "HDMI는 전송."
+    },
+    {
+      "id": "S617",
+      "mode": "science",
+      "q": "자외선은 가시광선보다?",
+      "choices": [
+        "파장이 짧다",
+        "파장이 길다"
+      ],
+      "answer": 0,
+      "explain": "자외선은 더 짧아."
+    },
+    {
+      "id": "H633",
+      "mode": "humanities",
+      "q": "태극기는 대한민국의 국기다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "국기 이름은 태극기."
+    },
+    {
+      "id": "H634",
+      "mode": "humanities",
+      "q": "희곡 작가로 널리 알려진 인물은?",
+      "choices": [
+        "아인슈타인",
+        "셰익스피어"
+      ],
+      "answer": 1,
+      "explain": "셰익스피어는 희곡 작가."
+    },
+    {
+      "id": "S618",
+      "mode": "science",
+      "q": "와트(W)는 전력의 단위다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전력 단위 W."
+    },
+    {
+      "id": "H635",
+      "mode": "humanities",
+      "q": "뮤지컬은 보통 무엇이 결합?",
+      "choices": [
+        "측정+계산",
+        "노래+연기"
+      ],
+      "answer": 1,
+      "explain": "노래와 연기."
+    },
+    {
+      "id": "H636",
+      "mode": "humanities",
+      "q": "물음표(?)는 무엇을 나타낼까?",
+      "choices": [
+        "속도",
+        "질문"
+      ],
+      "answer": 1,
+      "explain": "질문 표지."
+    },
+    {
+      "id": "H637",
+      "mode": "humanities",
+      "q": "민주주의는 국민이 주권을 가진 정치 형태다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "국민 주권."
+    },
+    {
+      "id": "H638",
+      "mode": "humanities",
+      "q": "조선은 한양(서울)을 수도로 삼았다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "한양을 수도로."
+    },
+    {
+      "id": "H639",
+      "mode": "humanities",
+      "q": "벨기에의 수도는?",
+      "choices": [
+        "리스본",
+        "브뤼셀"
+      ],
+      "answer": 1,
+      "explain": "벨기에 수도는 브뤼셀."
+    },
+    {
+      "id": "H640",
+      "mode": "humanities",
+      "q": "스페인의 수도는?",
+      "choices": [
+        "서울",
+        "마드리드"
+      ],
+      "answer": 1,
+      "explain": "스페인 수도는 마드리드."
+    },
+    {
+      "id": "H641",
+      "mode": "humanities",
+      "q": "베토벤은 고전주의·낭만주의를 잇는 작곡가로 유명하다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "베토벤은 유명한 작곡가야."
+    },
+    {
+      "id": "H642",
+      "mode": "humanities",
+      "q": "‘모나리자’의 작가로 알려진 인물은?",
+      "choices": [
+        "레오나르도 다 빈치",
+        "미켈란젤로"
+      ],
+      "answer": 0,
+      "explain": "다 빈치 작품으로 알려져 있어."
+    },
+    {
+      "id": "H643",
+      "mode": "humanities",
+      "q": "지도에서 범례는 기호의 뜻을 설명한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "기호 설명."
+    },
+    {
+      "id": "H644",
+      "mode": "humanities",
+      "q": "윤년 2월의 날짜는?",
+      "choices": [
+        "30일",
+        "29일"
+      ],
+      "answer": 1,
+      "explain": "윤년 2월은 29일."
+    },
+    {
+      "id": "H645",
+      "mode": "humanities",
+      "q": "오케스트라에 가까운 것은?",
+      "choices": [
+        "단독 독창",
+        "관현악단"
+      ],
+      "answer": 1,
+      "explain": "여러 악기 연주."
+    },
+    {
+      "id": "S619",
+      "mode": "science",
+      "q": "웹 주소와 관련된 것은?",
+      "choices": [
+        "DNA",
+        "URL"
+      ],
+      "answer": 1,
+      "explain": "URL은 주소."
+    },
+    {
+      "id": "S620",
+      "mode": "science",
+      "q": "자석은 철 같은 물질을 끌어당길 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "자성."
+    },
+    {
+      "id": "H646",
+      "mode": "humanities",
+      "q": "태국의 수도는?",
+      "choices": [
+        "방콕",
+        "서울"
+      ],
+      "answer": 0,
+      "explain": "태국 수도는 방콕."
+    },
+    {
+      "id": "H647",
+      "mode": "humanities",
+      "q": "악보는 음악을 기호로 기록한 것이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "음 높이·리듬 등을 적어."
+    },
+    {
+      "id": "S621",
+      "mode": "science",
+      "q": "시간는 초(s) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "시간 단위 예시로 초(s)."
+    },
+    {
+      "id": "S622",
+      "mode": "science",
+      "q": "오디오 파일 형식은?",
+      "choices": [
+        "PNG",
+        "MP3"
+      ],
+      "answer": 1,
+      "explain": "MP3는 오디오."
+    },
+    {
+      "id": "S623",
+      "mode": "science",
+      "q": "염기성 용액의 pH는 7보다 큰 편이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "염기성>7."
+    },
+    {
+      "id": "H648",
+      "mode": "humanities",
+      "q": "정부는 행정을 수행하는 역할을 한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "행정 수행."
+    },
+    {
+      "id": "H649",
+      "mode": "humanities",
+      "q": "판소리에서 북을 치는 사람은?",
+      "choices": [
+        "고수",
+        "화가"
+      ],
+      "answer": 0,
+      "explain": "북 치는 고수."
+    },
+    {
+      "id": "S624",
+      "mode": "science",
+      "q": "길이는 미터(m) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "길이 단위 예시로 미터(m)."
+    },
+    {
+      "id": "H650",
+      "mode": "humanities",
+      "q": "체코의 수도는?",
+      "choices": [
+        "프라하",
+        "로마"
+      ],
+      "answer": 0,
+      "explain": "체코 수도는 프라하."
+    },
+    {
+      "id": "H651",
+      "mode": "humanities",
+      "q": "영국의 수도는?",
+      "choices": [
+        "런던",
+        "서울"
+      ],
+      "answer": 0,
+      "explain": "영국 수도는 런던."
+    },
+    {
+      "id": "H652",
+      "mode": "humanities",
+      "q": "다음 중 전시 공간은?",
+      "choices": [
+        "정수장",
+        "미술관"
+      ],
+      "answer": 1,
+      "explain": "미술 작품 전시."
+    },
+    {
+      "id": "S625",
+      "mode": "science",
+      "q": "리터(L)는 부피 단위로 쓰인다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "부피 단위 L."
+    },
+    {
+      "id": "S626",
+      "mode": "science",
+      "q": "1cm는 몇 mm?",
+      "choices": [
+        "10mm",
+        "100mm"
+      ],
+      "answer": 0,
+      "explain": "1cm=10mm."
+    },
+    {
+      "id": "H653",
+      "mode": "humanities",
+      "q": "법원은 재판을 담당하는 기관이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "사법 기관."
+    },
+    {
+      "id": "S627",
+      "mode": "science",
+      "q": "섭씨 100℃는 물의 끓는점(1기압)으로 배운다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "100℃는 끓는점."
+    },
+    {
+      "id": "H654",
+      "mode": "humanities",
+      "q": "다음 중 예술 분야는?",
+      "choices": [
+        "배관",
+        "회화"
+      ],
+      "answer": 1,
+      "explain": "회화는 미술."
+    },
+    {
+      "id": "H655",
+      "mode": "humanities",
+      "q": "개인정보 보호가 필요한 이유에 가까운 것은?",
+      "choices": [
+        "사생활/보안",
+        "습도"
+      ],
+      "answer": 0,
+      "explain": "보안 문제."
+    },
+    {
+      "id": "H656",
+      "mode": "humanities",
+      "q": "미술관은 주로 미술 작품을 전시한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "미술 작품 전시."
+    },
+    {
+      "id": "S628",
+      "mode": "science",
+      "q": "물의 끓는점(1기압)은?",
+      "choices": [
+        "100℃",
+        "0℃"
+      ],
+      "answer": 0,
+      "explain": "100℃는 끓는점."
+    },
+    {
+      "id": "S629",
+      "mode": "science",
+      "q": "'milli'는 무엇을 뜻할까?",
+      "choices": [
+        "1/1000",
+        "1000"
+      ],
+      "answer": 0,
+      "explain": "milli=10^-3."
+    },
+    {
+      "id": "H657",
+      "mode": "humanities",
+      "q": "회의록은 회의 내용을 기록한 문서다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "회의 기록."
+    },
+    {
+      "id": "H658",
+      "mode": "humanities",
+      "q": "싱가포르의 수도는?",
+      "choices": [
+        "바르샤바",
+        "싱가포르"
+      ],
+      "answer": 1,
+      "explain": "싱가포르 수도는 싱가포르."
+    },
+    {
+      "id": "S630",
+      "mode": "science",
+      "q": "'nano'는 무엇을 뜻할까?",
+      "choices": [
+        "1/1,000,000,000",
+        "1/1000"
+      ],
+      "answer": 0,
+      "explain": "nano=10^-9."
+    },
+    {
+      "id": "H659",
+      "mode": "humanities",
+      "q": "베트남의 수도는?",
+      "choices": [
+        "하노이",
+        "서울"
+      ],
+      "answer": 0,
+      "explain": "베트남 수도는 하노이."
+    },
+    {
+      "id": "H660",
+      "mode": "humanities",
+      "q": "다음 중 공연 예술은?",
+      "choices": [
+        "연극",
+        "전기공학"
+      ],
+      "answer": 0,
+      "explain": "연극은 공연."
+    },
+    {
+      "id": "H661",
+      "mode": "humanities",
+      "q": "계약서는 약속 내용을 문서로 남긴 것이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "약속의 문서화."
+    },
+    {
+      "id": "H662",
+      "mode": "humanities",
+      "q": "저작권은 창작물의 권리를 보호한다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "창작물 보호."
+    },
+    {
+      "id": "H663",
+      "mode": "humanities",
+      "q": "느낌표(!)는 감탄이나 강조에 쓰인다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "강조/감탄."
+    },
+    {
+      "id": "S631",
+      "mode": "science",
+      "q": "소리가 전파되려면 필요한 것은?",
+      "choices": [
+        "매질",
+        "진공"
+      ],
+      "answer": 0,
+      "explain": "소리는 매질 필요."
+    },
+    {
+      "id": "S632",
+      "mode": "science",
+      "q": "진공에서 전파될 수 있는 것은?",
+      "choices": [
+        "빛",
+        "소리"
+      ],
+      "answer": 0,
+      "explain": "빛은 진공에서도 전파."
+    },
+    {
+      "id": "H664",
+      "mode": "humanities",
+      "q": "모나리자는 레오나르도 다 빈치의 작품으로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "대표작으로 알려져 있어."
+    },
+    {
+      "id": "S633",
+      "mode": "science",
+      "q": "전기량의 단위로 배우는 것은?",
+      "choices": [
+        "헤르츠(Hz)",
+        "쿨롬(C)"
+      ],
+      "answer": 1,
+      "explain": "전기량 단위 예시야."
+    },
+    {
+      "id": "S634",
+      "mode": "science",
+      "q": "산성 용액의 pH는 7보다 작은 편이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "산성<7."
+    },
+    {
+      "id": "H665",
+      "mode": "humanities",
+      "q": "시(詩)는 운율이나 함축을 활용하는 문학 형식이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "함축적 표현."
+    },
+    {
+      "id": "S635",
+      "mode": "science",
+      "q": "적외선은 가시광선보다 파장이 길다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "적외선=길음."
+    },
+    {
+      "id": "H666",
+      "mode": "humanities",
+      "q": "영화에서 연출을 맡는 역할은?",
+      "choices": [
+        "기상캐스터",
+        "감독"
+      ],
+      "answer": 1,
+      "explain": "연출=감독."
+    },
+    {
+      "id": "H667",
+      "mode": "humanities",
+      "q": "동서 위치를 나타내는 것은?",
+      "choices": [
+        "위도",
+        "경도"
+      ],
+      "answer": 1,
+      "explain": "경도=동서."
+    },
+    {
+      "id": "H668",
+      "mode": "humanities",
+      "q": "사우디아라비아의 수도는?",
+      "choices": [
+        "빈",
+        "리야드"
+      ],
+      "answer": 1,
+      "explain": "사우디아라비아 수도는 리야드."
+    },
+    {
+      "id": "H669",
+      "mode": "humanities",
+      "q": "관용구는 문자 그대로의 뜻과 다를 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "비유 표현."
+    },
+    {
+      "id": "H670",
+      "mode": "humanities",
+      "q": "아랍에미리트의 수도는?",
+      "choices": [
+        "아부다비",
+        "더블린"
+      ],
+      "answer": 0,
+      "explain": "아랍에미리트 수도는 아부다비."
+    },
+    {
+      "id": "S636",
+      "mode": "science",
+      "q": "HDMI는 영상과 음성을 전송할 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "영상/음성 전송."
+    },
+    {
+      "id": "S637",
+      "mode": "science",
+      "q": "'micro'는 무엇을 뜻할까?",
+      "choices": [
+        "1/100",
+        "1/1,000,000"
+      ],
+      "answer": 1,
+      "explain": "micro=10^-6."
+    },
+    {
+      "id": "H671",
+      "mode": "humanities",
+      "q": "몽골의 수도는 울란바토르이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "몽골 수도는 울란바토르."
+    },
+    {
+      "id": "H672",
+      "mode": "humanities",
+      "q": "덴마크의 수도는?",
+      "choices": [
+        "코펜하겐",
+        "리스본"
+      ],
+      "answer": 0,
+      "explain": "덴마크 수도는 코펜하겐."
+    },
+    {
+      "id": "S638",
+      "mode": "science",
+      "q": "1cm는 10mm다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "1cm=10mm."
+    },
+    {
+      "id": "S639",
+      "mode": "science",
+      "q": "부피 단위로 가까운 것은?",
+      "choices": [
+        "암페어(A)",
+        "리터(L)"
+      ],
+      "answer": 1,
+      "explain": "L는 부피."
+    },
+    {
+      "id": "H673",
+      "mode": "humanities",
+      "q": "멕시코의 수도는?",
+      "choices": [
+        "멕시코시티",
+        "서울"
+      ],
+      "answer": 0,
+      "explain": "멕시코 수도는 멕시코시티."
+    },
+    {
+      "id": "S640",
+      "mode": "science",
+      "q": "온도의 단위로 배우는 것은?",
+      "choices": [
+        "헤르츠(Hz)",
+        "섭씨(℃)"
+      ],
+      "answer": 1,
+      "explain": "온도 단위 예시야."
+    },
+    {
+      "id": "H674",
+      "mode": "humanities",
+      "q": "연극은 무대에서 배우들이 연기하는 공연 예술이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "무대 공연 예술."
+    },
+    {
+      "id": "S641",
+      "mode": "science",
+      "q": "염기성 용액의 pH는 보통?",
+      "choices": [
+        "7보다 크다",
+        "7보다 작다"
+      ],
+      "answer": 0,
+      "explain": "염기성>7."
+    },
+    {
+      "id": "H675",
+      "mode": "humanities",
+      "q": "무궁화는 대한민국의 국화로 알려져 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "국화로 널리 알려져 있어."
+    },
+    {
+      "id": "S642",
+      "mode": "science",
+      "q": "질량는 킬로그램(kg) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "질량 단위 예시로 킬로그램(kg)."
+    },
+    {
+      "id": "S643",
+      "mode": "science",
+      "q": "산성 용액의 pH는 보통?",
+      "choices": [
+        "7보다 작다",
+        "7보다 크다"
+      ],
+      "answer": 0,
+      "explain": "산성<7."
+    },
+    {
+      "id": "H676",
+      "mode": "humanities",
+      "q": "네덜란드의 수도는?",
+      "choices": [
+        "서울",
+        "암스테르담"
+      ],
+      "answer": 1,
+      "explain": "네덜란드 수도는 암스테르담."
+    },
+    {
+      "id": "S644",
+      "mode": "science",
+      "q": "전하는 쿨롬(C) 같은 단위로 나타낼 수 있다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "전하 단위 예시로 쿨롬(C)."
+    },
+    {
+      "id": "H677",
+      "mode": "humanities",
+      "q": "뮤지컬은 노래와 연기가 결합된 공연이다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "노래+연기."
+    },
+    {
+      "id": "S645",
+      "mode": "science",
+      "q": "무게를 재는 도구는?",
+      "choices": [
+        "저울",
+        "망원경"
+      ],
+      "answer": 0,
+      "explain": "저울로 측정."
+    },
+    {
+      "id": "S646",
+      "mode": "science",
+      "q": "물의 상태 중 용기 모양을 따르는 것은?",
+      "choices": [
+        "고체",
+        "액체"
+      ],
+      "answer": 1,
+      "explain": "액체는 용기 따라."
+    },
+    {
+      "id": "H678",
+      "mode": "humanities",
+      "q": "인사말로 '안녕하세요'는 자주 쓰인다.",
+      "choices": [
+        "O",
+        "X"
+      ],
+      "answer": 0,
+      "explain": "인사말이야."
+    },
+    {
+      "id": "H679",
+      "mode": "humanities",
+      "q": "거래 증빙에 도움 되는 것은?",
+      "choices": [
+        "자석",
+        "영수증"
+      ],
+      "answer": 1,
+      "explain": "영수증은 증빙."
     }
   ]
 }
