@@ -10,117 +10,203 @@
   <link rel="icon" href="data:," />
   <style>
     :root{
-      --bg:#f5f6f8; --card:#fff; --text:#111; --muted:#666; --line:#e6e8ee;
-      --accent:#2b6cff; --bad:#d12f2f; --good:#0f8a3c;
+      --bg:#f5f6f8;
+      --card:#fff;
+      --text:#111;
+      --muted:#6b7280;
+      --line:#e6e8ee;
+      --accent:#2b6cff;
+      --good:#16a34a;
+      --bad:#ef4444;
       --shadow: 0 10px 30px rgba(0,0,0,.08);
       --radius: 16px;
     }
     *{box-sizing:border-box}
     body{
-      margin:0; background:var(--bg); color:var(--text);
-      font-family: "맑은 고딕", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      display:flex; justify-content:center; padding:24px;
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:"맑은 고딕", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display:flex;
+      justify-content:center;
+      padding:20px;
     }
     .app{width:min(920px, 100%);}
-    header{display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:14px;}
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:12px;
+    }
     h1{margin:0; font-size:20px; letter-spacing:-.2px}
-    .sub{color:var(--muted); font-size:13px; margin-top:2px; line-height:1.35}
-    .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px;}
-    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:12px}
-    .grid3{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px}
-    @media (max-width:860px){ .grid3{grid-template-columns:1fr} }
-    @media (max-width:720px){ .grid2{grid-template-columns:1fr} }
-    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:stretch}
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-size:12px;
+      color:var(--muted);
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:16px;
+    }
+
+    .compact{ width:min(520px, 100%); margin:0 auto; }
+    .label{font-size:12.5px; color:var(--muted); font-weight:1000; margin-bottom:6px}
+    input{
+      width:100%;
+      padding:11px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      font-size:14px;
+      outline:none;
+    }
+    input:focus{border-color:#cfd5e2; box-shadow:0 0 0 3px rgba(43,108,255,.10)}
+
+    .hr{height:1px; background:var(--line); margin:12px 0}
+    .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
     .row > *{flex:1}
     .btn{
-      appearance:none; border:1px solid var(--line); background:#fff;
-      padding:12px 12px; border-radius:12px; cursor:pointer;
-      font-weight:900; font-size:14px; transition:.15s transform, .15s background, .15s border;
-      display:flex; align-items:center; justify-content:center; gap:8px;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      padding:11px 12px;
+      border-radius:14px;
+      cursor:pointer;
+      font-weight:1000;
+      font-size:14px;
+      transition:.12s transform, .12s border;
       user-select:none;
     }
     .btn:hover{transform:translateY(-1px); border-color:#cfd5e2}
+    .btn:disabled{opacity:.7; cursor:not-allowed; transform:none}
     .btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
     .btn.ghost{background:#fff}
-    .btn.danger{background:#fff; border-color:#ffd2d2; color:var(--bad)}
-    .pill{
-      display:inline-flex; align-items:center; justify-content:center; gap:8px;
-      padding:8px 10px; border:1px solid var(--line); border-radius:999px; background:#fff;
-      font-size:13px; color:var(--muted);
-    }
-    .badge{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff;
-      font-size:12px; color:var(--muted); font-weight:900;
-    }
-    .label{font-size:13px; color:var(--muted); font-weight:900; margin-bottom:6px}
-    input{
-      width:100%; padding:12px 12px; border-radius:12px; border:1px solid var(--line);
-      font-size:15px; outline:none;
-    }
-    input:focus{border-color:#cfd5e2; box-shadow:0 0 0 3px rgba(43,108,255,.10)}
-    .hr{height:1px; background:var(--line); margin:12px 0}
-    .note{border:1px solid var(--line); border-radius:12px; padding:12px; background:#fff; line-height:1.35;}
-    .note strong{font-weight:1000}
-    .muted{color:var(--muted)}
-    .small{font-size:13px}
+    .btn.danger{border-color:#ffd2d2; color:var(--bad); background:#fff}
 
-    .lbCard{border:1px solid var(--line); border-radius:14px; padding:12px; background:#fff; min-height:120px; display:flex; flex-direction:column; gap:8px;}
+    /* Mode screen */
+    .userline{
+      font-size:12.5px;
+      color:var(--muted);
+      font-weight:900;
+      margin-bottom:10px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .grid3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px}
+    @media (max-width:860px){ .grid3{grid-template-columns:1fr} }
+
+    .modeBtn{
+      width:100%;
+      padding:14px 12px;
+      font-size:15px;
+      border-radius:16px;
+    }
+
+    .lbCard{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px;
+      background:#fff;
+      min-height:140px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
     .lbHead{display:flex; align-items:center; justify-content:space-between; gap:8px}
     .lbTitle{font-weight:1000}
+    .lbHint{font-size:12px; color:var(--muted); font-weight:900; white-space:nowrap}
     .lbList{margin:0; padding:0 0 0 18px; color:var(--muted)}
-    .lbList li{margin:4px 0}
+    .lbList li{margin:6px 0; display:flex; gap:8px; align-items:baseline}
+    .lbList .who{flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .lbList .sc{font-weight:1000; color:#111; white-space:nowrap}
 
-    .qmeta{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
-    .progress{height:10px; border-radius:999px; background:#eef1f7; overflow:hidden; border:1px solid var(--line); width:min(360px, 100%);}
+    /* Quiz screen */
+    .quizWrap{width:min(560px, 100%); margin:0 auto;}
+    .qmeta{display:flex; gap:8px; flex-wrap:wrap; justify-content:space-between; align-items:center}
+    .pill{
+      display:inline-flex; align-items:center; gap:6px;
+      padding:7px 10px; border-radius:999px;
+      border:1px solid var(--line); background:#fff;
+      font-size:12px; color:var(--muted); font-weight:900;
+      white-space:nowrap;
+    }
+    .progress{height:9px; border-radius:999px; background:#eef1f7; overflow:hidden; border:1px solid var(--line); width:min(280px, 100%);}
     .bar{height:100%; width:0%; background:var(--accent); transition:width .2s}
-    .qtext{font-size:18px; line-height:1.35; font-weight:1000; letter-spacing:-.2px; margin:8px 0 2px 0}
-    .answers{display:grid; gap:10px; margin-top:8px}
-    .choice{justify-content:flex-start; text-align:left; padding:14px 12px}
-    .choice.good{border-color:#cfeedd; background:rgba(15,138,60,.08)}
-    .choice.bad{border-color:#ffd2d2; background:rgba(209,47,47,.06)}
-    .choice:disabled{cursor:not-allowed; transform:none; opacity:.95}
+    .qtext{font-size:16px; line-height:1.35; font-weight:1000; letter-spacing:-.2px; margin:10px 0 2px 0}
+    .answers{display:grid; gap:10px; margin-top:10px}
+    .choice{width:100%; text-align:left; padding:13px 12px}
 
+    /* Modal */
+    .modalBackdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.45);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+      z-index:50;
+    }
+    .modalBackdrop.show{display:flex}
+    .modal{
+      width:min(520px, 100%);
+      border-radius:18px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow: 0 18px 60px rgba(0,0,0,.25);
+      padding:16px;
+    }
+    .modalTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:8px;
+    }
+    .modalTitle{
+      margin:0;
+      font-size:18px;
+      font-weight:1100;
+      letter-spacing:-.2px;
+    }
+    .modalTitle.good{color:var(--good)}
+    .modalTitle.bad{color:var(--bad)}
+    .modalBody{
+      color:#111;
+      line-height:1.45;
+      font-size:14px;
+    }
+    .modalBody .muted{color:var(--muted); font-size:13px; margin-top:8px}
+    .modalBtns{display:flex; gap:10px; margin-top:12px}
+    .modalBtns .btn{flex:1}
     .toast{
       position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
       background:#111; color:#fff; padding:10px 12px; border-radius:999px;
       font-size:13px; opacity:0; pointer-events:none; transition:.2s opacity;
       max-width:min(720px, calc(100% - 40px));
       white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      z-index:60;
     }
     .toast.show{opacity:1}
-  
-    /* UI v2 tweaks */
-    body{padding:20px}
-    .card{padding:16px}
-    header{margin-bottom:12px}
-    .sub{max-width:72ch}
-    .badge{gap:6px}
-    .badge span{margin-left:6px}
-    .grid3 > div{display:flex; flex-direction:column}
-    .lbCard{flex:1; min-height:140px}
-    .lbList{padding-left:20px}
-    .lbList li{display:flex; gap:8px; align-items:baseline}
-    .lbList .who{flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-    .lbList .sc{font-weight:1000; color:#111}
-    .modeBtn{padding:14px 12px; font-size:15px; border-radius:14px}
-    .modeBtn small{font-weight:900; opacity:.9}
-    .row .btn{min-width:180px}
-    .note{background:#fbfcff}
-    .note strong{display:inline-block; max-width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
-
   </style>
 </head>
 <body>
   <div class="app">
     <header>
-      <div>
-        <h1>상식퀴즈</h1>
-        <div class="sub">
-          문제당 <b>5초</b>. 맞히면 <b>+1점</b>. 한 번 틀리면 <b>바로 끝</b>.
-          <span class="muted">(정답/오답 후 한 줄 해설 → 다음 버튼)</span>
-        </div>
-      </div>
+      <h1>상식퀴즈</h1>
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
         <span class="badge">문제:<span id="qCountBadge">-</span></span>
         <span class="badge">랭킹:<span id="rankBadge">-</span></span>
@@ -128,57 +214,46 @@
     </header>
 
     <!-- Login -->
-    <section id="screenLogin" class="card">
-      <div class="label">1) 정보 입력</div>
-      <div class="grid2">
-        <div>
-          <div class="label">이름</div>
-          <input id="inpName" placeholder="예: 장재양" maxlength="30" autocomplete="name" />
-        </div>
-        <div>
-          <div class="label">출신고등학교</div>
-          <input id="inpSchool" placeholder="예: 공주고" maxlength="40" autocomplete="organization" />
-        </div>
-      </div>
+    <section id="screenLogin" class="card compact">
+      <div class="label">이름</div>
+      <input id="inpName" placeholder="예: 장하양" maxlength="30" autocomplete="name" />
+      <div style="height:10px"></div>
+      <div class="label">출신학교</div>
+      <input id="inpSchool" placeholder="예: 공주고" maxlength="40" autocomplete="organization" />
       <div class="hr"></div>
       <div class="row" style="justify-content:flex-end;">
-        <button class="btn primary" id="btnGoMode" style="flex:0 0 auto;">다음</button>
+        <button class="btn primary" id="btnGoMode" style="flex:0 0 auto; min-width:120px;">다음</button>
       </div>
-      <div class="muted small" style="margin-top:10px;">랭킹 서버는 이미 연결돼 있어. (안 뜨면 네트워크/CORS 문제)</div>
     </section>
 
     <!-- Mode -->
     <section id="screenMode" class="card" style="display:none;">
-      <div class="label">2) 모드 선택</div>
-      <div class="note">
-        <div><strong id="whoLine">-</strong></div>
-        <div class="muted small">문과/이과/통합 중 하나 골라. 통합은 문과+이과 문제를 섞어서 냄.</div>
-      </div>
-
-      <div class="hr"></div>
+      <div class="userline" id="whoLine">-</div>
 
       <div class="grid3">
         <div>
-          <button class="btn primary modeBtn" data-mode="humanities">문과 상식 <small>시작</small></button>
+          <button class="btn primary modeBtn" data-mode="humanities">문과상식</button>
           <div style="height:10px"></div>
           <div class="lbCard">
-            <div class="lbHead"><div class="lbTitle">문과 TOP 3</div><div class="muted small" id="lbHintH">-</div></div>
+            <div class="lbHead"><div class="lbTitle">문과 TOP 3</div><div class="lbHint" id="lbHintH">-</div></div>
             <ol class="lbList" id="lbHumanities"></ol>
           </div>
         </div>
+
         <div>
-          <button class="btn primary modeBtn" data-mode="science">이과 상식 <small>시작</small></button>
+          <button class="btn primary modeBtn" data-mode="science">이과상식</button>
           <div style="height:10px"></div>
           <div class="lbCard">
-            <div class="lbHead"><div class="lbTitle">이과 TOP 3</div><div class="muted small" id="lbHintS">-</div></div>
+            <div class="lbHead"><div class="lbTitle">이과 TOP 3</div><div class="lbHint" id="lbHintS">-</div></div>
             <ol class="lbList" id="lbScience"></ol>
           </div>
         </div>
+
         <div>
-          <button class="btn primary modeBtn" data-mode="mixed">통합 <small>시작</small></button>
+          <button class="btn primary modeBtn" data-mode="mixed">통합</button>
           <div style="height:10px"></div>
           <div class="lbCard">
-            <div class="lbHead"><div class="lbTitle">통합 TOP 3</div><div class="muted small" id="lbHintM">-</div></div>
+            <div class="lbHead"><div class="lbTitle">통합 TOP 3</div><div class="lbHint" id="lbHintM">-</div></div>
             <ol class="lbList" id="lbMixed"></ol>
           </div>
         </div>
@@ -192,47 +267,32 @@
     </section>
 
     <!-- Quiz -->
-    <section id="screenQuiz" class="card" style="display:none;">
+    <section id="screenQuiz" class="card quizWrap" style="display:none;">
       <div class="qmeta">
         <div class="pill">모드: <strong id="modePill">-</strong></div>
         <div class="pill">점수: <strong id="scorePill">0</strong></div>
         <div class="pill">남은시간: <strong id="timePill">5</strong>s</div>
-        <div class="progress"><div class="bar" id="progBar"></div></div>
+        <div class="progress" aria-hidden="true"><div class="bar" id="progBar"></div></div>
       </div>
 
       <div class="qtext" id="qText">-</div>
-      <div class="muted small" id="qSub">2지선다 (OX 포함)</div>
-
       <div class="answers" id="answers"></div>
 
-      <div id="afterArea" style="display:none; margin-top:10px;">
-        <div class="note" id="explainBox"></div>
-        <div class="row" style="margin-top:10px;">
-          <button class="btn ghost" id="btnQuit">그만하기</button>
-          <button class="btn primary" id="btnNext">다음</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Result -->
-    <section id="screenResult" class="card" style="display:none;">
-      <div class="label">결과</div>
-      <div class="note">
-        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-          <div><strong id="resWho">-</strong></div>
-          <div class="pill">모드: <strong id="resMode">-</strong></div>
-        </div>
-        <div style="margin-top:8px; font-size:18px; font-weight:1000;">
-          최종 점수: <span id="resScore">0</span>점
-        </div>
-        <div class="muted small" style="margin-top:8px;" id="resSubmitHint">-</div>
-      </div>
       <div class="hr"></div>
-      <div class="row">
-        <button class="btn ghost" id="btnPlayAgain">모드 선택으로</button>
-        <button class="btn danger" id="btnResetLocal">로컬저장 삭제</button>
-      </div>
+      <button class="btn danger" id="btnQuit">그만하기</button>
     </section>
+  </div>
+
+  <!-- Modal -->
+  <div class="modalBackdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <div class="modalTop">
+        <h2 class="modalTitle" id="modalTitle">-</h2>
+        <span class="badge" id="modalBadge">-</span>
+      </div>
+      <div class="modalBody" id="modalBody">-</div>
+      <div class="modalBtns" id="modalBtns"></div>
+    </div>
   </div>
 
   <div class="toast" id="toast"></div>
@@ -264,8 +324,7 @@
     score: 0,
     locked: false,
     timer: null,
-    remaining: 5,
-    lastWasWrong: false
+    remaining: 5
   };
 
   function toast(msg){
@@ -273,11 +332,11 @@
     el.textContent = msg;
     el.classList.add("show");
     clearTimeout(el._t);
-    el._t = setTimeout(() => el.classList.remove("show"), 1500);
+    el._t = setTimeout(() => el.classList.remove("show"), 1400);
   }
 
   function showScreen(which){
-    ["screenLogin","screenMode","screenQuiz","screenResult"].forEach(id => {
+    ["screenLogin","screenMode","screenQuiz"].forEach(id => {
       $(id).style.display = (id === which ? "" : "none");
     });
   }
@@ -382,6 +441,7 @@
       fillLB($("lbHumanities"), data.humanities || []);
       fillLB($("lbScience"), data.science || []);
       fillLB($("lbMixed"), data.mixed || []);
+
       const stamp = new Date().toLocaleTimeString("ko-KR", { hour:"2-digit", minute:"2-digit" });
       $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = stamp;
       $("rankBadge").textContent = "연결됨";
@@ -419,14 +479,12 @@
 
   function renderQuestion(){
     state.locked = false;
-    state.lastWasWrong = false;
-    $("afterArea").style.display = "none";
     $("answers").innerHTML = "";
     $("scorePill").textContent = String(state.score);
 
     const q = state.pool[state.idx];
     if (!q){
-      endGame();
+      showResultModal();
       return;
     }
 
@@ -447,46 +505,76 @@
     startTimer();
   }
 
+  function openModal({ title, tone, badge, bodyHtml, buttons }){
+    const backdrop = $("modalBackdrop");
+    $("modalTitle").textContent = title;
+    $("modalTitle").className = "modalTitle " + (tone === "good" ? "good" : (tone === "bad" ? "bad" : ""));
+    $("modalBadge").textContent = badge || "";
+    $("modalBody").innerHTML = bodyHtml || "";
+
+    const btns = $("modalBtns");
+    btns.innerHTML = "";
+    (buttons || []).forEach(b => {
+      const el = document.createElement("button");
+      el.className = "btn " + (b.kind || "ghost");
+      el.textContent = b.text;
+      el.addEventListener("click", () => {
+        if (b.onClick) b.onClick();
+      });
+      btns.appendChild(el);
+    });
+
+    backdrop.classList.add("show");
+    backdrop.setAttribute("aria-hidden", "false");
+  }
+
+  function closeModal(){
+    const backdrop = $("modalBackdrop");
+    backdrop.classList.remove("show");
+    backdrop.setAttribute("aria-hidden", "true");
+  }
+
   function gradeAnswer(choiceIndex, isTimeout){
     if (state.locked) return;
     state.locked = true;
     stopTimer();
 
     const q = state.pool[state.idx];
-    const buttons = Array.from(document.querySelectorAll("#answers .choice"));
-    buttons.forEach(b => b.disabled = true);
+    const correct = (!isTimeout) && (choiceIndex === q.answer);
 
-    const correct = (choiceIndex === q.answer) && !isTimeout;
-    const picked = choiceIndex;
-
-    buttons.forEach((btn, i) => {
-      if (i === q.answer) btn.classList.add("good");
-      if (!correct && picked === i) btn.classList.add("bad");
-    });
+    const reason = isTimeout ? "시간초과" : (correct ? "정답" : "오답");
+    const explain = q.explain || "-";
 
     if (correct){
       state.score += 1;
       $("scorePill").textContent = String(state.score);
-      state.lastWasWrong = false;
-      $("btnNext").textContent = "다음";
-    } else {
-      state.lastWasWrong = true;
-      $("btnNext").textContent = "결과 보기";
-    }
 
-    const reason = isTimeout ? "시간초과" : (correct ? "정답" : "오답");
-    const explain = q.explain || "-";
-    $("explainBox").innerHTML =
-      `<strong>${reason}</strong><div class="muted small" style="margin-top:6px;">${escapeHtml(explain)}</div>`;
-    $("afterArea").style.display = "";
+      openModal({
+        title: "정답!",
+        tone: "good",
+        badge: `+1점 · ${MODE_LABEL[state.mode]}`,
+        bodyHtml: `<div>${escapeHtml(reason)}</div><div class="muted">${escapeHtml(explain)}</div>`,
+        buttons: [
+          { text: "다음", kind: "primary", onClick: () => { closeModal(); state.idx += 1; renderQuestion(); } }
+        ]
+      });
+    } else {
+      openModal({
+        title: isTimeout ? "시간초과!" : "오답!",
+        tone: "bad",
+        badge: `${MODE_LABEL[state.mode]} · 종료`,
+        bodyHtml: `<div>${escapeHtml(reason)}</div><div class="muted">${escapeHtml(explain)}</div>`,
+        buttons: [
+          { text: "결과 보기", kind: "primary", onClick: () => { closeModal(); showResultModal(); } }
+        ]
+      });
+    }
   }
 
   async function submitScore(){
     const base = (CONFIG.serverBase || "").replace(/\/+$/,"");
-    if (!base){
-      $("resSubmitHint").textContent = "랭킹 서버 꺼짐(제출 안 함).";
-      return;
-    }
+    if (!base) return { ok:false, msg:"랭킹 서버 꺼짐" };
+
     const { name, school } = getUser();
     const body = { name, school, mode: state.mode, score: state.score };
 
@@ -497,21 +585,32 @@
         body: JSON.stringify(body)
       });
       if (!res.ok) throw new Error("submit failed");
-      $("resSubmitHint").textContent = "랭킹 반영 완료.";
+      return { ok:true, msg:"랭킹 반영 완료" };
     }catch(e){
-      $("resSubmitHint").textContent = "랭킹 서버 제출 실패.";
+      return { ok:false, msg:"랭킹 반영 실패" };
     }
   }
 
-  function endGame(){
-    stopTimer();
+  function showResultModal(){
     const { name, school } = getUser();
-    $("resWho").textContent = `${name} (${school})`;
-    $("resMode").textContent = MODE_LABEL[state.mode] || "-";
-    $("resScore").textContent = String(state.score);
-    $("resSubmitHint").textContent = "랭킹 반영 중...";
-    showScreen("screenResult");
-    submitScore().then(() => {});
+    const score = state.score;
+
+    openModal({
+      title: "끝!",
+      tone: score > 0 ? "good" : "bad",
+      badge: `${MODE_LABEL[state.mode]} · ${score}점`,
+      bodyHtml: `<div><strong>${escapeHtml(name)}(${escapeHtml(school)})</strong></div>
+                <div class="muted" id="resStatus" style="margin-top:8px;">랭킹 반영 중...</div>`,
+      buttons: [
+        { text: "모드 선택으로", kind: "primary", onClick: () => { closeModal(); showScreen("screenMode"); fetchLeaderboards(); } }
+      ]
+    });
+
+    // async submit + update modal text
+    submitScore().then(r => {
+      const el = document.getElementById("resStatus");
+      if (el) el.textContent = r.msg;
+    });
   }
 
   function startGame(mode){
@@ -535,7 +634,6 @@
     });
   }
 
-  // Events
   $("btnGoMode").addEventListener("click", async () => {
     const name = $("inpName").value.trim();
     const school = $("inpSchool").value.trim();
@@ -545,7 +643,6 @@
     }
     setUser(name, school);
     $("whoLine").textContent = `${name} (${school})`;
-
     showScreen("screenMode");
     await loadQuestions().catch(() => {});
     fetchLeaderboards();
@@ -558,31 +655,10 @@
     btn.addEventListener("click", () => startGame(btn.getAttribute("data-mode")));
   });
 
-  $("btnNext").addEventListener("click", () => {
-    if (state.lastWasWrong){
-      endGame();
-      return;
-    }
-    state.idx += 1;
-    renderQuestion();
-  });
-
-  $("btnQuit").addEventListener("click", () => endGame());
-
-  $("btnPlayAgain").addEventListener("click", () => {
-    const { name, school } = getUser();
-    $("whoLine").textContent = `${name} (${school})`;
-    showScreen("screenMode");
-    fetchLeaderboards();
-  });
-
-  $("btnResetLocal").addEventListener("click", () => {
-    localStorage.removeItem(LS.name);
-    localStorage.removeItem(LS.school);
-    $("inpName").value = "";
-    $("inpSchool").value = "";
-    toast("로컬저장 삭제");
-    showScreen("screenLogin");
+  $("btnQuit").addEventListener("click", () => {
+    // quit = show result modal (current score)
+    stopTimer();
+    showResultModal();
   });
 
   // init
