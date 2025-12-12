@@ -355,11 +355,10 @@
     ["screenLogin","screenMode","screenQuiz"].forEach(id => {
       $(id).style.display = (id === which ? "" : "none");
     });
+    // 메인(로그인/모드)에서만 버전 배지 보이게
+    const vb = $("verBadge");
+    if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "inline-flex");
   }
-
-  // 메인(로그인/모드)에서만 버전 배지 보이게
-  const vb = $("verBadge");
-  if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "inline-flex");
 
 
   function getUser(){
