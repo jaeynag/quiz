@@ -268,27 +268,6 @@
   @keyframes stickerOut{
     to{ opacity:0; transform: translate(-50%,-50%) scale(0.85) rotate(var(--rot)); }
   }
-
-
-  /* Score corner (quiz only) */
-  .score-corner{
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    padding: 8px 12px;
-    border-radius: 14px;
-    font-weight: 800;
-    font-size: 16px;
-    letter-spacing: .2px;
-    background: rgba(0,0,0,.55);
-    color: #fff;
-    z-index: 9998;
-    pointer-events: none;
-    backdrop-filter: blur(6px);
-    display: none;
-  }
-  
-
   /* Sticker board */
   .sticker-board{
     position: fixed;
@@ -413,8 +392,6 @@
       <div class="modalBtns" id="modalBtns"></div>
     </div>
   </div>
-
-  <div id="scoreCorner" class="score-corner" aria-hidden="true"><span id="scoreCornerVal">0</span></div>
   <div class="toast" id="toast"></div>
 
 <script>
@@ -513,8 +490,9 @@ function popStickerForStreak(streak){
     const el = document.createElement("div");
     el.className = "sticker-stuck";
     const img = document.createElement("img");
-    img.alt = "cat-sticker";
+    img.alt = "";
     img.src = src;
+    img.onerror = () => { try { el.remove(); } catch(e){} };
     el.appendChild(img);
 
     // 랜덤 회전(-10~+10) + 살짝 스케일(0.92~1.03)
@@ -591,11 +569,12 @@ function popStickerForStreak(streak){
     });
     // 메인(로그인/모드)에서만 버전 배지 보이게
     const vb = $("verBadge");
-  const sb = $("scoreCorner");
-  const tt = $("appTitle");
+  const bd = $("stickerBoard");
+const tt = $("appTitle");
     if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
-  if (sb) sb.style.display = (which === "screenQuiz" ? "block" : "none");
-  if (tt) {
+  if (bd) bd.style.display = (which === "screenQuiz" ? "block" : "none");
+  if (which !== "screenQuiz") clearStickerBoard();
+if (tt) {
     // 퀴즈 화면에서는 타이틀 자리는 유지하고 글자만 숨김(배지 위치 고정)
     tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
   }
@@ -640,8 +619,8 @@ function popStickerForStreak(streak){
     // 버전 표시(메타가 있으면)
     const meta = (data && data.meta) ? data.meta : null;
     const vb = $("verBadge");
-  const sb = $("scoreCorner");
-  const tt = $("appTitle");
+  const bd = $("stickerBoard");
+const tt = $("appTitle");
     if (vb) {
       const v = meta && meta.version ? String(meta.version) : "no-meta";
       const u = meta && meta.updated ? ` ${meta.updated}` : "";
@@ -666,6 +645,27 @@ function popStickerForStreak(streak){
     }
     return Math.floor(Math.random() * maxExclusive);
   }
+  async function loadStickers(){
+    try{
+      const res = await fetch("assets/cats/stickers.json?v=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) throw new Error("stickers.json not found");
+      const list = await res.json();
+
+      if (!Array.isArray(list)) throw new Error("stickers.json must be an array");
+      // 파일명만 있으면 assets/cats/ 자동 prefix
+      STICKER_IMAGES = list
+        .map(x => String(x || "").trim())
+        .filter(Boolean)
+        .map(x => (x.includes("/") ? x : ("assets/cats/" + x)));
+
+      // 셔플백 초기화
+      _stickerBag = [];
+      _stickerPtr = 0;
+    }catch(e){
+      STICKER_IMAGES = [];
+    }
+  }
+
 
   function shuffle(arr){
     for (let i = arr.length - 1; i > 0; i--) {
@@ -794,9 +794,7 @@ function startTimer(){
     state.locked = false;
     $("answers").innerHTML = "";
     $("scorePill").textContent = String(state.score);
-    const scv = $("scoreCornerVal"); if (scv) scv.textContent = String(state.score);
-
-    const q = state.pool[state.idx];
+const q = state.pool[state.idx];
     if (!q){
       showResultModal();
       return;
@@ -864,9 +862,7 @@ function startTimer(){
     if (correct){
       state.score += 1;
       $("scorePill").textContent = String(state.score);
-    const scv = $("scoreCornerVal"); if (scv) scv.textContent = String(state.score);
-
-      state.streak = (state.streak || 0) + 1;
+state.streak = (state.streak || 0) + 1;
       popStickerForStreak(state.streak);
 
       openModal({
