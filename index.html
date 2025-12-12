@@ -225,6 +225,7 @@
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
         <span class="badge">문제:<span id="qCountBadge">-</span></span>
         <span class="badge">랭킹:<span id="rankBadge">-</span></span>
+        <span class="badge" id="verBadge">v-</span>
       </div>
     </header>
 
@@ -356,6 +357,11 @@
     });
   }
 
+  // 메인(로그인/모드)에서만 버전 배지 보이게
+  const vb = $("verBadge");
+  if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "inline-flex");
+
+
   function getUser(){
     return {
       name: (localStorage.getItem(LS.name) || "").trim(),
@@ -391,6 +397,15 @@
 
     state.questions = qs;
     $("qCountBadge").textContent = String(qs.length);
+    // 버전 표시(메타가 있으면)
+    const meta = (data && data.meta) ? data.meta : null;
+    const vb = $("verBadge");
+    if (vb) {
+      const v = meta && meta.version ? String(meta.version) : "no-meta";
+      const u = meta && meta.updated ? ` ${meta.updated}` : "";
+      vb.textContent = `v${v}${u}`;
+    }
+
     return qs;
   }
 
