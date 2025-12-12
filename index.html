@@ -217,21 +217,58 @@
     .bar.bad{background:var(--bad);}
 
   
-    .ver-badge{
-      position: fixed;
-      right: 10px;
-      bottom: 10px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      font-size: 11px;
-      line-height: 1;
-      background: rgba(0,0,0,0.35);
-      color: #fff;
-      z-index: 9999;
-      pointer-events: none;
-      backdrop-filter: blur(6px);
-      opacity: 0.85;
-    }
+  .ver-badge{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    line-height: 1;
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    z-index: 9998;
+    pointer-events: none;
+    backdrop-filter: blur(6px);
+    opacity: 0.85;
+  }
+
+  /* Sticker pop (연속정답 보상) */
+  .sticker-pop{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0.2);
+    opacity: 0;
+    z-index: 9997;
+    pointer-events: none;
+    will-change: transform, opacity;
+  }
+  .sticker-pop.show{
+    animation: stickerIn .22s cubic-bezier(.2,.9,.2,1.2) forwards,
+               stickerOut .28s ease-in forwards;
+    animation-delay: 0s, 0.92s; /* 총 1.2초 */
+  }
+  .sticker-pop img{
+    width: min(38vw, 190px);
+    max-height: 38vh;
+    display: block;
+    filter:
+      drop-shadow( 2px  0px 0px rgba(255,255,255,.92))
+      drop-shadow(-2px  0px 0px rgba(255,255,255,.92))
+      drop-shadow( 0px  2px 0px rgba(255,255,255,.92))
+      drop-shadow( 0px -2px 0px rgba(255,255,255,.92))
+      drop-shadow(0 10px 18px rgba(0,0,0,.28));
+    border-radius: 10px;
+  }
+  @keyframes stickerIn{
+    from{ opacity:0; transform: translate(-50%,-50%) scale(0.2) rotate(var(--rot)); }
+    to  { opacity:1; transform: translate(-50%,-50%) scale(1.0) rotate(var(--rot)); }
+  }
+  @keyframes stickerOut{
+    to{ opacity:0; transform: translate(-50%,-50%) scale(0.85) rotate(var(--rot)); }
+  }
+
 </style>
 </head>
 <body>
@@ -314,6 +351,9 @@
     </section>
   </div>
 
+  <!-- Sticker Pop -->
+  <div id="stickerPop" class="sticker-pop" aria-hidden="true"><img id="stickerImg" alt="sticker" /></div>
+
   <!-- Modal -->
   <div class="modalBackdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal">
@@ -355,7 +395,8 @@
     score: 0,
     locked: false,
     timer: null,
-    remaining: 5
+    remaining: 5,
+    streak: 0
   };
 
   function toast(msg){
@@ -366,13 +407,99 @@
     el._t = setTimeout(() => el.classList.remove("show"), 1400);
   }
 
+  // 연속정답 스티커(5점마다)
+  // 사진은 레포에 이렇게 넣어줘: assets/cats/cat_01.png, cat_02.png ...
+  const STICKER_IMAGES = Array.from({ length: 60 }, (_, i) =>
+    `assets/cats/cat_${String(i + 1).padStart(2, "0")}.png`
+  );
+
+  
+  // 스티커 이미지 선택 방식
+  // - false: 5점,10점,15점... 순서대로(cat_01, cat_02, ...)
+  // - true : 매번 랜덤(중복 최소화: 한 바퀴 돌 때까지 같은 사진 안 나옴)
+  const STICKER_RANDOM = true;
+  let _stickerBag = [];
+  let _stickerPtr = 0;
+
+  function _shuffle(a){
+    for (let i=a.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [a[i],a[j]]=[a[j],a[i]];
+    }
+    return a;
+  }
+
+  function nextStickerSrc(streak){
+    if (!STICKER_IMAGES.length) return null;
+
+    if (!STICKER_RANDOM){
+      const idx = Math.floor(streak/5) - 1;
+      return STICKER_IMAGES[idx % STICKER_IMAGES.length];
+    }
+
+    if (_stickerBag.length !== STICKER_IMAGES.length){
+      _stickerBag = _shuffle(Array.from({length: STICKER_IMAGES.length}, (_,i)=>i));
+      _stickerPtr = 0;
+    }
+    if (_stickerPtr >= _stickerBag.length){
+      _stickerBag = _shuffle(_stickerBag);
+      _stickerPtr = 0;
+    }
+    const pick = _stickerBag[_stickerPtr++];
+    return STICKER_IMAGES[pick];
+  }
+function popStickerForStreak(streak){
+    if (streak < 5) return;
+    if (streak % 5 !== 0) return;
+    const src = nextStickerSrc(streak);
+    if (!src) return;
+    popSticker(src);
+  }
+
+  function popSticker(src){
+    const wrap = $("stickerPop");
+    const img = $("stickerImg");
+    if (!wrap || !img) return;
+
+    // 문제 안 가리게: 화면 가장자리 쪽 랜덤 위치
+    const spots = [
+      // 코너/사이드
+      [16, 18], [84, 18], [16, 78], [84, 78],
+      [50, 16], [50, 84], [16, 50], [84, 50],
+      // 위 라인(여러 지점)
+      [22, 12], [38, 12], [62, 12], [78, 12],
+      // 아래 라인(여러 지점)
+      [22, 88], [38, 88], [62, 88], [78, 88]
+    ];
+    const pick = spots[randInt(spots.length)];
+    const jitterX = (randInt(9) - 4); // -4..+4
+    const jitterY = (randInt(9) - 4);
+    const x = Math.max(10, Math.min(90, pick[0] + jitterX));
+    const y = Math.max(12, Math.min(88, pick[1] + jitterY));
+
+    const rot = (randInt(17) - 8); // -8..+8 deg
+    wrap.style.left = x + "vw";
+    wrap.style.top  = y + "vh";
+    wrap.style.setProperty("--rot", rot + "deg");
+
+    img.onerror = () => { wrap.classList.remove("show"); };
+    img.src = src;
+
+    // 재생(연타 대비 리셋)
+    wrap.classList.remove("show");
+    // force reflow
+    void wrap.offsetWidth;
+    wrap.classList.add("show");
+  }
+
+
   function showScreen(which){
     ["screenLogin","screenMode","screenQuiz"].forEach(id => {
       $(id).style.display = (id === which ? "" : "none");
     });
     // 메인(로그인/모드)에서만 버전 배지 보이게
-  const vb = $("verBadge");
-  if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
+    const vb = $("verBadge");
+    if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
   }
 
 
@@ -627,12 +754,17 @@ function startTimer(){
     const q = state.pool[state.idx];
     const correct = (!isTimeout) && (choiceIndex === q.answer);
 
+    if (isTimeout) state.streak = 0;
+
     const reason = isTimeout ? "시간초과" : (correct ? "정답" : "오답");
     const explain = q.explain || "-";
 
     if (correct){
       state.score += 1;
       $("scorePill").textContent = String(state.score);
+
+      state.streak = (state.streak || 0) + 1;
+      popStickerForStreak(state.streak);
 
       openModal({
         title: "정답!",
@@ -644,6 +776,7 @@ function startTimer(){
         ]
       });
     } else {
+      state.streak = 0;
       openModal({
         title: isTimeout ? "시간초과!" : "오답!",
         tone: "bad",
@@ -703,6 +836,7 @@ function startTimer(){
     state.idx = 0;
     state.score = 0;
     state.pool = [];
+    state.streak = 0;
 
     loadQuestions().then(qs => {
       const pool = buildPool(mode, qs);
@@ -755,6 +889,6 @@ function startTimer(){
   })();
 })();
 </script>
-  <div id="verBadge" class="ver-badge" aria-label="버전"></div>
+  <div id="verBadge" class="ver-badge" aria-label="버전" aria-hidden="true"></div>
 </body>
 </html>
