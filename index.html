@@ -216,7 +216,23 @@
     .bar.warn{background:rgb(245,158,11);}
     .bar.bad{background:var(--bad);}
 
-  </style>
+  
+    .ver-badge{
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      line-height: 1;
+      background: rgba(0,0,0,0.35);
+      color: #fff;
+      z-index: 9999;
+      pointer-events: none;
+      backdrop-filter: blur(6px);
+      opacity: 0.85;
+    }
+</style>
 </head>
 <body>
   <div class="app">
@@ -225,8 +241,7 @@
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
         <span class="badge">문제:<span id="qCountBadge">-</span></span>
         <span class="badge">랭킹:<span id="rankBadge">-</span></span>
-        <span class="badge" id="verBadge">v-</span>
-      </div>
+</div>
     </header>
 
     <!-- Login -->
@@ -356,8 +371,8 @@
       $(id).style.display = (id === which ? "" : "none");
     });
     // 메인(로그인/모드)에서만 버전 배지 보이게
-    const vb = $("verBadge");
-    if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "inline-flex");
+  const vb = $("verBadge");
+  if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
   }
 
 
@@ -402,7 +417,7 @@
     if (vb) {
       const v = meta && meta.version ? String(meta.version) : "no-meta";
       const u = meta && meta.updated ? ` ${meta.updated}` : "";
-      vb.textContent = `v${v}${u}`;
+      vb.textContent = `v${v}`;
     }
 
     return qs;
@@ -740,5 +755,6 @@ function startTimer(){
   })();
 })();
 </script>
+  <div id="verBadge" class="ver-badge" aria-label="버전"></div>
 </body>
 </html>
