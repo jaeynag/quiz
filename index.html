@@ -145,7 +145,7 @@
         <button class="btn primary" id="btnGoMode" style="flex:0 0 auto;">다음</button>
       </div>
       <div class="muted small" style="margin-top:10px;">
-        랭킹 서버는 나중에 연결될 거야. (지금은 퀴즈만 돌아감)
+        랭킹 서버 연결됨.
       </div>
     </section>
 
@@ -289,6 +289,8 @@
   }
 
   const CONFIG = {
+    // 운영 서버 주소를 여기에 넣어라. 예) "https://api.example.com"
+    // 비워두면 랭킹(조회/제출) 기능이 꺼진다.
     serverBase: "https://quiz-leaderboard.yangsquiz.workers.dev"
   };
 
@@ -609,7 +611,6 @@ try{
     stopTimer();
     $("inpName").value = "";
     $("inpSchool").value = "";
-    /* removed */ "" = "";
     $("serverBadge").textContent = "-";
     $("qCountBadge").textContent = "-";
     state.loadedQuestions = null;
@@ -621,8 +622,6 @@ try{
   (function init(){
     $("inpName").value = localStorage.getItem(LS.name) || "";
     $("inpSchool").value = localStorage.getItem(LS.school) || "";
-    /* removed: serverBase fixed in CONFIG */
-    /* removed */ "" = savedServer;
     $("serverBadge").textContent = getServerBase() ? "연결됨" : "준비중";
 
     loadQuestions().then(() => {}).catch(() => {});
