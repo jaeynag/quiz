@@ -189,13 +189,13 @@
       line-height:1.45;
       font-size:14px;
     }
-    .modalBody .muted{color:var(--muted); font-size:13px; margin-top:8px}
+    .modalBody .muted{color:var(--muted); font-size: 16px; margin-top:8px}
     .modalBtns{display:flex; gap:10px; margin-top:12px}
     .modalBtns .btn{flex:1}
     .toast{
       position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
       background:#111; color:#fff; padding:10px 12px; border-radius:999px;
-      font-size:13px; opacity:0; pointer-events:none; transition:.2s opacity;
+      font-size: 16px; opacity:0; pointer-events:none; transition:.2s opacity;
       max-width:min(720px, calc(100% - 40px));
       white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
       z-index:60;
@@ -269,12 +269,57 @@
     to{ opacity:0; transform: translate(-50%,-50%) scale(0.85) rotate(var(--rot)); }
   }
 
+
+  /* Score corner (quiz only) */
+  .score-corner{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    padding: 8px 12px;
+    border-radius: 14px;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: .2px;
+    background: rgba(0,0,0,.55);
+    color: #fff;
+    z-index: 9998;
+    pointer-events: none;
+    backdrop-filter: blur(6px);
+    display: none;
+  }
+  
+
+  /* Sticker board */
+  .sticker-board{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50; /* below modal/toast, above background */
+  }
+  .sticker-stuck{
+    position: absolute;
+    will-change: transform, opacity;
+    animation: stickerIn .22s cubic-bezier(.2,.9,.2,1.2) forwards;
+  }
+  .sticker-stuck img{
+    width: min(34vw, 170px);
+    max-height: 34vh;
+    display: block;
+    filter:
+      drop-shadow( 2px  0px 0px rgba(255,255,255,.92))
+      drop-shadow(-2px  0px 0px rgba(255,255,255,.92))
+      drop-shadow( 0px  2px 0px rgba(255,255,255,.92))
+      drop-shadow( 0px -2px 0px rgba(255,255,255,.92))
+      drop-shadow( 0px 10px 18px rgba(0,0,0,.18));
+    border-radius: 10px;
+  }
+
 </style>
 </head>
 <body>
   <div class="app">
     <header>
-      <h1>상식퀴즈</h1>
+      <h1 id="appTitle">상식퀴즈</h1>
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
         <span class="badge">문제:<span id="qCountBadge">-</span></span>
         <span class="badge">랭킹:<span id="rankBadge">-</span></span>
@@ -351,6 +396,9 @@
     </section>
   </div>
 
+  <!-- Sticker Board (stickers accumulate) -->
+  <div id="stickerBoard" class="sticker-board" aria-hidden="true"></div>
+
   <!-- Sticker Pop -->
   <div id="stickerPop" class="sticker-pop" aria-hidden="true"><img id="stickerImg" alt="sticker" /></div>
 
@@ -366,6 +414,7 @@
     </div>
   </div>
 
+  <div id="scoreCorner" class="score-corner" aria-hidden="true"><span id="scoreCornerVal">0</span></div>
   <div class="toast" id="toast"></div>
 
 <script>
@@ -457,39 +506,79 @@ function popStickerForStreak(streak){
   }
 
   function popSticker(src){
-    const wrap = $("stickerPop");
-    const img = $("stickerImg");
-    if (!wrap || !img) return;
+    const board = $("stickerBoard");
+    if (!board) return;
 
-    // 문제 안 가리게: 화면 가장자리 쪽 랜덤 위치
-    const spots = [
-      // 코너/사이드
-      [16, 18], [84, 18], [16, 78], [84, 78],
-      [50, 16], [50, 84], [16, 50], [84, 50],
-      // 위 라인(여러 지점)
-      [22, 12], [38, 12], [62, 12], [78, 12],
-      // 아래 라인(여러 지점)
-      [22, 88], [38, 88], [62, 88], [78, 88]
-    ];
-    const pick = spots[randInt(spots.length)];
-    const jitterX = (randInt(9) - 4); // -4..+4
-    const jitterY = (randInt(9) - 4);
-    const x = Math.max(10, Math.min(90, pick[0] + jitterX));
-    const y = Math.max(12, Math.min(88, pick[1] + jitterY));
-
-    const rot = (randInt(17) - 8); // -8..+8 deg
-    wrap.style.left = x + "vw";
-    wrap.style.top  = y + "vh";
-    wrap.style.setProperty("--rot", rot + "deg");
-
-    img.onerror = () => { wrap.classList.remove("show"); };
+    // 스티커 요소 생성(누적)
+    const el = document.createElement("div");
+    el.className = "sticker-stuck";
+    const img = document.createElement("img");
+    img.alt = "cat-sticker";
     img.src = src;
+    el.appendChild(img);
 
-    // 재생(연타 대비 리셋)
-    wrap.classList.remove("show");
-    // force reflow
-    void wrap.offsetWidth;
-    wrap.classList.add("show");
+    // 랜덤 회전(-10~+10) + 살짝 스케일(0.92~1.03)
+    const rot = (randInt(21) - 10);
+    const sc  = (92 + randInt(12)) / 100;
+    el.style.transform = `translate3d(0,0,0) rotate(${rot}deg) scale(${sc})`;
+
+    // 배치: '퀴즈 카드 주변' 링(너무 사이드로 안 가게)
+    const avoidEl = $("screenQuiz");
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    const avoid = avoidEl ? avoidEl.getBoundingClientRect() : { left: vw*0.25, top: vh*0.25, right: vw*0.75, bottom: vh*0.75 };
+
+    const pad = 12;     // 화면 가장자리 여백
+    const ring = 200;   // 카드 주변 범위(커질수록 더 멀리도 감)
+    const w = Math.min(vw*0.34, 170); // 이미지 예상 폭(대략)
+    const h = Math.min(vh*0.34, 170); // 대략(정사각 가정)
+
+    // 링 영역(카드 주변의 확장 사각형)
+    const outer = {
+      left: Math.max(pad, avoid.left - ring),
+      top: Math.max(pad, avoid.top - ring),
+      right: Math.min(vw - pad, avoid.right + ring),
+      bottom: Math.min(vh - pad, avoid.bottom + ring)
+    };
+
+    // 카드 자체(겹침 금지 영역) 조금 더 키움
+    const inner = {
+      left: avoid.left - 6,
+      top: avoid.top - 6,
+      right: avoid.right + 6,
+      bottom: avoid.bottom + 6
+    };
+      return false;
+    }
+
+    let x = pad, y = pad;
+    let ok = false;
+    for (let t=0; t<40; t++){
+      const rx = outer.left + Math.random() * Math.max(1, (outer.right - outer.left - w));
+      const ry = outer.top  + Math.random() * Math.max(1, (outer.bottom - outer.top - h));
+      const r = { left: rx, top: ry, right: rx + w, bottom: ry + h };
+      // 카드랑 안 겹치고(문제 가리지 않기), 스티커끼리 과도 겹침만 피하기
+      if (!intersects(r, inner) ){
+        x = rx; y = ry; ok = true; break;
+      }
+    }
+    if (!ok){
+      // 최후: 위/아래 라인 쪽
+      x = Math.min(vw - pad - w, Math.max(pad, avoid.left + (avoid.right-avoid.left)*Math.random() - w/2));
+      y = (Math.random() < 0.5) ? Math.max(pad, avoid.top - ring/1.4) : Math.min(vh - pad - h, avoid.bottom + ring/1.4);
+    }
+
+    el.style.left = `${x}px`;
+    el.style.top  = `${y}px`;
+
+    board.appendChild(el);
+
+    // 너무 많아지면 오래된 것부터 정리(화면 난장판 방지)
+    const MAX_STICKERS = 40;
+    while (board.children.length > MAX_STICKERS){
+      board.removeChild(board.firstElementChild);
+    }
   }
 
 
@@ -499,7 +588,11 @@ function popStickerForStreak(streak){
     });
     // 메인(로그인/모드)에서만 버전 배지 보이게
     const vb = $("verBadge");
+  const sb = $("scoreCorner");
+  const tt = $("appTitle");
     if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
+  if (sb) sb.style.display = (which === "screenQuiz" ? "block" : "none");
+  if (tt) tt.style.display = (which === "screenQuiz" ? "none" : "block");
   }
 
 
@@ -541,6 +634,8 @@ function popStickerForStreak(streak){
     // 버전 표시(메타가 있으면)
     const meta = (data && data.meta) ? data.meta : null;
     const vb = $("verBadge");
+  const sb = $("scoreCorner");
+  const tt = $("appTitle");
     if (vb) {
       const v = meta && meta.version ? String(meta.version) : "no-meta";
       const u = meta && meta.updated ? ` ${meta.updated}` : "";
@@ -693,6 +788,7 @@ function startTimer(){
     state.locked = false;
     $("answers").innerHTML = "";
     $("scorePill").textContent = String(state.score);
+    const scv = $("scoreCornerVal"); if (scv) scv.textContent = String(state.score);
 
     const q = state.pool[state.idx];
     if (!q){
@@ -762,6 +858,7 @@ function startTimer(){
     if (correct){
       state.score += 1;
       $("scorePill").textContent = String(state.score);
+    const scv = $("scoreCornerVal"); if (scv) scv.textContent = String(state.score);
 
       state.streak = (state.streak || 0) + 1;
       popStickerForStreak(state.streak);
@@ -875,7 +972,9 @@ function startTimer(){
   });
 
   $("btnQuit").addEventListener("click", () => {
-    // quit = show result modal (current score)
+    
+    clearStickerBoard();
+// quit = show result modal (current score)
     stopTimer();
     showResultModal();
   });
