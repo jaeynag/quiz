@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>상식퀴즈</title>
+  <style>
+    :root{
+      --bg:#f5f6f8; --card:#fff; --text:#111; --muted:#666; --line:#e6e8ee;
+      --accent:#2b6cff; --bad:#d12f2f; --good:#0f8a3c;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --radius: 16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family: "맑은 고딕", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display:flex; justify-content:center; padding:24px;
+    }
+    .app{width:min(920px, 100%);}
+    header{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+      margin-bottom:14px;
+    }
+    h1{margin:0; font-size:20px; letter-spacing:-.2px}
+    .sub{color:var(--muted); font-size:13px; margin-top:2px; line-height:1.35}
+    .card{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+      box-shadow:var(--shadow); padding:18px;
+    }
+    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:stretch}
+    .row > *{flex:1}
+    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:12px}
+    .grid3{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px}
+    @media (max-width:860px){ .grid3{grid-template-columns:1fr} }
+    @media (max-width:720px){ .grid2{grid-template-columns:1fr} }
+
+    .btn{
+      appearance:none; border:1px solid var(--line); background:#fff;
+      padding:12px 12px; border-radius:12px; cursor:pointer;
+      font-weight:900; font-size:14px; transition:.15s transform, .15s background, .15s border;
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      user-select:none;
+    }
+    .btn:hover{transform:translateY(-1px); border-color:#cfd5e2}
+    .btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+    .btn.danger{background:#fff; border-color:#ffd2d2; color:var(--bad)}
+    .btn.ghost{background:#fff}
+
+    .pill{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding:8px 10px; border:1px solid var(--line); border-radius:999px; background:#fff;
+      font-size:13px; color:var(--muted);
+    }
+    .label{font-size:13px; color:var(--muted); font-weight:900; margin-bottom:6px}
+    input{
+      width:100%; padding:12px 12px; border-radius:12px; border:1px solid var(--line);
+      font-size:15px; outline:none;
+    }
+    input:focus{border-color:#cfd5e2; box-shadow:0 0 0 3px rgba(43,108,255,.10)}
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    .sectionTitle{margin:0 0 10px 0; font-size:14px; color:var(--muted); font-weight:1000}
+
+    .qmeta{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
+    .progress{
+      height:10px; border-radius:999px; background:#eef1f7; overflow:hidden; border:1px solid var(--line);
+      width:min(360px, 100%);
+    }
+    .bar{height:100%; width:0%; background:var(--accent); transition:width .2s}
+    .qtext{font-size:18px; line-height:1.35; font-weight:1000; letter-spacing:-.2px; margin:8px 0 2px 0}
+    .answers{display:grid; gap:10px; margin-top:8px}
+    .choice{justify-content:flex-start; text-align:left; padding:14px 12px}
+    .choice.good{border-color:#cfeedd; background:rgba(15,138,60,.08)}
+    .choice.bad{border-color:#ffd2d2; background:rgba(209,47,47,.06)}
+    .choice:disabled{cursor:not-allowed; transform:none; opacity:.95}
+    .note{
+      border:1px solid var(--line); border-radius:12px; padding:12px; background:#fff;
+      line-height:1.35;
+    }
+    .note strong{font-weight:1000}
+    .hr{height:1px; background:var(--line); margin:12px 0}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
+
+    .lbCard{
+      border:1px solid var(--line); border-radius:14px; padding:12px;
+      background:#fff; min-height:120px;
+      display:flex; flex-direction:column; gap:8px;
+    }
+    .lbHead{display:flex; align-items:center; justify-content:space-between; gap:8px}
+    .lbTitle{font-weight:1000}
+    .lbList{margin:0; padding:0 0 0 18px; color:var(--muted)}
+    .lbList li{margin:4px 0}
+    .topLine{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .badge{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff;
+      font-size:12px; color:var(--muted); font-weight:900;
+    }
+
+    .toast{
+      position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
+      background:#111; color:#fff; padding:10px 12px; border-radius:999px;
+      font-size:13px; opacity:0; pointer-events:none; transition:.2s opacity;
+      max-width:min(720px, calc(100% - 40px));
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .toast.show{opacity:1}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>상식퀴즈</h1>
+        <div class="sub">
+          문제당 <b>5초</b>. 맞히면 <b>+1점</b>. 한 번 틀리면 <b>바로 끝</b>.
+          <span class="muted">(정답/오답 후 한 줄 해설 → 다음 버튼)</span>
+        </div>
+      </div>
+      <div class="topLine">
+        <span class="badge">문제: <span id="qCountBadge">-</span></span>
+        <span class="badge">서버: <span id="serverBadge" class="mono">-</span></span>
+      </div>
+    </header>
+
+    <!-- Screen: Login -->
+    <section id="screenLogin" class="card">
+      <p class="sectionTitle">1) 정보 입력</p>
+      <div class="grid2">
+        <div>
+          <div class="label">이름</div>
+          <input id="inpName" placeholder="예: 장재양" maxlength="30" autocomplete="name" />
+        </div>
+        <div>
+          <div class="label">출신고등학교</div>
+          <input id="inpSchool" placeholder="예: OO고" maxlength="40" autocomplete="organization" />
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="grid2">
+        <div>
+          <div class="label">서버 주소</div>
+          <input id="inpServer" placeholder="예: https://api.example.com" />
+          <div class="muted small" style="margin-top:6px;">
+            랭킹 저장/조회용. 비워두면 <span class="mono">http://localhost:3000</span> 사용.
+          </div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:flex-end;">
+          <button class="btn ghost" id="btnSaveServer">서버 저장</button>
+          <button class="btn primary" id="btnGoMode">다음</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen: Mode -->
+    <section id="screenMode" class="card" style="display:none;">
+      <p class="sectionTitle">2) 모드 선택</p>
+
+      <div class="note">
+        <div><strong id="whoLine">-</strong></div>
+        <div class="muted small">문과/이과/통합 중 하나 골라. 통합은 문과+이과 문제를 섞어서 냄.</div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="grid3">
+        <div>
+          <button class="btn primary" data-mode="humanities">문과 상식 시작</button>
+          <div style="height:10px"></div>
+          <div class="lbCard">
+            <div class="lbHead">
+              <div class="lbTitle">문과 TOP 3</div>
+              <div class="muted small" id="lbHintH">-</div>
+            </div>
+            <ol class="lbList" id="lbHumanities"></ol>
+          </div>
+        </div>
+
+        <div>
+          <button class="btn primary" data-mode="science">이과 상식 시작</button>
+          <div style="height:10px"></div>
+          <div class="lbCard">
+            <div class="lbHead">
+              <div class="lbTitle">이과 TOP 3</div>
+              <div class="muted small" id="lbHintS">-</div>
+            </div>
+            <ol class="lbList" id="lbScience"></ol>
+          </div>
+        </div>
+
+        <div>
+          <button class="btn primary" data-mode="mixed">통합 시작</button>
+          <div style="height:10px"></div>
+          <div class="lbCard">
+            <div class="lbHead">
+              <div class="lbTitle">통합 TOP 3</div>
+              <div class="muted small" id="lbHintM">-</div>
+            </div>
+            <ol class="lbList" id="lbMixed"></ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+      <div class="row">
+        <button class="btn ghost" id="btnBackToLogin">이름/학교 다시</button>
+        <button class="btn ghost" id="btnRefreshLB">랭킹 새로고침</button>
+      </div>
+    </section>
+
+    <!-- Screen: Quiz -->
+    <section id="screenQuiz" class="card" style="display:none;">
+      <div class="qmeta">
+        <div class="pill"><strong id="modePill">-</strong></div>
+        <div class="pill">점수: <strong id="scorePill">0</strong></div>
+        <div class="pill">남은시간: <strong id="timePill">5</strong>s</div>
+        <div class="progress" aria-label="진행">
+          <div class="bar" id="progBar"></div>
+        </div>
+      </div>
+
+      <div class="qtext" id="qText">-</div>
+      <div class="muted small" id="qSub">2지선다 (OX 포함)</div>
+
+      <div class="answers" id="answers"></div>
+
+      <div id="afterArea" style="display:none; margin-top:10px;">
+        <div class="note" id="explainBox"></div>
+        <div class="row" style="margin-top:10px;">
+          <button class="btn ghost" id="btnQuit">그만하기</button>
+          <button class="btn primary" id="btnNext">다음</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen: Result -->
+    <section id="screenResult" class="card" style="display:none;">
+      <p class="sectionTitle">결과</p>
+      <div class="note">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+          <div><strong id="resWho">-</strong></div>
+          <div class="pill">모드: <strong id="resMode">-</strong></div>
+        </div>
+        <div style="margin-top:8px; font-size:18px; font-weight:1000;">
+          최종 점수: <span id="resScore">0</span>점
+        </div>
+        <div class="muted small" style="margin-top:8px;" id="resSubmitHint">-</div>
+      </div>
+      <div class="hr"></div>
+      <div class="row">
+        <button class="btn ghost" id="btnPlayAgain">모드 선택으로</button>
+        <button class="btn danger" id="btnResetAll">초기화(저장값 삭제)</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+
+  const LS = {
+    name: "quiz_name",
+    school: "quiz_school",
+    server: "quiz_server_base"
+  };
+
+  const MODE_LABEL = {
+    humanities: "문과",
+    science: "이과",
+    mixed: "통합"
+  };
+
+  const state = {
+    loadedQuestions: null,
+    mode: null,
+    pool: [],
+    idx: 0,
+    score: 0,
+    locked: false,
+    timer: null,
+    remaining: 5,
+    lastWasWrong: false,
+    lastExplain: "",
+  };
+
+  function toast(msg){
+    const el = $("toast");
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(el._t);
+    el._t = setTimeout(() => el.classList.remove("show"), 1600);
+  }
+
+  function getServerBase(){
+    const saved = localStorage.getItem(LS.server) || "";
+    return (saved.trim() || "http://localhost:3000").replace(/\/+$/,"");
+  }
+
+  function setServerBase(v){
+    const base = (v || "").trim().replace(/\/+$/,"");
+    localStorage.setItem(LS.server, base);
+    $("serverBadge").textContent = getServerBase();
+  }
+
+  async function loadQuestions(){
+    if (state.loadedQuestions) return state.loadedQuestions;
+    const res = await fetch("./questions.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("questions.json 로드 실패");
+    const data = await res.json();
+    if (!data || !Array.isArray(data.questions)) throw new Error("questions.json 형식 이상함");
+    // basic validation
+    const qs = data.questions.filter(q =>
+      q && typeof q.id === "string" &&
+      (q.mode === "humanities" || q.mode === "science") &&
+      typeof q.q === "string" &&
+      Array.isArray(q.choices) && q.choices.length === 2 &&
+      (q.answer === 0 || q.answer === 1) &&
+      typeof q.explain === "string"
+    );
+    state.loadedQuestions = qs;
+    $("qCountBadge").textContent = String(qs.length);
+    return qs;
+  }
+
+  function shuffle(arr){
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function showScreen(which){
+    const screens = ["screenLogin","screenMode","screenQuiz","screenResult"];
+    screens.forEach(id => $(id).style.display = (id === which ? "" : "none"));
+  }
+
+  function getUser(){
+    const name = (localStorage.getItem(LS.name) || "").trim();
+    const school = (localStorage.getItem(LS.school) || "").trim();
+    return { name, school };
+  }
+
+  function setUser(name, school){
+    localStorage.setItem(LS.name, (name||"").trim());
+    localStorage.setItem(LS.school, (school||"").trim());
+  }
+
+  function prettyEntry(e){
+    const n = e?.name ?? "-";
+    const s = e?.school ?? "-";
+    const sc = (typeof e?.score === "number") ? e.score : 0;
+    return `${n}(${s}) - ${sc}점`;
+  }
+
+  function fillLB(listEl, arr){
+    listEl.innerHTML = "";
+    if (!arr || arr.length === 0){
+      const li = document.createElement("li");
+      li.textContent = "-";
+      listEl.appendChild(li);
+      return;
+    }
+    arr.slice(0,3).forEach(e => {
+      const li = document.createElement("li");
+      li.textContent = prettyEntry(e);
+      listEl.appendChild(li);
+    });
+  }
+
+  async function fetchLeaderboards(){
+    const base = getServerBase();
+    $("serverBadge").textContent = base;
+
+    const hintH = $("lbHintH");
+    const hintS = $("lbHintS");
+    const hintM = $("lbHintM");
+    hintH.textContent = hintS.textContent = hintM.textContent = "불러오는 중";
+
+    try{
+      const res = await fetch(base + "/leaderboard", { cache:"no-store" });
+      if (!res.ok) throw new Error("서버 응답 이상함");
+      const data = await res.json();
+      fillLB($("lbHumanities"), data.humanities || []);
+      fillLB($("lbScience"), data.science || []);
+      fillLB($("lbMixed"), data.mixed || []);
+
+      const now = new Date();
+      const stamp = now.toLocaleTimeString("ko-KR", { hour:"2-digit", minute:"2-digit" });
+      hintH.textContent = hintS.textContent = hintM.textContent = stamp;
+    }catch(e){
+      fillLB($("lbHumanities"), []);
+      fillLB($("lbScience"), []);
+      fillLB($("lbMixed"), []);
+      hintH.textContent = hintS.textContent = hintM.textContent = "서버 연결 실패";
+      toast("랭킹 서버 연결이 안 됨");
+    }
+  }
+
+  function buildPool(mode, questions){
+    if (mode === "mixed") return shuffle([...questions]);
+    return shuffle(questions.filter(q => q.mode === mode));
+  }
+
+  function stopTimer(){
+    if (state.timer){
+      clearInterval(state.timer);
+      state.timer = null;
+    }
+  }
+
+  function startTimer(){
+    stopTimer();
+    state.remaining = 5;
+    $("timePill").textContent = "5";
+    state.timer = setInterval(() => {
+      state.remaining -= 1;
+      $("timePill").textContent = String(Math.max(0, state.remaining));
+      if (state.remaining <= 0){
+        stopTimer();
+        if (!state.locked){
+          gradeAnswer(null, true);
+        }
+      }
+    }, 1000);
+  }
+
+  function renderQuestion(){
+    state.locked = false;
+    state.lastWasWrong = false;
+    $("afterArea").style.display = "none";
+    $("answers").innerHTML = "";
+    $("scorePill").textContent = String(state.score);
+
+    const q = state.pool[state.idx];
+    if (!q){
+      endGame();
+      return;
+    }
+
+    $("qText").textContent = q.q;
+    $("qSub").textContent = "2지선다 (OX 포함)";
+    $("modePill").textContent = MODE_LABEL[state.mode] || "-";
+
+    // progress bar (since it's potentially endless until wrong, show small pulse by count)
+    const pct = Math.min(100, (state.idx % 20) * 5); // cosmetic
+    $("progBar").style.width = pct + "%";
+
+    q.choices.forEach((label, i) => {
+      const btn = document.createElement("button");
+      btn.className = "btn choice";
+      btn.textContent = label;
+      btn.addEventListener("click", () => gradeAnswer(i, false));
+      $("answers").appendChild(btn);
+    });
+
+    startTimer();
+  }
+
+  function gradeAnswer(choiceIndex, isTimeout){
+    if (state.locked) return;
+    state.locked = true;
+    stopTimer();
+
+    const q = state.pool[state.idx];
+    const buttons = Array.from(document.querySelectorAll("#answers .choice"));
+    buttons.forEach(b => b.disabled = true);
+
+    const correct = (choiceIndex === q.answer) && !isTimeout;
+    const picked = choiceIndex;
+
+    // mark buttons
+    buttons.forEach((btn, i) => {
+      if (i === q.answer) btn.classList.add("good");
+      if (!correct && picked === i) btn.classList.add("bad");
+    });
+
+    if (correct){
+      state.score += 1;
+      $("scorePill").textContent = String(state.score);
+      state.lastWasWrong = false;
+      $("btnNext").textContent = "다음";
+    } else {
+      state.lastWasWrong = true;
+      $("btnNext").textContent = "결과 보기";
+    }
+
+    const reason = isTimeout ? "시간초과" : (correct ? "정답" : "오답");
+    const explain = q.explain || "-";
+    $("explainBox").innerHTML = `<strong>${reason}</strong><div class="muted small" style="margin-top:6px;">${escapeHtml(explain)}</div>`;
+    $("afterArea").style.display = "";
+
+    // keep last explain for result screen context if needed
+    state.lastExplain = explain;
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[c]));
+  }
+
+  async function submitScore(){
+    const base = getServerBase();
+    const { name, school } = getUser();
+    const body = { name, school, mode: state.mode, score: state.score };
+
+    try{
+      const res = await fetch(base + "/submit", {
+        method:"POST",
+        headers:{ "Content-Type":"application/json" },
+        body: JSON.stringify(body)
+      });
+      if (!res.ok) throw new Error("제출 실패");
+      await res.json().catch(() => ({}));
+      $("resSubmitHint").textContent = "랭킹에 반영 완료.";
+    }catch(e){
+      $("resSubmitHint").textContent = "랭킹 서버 연결 실패(점수 제출 못 함).";
+    }
+  }
+
+  function endGame(){
+    const { name, school } = getUser();
+    $("resWho").textContent = `${name} (${school})`;
+    $("resMode").textContent = MODE_LABEL[state.mode] || "-";
+    $("resScore").textContent = String(state.score);
+    $("resSubmitHint").textContent = "랭킹 반영 중...";
+
+    showScreen("screenResult");
+    submitScore().then(() => {});
+  }
+
+  function startGame(mode){
+    state.mode = mode;
+    state.idx = 0;
+    state.score = 0;
+    state.locked = false;
+    state.pool = [];
+
+    loadQuestions().then((qs) => {
+      const pool = buildPool(mode, qs);
+      if (pool.length < 1){
+        toast("해당 모드 문제 없음");
+        return;
+      }
+      state.pool = pool;
+
+      showScreen("screenQuiz");
+      renderQuestion();
+    }).catch((e) => {
+      toast("문제 로드 실패");
+      console.error(e);
+    });
+  }
+
+  // Events
+  $("btnSaveServer").addEventListener("click", () => {
+    setServerBase($("inpServer").value || "");
+    toast("서버 저장됨");
+  });
+
+  $("btnGoMode").addEventListener("click", async () => {
+    const name = $("inpName").value.trim();
+    const school = $("inpSchool").value.trim();
+    if (!name || !school){
+      toast("이름/학교 둘 다 적어");
+      return;
+    }
+    setUser(name, school);
+    $("whoLine").textContent = `${name} (${school})`;
+
+    showScreen("screenMode");
+    await loadQuestions().catch(() => {});
+    fetchLeaderboards();
+  });
+
+  $("btnBackToLogin").addEventListener("click", () => showScreen("screenLogin"));
+  $("btnRefreshLB").addEventListener("click", () => fetchLeaderboards());
+
+  document.querySelectorAll('button[data-mode]').forEach(btn => {
+    btn.addEventListener("click", () => startGame(btn.getAttribute("data-mode")));
+  });
+
+  $("btnNext").addEventListener("click", () => {
+    if (state.lastWasWrong){
+      endGame();
+      return;
+    }
+    state.idx += 1;
+    renderQuestion();
+  });
+
+  $("btnQuit").addEventListener("click", () => endGame());
+
+  $("btnPlayAgain").addEventListener("click", () => {
+    stopTimer();
+    const { name, school } = getUser();
+    $("whoLine").textContent = `${name} (${school})`;
+    showScreen("screenMode");
+    fetchLeaderboards();
+  });
+
+  $("btnResetAll").addEventListener("click", () => {
+    localStorage.removeItem(LS.name);
+    localStorage.removeItem(LS.school);
+    localStorage.removeItem(LS.server);
+    stopTimer();
+    $("inpName").value = "";
+    $("inpSchool").value = "";
+    $("inpServer").value = "";
+    $("serverBadge").textContent = "-";
+    $("qCountBadge").textContent = "-";
+    state.loadedQuestions = null;
+    toast("초기화 완료");
+    showScreen("screenLogin");
+  });
+
+  // init
+  (function init(){
+    $("inpName").value = localStorage.getItem(LS.name) || "";
+    $("inpSchool").value = localStorage.getItem(LS.school) || "";
+    const savedServer = localStorage.getItem(LS.server) || "";
+    $("inpServer").value = savedServer;
+    $("serverBadge").textContent = getServerBase();
+
+    loadQuestions().then(() => {}).catch(() => {});
+  })();
+})();
+</script>
+</body>
+</html>
