@@ -7,6 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>상식퀴즈</title>
+  <link rel="icon" href="data:," />
   <style>
     :root{
       --bg:#f5f6f8; --card:#fff; --text:#111; --muted:#666; --line:#e6e8ee;
@@ -88,6 +89,26 @@
       white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
     }
     .toast.show{opacity:1}
+  
+    /* UI v2 tweaks */
+    body{padding:20px}
+    .card{padding:16px}
+    header{margin-bottom:12px}
+    .sub{max-width:72ch}
+    .badge{gap:6px}
+    .badge span{margin-left:6px}
+    .grid3 > div{display:flex; flex-direction:column}
+    .lbCard{flex:1; min-height:140px}
+    .lbList{padding-left:20px}
+    .lbList li{display:flex; gap:8px; align-items:baseline}
+    .lbList .who{flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .lbList .sc{font-weight:1000; color:#111}
+    .modeBtn{padding:14px 12px; font-size:15px; border-radius:14px}
+    .modeBtn small{font-weight:900; opacity:.9}
+    .row .btn{min-width:180px}
+    .note{background:#fbfcff}
+    .note strong{display:inline-block; max-width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
   </style>
 </head>
 <body>
@@ -138,7 +159,7 @@
 
       <div class="grid3">
         <div>
-          <button class="btn primary" data-mode="humanities">문과 상식 시작</button>
+          <button class="btn primary modeBtn" data-mode="humanities">문과 상식 <small>시작</small></button>
           <div style="height:10px"></div>
           <div class="lbCard">
             <div class="lbHead"><div class="lbTitle">문과 TOP 3</div><div class="muted small" id="lbHintH">-</div></div>
@@ -146,7 +167,7 @@
           </div>
         </div>
         <div>
-          <button class="btn primary" data-mode="science">이과 상식 시작</button>
+          <button class="btn primary modeBtn" data-mode="science">이과 상식 <small>시작</small></button>
           <div style="height:10px"></div>
           <div class="lbCard">
             <div class="lbHead"><div class="lbTitle">이과 TOP 3</div><div class="muted small" id="lbHintS">-</div></div>
@@ -154,7 +175,7 @@
           </div>
         </div>
         <div>
-          <button class="btn primary" data-mode="mixed">통합 시작</button>
+          <button class="btn primary modeBtn" data-mode="mixed">통합 <small>시작</small></button>
           <div style="height:10px"></div>
           <div class="lbCard">
             <div class="lbHead"><div class="lbTitle">통합 TOP 3</div><div class="muted small" id="lbHintM">-</div></div>
@@ -313,6 +334,7 @@
   }
 
   function fillLB(listEl, arr){
+    const medals = ["🥇","🥈","🥉"];
     listEl.innerHTML = "";
     if (!arr || arr.length === 0){
       const li = document.createElement("li");
@@ -320,12 +342,21 @@
       listEl.appendChild(li);
       return;
     }
-    arr.slice(0,3).forEach(e => {
+    arr.slice(0,3).forEach((e, idx) => {
       const li = document.createElement("li");
+
+      const who = document.createElement("span");
+      who.className = "who";
       const n = e?.name ?? "-";
       const s = e?.school ?? "-";
-      const sc = (typeof e?.score === "number") ? e.score : 0;
-      li.textContent = `${n}(${s}) - ${sc}점`;
+      who.textContent = `${medals[idx] || ""} ${n}(${s})`;
+
+      const sc = document.createElement("span");
+      sc.className = "sc";
+      sc.textContent = `${(typeof e?.score === "number") ? e.score : 0}점`;
+
+      li.appendChild(who);
+      li.appendChild(sc);
       listEl.appendChild(li);
     });
   }
@@ -558,7 +589,7 @@
   (function init(){
     $("inpName").value = localStorage.getItem(LS.name) || "";
     $("inpSchool").value = localStorage.getItem(LS.school) || "";
-    $("rankBadge").textContent = "준비중";
+    $("rankBadge").textContent = (CONFIG.serverBase ? "연결중" : "꺼짐");
     loadQuestions().catch(() => {});
   })();
 })();
