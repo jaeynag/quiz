@@ -395,7 +395,7 @@
   <div class="toast" id="toast"></div>
 
 <script>
-  const APP_VERSION = "2025.12.13-01";
+  const APP_VERSION = "2025.12.13-02";
 
 (() => {
   const $ = (id) => document.getElementById(id);
@@ -437,7 +437,7 @@
 
   // 연속정답 스티커(5점마다)
   // 사진은 레포에 이렇게 넣어줘: assets/cats/cat_01.png, cat_02.png ...
-  const STICKER_IMAGES = Array.from({ length: 60 }, (_, i) =>
+  let STICKER_IMAGES = Array.from({ length: 60 }, (_, i) =>
     `assets/cats/cat_${String(i + 1).padStart(2, "0")}.png`
   );
 
@@ -616,9 +616,19 @@ if (tt) {
       typeof q.explain === "string"
     );
 
-    state.questions = qs;
-    $("qCountBadge").textContent = String(qs.length);
-    // 버전 표시(메타가 있으면)
+    // (중복 방지) 같은 모드에서 질문 텍스트(q)가 완전히 같은 문제는 1개만 남김
+    const _seenQ = new Set();
+    const uniq = [];
+    for (const q of qs){
+      const key = q.mode + "|" + String(q.q || "").trim();
+      if (_seenQ.has(key)) continue;
+      _seenQ.add(key);
+      uniq.push(q);
+    }
+
+    state.questions = uniq;
+    $("qCountBadge").textContent = String(uniq.length);
+// 버전 표시(메타가 있으면)
     const meta = (data && data.meta) ? data.meta : null;
     const vb = $("verBadge");
   const bd = $("stickerBoard");
@@ -658,19 +668,30 @@ const tt = $("appTitle");
       const res = await fetch("assets/cats/stickers.json?v=" + Date.now(), { cache: "no-store" });
       if (!res.ok) throw new Error("stickers.json not found");
       const list = await res.json();
-
       if (!Array.isArray(list)) throw new Error("stickers.json must be an array");
+
       // 파일명만 있으면 assets/cats/ 자동 prefix
-      STICKER_IMAGES = list
+      const mapped = list
         .map(x => String(x || "").trim())
         .filter(Boolean)
         .map(x => (x.includes("/") ? x : ("assets/cats/" + x)));
+
+      // 중복 제거(파일명 중복 업로드 대비)
+      const seen = new Set();
+      STICKER_IMAGES = mapped.filter(src => {
+        if (seen.has(src)) return false;
+        seen.add(src);
+        return true;
+      });
 
       // 셔플백 초기화
       _stickerBag = [];
       _stickerPtr = 0;
     }catch(e){
-      STICKER_IMAGES = [];
+      // stickers.json이 없거나 형식이 깨져도, 기존 STICKER_IMAGES(기본값)는 유지
+      _stickerBag = [];
+      _stickerPtr = 0;
+      console.warn("loadStickers failed:", e);
     }
   }
 
@@ -971,6 +992,7 @@ state.streak = (state.streak || 0) + 1;
     $("whoLine").textContent = `${name} (${school})`;
     showScreen("screenMode");
     await loadQuestions().catch(() => {});
+    loadStickers().catch(() => {});
     fetchLeaderboards();
   });
 
@@ -995,6 +1017,7 @@ state.streak = (state.streak || 0) + 1;
     $("inpSchool").value = localStorage.getItem(LS.school) || "";
     $("rankBadge").textContent = (CONFIG.serverBase ? "연결중" : "꺼짐");
     loadQuestions().catch(() => {});
+    loadStickers().catch(() => {});
   })();
 })();
 </script>
