@@ -595,7 +595,10 @@ function popStickerForStreak(streak){
   const tt = $("appTitle");
     if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
   if (sb) sb.style.display = (which === "screenQuiz" ? "block" : "none");
-  if (tt) tt.style.display = (which === "screenQuiz" ? "none" : "block");
+  if (tt) {
+    // 퀴즈 화면에서는 타이틀 자리는 유지하고 글자만 숨김(배지 위치 고정)
+    tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
+  }
   }
 
 
