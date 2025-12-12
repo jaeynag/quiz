@@ -123,7 +123,7 @@
       </div>
       <div class="topLine">
         <span class="badge">문제: <span id="qCountBadge">-</span></span>
-        <span class="badge">서버: <span id="serverBadge" class="mono">-</span></span>
+        <span class="badge">랭킹: <span id="serverBadge" class="mono">준비중</span></span>
       </div>
     </header>
 
@@ -141,18 +141,11 @@
         </div>
       </div>
       <div class="hr"></div>
-      <div class="grid2">
-        <div>
-          <div class="label">서버 주소</div>
-          <input id="inpServer" placeholder="예: https://api.example.com" />
-          <div class="muted small" style="margin-top:6px;">
-            랭킹 저장/조회용. 비워두면 <span class="mono">http://localhost:3000</span> 사용.
-          </div>
-        </div>
-        <div style="display:flex; gap:10px; align-items:flex-end;">
-          <button class="btn ghost" id="btnSaveServer">서버 저장</button>
-          <button class="btn primary" id="btnGoMode">다음</button>
-        </div>
+      <div class="row" style="justify-content:flex-end;">
+        <button class="btn primary" id="btnGoMode" style="flex:0 0 auto;">다음</button>
+      </div>
+      <div class="muted small" style="margin-top:10px;">
+        랭킹 서버는 나중에 연결될 거야. (지금은 퀴즈만 돌아감)
       </div>
     </section>
 
@@ -266,9 +259,7 @@
 
   const LS = {
     name: "quiz_name",
-    school: "quiz_school",
-    server: "quiz_server_base"
-  };
+    school: "quiz_school",  };
 
   const MODE_LABEL = {
     humanities: "문과",
@@ -297,15 +288,15 @@
     el._t = setTimeout(() => el.classList.remove("show"), 1600);
   }
 
-  function getServerBase(){
-    const saved = localStorage.getItem(LS.server) || "";
-    return (saved.trim() || "http://localhost:3000").replace(/\/+$/,"");
-  }
+  const CONFIG = {
+    // 운영 서버 주소를 여기에 넣어라. 예) "https://api.example.com"
+    // 비워두면 랭킹(조회/제출) 기능이 꺼진다.
+    serverBase: "https://yangsquiz.workers.dev"
+  };
 
-  function setServerBase(v){
-    const base = (v || "").trim().replace(/\/+$/,"");
-    localStorage.setItem(LS.server, base);
-    $("serverBadge").textContent = getServerBase();
+  function getServerBase(){
+    const base = (CONFIG.serverBase || "").trim().replace(/\/+$/,"");
+    return base;
   }
 
   async function loadQuestions(){
@@ -376,9 +367,16 @@
 
   async function fetchLeaderboards(){
     const base = getServerBase();
-    $("serverBadge").textContent = base;
-
-    const hintH = $("lbHintH");
+    $("serverBadge").textContent = base ? "연결됨" : "준비중";
+    if (!base){
+      // 랭킹 기능 꺼짐
+      fillLB($("lbHumanities"), []);
+      fillLB($("lbScience"), []);
+      fillLB($("lbMixed"), []);
+      $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = "서버 없음";
+      return;
+    }
+const hintH = $("lbHintH");
     const hintS = $("lbHintS");
     const hintM = $("lbHintM");
     hintH.textContent = hintS.textContent = hintM.textContent = "불러오는 중";
@@ -508,10 +506,13 @@
 
   async function submitScore(){
     const base = getServerBase();
+    if (!base){
+      $("resSubmitHint").textContent = "랭킹 서버 미연결(제출 안 함).";
+      return;
+    }
     const { name, school } = getUser();
     const body = { name, school, mode: state.mode, score: state.score };
-
-    try{
+try{
       const res = await fetch(base + "/submit", {
         method:"POST",
         headers:{ "Content-Type":"application/json" },
@@ -559,10 +560,7 @@
     });
   }
 
-  // Events
-  $("btnSaveServer").addEventListener("click", () => {
-    setServerBase($("inpServer").value || "");
-    toast("서버 저장됨");
+  // Events    toast("서버 저장됨");
   });
 
   $("btnGoMode").addEventListener("click", async () => {
@@ -609,11 +607,11 @@
   $("btnResetAll").addEventListener("click", () => {
     localStorage.removeItem(LS.name);
     localStorage.removeItem(LS.school);
-    localStorage.removeItem(LS.server);
+    /* removed */
     stopTimer();
     $("inpName").value = "";
     $("inpSchool").value = "";
-    $("inpServer").value = "";
+    /* removed */ "" = "";
     $("serverBadge").textContent = "-";
     $("qCountBadge").textContent = "-";
     state.loadedQuestions = null;
@@ -625,9 +623,9 @@
   (function init(){
     $("inpName").value = localStorage.getItem(LS.name) || "";
     $("inpSchool").value = localStorage.getItem(LS.school) || "";
-    const savedServer = localStorage.getItem(LS.server) || "";
-    $("inpServer").value = savedServer;
-    $("serverBadge").textContent = getServerBase();
+    /* removed: serverBase fixed in CONFIG */
+    /* removed */ "" = savedServer;
+    $("serverBadge").textContent = getServerBase() ? "연결됨" : "준비중";
 
     loadQuestions().then(() => {}).catch(() => {});
   })();
