@@ -21,23 +21,16 @@
       display:flex; justify-content:center; padding:24px;
     }
     .app{width:min(920px, 100%);}
-    header{
-      display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
-      margin-bottom:14px;
-    }
+    header{display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:14px;}
     h1{margin:0; font-size:20px; letter-spacing:-.2px}
     .sub{color:var(--muted); font-size:13px; margin-top:2px; line-height:1.35}
-    .card{
-      background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
-      box-shadow:var(--shadow); padding:18px;
-    }
-    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:stretch}
-    .row > *{flex:1}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px;}
     .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:12px}
     .grid3{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px}
     @media (max-width:860px){ .grid3{grid-template-columns:1fr} }
     @media (max-width:720px){ .grid2{grid-template-columns:1fr} }
-
+    .row{display:flex; gap:12px; flex-wrap:wrap; align-items:stretch}
+    .row > *{flex:1}
     .btn{
       appearance:none; border:1px solid var(--line); background:#fff;
       padding:12px 12px; border-radius:12px; cursor:pointer;
@@ -47,13 +40,17 @@
     }
     .btn:hover{transform:translateY(-1px); border-color:#cfd5e2}
     .btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
-    .btn.danger{background:#fff; border-color:#ffd2d2; color:var(--bad)}
     .btn.ghost{background:#fff}
-
+    .btn.danger{background:#fff; border-color:#ffd2d2; color:var(--bad)}
     .pill{
       display:inline-flex; align-items:center; justify-content:center; gap:8px;
       padding:8px 10px; border:1px solid var(--line); border-radius:999px; background:#fff;
       font-size:13px; color:var(--muted);
+    }
+    .badge{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff;
+      font-size:12px; color:var(--muted); font-weight:900;
     }
     .label{font-size:13px; color:var(--muted); font-weight:900; margin-bottom:6px}
     input{
@@ -61,15 +58,20 @@
       font-size:15px; outline:none;
     }
     input:focus{border-color:#cfd5e2; box-shadow:0 0 0 3px rgba(43,108,255,.10)}
+    .hr{height:1px; background:var(--line); margin:12px 0}
+    .note{border:1px solid var(--line); border-radius:12px; padding:12px; background:#fff; line-height:1.35;}
+    .note strong{font-weight:1000}
     .muted{color:var(--muted)}
     .small{font-size:13px}
-    .sectionTitle{margin:0 0 10px 0; font-size:14px; color:var(--muted); font-weight:1000}
+
+    .lbCard{border:1px solid var(--line); border-radius:14px; padding:12px; background:#fff; min-height:120px; display:flex; flex-direction:column; gap:8px;}
+    .lbHead{display:flex; align-items:center; justify-content:space-between; gap:8px}
+    .lbTitle{font-weight:1000}
+    .lbList{margin:0; padding:0 0 0 18px; color:var(--muted)}
+    .lbList li{margin:4px 0}
 
     .qmeta{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap}
-    .progress{
-      height:10px; border-radius:999px; background:#eef1f7; overflow:hidden; border:1px solid var(--line);
-      width:min(360px, 100%);
-    }
+    .progress{height:10px; border-radius:999px; background:#eef1f7; overflow:hidden; border:1px solid var(--line); width:min(360px, 100%);}
     .bar{height:100%; width:0%; background:var(--accent); transition:width .2s}
     .qtext{font-size:18px; line-height:1.35; font-weight:1000; letter-spacing:-.2px; margin:8px 0 2px 0}
     .answers{display:grid; gap:10px; margin-top:8px}
@@ -77,29 +79,6 @@
     .choice.good{border-color:#cfeedd; background:rgba(15,138,60,.08)}
     .choice.bad{border-color:#ffd2d2; background:rgba(209,47,47,.06)}
     .choice:disabled{cursor:not-allowed; transform:none; opacity:.95}
-    .note{
-      border:1px solid var(--line); border-radius:12px; padding:12px; background:#fff;
-      line-height:1.35;
-    }
-    .note strong{font-weight:1000}
-    .hr{height:1px; background:var(--line); margin:12px 0}
-    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
-
-    .lbCard{
-      border:1px solid var(--line); border-radius:14px; padding:12px;
-      background:#fff; min-height:120px;
-      display:flex; flex-direction:column; gap:8px;
-    }
-    .lbHead{display:flex; align-items:center; justify-content:space-between; gap:8px}
-    .lbTitle{font-weight:1000}
-    .lbList{margin:0; padding:0 0 0 18px; color:var(--muted)}
-    .lbList li{margin:4px 0}
-    .topLine{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-    .badge{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff;
-      font-size:12px; color:var(--muted); font-weight:900;
-    }
 
     .toast{
       position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
@@ -121,15 +100,15 @@
           <span class="muted">(정답/오답 후 한 줄 해설 → 다음 버튼)</span>
         </div>
       </div>
-      <div class="topLine">
-        <span class="badge">문제: <span id="qCountBadge">-</span></span>
-        <span class="badge">랭킹: <span id="serverBadge" class="mono">준비중</span></span>
+      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+        <span class="badge">문제:<span id="qCountBadge">-</span></span>
+        <span class="badge">랭킹:<span id="rankBadge">-</span></span>
       </div>
     </header>
 
-    <!-- Screen: Login -->
+    <!-- Login -->
     <section id="screenLogin" class="card">
-      <p class="sectionTitle">1) 정보 입력</p>
+      <div class="label">1) 정보 입력</div>
       <div class="grid2">
         <div>
           <div class="label">이름</div>
@@ -137,22 +116,19 @@
         </div>
         <div>
           <div class="label">출신고등학교</div>
-          <input id="inpSchool" placeholder="예: OO고" maxlength="40" autocomplete="organization" />
+          <input id="inpSchool" placeholder="예: 공주고" maxlength="40" autocomplete="organization" />
         </div>
       </div>
       <div class="hr"></div>
       <div class="row" style="justify-content:flex-end;">
         <button class="btn primary" id="btnGoMode" style="flex:0 0 auto;">다음</button>
       </div>
-      <div class="muted small" style="margin-top:10px;">
-        랭킹 서버 연결됨.
-      </div>
+      <div class="muted small" style="margin-top:10px;">랭킹 서버는 이미 연결돼 있어. (안 뜨면 네트워크/CORS 문제)</div>
     </section>
 
-    <!-- Screen: Mode -->
+    <!-- Mode -->
     <section id="screenMode" class="card" style="display:none;">
-      <p class="sectionTitle">2) 모드 선택</p>
-
+      <div class="label">2) 모드 선택</div>
       <div class="note">
         <div><strong id="whoLine">-</strong></div>
         <div class="muted small">문과/이과/통합 중 하나 골라. 통합은 문과+이과 문제를 섞어서 냄.</div>
@@ -165,34 +141,23 @@
           <button class="btn primary" data-mode="humanities">문과 상식 시작</button>
           <div style="height:10px"></div>
           <div class="lbCard">
-            <div class="lbHead">
-              <div class="lbTitle">문과 TOP 3</div>
-              <div class="muted small" id="lbHintH">-</div>
-            </div>
+            <div class="lbHead"><div class="lbTitle">문과 TOP 3</div><div class="muted small" id="lbHintH">-</div></div>
             <ol class="lbList" id="lbHumanities"></ol>
           </div>
         </div>
-
         <div>
           <button class="btn primary" data-mode="science">이과 상식 시작</button>
           <div style="height:10px"></div>
           <div class="lbCard">
-            <div class="lbHead">
-              <div class="lbTitle">이과 TOP 3</div>
-              <div class="muted small" id="lbHintS">-</div>
-            </div>
+            <div class="lbHead"><div class="lbTitle">이과 TOP 3</div><div class="muted small" id="lbHintS">-</div></div>
             <ol class="lbList" id="lbScience"></ol>
           </div>
         </div>
-
         <div>
           <button class="btn primary" data-mode="mixed">통합 시작</button>
           <div style="height:10px"></div>
           <div class="lbCard">
-            <div class="lbHead">
-              <div class="lbTitle">통합 TOP 3</div>
-              <div class="muted small" id="lbHintM">-</div>
-            </div>
+            <div class="lbHead"><div class="lbTitle">통합 TOP 3</div><div class="muted small" id="lbHintM">-</div></div>
             <ol class="lbList" id="lbMixed"></ol>
           </div>
         </div>
@@ -205,15 +170,13 @@
       </div>
     </section>
 
-    <!-- Screen: Quiz -->
+    <!-- Quiz -->
     <section id="screenQuiz" class="card" style="display:none;">
       <div class="qmeta">
-        <div class="pill"><strong id="modePill">-</strong></div>
+        <div class="pill">모드: <strong id="modePill">-</strong></div>
         <div class="pill">점수: <strong id="scorePill">0</strong></div>
         <div class="pill">남은시간: <strong id="timePill">5</strong>s</div>
-        <div class="progress" aria-label="진행">
-          <div class="bar" id="progBar"></div>
-        </div>
+        <div class="progress"><div class="bar" id="progBar"></div></div>
       </div>
 
       <div class="qtext" id="qText">-</div>
@@ -230,9 +193,9 @@
       </div>
     </section>
 
-    <!-- Screen: Result -->
+    <!-- Result -->
     <section id="screenResult" class="card" style="display:none;">
-      <p class="sectionTitle">결과</p>
+      <div class="label">결과</div>
       <div class="note">
         <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
           <div><strong id="resWho">-</strong></div>
@@ -246,7 +209,7 @@
       <div class="hr"></div>
       <div class="row">
         <button class="btn ghost" id="btnPlayAgain">모드 선택으로</button>
-        <button class="btn danger" id="btnResetAll">초기화(저장값 삭제)</button>
+        <button class="btn danger" id="btnResetLocal">로컬저장 삭제</button>
       </div>
     </section>
   </div>
@@ -257,9 +220,14 @@
 (() => {
   const $ = (id) => document.getElementById(id);
 
+  const CONFIG = {
+    serverBase: "https://quiz-leaderboard.yangsquiz.workers.dev"
+  };
+
   const LS = {
     name: "quiz_name",
-    school: "quiz_school",  };
+    school: "quiz_school"
+  };
 
   const MODE_LABEL = {
     humanities: "문과",
@@ -268,7 +236,7 @@
   };
 
   const state = {
-    loadedQuestions: null,
+    questions: null,
     mode: null,
     pool: [],
     idx: 0,
@@ -276,8 +244,7 @@
     locked: false,
     timer: null,
     remaining: 5,
-    lastWasWrong: false,
-    lastExplain: "",
+    lastWasWrong: false
   };
 
   function toast(msg){
@@ -285,27 +252,39 @@
     el.textContent = msg;
     el.classList.add("show");
     clearTimeout(el._t);
-    el._t = setTimeout(() => el.classList.remove("show"), 1600);
+    el._t = setTimeout(() => el.classList.remove("show"), 1500);
   }
 
-  const CONFIG = {
-    // 운영 서버 주소를 여기에 넣어라. 예) "https://api.example.com"
-    // 비워두면 랭킹(조회/제출) 기능이 꺼진다.
-    serverBase: "https://quiz-leaderboard.yangsquiz.workers.dev"
-  };
+  function showScreen(which){
+    ["screenLogin","screenMode","screenQuiz","screenResult"].forEach(id => {
+      $(id).style.display = (id === which ? "" : "none");
+    });
+  }
 
-  function getServerBase(){
-    const base = (CONFIG.serverBase || "").trim().replace(/\/+$/,"");
-    return base;
+  function getUser(){
+    return {
+      name: (localStorage.getItem(LS.name) || "").trim(),
+      school: (localStorage.getItem(LS.school) || "").trim()
+    };
+  }
+  function setUser(name, school){
+    localStorage.setItem(LS.name, (name || "").trim());
+    localStorage.setItem(LS.school, (school || "").trim());
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[c]));
   }
 
   async function loadQuestions(){
-    if (state.loadedQuestions) return state.loadedQuestions;
+    if (state.questions) return state.questions;
     const res = await fetch("./questions.json", { cache: "no-store" });
     if (!res.ok) throw new Error("questions.json 로드 실패");
     const data = await res.json();
     if (!data || !Array.isArray(data.questions)) throw new Error("questions.json 형식 이상함");
-    // basic validation
+
     const qs = data.questions.filter(q =>
       q && typeof q.id === "string" &&
       (q.mode === "humanities" || q.mode === "science") &&
@@ -314,7 +293,8 @@
       (q.answer === 0 || q.answer === 1) &&
       typeof q.explain === "string"
     );
-    state.loadedQuestions = qs;
+
+    state.questions = qs;
     $("qCountBadge").textContent = String(qs.length);
     return qs;
   }
@@ -327,27 +307,9 @@
     return arr;
   }
 
-  function showScreen(which){
-    const screens = ["screenLogin","screenMode","screenQuiz","screenResult"];
-    screens.forEach(id => $(id).style.display = (id === which ? "" : "none"));
-  }
-
-  function getUser(){
-    const name = (localStorage.getItem(LS.name) || "").trim();
-    const school = (localStorage.getItem(LS.school) || "").trim();
-    return { name, school };
-  }
-
-  function setUser(name, school){
-    localStorage.setItem(LS.name, (name||"").trim());
-    localStorage.setItem(LS.school, (school||"").trim());
-  }
-
-  function prettyEntry(e){
-    const n = e?.name ?? "-";
-    const s = e?.school ?? "-";
-    const sc = (typeof e?.score === "number") ? e.score : 0;
-    return `${n}(${s}) - ${sc}점`;
+  function buildPool(mode, questions){
+    if (mode === "mixed") return shuffle([...questions]);
+    return shuffle(questions.filter(q => q.mode === mode));
   }
 
   function fillLB(listEl, arr){
@@ -360,50 +322,45 @@
     }
     arr.slice(0,3).forEach(e => {
       const li = document.createElement("li");
-      li.textContent = prettyEntry(e);
+      const n = e?.name ?? "-";
+      const s = e?.school ?? "-";
+      const sc = (typeof e?.score === "number") ? e.score : 0;
+      li.textContent = `${n}(${s}) - ${sc}점`;
       listEl.appendChild(li);
     });
   }
 
   async function fetchLeaderboards(){
-    const base = getServerBase();
-    $("serverBadge").textContent = base ? "연결됨" : "준비중";
+    const base = (CONFIG.serverBase || "").replace(/\/+$/,"");
     if (!base){
-      // 랭킹 기능 꺼짐
+      $("rankBadge").textContent = "꺼짐";
       fillLB($("lbHumanities"), []);
       fillLB($("lbScience"), []);
       fillLB($("lbMixed"), []);
-      $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = "서버 없음";
+      $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = "-";
       return;
     }
-const hintH = $("lbHintH");
-    const hintS = $("lbHintS");
-    const hintM = $("lbHintM");
-    hintH.textContent = hintS.textContent = hintM.textContent = "불러오는 중";
+
+    $("rankBadge").textContent = "연결중";
+    $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = "불러오는 중";
 
     try{
       const res = await fetch(base + "/leaderboard", { cache:"no-store" });
-      if (!res.ok) throw new Error("서버 응답 이상함");
+      if (!res.ok) throw new Error("서버 응답 이상");
       const data = await res.json();
       fillLB($("lbHumanities"), data.humanities || []);
       fillLB($("lbScience"), data.science || []);
       fillLB($("lbMixed"), data.mixed || []);
-
-      const now = new Date();
-      const stamp = now.toLocaleTimeString("ko-KR", { hour:"2-digit", minute:"2-digit" });
-      hintH.textContent = hintS.textContent = hintM.textContent = stamp;
+      const stamp = new Date().toLocaleTimeString("ko-KR", { hour:"2-digit", minute:"2-digit" });
+      $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = stamp;
+      $("rankBadge").textContent = "연결됨";
     }catch(e){
       fillLB($("lbHumanities"), []);
       fillLB($("lbScience"), []);
       fillLB($("lbMixed"), []);
-      hintH.textContent = hintS.textContent = hintM.textContent = "서버 연결 실패";
-      toast("랭킹 서버 연결이 안 됨");
+      $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = "실패";
+      $("rankBadge").textContent = "실패";
     }
-  }
-
-  function buildPool(mode, questions){
-    if (mode === "mixed") return shuffle([...questions]);
-    return shuffle(questions.filter(q => q.mode === mode));
   }
 
   function stopTimer(){
@@ -443,11 +400,9 @@ const hintH = $("lbHintH");
     }
 
     $("qText").textContent = q.q;
-    $("qSub").textContent = "2지선다 (OX 포함)";
     $("modePill").textContent = MODE_LABEL[state.mode] || "-";
 
-    // progress bar (since it's potentially endless until wrong, show small pulse by count)
-    const pct = Math.min(100, (state.idx % 20) * 5); // cosmetic
+    const pct = Math.min(100, (state.idx % 20) * 5);
     $("progBar").style.width = pct + "%";
 
     q.choices.forEach((label, i) => {
@@ -473,7 +428,6 @@ const hintH = $("lbHintH");
     const correct = (choiceIndex === q.answer) && !isTimeout;
     const picked = choiceIndex;
 
-    // mark buttons
     buttons.forEach((btn, i) => {
       if (i === q.answer) btn.classList.add("good");
       if (!correct && picked === i) btn.classList.add("bad");
@@ -491,48 +445,40 @@ const hintH = $("lbHintH");
 
     const reason = isTimeout ? "시간초과" : (correct ? "정답" : "오답");
     const explain = q.explain || "-";
-    $("explainBox").innerHTML = `<strong>${reason}</strong><div class="muted small" style="margin-top:6px;">${escapeHtml(explain)}</div>`;
+    $("explainBox").innerHTML =
+      `<strong>${reason}</strong><div class="muted small" style="margin-top:6px;">${escapeHtml(explain)}</div>`;
     $("afterArea").style.display = "";
-
-    // keep last explain for result screen context if needed
-    state.lastExplain = explain;
-  }
-
-  function escapeHtml(s){
-    return String(s).replace(/[&<>"']/g, c => ({
-      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-    }[c]));
   }
 
   async function submitScore(){
-    const base = getServerBase();
+    const base = (CONFIG.serverBase || "").replace(/\/+$/,"");
     if (!base){
-      $("resSubmitHint").textContent = "랭킹 서버 미연결(제출 안 함).";
+      $("resSubmitHint").textContent = "랭킹 서버 꺼짐(제출 안 함).";
       return;
     }
     const { name, school } = getUser();
     const body = { name, school, mode: state.mode, score: state.score };
-try{
+
+    try{
       const res = await fetch(base + "/submit", {
         method:"POST",
         headers:{ "Content-Type":"application/json" },
         body: JSON.stringify(body)
       });
-      if (!res.ok) throw new Error("제출 실패");
-      await res.json().catch(() => ({}));
-      $("resSubmitHint").textContent = "랭킹에 반영 완료.";
+      if (!res.ok) throw new Error("submit failed");
+      $("resSubmitHint").textContent = "랭킹 반영 완료.";
     }catch(e){
-      $("resSubmitHint").textContent = "랭킹 서버 연결 실패(점수 제출 못 함).";
+      $("resSubmitHint").textContent = "랭킹 서버 제출 실패.";
     }
   }
 
   function endGame(){
+    stopTimer();
     const { name, school } = getUser();
     $("resWho").textContent = `${name} (${school})`;
     $("resMode").textContent = MODE_LABEL[state.mode] || "-";
     $("resScore").textContent = String(state.score);
     $("resSubmitHint").textContent = "랭킹 반영 중...";
-
     showScreen("screenResult");
     submitScore().then(() => {});
   }
@@ -541,28 +487,24 @@ try{
     state.mode = mode;
     state.idx = 0;
     state.score = 0;
-    state.locked = false;
     state.pool = [];
 
-    loadQuestions().then((qs) => {
+    loadQuestions().then(qs => {
       const pool = buildPool(mode, qs);
       if (pool.length < 1){
-        toast("해당 모드 문제 없음");
+        toast("문제가 없음");
         return;
       }
       state.pool = pool;
-
       showScreen("screenQuiz");
       renderQuestion();
-    }).catch((e) => {
-      toast("문제 로드 실패");
+    }).catch(e => {
       console.error(e);
+      toast("문제 로드 실패");
     });
   }
 
-  // Events    toast("서버 저장됨");
-  });
-
+  // Events
   $("btnGoMode").addEventListener("click", async () => {
     const name = $("inpName").value.trim();
     const school = $("inpSchool").value.trim();
@@ -597,24 +539,18 @@ try{
   $("btnQuit").addEventListener("click", () => endGame());
 
   $("btnPlayAgain").addEventListener("click", () => {
-    stopTimer();
     const { name, school } = getUser();
     $("whoLine").textContent = `${name} (${school})`;
     showScreen("screenMode");
     fetchLeaderboards();
   });
 
-  $("btnResetAll").addEventListener("click", () => {
+  $("btnResetLocal").addEventListener("click", () => {
     localStorage.removeItem(LS.name);
     localStorage.removeItem(LS.school);
-    /* removed */
-    stopTimer();
     $("inpName").value = "";
     $("inpSchool").value = "";
-    $("serverBadge").textContent = "-";
-    $("qCountBadge").textContent = "-";
-    state.loadedQuestions = null;
-    toast("초기화 완료");
+    toast("로컬저장 삭제");
     showScreen("screenLogin");
   });
 
@@ -622,9 +558,8 @@ try{
   (function init(){
     $("inpName").value = localStorage.getItem(LS.name) || "";
     $("inpSchool").value = localStorage.getItem(LS.school) || "";
-    $("serverBadge").textContent = getServerBase() ? "연결됨" : "준비중";
-
-    loadQuestions().then(() => {}).catch(() => {});
+    $("rankBadge").textContent = "준비중";
+    loadQuestions().catch(() => {});
   })();
 })();
 </script>
