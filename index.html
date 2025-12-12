@@ -201,6 +201,21 @@
       z-index:60;
     }
     .toast.show{opacity:1}
+  
+    /* Timer FX */
+    .pill.timer{transition: .15s transform, .15s border, .15s background, .15s color;}
+    .pill.timer.ok{border-color:var(--line); background:#fff; color:var(--muted);}
+    .pill.timer.warn{border-color:rgba(245,158,11,.45); background:rgba(245,158,11,.10); color:#7c5a00;}
+    .pill.timer.bad{border-color:rgba(239,68,68,.55); background:rgba(239,68,68,.10); color:var(--bad);}
+    .pill.timer.pulse{animation:pulse .55s ease-in-out infinite;}
+    @keyframes pulse{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.04)}
+      100%{transform:scale(1)}
+    }
+    .bar.warn{background:rgb(245,158,11);}
+    .bar.bad{background:var(--bad);}
+
   </style>
 </head>
 <body>
@@ -271,7 +286,7 @@
       <div class="qmeta">
         <div class="pill">모드: <strong id="modePill">-</strong></div>
         <div class="pill">점수: <strong id="scorePill">0</strong></div>
-        <div class="pill">남은시간: <strong id="timePill">5</strong>s</div>
+        <div class="pill timer ok" id="timePillWrap">남은시간: <strong id="timePill">5</strong>s</div>
         <div class="progress" aria-hidden="true"><div class="bar" id="progBar"></div></div>
       </div>
 
@@ -461,14 +476,39 @@
     }
   }
 
-  function startTimer(){
+  
+  function setTimerUI(rem){
+    const wrap = $("timePillWrap");
+    const bar = $("progBar");
+    wrap.classList.remove("ok","warn","bad","pulse");
+    bar.classList.remove("warn","bad");
+
+    if (rem <= 2){
+      wrap.classList.add("bad","pulse");
+      bar.classList.add("bad");
+    } else if (rem === 3){
+      wrap.classList.add("warn");
+      bar.classList.add("warn");
+    } else {
+      wrap.classList.add("ok");
+    }
+
+    // bar shows remaining time (100% -> 0%)
+    const pct = Math.max(0, Math.min(100, (rem / 5) * 100));
+    bar.style.width = pct + "%";
+  }
+
+function startTimer(){
     stopTimer();
     state.remaining = 5;
     $("timePill").textContent = "5";
+    setTimerUI(5);
     state.timer = setInterval(() => {
       state.remaining -= 1;
-      $("timePill").textContent = String(Math.max(0, state.remaining));
-      if (state.remaining <= 0){
+      const rem = Math.max(0, state.remaining);
+      $("timePill").textContent = String(rem);
+      setTimerUI(rem);
+      if (rem <= 0){
         stopTimer();
         if (!state.locked){
           gradeAnswer(null, true);
@@ -491,8 +531,8 @@
     $("qText").textContent = q.q;
     $("modePill").textContent = MODE_LABEL[state.mode] || "-";
 
-    const pct = Math.min(100, (state.idx % 20) * 5);
-    $("progBar").style.width = pct + "%";
+    // progress bar is used for timer (reset to full)
+    $("progBar").style.width = "100%";
 
     q.choices.forEach((label, i) => {
       const btn = document.createElement("button");
