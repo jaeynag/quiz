@@ -201,7 +201,7 @@
       z-index:60;
     }
     .toast.show{opacity:1}
-  
+
     /* Timer FX */
     .pill.timer{transition: .15s transform, .15s border, .15s background, .15s color;}
     .pill.timer.ok{border-color:var(--line); background:#fff; color:var(--muted);}
@@ -216,84 +216,22 @@
     .bar.warn{background:rgb(245,158,11);}
     .bar.bad{background:var(--bad);}
 
-  
-  .ver-badge{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    padding: 4px 8px;
-    border-radius: 999px;
-    font-size: 11px;
-    line-height: 1;
-    background: rgba(0,0,0,0.35);
-    color: #fff;
-    z-index: 9998;
-    pointer-events: none;
-    backdrop-filter: blur(6px);
-    opacity: 0.85;
-  }
-
-  /* Sticker pop (연속정답 보상) */
-  .sticker-pop{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(0.2);
-    opacity: 0;
-    z-index: 9997;
-    pointer-events: none;
-    will-change: transform, opacity;
-  }
-  .sticker-pop.show{
-    animation: stickerIn .22s cubic-bezier(.2,.9,.2,1.2) forwards,
-               stickerOut .28s ease-in forwards;
-    animation-delay: 0s, 0.92s; /* 총 1.2초 */
-  }
-  .sticker-pop img{
-    width: min(38vw, 190px);
-    max-height: 38vh;
-    display: block;
-    filter:
-      drop-shadow( 2px  0px 0px rgba(255,255,255,.92))
-      drop-shadow(-2px  0px 0px rgba(255,255,255,.92))
-      drop-shadow( 0px  2px 0px rgba(255,255,255,.92))
-      drop-shadow( 0px -2px 0px rgba(255,255,255,.92))
-      drop-shadow(0 10px 18px rgba(0,0,0,.28));
-    border-radius: 10px;
-  }
-  @keyframes stickerIn{
-    from{ opacity:0; transform: translate(-50%,-50%) scale(0.2) rotate(var(--rot)); }
-    to  { opacity:1; transform: translate(-50%,-50%) scale(1.0) rotate(var(--rot)); }
-  }
-  @keyframes stickerOut{
-    to{ opacity:0; transform: translate(-50%,-50%) scale(0.85) rotate(var(--rot)); }
-  }
-  /* Sticker board */
-  .sticker-board{
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 50; /* below modal/toast, above background */
-  }
-  .sticker-stuck{
-    position: absolute;
-    will-change: transform, opacity;
-    animation: stickerIn .22s cubic-bezier(.2,.9,.2,1.2) forwards;
-  }
-  .sticker-stuck img{
-    width: min(34vw, 170px);
-    max-height: 34vh;
-    display: block;
-    filter:
-      drop-shadow( 2px  0px 0px rgba(255,255,255,.92))
-      drop-shadow(-2px  0px 0px rgba(255,255,255,.92))
-      drop-shadow( 0px  2px 0px rgba(255,255,255,.92))
-      drop-shadow( 0px -2px 0px rgba(255,255,255,.92))
-      drop-shadow( 0px 10px 18px rgba(0,0,0,.18));
-    border-radius: 10px;
-  }
-
-</style>
+    .ver-badge{
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      line-height: 1;
+      background: rgba(0,0,0,0.35);
+      color: #fff;
+      z-index: 9998;
+      pointer-events: none;
+      backdrop-filter: blur(6px);
+      opacity: 0.85;
+    }
+  </style>
 </head>
 <body>
   <div class="app">
@@ -302,7 +240,7 @@
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
         <span class="badge">문제:<span id="qCountBadge">-</span></span>
         <span class="badge">랭킹:<span id="rankBadge">-</span></span>
-</div>
+      </div>
     </header>
 
     <!-- Login -->
@@ -375,12 +313,6 @@
     </section>
   </div>
 
-  <!-- Sticker Board (stickers accumulate) -->
-  <div id="stickerBoard" class="sticker-board" aria-hidden="true"></div>
-
-  <!-- Sticker Pop -->
-  <div id="stickerPop" class="sticker-pop" aria-hidden="true"><img id="stickerImg" alt="sticker" /></div>
-
   <!-- Modal -->
   <div class="modalBackdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal">
@@ -394,8 +326,10 @@
   </div>
   <div class="toast" id="toast"></div>
 
+  <div id="verBadge" class="ver-badge" aria-label="버전" aria-hidden="true"></div>
+
 <script>
-  const APP_VERSION = "2025.12.13-02";
+  const APP_VERSION = "2025.12.13-06";
 
 (() => {
   const $ = (id) => document.getElementById(id);
@@ -424,6 +358,7 @@
     locked: false,
     timer: null,
     remaining: 5,
+    totalTime: 5,
     streak: 0
   };
 
@@ -435,153 +370,15 @@
     el._t = setTimeout(() => el.classList.remove("show"), 1400);
   }
 
-  // 연속정답 스티커(5점마다)
-  // 사진은 레포에 이렇게 넣어줘: assets/cats/cat_01.png, cat_02.png ...
-  const STICKER_IMAGES = Array.from({ length: 60 }, (_, i) =>
-    `assets/cats/cat_${String(i + 1).padStart(2, "0")}.png`
-  );
-
-  
-  // 스티커 이미지 선택 방식
-  // - false: 5점,10점,15점... 순서대로(cat_01, cat_02, ...)
-  // - true : 매번 랜덤(중복 최소화: 한 바퀴 돌 때까지 같은 사진 안 나옴)
-  const STICKER_RANDOM = true;
-  let _stickerBag = [];
-  let _stickerPtr = 0;
-
-  function _shuffle(a){
-    for (let i=a.length-1;i>0;i--){
-      const j = Math.floor(Math.random()*(i+1));
-      [a[i],a[j]]=[a[j],a[i]];
-    }
-    return a;
-  }
-
-  function nextStickerSrc(streak){
-    if (!STICKER_IMAGES.length) return null;
-
-    if (!STICKER_RANDOM){
-      const idx = Math.floor(streak/5) - 1;
-      return STICKER_IMAGES[idx % STICKER_IMAGES.length];
-    }
-
-    if (_stickerBag.length !== STICKER_IMAGES.length){
-      _stickerBag = _shuffle(Array.from({length: STICKER_IMAGES.length}, (_,i)=>i));
-      _stickerPtr = 0;
-    }
-    if (_stickerPtr >= _stickerBag.length){
-      _stickerBag = _shuffle(_stickerBag);
-      _stickerPtr = 0;
-    }
-    const pick = _stickerBag[_stickerPtr++];
-    return STICKER_IMAGES[pick];
-  }
-function popStickerForStreak(streak){
-    if (streak < 5) return;
-    if (streak % 5 !== 0) return;
-    const src = nextStickerSrc(streak);
-    if (!src) return;
-    popSticker(src);
-  }
-
-  function popSticker(src){
-    const board = $("stickerBoard");
-    if (!board) return;
-
-    // 스티커 요소 생성(누적)
-    const el = document.createElement("div");
-    el.className = "sticker-stuck";
-    const img = document.createElement("img");
-    img.alt = "";
-    img.src = src;
-    img.onerror = () => { try { el.remove(); } catch(e){} };
-    el.appendChild(img);
-
-    // 랜덤 회전(-10~+10) + 살짝 스케일(0.92~1.03)
-    const rot = (randInt(21) - 10);
-    const sc  = (92 + randInt(12)) / 100;
-    el.style.transform = `translate3d(0,0,0) rotate(${rot}deg) scale(${sc})`;
-
-    // 배치: '퀴즈 카드 주변' 링(너무 사이드로 안 가게)
-    const avoidEl = $("screenQuiz");
-    const vw = window.innerWidth;
-    const vh = window.innerHeight;
-
-    const avoid = avoidEl ? avoidEl.getBoundingClientRect() : { left: vw*0.25, top: vh*0.25, right: vw*0.75, bottom: vh*0.75 };
-
-    const pad = 12;     // 화면 가장자리 여백
-    const ring = 200;   // 카드 주변 범위(커질수록 더 멀리도 감)
-    const w = Math.min(vw*0.34, 170); // 이미지 예상 폭(대략)
-    const h = Math.min(vh*0.34, 170); // 대략(정사각 가정)
-
-    // 링 영역(카드 주변의 확장 사각형)
-    const outer = {
-      left: Math.max(pad, avoid.left - ring),
-      top: Math.max(pad, avoid.top - ring),
-      right: Math.min(vw - pad, avoid.right + ring),
-      bottom: Math.min(vh - pad, avoid.bottom + ring)
-    };
-
-    // 카드 자체(겹침 금지 영역) 조금 더 키움
-    const inner = {
-      left: avoid.left - 6,
-      top: avoid.top - 6,
-      right: avoid.right + 6,
-      bottom: avoid.bottom + 6
-    };
-
-    function intersects(a,b){
-      return !(a.right < b.left || a.left > b.right || a.bottom < b.top || a.top > b.bottom);
-    }
-
-
-    let x = pad, y = pad;
-    let ok = false;
-    for (let t=0; t<40; t++){
-      const rx = outer.left + Math.random() * Math.max(1, (outer.right - outer.left - w));
-      const ry = outer.top  + Math.random() * Math.max(1, (outer.bottom - outer.top - h));
-      const r = { left: rx, top: ry, right: rx + w, bottom: ry + h };
-      // 카드랑 안 겹치고(문제 가리지 않기), 스티커끼리 과도 겹침만 피하기
-      if (!intersects(r, inner) ){
-        x = rx; y = ry; ok = true; break;
-      }
-    }
-    if (!ok){
-      // 최후: 위/아래 라인 쪽
-      x = Math.min(vw - pad - w, Math.max(pad, avoid.left + (avoid.right-avoid.left)*Math.random() - w/2));
-      y = (Math.random() < 0.5) ? Math.max(pad, avoid.top - ring/1.4) : Math.min(vh - pad - h, avoid.bottom + ring/1.4);
-    }
-
-    el.style.left = `${x}px`;
-    el.style.top  = `${y}px`;
-
-    board.appendChild(el);
-
-    // 너무 많아지면 오래된 것부터 정리(화면 난장판 방지)
-    const MAX_STICKERS = 40;
-    while (board.children.length > MAX_STICKERS){
-      board.removeChild(board.firstElementChild);
-    }
-  }
-
-
   function showScreen(which){
     ["screenLogin","screenMode","screenQuiz"].forEach(id => {
       $(id).style.display = (id === which ? "" : "none");
     });
-    // 메인(로그인/모드)에서만 버전 배지 보이게
     const vb = $("verBadge");
-  const bd = $("stickerBoard");
-const tt = $("appTitle");
+    const tt = $("appTitle");
     if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
-  if (bd) bd.style.display = (which === "screenQuiz" ? "block" : "none");
-  if (which !== "screenQuiz") { try { clearStickerBoard(); } catch(e){} }
-if (tt) {
-    // 퀴즈 화면에서는 타이틀 자리는 유지하고 글자만 숨김(배지 위치 고정)
-    tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
+    if (tt) tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
   }
-  }
-
 
   function getUser(){
     return {
@@ -600,6 +397,74 @@ if (tt) {
     }[c]));
   }
 
+  // ---------- 질문 중복/유사중복 처리 ----------
+  function normExact(s){
+    return String(s ?? "").trim().replace(/\s+/g, " ");
+  }
+  function signature(q){
+    const qq = normExact(q?.q);
+    const cs = Array.isArray(q?.choices) ? q.choices.map(normExact).join("||") : "";
+    return `${qq}||${cs}||${q?.answer}`;
+  }
+  function normSim(s){
+    s = String(s ?? "").toLowerCase();
+    // 기호/표기 통일(필요한 것만)
+    s = s.replace(/Ω/g, "옴").replace(/ohm/g, "옴");
+    s = s.replace(/\s+/g, "");
+    // 구두점/기호 제거(유사문항 걸러내기용)
+    s = s.replace(/[\.,!?'"“”‘’(){}\[\]<>:;\\\/|@#$%^&*_+=~`·—\-]/g, "");
+    // 자주 붙는 종결/표현 일부 정리(너무 공격적이진 않게)
+    s = s.replace(/입니다|이다|였다|한다|라고한다|라고부른다/g, "");
+    s = s.replace(/로읽는다|로읽음|로읽어/g, "읽는다");
+    return s;
+  }
+  function simKey(q){
+    const cs = Array.isArray(q?.choices) ? q.choices.join("|") : "";
+    const s = normSim((q?.q ?? "") + "|" + cs);
+    // 너무 길면 앞부분만(메모리 절약)
+    return s.slice(0, 80);
+  }
+
+  // 풀 생성 후: (1) 완전 동일 중복 제거 (2) 유사문항 근접 배치 방지
+  function enforceVariety(list){
+    const out = [];
+    const seenSig = new Set();
+    const recentKeys = [];
+    const WINDOW = 10;      // 최근 10문항 내 유사키 재등장 방지
+    const queue = [];
+
+    for (const q of list){
+      const sig = signature(q);
+      if (seenSig.has(sig)) continue; // 같은 판에서 동일문항 재등장 방지(데이터 중복 대비)
+      seenSig.add(sig);
+      queue.push(q);
+    }
+
+    // 가볍게 "유사키 쿨다운"으로 재배치
+    let guard = 0;
+    const limit = queue.length * 25 + 200;
+    while (queue.length && guard < limit){
+      const q = queue.shift();
+      const k = simKey(q);
+      if (k && recentKeys.includes(k)){
+        queue.push(q);
+      } else {
+        out.push(q);
+        if (k){
+          recentKeys.push(k);
+          if (recentKeys.length > WINDOW) recentKeys.shift();
+        }
+      }
+      guard++;
+    }
+
+    // 더 이상 재배치가 안 되면(데이터가 너무 비슷한 경우) 남은 건 그냥 붙임
+    while (queue.length) out.push(queue.shift());
+
+    return out;
+  }
+  // --------------------------------------------
+
   async function loadQuestions(){
     if (state.questions) return state.questions;
     const res = await fetch("./questions.json", { cache: "no-store" });
@@ -615,18 +480,12 @@ if (tt) {
       Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.choices.length &&
       typeof q.explain === "string"
     );
+
     state.questions = qs;
     $("qCountBadge").textContent = String(qs.length);
-    // 버전 표시(메타가 있으면)
-    const meta = (data && data.meta) ? data.meta : null;
+
     const vb = $("verBadge");
-  const bd = $("stickerBoard");
-const tt = $("appTitle");
-    if (vb) {
-      const v = meta && meta.version ? String(meta.version) : "no-meta";
-      const u = meta && meta.updated ? ` ${meta.updated}` : "";
-      vb.textContent = `v${APP_VERSION}`;
-    }
+    if (vb) vb.textContent = `v${APP_VERSION}`;
 
     return qs;
   }
@@ -647,33 +506,6 @@ const tt = $("appTitle");
     return Math.floor(Math.random() * maxExclusive);
   }
 
-  function clearStickerBoard(){
-    const b = $("stickerBoard");
-    if (b) b.innerHTML = "";
-  }
-
-  async function loadStickers(){
-    try{
-      const res = await fetch("assets/cats/stickers.json?v=" + Date.now(), { cache: "no-store" });
-      if (!res.ok) throw new Error("stickers.json not found");
-      const list = await res.json();
-
-      if (!Array.isArray(list)) throw new Error("stickers.json must be an array");
-      // 파일명만 있으면 assets/cats/ 자동 prefix
-      STICKER_IMAGES = list
-        .map(x => String(x || "").trim())
-        .filter(Boolean)
-        .map(x => (x.includes("/") ? x : ("assets/cats/" + x)));
-
-      // 셔플백 초기화
-      _stickerBag = [];
-      _stickerPtr = 0;
-    }catch(e){
-      STICKER_IMAGES = [];
-    }
-  }
-
-
   function shuffle(arr){
     for (let i = arr.length - 1; i > 0; i--) {
       const j = randInt(i + 1);
@@ -682,7 +514,25 @@ const tt = $("appTitle");
     return arr;
   }
 
-  
+  function buildPool(mode, questions){
+    if (mode === "mixed"){
+      // 50:50 유지: 문과/이과를 섞어서 번갈아 넣되, 최종적으로 다양성 필터 적용
+      const hs = shuffle(questions.filter(q => q.mode === "humanities"));
+      const ss = shuffle(questions.filter(q => q.mode === "science"));
+      const n = Math.min(hs.length, ss.length);
+      const out = [];
+      for (let i=0;i<n;i++){
+        if (Math.random() < 0.5){
+          out.push(hs[i], ss[i]);
+        } else {
+          out.push(ss[i], hs[i]);
+        }
+      }
+      return enforceVariety(out);
+    }
+    const out = shuffle(questions.filter(q => q.mode === mode));
+    return enforceVariety(out);
+  }
 
   function fillLB(listEl, arr){
     const medals = ["🥇","🥈","🥉"];
@@ -734,8 +584,25 @@ const tt = $("appTitle");
       fillLB($("lbScience"), data.science || []);
       fillLB($("lbMixed"), data.mixed || []);
 
-      const stamp = new Date().toLocaleTimeString("ko-KR", { hour:"2-digit", minute:"2-digit" });
-      $("lbHintH").textContent = $("lbHintS").textContent = $("lbHintM").textContent = stamp;
+      // 오늘 도전(모드별)
+      try{
+        const r2 = await fetch(base + "/today", { cache:"no-store" });
+        if (r2.ok){
+          const t = await r2.json();
+          $("lbHintH").textContent = `오늘 ${Number((t && t.humanities) || 0)}회`;
+          $("lbHintS").textContent = `오늘 ${Number((t && t.science) || 0)}회`;
+          $("lbHintM").textContent = `오늘 ${Number((t && t.mixed) || 0)}회`;
+        } else {
+          $("lbHintH").textContent = "-";
+          $("lbHintS").textContent = "-";
+          $("lbHintM").textContent = "-";
+        }
+      }catch(_){
+        $("lbHintH").textContent = "-";
+        $("lbHintS").textContent = "-";
+        $("lbHintM").textContent = "-";
+      }
+
       $("rankBadge").textContent = "연결됨";
     }catch(e){
       fillLB($("lbHumanities"), []);
@@ -753,184 +620,37 @@ const tt = $("appTitle");
     }
   }
 
-  
-  
-
-  // ---- Question type & anti-boredom helpers ----
-  const RECENT_MAX_IDS = 250;
-  const RECENT_MAX_TOPICS = 60;
-
-  function _normText(s){
-    return String(s||"")
-      .toLowerCase()
-      .replace(/[\s\u00A0]+/g, "")
-      .replace(/[\"'“”‘’`·•\.,!?;:()\[\]{}<>~\-_=+*/\\|@#$%^&]/g, "")
-      .replace(/[^0-9a-z가-힣]/g, "");
-  }
-
-  function inferType(q){
-    const c = Array.isArray(q?.choices) ? q.choices : [];
-    if (c.length === 2){
-      const a = String(c[0]||"").trim().toUpperCase();
-      const b = String(c[1]||"").trim().toUpperCase();
-      if ((a === "O" || a === "○") && (b === "X" || b === "×")) return "OX";
-      return "MC2";
-    }
-    if (c.length === 4) return "MC4";
-    return "MC2";
-  }
-
-  function timeLimitSec(q){
-    const t = q?.type ? String(q.type) : inferType(q);
-    return (t === "MC4") ? 10 : 5; // OX=5, 2지=5, 4지=10
-  }
-
-  function topicKeyFromText(txt){
-    // 간단 토큰화: 조사가 붙어도 대충 걸러지게
-    const raw = String(txt||"")
-      .replace(/[^0-9a-zA-Z가-힣]+/g, " ")
-      .trim()
-      .toLowerCase();
-    if (!raw) return "";
-    const stop = new Set(["은","는","이","가","을","를","의","에","에서","으로","로","과","와","하다","이다","있다","없다","된다","수","것","등","및","또는","그리고","하지만","또","때","중","가장","다음","관련","것은","무엇"]);
-    const toks = raw.split(/\s+/).map(t => t.trim()).filter(t => t.length >= 2 && !stop.has(t));
-    if (toks.length === 0) return _normText(raw).slice(0, 10);
-    toks.sort((a,b) => b.length - a.length);
-    return (toks[0] || "") + "|" + (toks[1] || "");
-  }
-
-  function _lsGetArr(key){
-    try{
-      const v = localStorage.getItem(key);
-      const a = JSON.parse(v || "[]");
-      return Array.isArray(a) ? a : [];
-    }catch(_){ return []; }
-  }
-  function _lsSetArr(key, arr){
-    try{ localStorage.setItem(key, JSON.stringify(arr)); }catch(_){}
-  }
-  function recentIdsKey(mode){ return `quiz_recent_ids_v1_${mode}`; }
-  function recentTopicsKey(mode){ return `quiz_recent_topics_v1_${mode}`; }
-
-  function getRecentIdSet(mode){
-    const all = _lsGetArr(recentIdsKey("all"));
-    const m = _lsGetArr(recentIdsKey(mode));
-    return new Set([...(all||[]), ...(m||[])]);
-  }
-
-  function getRecentTopicSet(mode){
-    const all = _lsGetArr(recentTopicsKey("all"));
-    const m = _lsGetArr(recentTopicsKey(mode));
-    return new Set([...(all||[]), ...(m||[])]);
-  }
-
-  function rememberQuestion(mode, q){
-    const id = q?.id;
-    if (!id) return;
-
-    const tk = topicKeyFromText(q?.q);
-
-    function pushUnique(key, value, max){
-      const arr = _lsGetArr(key);
-      const next = [value, ...arr.filter(x => x !== value)].slice(0, max);
-      _lsSetArr(key, next);
-    }
-
-    pushUnique(recentIdsKey(mode), id, RECENT_MAX_IDS);
-    pushUnique(recentIdsKey("all"), id, RECENT_MAX_IDS);
-
-    if (tk){
-      pushUnique(recentTopicsKey(mode), tk, RECENT_MAX_TOPICS);
-      pushUnique(recentTopicsKey("all"), tk, RECENT_MAX_TOPICS);
-    }
-  }
-
-  function buildPool(mode, questions){
-    const base = (mode === "mixed")
-      ? [...questions]
-      : questions.filter(q => q.mode === mode);
-
-    // 1) 텍스트 완전중복 제거(클라이언트에서도 한 번 더)
-    const seenSig = new Set();
-    const uniq = [];
-    for (const q of base){
-      const sig = _normText(q?.q);
-      if (!sig) continue;
-      if (seenSig.has(sig)) continue;
-      seenSig.add(sig);
-      uniq.push(q);
-    }
-
-    // 2) 최근에 봤던 문제(모드+전체) 최대한 제외
-    const recentIds = getRecentIdSet(mode);
-    let cand = uniq.filter(q => !recentIds.has(q.id));
-    if (cand.length < Math.min(60, Math.floor(uniq.length * 0.4))){
-      cand = uniq; // 너무 줄면 그냥 전체 허용(대신 아래 다양화로 지루함 줄임)
-    }
-
-    // 3) 섞고, 같은 주제 연속 방지(최근 토픽/바로 직전 토픽)
-    const recentTopics = getRecentTopicSet(mode);
-    const shuffled = shuffle([...cand]);
-
-    const out = [];
-    const stash = [];
-    const lastTopics = [];
-
-    for (const q of shuffled){
-      const tk = topicKeyFromText(q?.q);
-      const recentHit = tk && recentTopics.has(tk);
-      const localHit = tk && lastTopics.includes(tk);
-
-      if (recentHit || localHit){
-        stash.push(q);
-      } else {
-        out.push(q);
-        if (tk){
-          lastTopics.unshift(tk);
-          lastTopics.splice(25);
-        }
-      }
-    }
-    return [...out, ...stash];
-  }
-  // ---- end helpers ----
-function setTimerUI(rem){
+  function setTimerUI(rem, total){
     const wrap = $("timePillWrap");
     const bar = $("progBar");
     wrap.classList.remove("ok","warn","bad","pulse");
     bar.classList.remove("warn","bad");
 
-    const total = Math.max(1, state.totalTime || 5);
-    const badCut = Math.max(2, Math.ceil(total * 0.2));
-    const warnCut = Math.max(badCut + 1, Math.ceil(total * 0.4));
-
-    if (rem <= badCut){
+    if (rem <= 2){
       wrap.classList.add("bad","pulse");
       bar.classList.add("bad");
-    } else if (rem <= warnCut){
+    } else if (rem === 3){
       wrap.classList.add("warn");
       bar.classList.add("warn");
     } else {
       wrap.classList.add("ok");
     }
 
-    // bar shows remaining time (100% -> 0%)
     const pct = Math.max(0, Math.min(100, (rem / total) * 100));
     bar.style.width = pct + "%";
   }
 
-function startTimer(totalSec){
+  function startTimer(totalSeconds){
     stopTimer();
-    const t = (Number.isFinite(totalSec) && totalSec > 0) ? Math.floor(totalSec) : 5;
-    state.totalTime = t;
-    state.remaining = t;
-    $("timePill").textContent = String(t);
-    setTimerUI(t);
+    state.totalTime = totalSeconds;
+    state.remaining = totalSeconds;
+    $("timePill").textContent = String(totalSeconds);
+    setTimerUI(totalSeconds, totalSeconds);
     state.timer = setInterval(() => {
       state.remaining -= 1;
       const rem = Math.max(0, state.remaining);
       $("timePill").textContent = String(rem);
-      setTimerUI(rem);
+      setTimerUI(rem, state.totalTime);
       if (rem <= 0){
         stopTimer();
         if (!state.locked){
@@ -944,7 +664,8 @@ function startTimer(totalSec){
     state.locked = false;
     $("answers").innerHTML = "";
     $("scorePill").textContent = String(state.score);
-const q = state.pool[state.idx];
+
+    const q = state.pool[state.idx];
     if (!q){
       showResultModal();
       return;
@@ -952,8 +673,6 @@ const q = state.pool[state.idx];
 
     $("qText").textContent = q.q;
     $("modePill").textContent = MODE_LABEL[state.mode] || "-";
-
-    // progress bar is used for timer (reset to full)
     $("progBar").style.width = "100%";
 
     q.choices.forEach((label, i) => {
@@ -964,7 +683,7 @@ const q = state.pool[state.idx];
       $("answers").appendChild(btn);
     });
 
-    startTimer(timeLimitSec(q));
+    startTimer((q.choices && q.choices.length === 4) ? 10 : 5);
   }
 
   function openModal({ title, tone, badge, bodyHtml, buttons }){
@@ -1002,7 +721,6 @@ const q = state.pool[state.idx];
     stopTimer();
 
     const q = state.pool[state.idx];
-    rememberQuestion(state.mode, q);
     const correct = (!isTimeout) && (choiceIndex === q.answer);
 
     if (isTimeout) state.streak = 0;
@@ -1013,9 +731,7 @@ const q = state.pool[state.idx];
     if (correct){
       state.score += 1;
       $("scorePill").textContent = String(state.score);
-state.streak = (state.streak || 0) + 1;
-      popStickerForStreak(state.streak);
-
+      state.streak = (state.streak || 0) + 1;
       openModal({
         title: "정답!",
         tone: "good",
@@ -1059,6 +775,27 @@ state.streak = (state.streak || 0) + 1;
     }
   }
 
+  // 오늘 도전 카운트(+1): 첫 문제 화면 진입 순간에만 호출
+  let _attemptCooldownUntil = 0;
+  async function hitAttempt(mode){
+    const base = (CONFIG.serverBase || "").replace(/\/+$/,"");
+    if (!base) return;
+
+    const now = Date.now();
+    if (now < _attemptCooldownUntil) return;
+    _attemptCooldownUntil = now + 4000;
+
+    try{
+      await fetch(base + "/attempt", {
+        method: "POST",
+        headers: { "Content-Type":"application/json" },
+        body: JSON.stringify({ mode })
+      });
+    }catch(e){
+      // 실패해도 게임 진행은 막지 않음
+    }
+  }
+
   function showResultModal(){
     const { name, school } = getUser();
     const score = state.score;
@@ -1074,7 +811,6 @@ state.streak = (state.streak || 0) + 1;
       ]
     });
 
-    // async submit + update modal text
     submitScore().then(r => {
       const el = document.getElementById("resStatus");
       if (el) el.textContent = r.msg;
@@ -1096,6 +832,10 @@ state.streak = (state.streak || 0) + 1;
       }
       state.pool = pool;
       showScreen("screenQuiz");
+
+      // 첫 문제 화면 진입 순간 +1
+      hitAttempt(mode);
+
       renderQuestion();
     }).catch(e => {
       console.error(e);
@@ -1125,14 +865,10 @@ state.streak = (state.streak || 0) + 1;
   });
 
   $("btnQuit").addEventListener("click", () => {
-    
-    clearStickerBoard();
-// quit = show result modal (current score)
     stopTimer();
     showResultModal();
   });
 
-  // init
   (function init(){
     $("inpName").value = localStorage.getItem(LS.name) || "";
     $("inpSchool").value = localStorage.getItem(LS.school) || "";
@@ -1141,6 +877,5 @@ state.streak = (state.streak || 0) + 1;
   })();
 })();
 </script>
-  <div id="verBadge" class="ver-badge" aria-label="버전" aria-hidden="true"></div>
 </body>
 </html>
