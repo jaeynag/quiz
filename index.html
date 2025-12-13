@@ -329,7 +329,7 @@
   <div id="verBadge" class="ver-badge" aria-label="버전" aria-hidden="true"></div>
 
 <script>
-  const APP_VERSION = "2025.12.13-03";
+  const APP_VERSION = "2025.12.13-05";
 
 (() => {
   const $ = (id) => document.getElementById(id);
@@ -373,14 +373,10 @@
     ["screenLogin","screenMode","screenQuiz"].forEach(id => {
       $(id).style.display = (id === which ? "" : "none");
     });
-    // 메인(로그인/모드)에서만 버전 배지 보이게
     const vb = $("verBadge");
     const tt = $("appTitle");
     if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
-    if (tt) {
-      // 퀴즈 화면에서는 타이틀 자리는 유지하고 글자만 숨김(배지 위치 고정)
-      tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
-    }
+    if (tt) tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
   }
 
   function getUser(){
@@ -399,6 +395,74 @@
       "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
     }[c]));
   }
+
+  // ---------- 질문 중복/유사중복 처리 ----------
+  function normExact(s){
+    return String(s ?? "").trim().replace(/\s+/g, " ");
+  }
+  function signature(q){
+    const qq = normExact(q?.q);
+    const c0 = normExact(q?.choices?.[0]);
+    const c1 = normExact(q?.choices?.[1]);
+    return `${qq}||${c0}||${c1}||${q?.answer}`;
+  }
+  function normSim(s){
+    s = String(s ?? "").toLowerCase();
+    // 기호/표기 통일(필요한 것만)
+    s = s.replace(/Ω/g, "옴").replace(/ohm/g, "옴");
+    s = s.replace(/\s+/g, "");
+    // 구두점/기호 제거(유사문항 걸러내기용)
+    s = s.replace(/[\.,!?'"“”‘’(){}\[\]<>:;\\\/|@#$%^&*_+=~`·—\-]/g, "");
+    // 자주 붙는 종결/표현 일부 정리(너무 공격적이진 않게)
+    s = s.replace(/입니다|이다|였다|한다|라고한다|라고부른다/g, "");
+    s = s.replace(/로읽는다|로읽음|로읽어/g, "읽는다");
+    return s;
+  }
+  function simKey(q){
+    const s = normSim((q?.q ?? "") + "|" + (q?.choices?.[0] ?? "") + "|" + (q?.choices?.[1] ?? ""));
+    // 너무 길면 앞부분만(메모리 절약)
+    return s.slice(0, 80);
+  }
+
+  // 풀 생성 후: (1) 완전 동일 중복 제거 (2) 유사문항 근접 배치 방지
+  function enforceVariety(list){
+    const out = [];
+    const seenSig = new Set();
+    const recentKeys = [];
+    const WINDOW = 10;      // 최근 10문항 내 유사키 재등장 방지
+    const queue = [];
+
+    for (const q of list){
+      const sig = signature(q);
+      if (seenSig.has(sig)) continue; // 같은 판에서 동일문항 재등장 방지(데이터 중복 대비)
+      seenSig.add(sig);
+      queue.push(q);
+    }
+
+    // 가볍게 "유사키 쿨다운"으로 재배치
+    let guard = 0;
+    const limit = queue.length * 25 + 200;
+    while (queue.length && guard < limit){
+      const q = queue.shift();
+      const k = simKey(q);
+      if (k && recentKeys.includes(k)){
+        queue.push(q);
+      } else {
+        out.push(q);
+        if (k){
+          recentKeys.push(k);
+          if (recentKeys.length > WINDOW) recentKeys.shift();
+        }
+      }
+      guard++;
+    }
+
+    // 더 이상 재배치가 안 되면(데이터가 너무 비슷한 경우) 남은 건 그냥 붙임
+    while (queue.length) out.push(queue.shift());
+
+    return out;
+  }
+  // --------------------------------------------
 
   async function loadQuestions(){
     if (state.questions) return state.questions;
@@ -419,16 +483,8 @@
     state.questions = qs;
     $("qCountBadge").textContent = String(qs.length);
 
-    // 버전 표시(메타가 있으면)
-    const meta = (data && data.meta) ? data.meta : null;
     const vb = $("verBadge");
-    if (vb) {
-      const v = meta && meta.version ? String(meta.version) : "no-meta";
-      const u = meta && meta.updated ? ` ${meta.updated}` : "";
-      // APP_VERSION 우선 표시(원하면 meta 버전으로 바꿔도 됨)
-      vb.textContent = `v${APP_VERSION}`;
-      vb.title = `meta:${v}${u}`;
-    }
+    if (vb) vb.textContent = `v${APP_VERSION}`;
 
     return qs;
   }
@@ -459,6 +515,7 @@
 
   function buildPool(mode, questions){
     if (mode === "mixed"){
+      // 50:50 유지: 문과/이과를 섞어서 번갈아 넣되, 최종적으로 다양성 필터 적용
       const hs = shuffle(questions.filter(q => q.mode === "humanities"));
       const ss = shuffle(questions.filter(q => q.mode === "science"));
       const n = Math.min(hs.length, ss.length);
@@ -470,9 +527,10 @@
           out.push(ss[i], hs[i]);
         }
       }
-      return out;
+      return enforceVariety(out);
     }
-    return shuffle(questions.filter(q => q.mode === mode));
+    const out = shuffle(questions.filter(q => q.mode === mode));
+    return enforceVariety(out);
   }
 
   function fillLB(listEl, arr){
@@ -577,7 +635,6 @@
       wrap.classList.add("ok");
     }
 
-    // bar shows remaining time (100% -> 0%)
     const pct = Math.max(0, Math.min(100, (rem / 5) * 100));
     bar.style.width = pct + "%";
   }
@@ -614,8 +671,6 @@
 
     $("qText").textContent = q.q;
     $("modePill").textContent = MODE_LABEL[state.mode] || "-";
-
-    // progress bar is used for timer (reset to full)
     $("progBar").style.width = "100%";
 
     q.choices.forEach((label, i) => {
@@ -726,7 +781,7 @@
 
     const now = Date.now();
     if (now < _attemptCooldownUntil) return;
-    _attemptCooldownUntil = now + 4000; // 4초 쿨다운(실수 중복방지)
+    _attemptCooldownUntil = now + 4000;
 
     try{
       await fetch(base + "/attempt", {
@@ -754,7 +809,6 @@
       ]
     });
 
-    // async submit + update modal text
     submitScore().then(r => {
       const el = document.getElementById("resStatus");
       if (el) el.textContent = r.msg;
@@ -809,12 +863,10 @@
   });
 
   $("btnQuit").addEventListener("click", () => {
-    // quit = show result modal (current score)
     stopTimer();
     showResultModal();
   });
 
-  // init
   (function init(){
     $("inpName").value = localStorage.getItem(LS.name) || "";
     $("inpSchool").value = localStorage.getItem(LS.school) || "";
