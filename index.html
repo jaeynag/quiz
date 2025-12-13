@@ -201,7 +201,7 @@
       z-index:60;
     }
     .toast.show{opacity:1}
-  
+
     /* Timer FX */
     .pill.timer{transition: .15s transform, .15s border, .15s background, .15s color;}
     .pill.timer.ok{border-color:var(--line); background:#fff; color:var(--muted);}
@@ -216,26 +216,22 @@
     .bar.warn{background:rgb(245,158,11);}
     .bar.bad{background:var(--bad);}
 
-  
-  .ver-badge{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    padding: 4px 8px;
-    border-radius: 999px;
-    font-size: 11px;
-    line-height: 1;
-    background: rgba(0,0,0,0.35);
-    color: #fff;
-    z-index: 9998;
-    pointer-events: none;
-    backdrop-filter: blur(6px);
-    opacity: 0.85;
-  }
-to  { opacity:1; transform: translate(-50%,-50%) scale(1.0) rotate(var(--rot)); }
-  }
-}
-</style>
+    .ver-badge{
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      line-height: 1;
+      background: rgba(0,0,0,0.35);
+      color: #fff;
+      z-index: 9998;
+      pointer-events: none;
+      backdrop-filter: blur(6px);
+      opacity: 0.85;
+    }
+  </style>
 </head>
 <body>
   <div class="app">
@@ -244,7 +240,7 @@ to  { opacity:1; transform: translate(-50%,-50%) scale(1.0) rotate(var(--rot)); 
       <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
         <span class="badge">문제:<span id="qCountBadge">-</span></span>
         <span class="badge">랭킹:<span id="rankBadge">-</span></span>
-</div>
+      </div>
     </header>
 
     <!-- Login -->
@@ -316,6 +312,7 @@ to  { opacity:1; transform: translate(-50%,-50%) scale(1.0) rotate(var(--rot)); 
       <button class="btn danger" id="btnQuit">그만하기</button>
     </section>
   </div>
+
   <!-- Modal -->
   <div class="modalBackdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal">
@@ -328,6 +325,8 @@ to  { opacity:1; transform: translate(-50%,-50%) scale(1.0) rotate(var(--rot)); 
     </div>
   </div>
   <div class="toast" id="toast"></div>
+
+  <div id="verBadge" class="ver-badge" aria-label="버전" aria-hidden="true"></div>
 
 <script>
   const APP_VERSION = "2025.12.13-03";
@@ -376,14 +375,13 @@ to  { opacity:1; transform: translate(-50%,-50%) scale(1.0) rotate(var(--rot)); 
     });
     // 메인(로그인/모드)에서만 버전 배지 보이게
     const vb = $("verBadge");
-const tt = $("appTitle");
+    const tt = $("appTitle");
     if (vb) vb.style.display = (which === "screenQuiz" ? "none" : "block");
-if (tt) {
-    // 퀴즈 화면에서는 타이틀 자리는 유지하고 글자만 숨김(배지 위치 고정)
-    tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
+    if (tt) {
+      // 퀴즈 화면에서는 타이틀 자리는 유지하고 글자만 숨김(배지 위치 고정)
+      tt.style.visibility = (which === "screenQuiz" ? "hidden" : "visible");
+    }
   }
-  }
-
 
   function getUser(){
     return {
@@ -420,14 +418,16 @@ if (tt) {
 
     state.questions = qs;
     $("qCountBadge").textContent = String(qs.length);
+
     // 버전 표시(메타가 있으면)
     const meta = (data && data.meta) ? data.meta : null;
     const vb = $("verBadge");
-const tt = $("appTitle");
     if (vb) {
       const v = meta && meta.version ? String(meta.version) : "no-meta";
       const u = meta && meta.updated ? ` ${meta.updated}` : "";
+      // APP_VERSION 우선 표시(원하면 meta 버전으로 바꿔도 됨)
       vb.textContent = `v${APP_VERSION}`;
+      vb.title = `meta:${v}${u}`;
     }
 
     return qs;
@@ -448,8 +448,6 @@ const tt = $("appTitle");
     }
     return Math.floor(Math.random() * maxExclusive);
   }
-  }
-
 
   function shuffle(arr){
     for (let i = arr.length - 1; i > 0; i--) {
@@ -527,7 +525,6 @@ const tt = $("appTitle");
       fillLB($("lbScience"), data.science || []);
       fillLB($("lbMixed"), data.mixed || []);
 
-
       // 오늘 도전(모드별)
       try{
         const r2 = await fetch(base + "/today", { cache:"no-store" });
@@ -564,7 +561,6 @@ const tt = $("appTitle");
     }
   }
 
-  
   function setTimerUI(rem){
     const wrap = $("timePillWrap");
     const bar = $("progBar");
@@ -586,7 +582,7 @@ const tt = $("appTitle");
     bar.style.width = pct + "%";
   }
 
-function startTimer(){
+  function startTimer(){
     stopTimer();
     state.remaining = 5;
     $("timePill").textContent = "5";
@@ -609,7 +605,8 @@ function startTimer(){
     state.locked = false;
     $("answers").innerHTML = "";
     $("scorePill").textContent = String(state.score);
-const q = state.pool[state.idx];
+
+    const q = state.pool[state.idx];
     if (!q){
       showResultModal();
       return;
@@ -677,7 +674,7 @@ const q = state.pool[state.idx];
     if (correct){
       state.score += 1;
       $("scorePill").textContent = String(state.score);
-state.streak = (state.streak || 0) + 1;
+      state.streak = (state.streak || 0) + 1;
       openModal({
         title: "정답!",
         tone: "good",
@@ -719,6 +716,7 @@ state.streak = (state.streak || 0) + 1;
     }catch(e){
       return { ok:false, msg:"랭킹 반영 실패" };
     }
+  }
 
   // 오늘 도전 카운트(+1): 첫 문제 화면 진입 순간에만 호출
   let _attemptCooldownUntil = 0;
@@ -739,7 +737,6 @@ state.streak = (state.streak || 0) + 1;
     }catch(e){
       // 실패해도 게임 진행은 막지 않음
     }
-  }
   }
 
   function showResultModal(){
@@ -779,7 +776,10 @@ state.streak = (state.streak || 0) + 1;
       }
       state.pool = pool;
       showScreen("screenQuiz");
+
+      // 첫 문제 화면 진입 순간 +1
       hitAttempt(mode);
+
       renderQuestion();
     }).catch(e => {
       console.error(e);
@@ -809,7 +809,7 @@ state.streak = (state.streak || 0) + 1;
   });
 
   $("btnQuit").addEventListener("click", () => {
-// quit = show result modal (current score)
+    // quit = show result modal (current score)
     stopTimer();
     showResultModal();
   });
@@ -823,6 +823,5 @@ state.streak = (state.streak || 0) + 1;
   })();
 })();
 </script>
-  <div id="verBadge" class="ver-badge" aria-label="버전" aria-hidden="true"></div>
 </body>
 </html>
