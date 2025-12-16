@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "2025.12.13-03",
-    "updated": "2025-12-13",
-    "note": "Deduped exact-duplicate questions (by normalized text), added 100 new questions (history-heavy humanities + science mix), and allowed 4-choice questions. Deduped 2 exact duplicates (HN022, SN024)."
+    "version": "2025.12.16-merged01",
+    "updated": "2025-12-16",
+    "note": "Merged questions_fixed_dedup_better_proverbs.json (common mapped to humanities) + jemini.txt. Renamed 3 colliding IDs (H458-H460 -> JH458-JH460)."
   },
   "questions": [
     {
@@ -2199,9 +2199,9 @@
       "mode": "humanities",
       "q": "누워서 ____ 먹기.",
       "choices": [
-        "침",
+        "떡",
         "물",
-        "약",
+        "침",
         "밥"
       ],
       "answer": 0,
@@ -8942,9 +8942,9 @@
     },
     {
       "id": "c_life_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "경찰 신고 번호는? ",
+      "q": "경찰 신고 번호는?",
       "choices": [
         "112",
         "119",
@@ -8952,13 +8952,14 @@
         "114"
       ],
       "answer": 0,
-      "explain": "112는 경찰, 119는 소방·구급이야."
+      "explain": "112는 경찰, 119는 소방·구급이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "응급(구급) 신고 번호는? ",
+      "q": "응급(구급) 신고 번호는?",
       "choices": [
         "112",
         "119",
@@ -8966,13 +8967,14 @@
         "182"
       ],
       "answer": 1,
-      "explain": "119가 구급·소방이야."
+      "explain": "119가 구급·소방이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "가스 냄새가 강하면 가장 먼저? ",
+      "q": "가스 냄새가 강하면 가장 먼저?",
       "choices": [
         "창문 열어 환기",
         "전등 스위치 켜기",
@@ -8980,13 +8982,14 @@
         "가스레인지 점화"
       ],
       "answer": 0,
-      "explain": "스파크/불씨가 위험이라 환기하고 점화·스위치 조작을 피하는 게 좋아."
+      "explain": "스파크/불씨가 위험이라 환기하고 점화·스위치 조작을 피하는 게 좋아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "화재 시 가장 권장되는 대피 수단은? ",
+      "q": "화재 시 가장 권장되는 대피 수단은?",
       "choices": [
         "엘리베이터",
         "계단",
@@ -8994,13 +8997,14 @@
         "승강기 비상구"
       ],
       "answer": 1,
-      "explain": "엘리베이터는 정전·연기 유입 위험이 있어."
+      "explain": "엘리베이터는 정전·연기 유입 위험이 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "혈액 얼룩 제거에 더 유리한 건? ",
+      "q": "혈액 얼룩 제거에 더 유리한 건?",
       "choices": [
         "뜨거운 물",
         "찬물",
@@ -9008,13 +9012,14 @@
         "기름 바르기"
       ],
       "answer": 1,
-      "explain": "피는 단백질이라 뜨거운 물에 ‘익어’ 더 고착될 수 있어."
+      "explain": "피는 단백질이라 뜨거운 물에 ‘익어’ 더 고착될 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "전자레인지에 넣으면 위험한 건? ",
+      "q": "전자레인지에 넣으면 위험한 건?",
       "choices": [
         "도자기 그릇",
         "유리 용기",
@@ -9022,13 +9027,14 @@
         "종이컵"
       ],
       "answer": 2,
-      "explain": "금속은 스파크/화재 위험이 생길 수 있어."
+      "explain": "금속은 스파크/화재 위험이 생길 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "비밀번호 관리로 더 안전한 건? ",
+      "q": "비밀번호 관리로 더 안전한 건?",
       "choices": [
         "여러 사이트에 같은 비번",
         "사이트마다 다른 비번",
@@ -9036,13 +9042,14 @@
         "이름+1234"
       ],
       "answer": 1,
-      "explain": "재사용은 한 곳 유출 시 연쇄 피해로 이어져."
+      "explain": "재사용은 한 곳 유출 시 연쇄 피해로 이어져.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "공기청정기 필터 관리로 맞는 건? ",
+      "q": "공기청정기 필터 관리로 맞는 건?",
       "choices": [
         "필터는 평생",
         "먼지 많은 집은 주기 점검",
@@ -9050,13 +9057,14 @@
         "냄새 나면 방향제만"
       ],
       "answer": 1,
-      "explain": "필터는 사용 환경에 따라 점검·교체가 필요해."
+      "explain": "필터는 사용 환경에 따라 점검·교체가 필요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "차 안에 스마트폰을 여름에 두면? ",
+      "q": "차 안에 스마트폰을 여름에 두면?",
       "choices": [
         "항상 안전",
         "과열로 배터리·기기 손상 위험",
@@ -9064,13 +9072,14 @@
         "화면이 더 선명"
       ],
       "answer": 1,
-      "explain": "고온은 배터리와 부품에 부담이 커."
+      "explain": "고온은 배터리와 부품에 부담이 커.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "도어락 배터리 방전 대비로 유용한 건? ",
+      "q": "도어락 배터리 방전 대비로 유용한 건?",
       "choices": [
         "비상 9V 단자 위치 알기",
         "비번을 0000으로",
@@ -9078,13 +9087,14 @@
         "열쇠를 문에 꽂아두기"
       ],
       "answer": 0,
-      "explain": "대부분 비상 전원 단자가 있어."
+      "explain": "대부분 비상 전원 단자가 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "페트병 분리배출로 더 바람직한 건? ",
+      "q": "페트병 분리배출로 더 바람직한 건?",
       "choices": [
         "라벨 제거·비우고 헹굼",
         "내용물 남아도 배출",
@@ -9092,13 +9102,14 @@
         "검은 비닐에 넣기"
       ],
       "answer": 0,
-      "explain": "이물질이 남으면 재활용 품질이 떨어져."
+      "explain": "이물질이 남으면 재활용 품질이 떨어져.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "재난문자(긴급재난문자)가 울릴 때? ",
+      "q": "재난문자(긴급재난문자)가 울릴 때?",
       "choices": [
         "무시하고 계속 이동",
         "내용 확인 후 주변 상황 파악",
@@ -9106,13 +9117,14 @@
         "SNS만 확인"
       ],
       "answer": 1,
-      "explain": "기본은 안내 내용을 확인하고 안전 행동을 하는 거야."
+      "explain": "기본은 안내 내용을 확인하고 안전 행동을 하는 거야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "감전 의심 상황에서 먼저 할 건? ",
+      "q": "감전 의심 상황에서 먼저 할 건?",
       "choices": [
         "바로 맨손으로 떼어내기",
         "전원 차단 후 접근",
@@ -9120,13 +9132,14 @@
         "금속막대로 밀기"
       ],
       "answer": 1,
-      "explain": "전원 차단이 최우선이야."
+      "explain": "전원 차단이 최우선이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "쓰레기봉투가 찢어졌을 때 더 좋은 방법은? ",
+      "q": "쓰레기봉투가 찢어졌을 때 더 좋은 방법은?",
       "choices": [
         "새 봉투로 이중 포장",
         "테이프로 한두 번만",
@@ -9134,11 +9147,12 @@
         "바닥에 끌기"
       ],
       "answer": 0,
-      "explain": "누수·악취·미화원 안전 때문에 이중 포장이 낫지."
+      "explain": "누수·악취·미화원 안전 때문에 이중 포장이 낫지.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
       "q": "공동현관 비밀번호를 택배기사에게 알려줘도 된다",
       "choices": [
@@ -9146,13 +9160,14 @@
         "X"
       ],
       "answer": 1,
-      "explain": "공동현관 비번 공유는 보안상 위험해."
+      "explain": "공동현관 비번 공유는 보안상 위험해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "스마트폰 충전기 케이블이 뜨겁다면? ",
+      "q": "스마트폰 충전기 케이블이 뜨겁다면?",
       "choices": [
         "정상이라 계속 사용",
         "사용 중지·원인 점검",
@@ -9160,13 +9175,14 @@
         "충전 속도 올리기"
       ],
       "answer": 1,
-      "explain": "과열은 화재/고장 위험이야."
+      "explain": "과열은 화재/고장 위험이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "냉동실에서 음식이 ‘성에’가 심하면? ",
+      "q": "냉동실에서 음식이 ‘성에’가 심하면?",
       "choices": [
         "문 여닫음 잦거나 밀폐 불량 가능",
         "무조건 고장",
@@ -9174,13 +9190,14 @@
         "냉장고가 더 차가움"
       ],
       "answer": 0,
-      "explain": "습기 유입이 많으면 성에가 늘기 쉬워."
+      "explain": "습기 유입이 많으면 성에가 늘기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "장마철 빨래 건조에 더 도움 되는 건? ",
+      "q": "장마철 빨래 건조에 더 도움 되는 건?",
       "choices": [
         "제습기/환기",
         "문 닫고 방향제",
@@ -9188,13 +9205,14 @@
         "바닥에 펼치기"
       ],
       "answer": 0,
-      "explain": "습도 낮추고 공기 흐름을 만드는 게 핵심."
+      "explain": "습도 낮추고 공기 흐름을 만드는 게 핵심.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "에어컨 냄새가 날 때 먼저 해볼 건? ",
+      "q": "에어컨 냄새가 날 때 먼저 해볼 건?",
       "choices": [
         "필터 청소",
         "향수 뿌리기",
@@ -9202,13 +9220,14 @@
         "바람 막기"
       ],
       "answer": 0,
-      "explain": "필터·열교환기 오염이 원인인 경우가 많아."
+      "explain": "필터·열교환기 오염이 원인인 경우가 많아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "휴대폰 분실 시 가장 먼저 하면 좋은 건? ",
+      "q": "휴대폰 분실 시 가장 먼저 하면 좋은 건?",
       "choices": [
         "분실 모드/원격 잠금",
         "비행기 모드 해제",
@@ -9216,13 +9235,14 @@
         "모든 앱 삭제"
       ],
       "answer": 0,
-      "explain": "계정으로 원격 잠금·추적이 가능해."
+      "explain": "계정으로 원격 잠금·추적이 가능해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_021",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "택배 문자에 있는 단축 URL을 무심코 누르면? ",
+      "q": "택배 문자에 있는 단축 URL을 무심코 누르면?",
       "choices": [
         "대체로 안전",
         "스미싱 위험",
@@ -9230,13 +9250,14 @@
         "요금 자동 할인"
       ],
       "answer": 1,
-      "explain": "스미싱 링크는 악성앱·피싱으로 이어질 수 있어."
+      "explain": "스미싱 링크는 악성앱·피싱으로 이어질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_022",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "자동이체 해지/변경에 가장 안전한 방법은? ",
+      "q": "자동이체 해지/변경에 가장 안전한 방법은?",
       "choices": [
         "공식 앱/홈페이지",
         "문자 링크",
@@ -9244,13 +9265,14 @@
         "알 수 없는 상담원"
       ],
       "answer": 0,
-      "explain": "공식 채널을 이용하는 게 안전해."
+      "explain": "공식 채널을 이용하는 게 안전해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_023",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "실내에서 라면을 끓일 때 가스레인지 주변에 두면 위험한 건? ",
+      "q": "실내에서 라면을 끓일 때 가스레인지 주변에 두면 위험한 건?",
       "choices": [
         "키친타월",
         "냄비받침",
@@ -9258,13 +9280,14 @@
         "집게"
       ],
       "answer": 0,
-      "explain": "인화성 물건은 화재 위험이 커."
+      "explain": "인화성 물건은 화재 위험이 커.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_024",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "겨울철 보일러 난방비 줄이는 데 보통 더 유리한 건? ",
+      "q": "겨울철 보일러 난방비 줄이는 데 보통 더 유리한 건?",
       "choices": [
         "짧게 껐다 켰다 반복",
         "적정온도 유지+외출모드 활용",
@@ -9272,13 +9295,14 @@
         "온수 계속 틀기"
       ],
       "answer": 1,
-      "explain": "상황에 따라 다르지만 ‘과도한 반복 가동’은 비효율이 될 수 있어."
+      "explain": "상황에 따라 다르지만 ‘과도한 반복 가동’은 비효율이 될 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_025",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "칼을 보관할 때 안전한 건? ",
+      "q": "칼을 보관할 때 안전한 건?",
       "choices": [
         "날이 밖으로",
         "날 보호 캡/블록",
@@ -9286,13 +9310,14 @@
         "싱크대에 담가두기"
       ],
       "answer": 1,
-      "explain": "날 보호와 손 베임 방지가 중요해."
+      "explain": "날 보호와 손 베임 방지가 중요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_026",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "빨래에서 섬유유연제를 과다 사용하면? ",
+      "q": "빨래에서 섬유유연제를 과다 사용하면?",
       "choices": [
         "항상 향이 오래감",
         "흡수성/기능성 저하 가능",
@@ -9300,13 +9325,14 @@
         "색이 더 선명"
       ],
       "answer": 1,
-      "explain": "잔여물이 남아 흡수성·통기성이 떨어질 수 있어."
+      "explain": "잔여물이 남아 흡수성·통기성이 떨어질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_027",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "신용카드 결제 문자에 모르는 결제가 있으면? ",
+      "q": "신용카드 결제 문자에 모르는 결제가 있으면?",
       "choices": [
         "무시",
         "카드사에 즉시 확인",
@@ -9314,13 +9340,14 @@
         "며칠 뒤 확인"
       ],
       "answer": 1,
-      "explain": "부정 사용은 빠르게 확인·조치가 좋아."
+      "explain": "부정 사용은 빠르게 확인·조치가 좋아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_028",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "공유기 비밀번호 설정으로 더 안전한 건? ",
+      "q": "공유기 비밀번호 설정으로 더 안전한 건?",
       "choices": [
         "admin/admin",
         "긴 비밀번호+WPA2/3",
@@ -9328,13 +9355,14 @@
         "12345678"
       ],
       "answer": 1,
-      "explain": "기본 비번은 바로 털리기 쉬워."
+      "explain": "기본 비번은 바로 털리기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_029",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "실내 습도가 너무 낮으면 생길 수 있는 건? ",
+      "q": "실내 습도가 너무 낮으면 생길 수 있는 건?",
       "choices": [
         "정전기·건조",
         "곰팡이 폭발",
@@ -9342,11 +9370,12 @@
         "산소 부족"
       ],
       "answer": 0,
-      "explain": "건조하면 정전기, 목/피부 건조가 늘 수 있어."
+      "explain": "건조하면 정전기, 목/피부 건조가 늘 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_030",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
       "q": "배터리 화재가 우려되면 물에 담그는 게 최선이다",
       "choices": [
@@ -9354,13 +9383,14 @@
         "X"
       ],
       "answer": 1,
-      "explain": "무조건 물에 담그는 건 위험할 수 있어. 안전거리 확보·신고가 우선."
+      "explain": "무조건 물에 담그는 건 위험할 수 있어. 안전거리 확보·신고가 우선.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_031",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "자동차 타이어 공기압 경고등이 떴을 때? ",
+      "q": "자동차 타이어 공기압 경고등이 떴을 때?",
       "choices": [
         "무시하고 고속주행",
         "안전한 곳에 정차 후 점검",
@@ -9368,11 +9398,12 @@
         "에어컨 끄기"
       ],
       "answer": 1,
-      "explain": "저압은 제동/조향에 영향이 있어."
+      "explain": "저압은 제동/조향에 영향이 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_032",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
       "q": "계란 유통기한이 조금 지나도 무조건 먹어도 된다",
       "choices": [
@@ -9380,11 +9411,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "상태/보관에 따라 위험할 수 있어. 냄새·부유 테스트만 맹신하면 안 돼."
+      "explain": "상태/보관에 따라 위험할 수 있어. 냄새·부유 테스트만 맹신하면 안 돼.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_033",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
       "q": "손 소독제는 손이 완전히 젖어 있을 때 쓰는 게 더 좋다",
       "choices": [
@@ -9392,13 +9424,14 @@
         "X"
       ],
       "answer": 1,
-      "explain": "손이 젖어 있으면 효과가 떨어질 수 있어."
+      "explain": "손이 젖어 있으면 효과가 떨어질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_034",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "겨울철 실내 난방 중에 가습이 필요한 이유로 가까운 건? ",
+      "q": "겨울철 실내 난방 중에 가습이 필요한 이유로 가까운 건?",
       "choices": [
         "습도 유지로 건조 완화",
         "산소 생성",
@@ -9406,13 +9439,14 @@
         "전기 절약"
       ],
       "answer": 0,
-      "explain": "적정 습도는 건조 증상을 완화할 수 있어."
+      "explain": "적정 습도는 건조 증상을 완화할 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_035",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "배수구 악취 줄이기에 흔히 도움 되는 건? ",
+      "q": "배수구 악취 줄이기에 흔히 도움 되는 건?",
       "choices": [
         "트랩/물막이 유지",
         "향초만 켜기",
@@ -9420,13 +9454,14 @@
         "세제 계속 붓기"
       ],
       "answer": 0,
-      "explain": "물막이가 깨지면 냄새가 올라오기 쉬워."
+      "explain": "물막이가 깨지면 냄새가 올라오기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_036",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "스마트폰 화면에 묻은 기름때 닦을 때 더 나은 건? ",
+      "q": "스마트폰 화면에 묻은 기름때 닦을 때 더 나은 건?",
       "choices": [
         "거친 수세미",
         "마른 극세사천",
@@ -9434,25 +9469,27 @@
         "사포"
       ],
       "answer": 1,
-      "explain": "코팅 손상 방지를 위해 부드러운 천이 좋아."
+      "explain": "코팅 손상 방지를 위해 부드러운 천이 좋아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_037",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "자동차 에어컨 외기/내기 순환 중 냄새·매연 많은 곳에 더 적절한 건? ",
+      "q": "자동차 에어컨 외기/내기 순환 중 냄새·매연 많은 곳에 더 적절한 건?",
       "choices": [
         "외기",
         "내기"
       ],
       "answer": 1,
-      "explain": "매연 많은 구간에선 내기 순환이 유리할 때가 많아."
+      "explain": "매연 많은 구간에선 내기 순환이 유리할 때가 많아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_038",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "쓰레기통에서 초파리 줄이는 데 보통 도움 되는 건? ",
+      "q": "쓰레기통에서 초파리 줄이는 데 보통 도움 되는 건?",
       "choices": [
         "음식물 밀폐+자주 비움",
         "향수 뿌리기",
@@ -9460,23 +9497,25 @@
         "물만 채우기"
       ],
       "answer": 0,
-      "explain": "유인원이 되는 음식물 잔재를 줄여야 해."
+      "explain": "유인원이 되는 음식물 잔재를 줄여야 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_039",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
-      "q": "장시간 앉아서 일할 때 더 권장되는 건? ",
+      "q": "장시간 앉아서 일할 때 더 권장되는 건?",
       "choices": [
         "가끔 일어나 가볍게 움직이기",
         "계속 앉아있기"
       ],
       "answer": 0,
-      "explain": "가벼운 움직임이 부담을 줄여줄 수 있어."
+      "explain": "가벼운 움직임이 부담을 줄여줄 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_life_040",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "실생활",
       "q": "휴대폰 충전은 베개 밑에서 하는 게 안전하다",
       "choices": [
@@ -9484,11 +9523,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "열이 갇혀 과열 위험이 커질 수 있어."
+      "explain": "열이 갇혀 과열 위험이 커질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "드립에서 ‘분쇄도’가 너무 곱고 추출이 길어지면 보통?",
       "choices": [
@@ -9498,11 +9538,12 @@
         "향이 무조건 2배"
       ],
       "answer": 0,
-      "explain": "곱게+길게는 과다추출로 가기 쉬워."
+      "explain": "곱게+길게는 과다추출로 가기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "드립 ‘블루밍’의 주된 목적은?",
       "choices": [
@@ -9512,11 +9553,12 @@
         "필터를 표백"
       ],
       "answer": 0,
-      "explain": "뜸 들이기로 가스 배출을 돕고 추출을 안정시키는 데 쓰여."
+      "explain": "뜸 들이기로 가스 배출을 돕고 추출을 안정시키는 데 쓰여.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "드립에서 보통 비율(커피:물) 관리에 가장 유용한 도구는?",
       "choices": [
@@ -9526,11 +9568,12 @@
         "스푼"
       ],
       "answer": 0,
-      "explain": "무게로 비율을 맞추면 재현성이 좋아져."
+      "explain": "무게로 비율을 맞추면 재현성이 좋아져.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "원두 보관으로 더 나은 편은?",
       "choices": [
@@ -9540,11 +9583,12 @@
         "젖은 곳"
       ],
       "answer": 0,
-      "explain": "산소·열·빛·습기가 향을 빠르게 망가뜨려."
+      "explain": "산소·열·빛·습기가 향을 빠르게 망가뜨려.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "드립에서 맛이 너무 시고 얕게 느껴지면(대체로) 먼저 의심할 건?",
       "choices": [
@@ -9554,11 +9598,12 @@
         "물에 설탕"
       ],
       "answer": 0,
-      "explain": "과소추출은 시고 밋밋하게 느껴질 수 있어."
+      "explain": "과소추출은 시고 밋밋하게 느껴질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "프렌치프레스의 특징으로 맞는 건?",
       "choices": [
@@ -9568,11 +9613,12 @@
         "카페인 0"
       ],
       "answer": 0,
-      "explain": "금속 필터+침출로 미분이 남아 바디감이 생기기 쉬워."
+      "explain": "금속 필터+침출로 미분이 남아 바디감이 생기기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "콜드브루가 보통 드립보다 덜 쓴맛이 느껴지기도 하는 이유는?",
       "choices": [
@@ -9582,11 +9628,12 @@
         "카페인이 0이라서"
       ],
       "answer": 0,
-      "explain": "추출 조건 차이로 맛 성향이 달라질 수 있어."
+      "explain": "추출 조건 차이로 맛 성향이 달라질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "에스프레소에서 ‘크레마’에 대한 설명으로 가까운 건?",
       "choices": [
@@ -9596,11 +9643,12 @@
         "원두 껍질"
       ],
       "answer": 0,
-      "explain": "오일·가스 등이 섞여 생기는 거품층이야."
+      "explain": "오일·가스 등이 섞여 생기는 거품층이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "핸드드립에서 물줄기를 더 가늘게(컨트롤) 하려고 쓰는 주전자는?",
       "choices": [
@@ -9610,11 +9658,12 @@
         "텀블러"
       ],
       "answer": 0,
-      "explain": "구스넥은 물줄기 제어가 쉬워."
+      "explain": "구스넥은 물줄기 제어가 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "커피 맛의 ‘쓴맛’이 강할 때 보통 줄이는 쪽으로 맞는 건?",
       "choices": [
@@ -9624,11 +9673,12 @@
         "원두를 더 태우기"
       ],
       "answer": 0,
-      "explain": "쓴맛은 과다추출 요인과 연결되는 경우가 많아."
+      "explain": "쓴맛은 과다추출 요인과 연결되는 경우가 많아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "디카페인 원두는 카페인이 ‘완전 0’이다",
       "choices": [
@@ -9636,11 +9686,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "대개 카페인이 크게 줄지만 완전 0은 아닐 수 있어."
+      "explain": "대개 카페인이 크게 줄지만 완전 0은 아닐 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "로부스타가 아라비카보다 흔히 더 강한 쓴맛·바디를 낼 수 있다",
       "choices": [
@@ -9648,11 +9699,12 @@
         "X"
       ],
       "answer": 0,
-      "explain": "품종/배합에 따라 다르지만 그런 경향이 알려져 있어."
+      "explain": "품종/배합에 따라 다르지만 그런 경향이 알려져 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "종이필터 드립의 특징으로 가까운 건?",
       "choices": [
@@ -9662,11 +9714,12 @@
         "무조건 산미 0"
       ],
       "answer": 0,
-      "explain": "종이필터가 오일/미분을 일부 걸러줘."
+      "explain": "종이필터가 오일/미분을 일부 걸러줘.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "모카포트를 가열할 때 뚜껑을 꼭 닫고 얼굴을 가까이 대는 건?",
       "choices": [
@@ -9674,11 +9727,12 @@
         "무조건 안전"
       ],
       "answer": 0,
-      "explain": "압력·분출로 화상 위험이 있을 수 있어."
+      "explain": "압력·분출로 화상 위험이 있을 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "드립에서 ‘추출이 너무 빠른’ 편이면 먼저 조정할 건?",
       "choices": [
@@ -9688,11 +9742,12 @@
         "컵을 바꾸기"
       ],
       "answer": 0,
-      "explain": "너무 빠르면 과소추출 쪽이라 곱게 가는 쪽을 먼저 봐."
+      "explain": "너무 빠르면 과소추출 쪽이라 곱게 가는 쪽을 먼저 봐.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "우유 거품(폼)에서 보통 목표는?",
       "choices": [
@@ -9702,11 +9757,12 @@
         "거품 위에 얼음"
       ],
       "answer": 0,
-      "explain": "라떼아트도 미세거품이 유리해."
+      "explain": "라떼아트도 미세거품이 유리해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "커피의 ‘산미’가 무조건 나쁜 맛이다",
       "choices": [
@@ -9714,11 +9770,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "산미는 원두/추출에 따라 장점이 될 수도 있어."
+      "explain": "산미는 원두/추출에 따라 장점이 될 수도 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "핸드드립에서 흔히 타이머를 쓰는 이유는?",
       "choices": [
@@ -9728,11 +9785,12 @@
         "카페인 제거"
       ],
       "answer": 0,
-      "explain": "시간을 맞추면 맛 재현이 쉬워."
+      "explain": "시간을 맞추면 맛 재현이 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "커피 향을 더 오래 유지하려면 갈아둔 분쇄커피보다?",
       "choices": [
@@ -9742,11 +9800,12 @@
         "물에 담가두기"
       ],
       "answer": 0,
-      "explain": "분쇄 후 표면적이 늘어 향이 빨리 빠져."
+      "explain": "분쇄 후 표면적이 늘어 향이 빨리 빠져.",
+      "origin_mode": "common"
     },
     {
       "id": "c_coffee_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "커피",
       "q": "드립에서 물온도(뜨거움)가 너무 높으면 생기기 쉬운 쪽은?",
       "choices": [
@@ -9756,11 +9815,12 @@
         "산미만 0"
       ],
       "answer": 0,
-      "explain": "너무 높은 온도는 과다추출로 이어질 수 있어."
+      "explain": "너무 높은 온도는 과다추출로 이어질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "사진에서 ISO를 올리면 일반적으로?",
       "choices": [
@@ -9770,11 +9830,12 @@
         "초점이 자동 고정"
       ],
       "answer": 0,
-      "explain": "ISO는 밝기 확보에 도움되지만 노이즈가 늘기 쉬워."
+      "explain": "ISO는 밝기 확보에 도움되지만 노이즈가 늘기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "셔터속도가 느릴수록 흔히 생기는 건?",
       "choices": [
@@ -9784,11 +9845,12 @@
         "줌이 자동"
       ],
       "answer": 0,
-      "explain": "손떨림·피사체 움직임이 흐려질 수 있어."
+      "explain": "손떨림·피사체 움직임이 흐려질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "조리개 값(f값)이 작아지면(예: f/1.8 →) 대체로?",
       "choices": [
@@ -9798,11 +9860,12 @@
         "화이트밸런스 고정"
       ],
       "answer": 0,
-      "explain": "조리개가 열리면 심도가 얕아져 배경이 더 흐려질 수 있어."
+      "explain": "조리개가 열리면 심도가 얕아져 배경이 더 흐려질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "RAW 파일의 장점으로 가까운 건?",
       "choices": [
@@ -9812,11 +9875,12 @@
         "색 정보가 적음"
       ],
       "answer": 0,
-      "explain": "RAW는 정보가 많아 보정 여지가 커."
+      "explain": "RAW는 정보가 많아 보정 여지가 커.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "화이트밸런스는 주로 무엇을 맞추는 설정?",
       "choices": [
@@ -9826,11 +9890,12 @@
         "줌 속도"
       ],
       "answer": 0,
-      "explain": "조명 색에 따라 색감을 보정하는 개념이야."
+      "explain": "조명 색에 따라 색감을 보정하는 개념이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "역광에서 얼굴이 어둡게 나오면 흔히 쓰는 건?",
       "choices": [
@@ -9840,11 +9905,12 @@
         "흑백 전환"
       ],
       "answer": 0,
-      "explain": "노출 보정/HDR/보조광이 도움이 될 수 있어."
+      "explain": "노출 보정/HDR/보조광이 도움이 될 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "손떨림 방지(OIS/IBIS)는 주로 무엇을 줄여줘?",
       "choices": [
@@ -9854,11 +9920,12 @@
         "초점 거리"
       ],
       "answer": 0,
-      "explain": "손떨림을 줄이는 기술이지, 피사체 움직임을 멈추진 못해."
+      "explain": "손떨림을 줄이는 기술이지, 피사체 움직임을 멈추진 못해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "망원으로 갈수록 흔히 더 필요해지는 건?",
       "choices": [
@@ -9868,11 +9935,12 @@
         "색온도 0"
       ],
       "answer": 0,
-      "explain": "망원은 흔들림이 더 크게 보이기 쉬워."
+      "explain": "망원은 흔들림이 더 크게 보이기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "디지털 줌의 본질에 더 가까운 건?",
       "choices": [
@@ -9882,11 +9950,12 @@
         "셔터속도 증가"
       ],
       "answer": 0,
-      "explain": "대개 크롭이라 디테일 손실이 쉬워."
+      "explain": "대개 크롭이라 디테일 손실이 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "히스토그램은 무엇을 보여주는 그래프?",
       "choices": [
@@ -9896,11 +9965,12 @@
         "GPS 좌표"
       ],
       "answer": 0,
-      "explain": "노출 판단에 도움 되는 밝기 분포야."
+      "explain": "노출 판단에 도움 되는 밝기 분포야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "삼각대의 가장 큰 장점은?",
       "choices": [
@@ -9910,11 +9980,12 @@
         "노이즈 0"
       ],
       "answer": 0,
-      "explain": "카메라를 안정적으로 고정해줘."
+      "explain": "카메라를 안정적으로 고정해줘.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "스포츠/움직임 촬영에 보통 유리한 건?",
       "choices": [
@@ -9924,11 +9995,12 @@
         "흑백 모드"
       ],
       "answer": 0,
-      "explain": "빠른 셔터가 움직임을 멈추기 쉬워."
+      "explain": "빠른 셔터가 움직임을 멈추기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "인물사진에서 ‘룰 오브 서즈(삼분할)’는?",
       "choices": [
@@ -9938,11 +10010,12 @@
         "배터리 절약"
       ],
       "answer": 0,
-      "explain": "피사체 배치를 돕는 구도 원칙 중 하나야."
+      "explain": "피사체 배치를 돕는 구도 원칙 중 하나야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "렌즈/필터 닦을 때 더 권장되는 건?",
       "choices": [
@@ -9952,11 +10025,12 @@
         "거친 수세미"
       ],
       "answer": 0,
-      "explain": "스크래치 방지를 위해 부드럽고 깨끗한 도구가 좋아."
+      "explain": "스크래치 방지를 위해 부드럽고 깨끗한 도구가 좋아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "야경에서 가로등 주변이 번져 보이면 원인으로 흔한 건?",
       "choices": [
@@ -9966,11 +10040,12 @@
         "초점이 완벽해서"
       ],
       "answer": 0,
-      "explain": "지문/먼지로 플레어가 늘 수 있어."
+      "explain": "지문/먼지로 플레어가 늘 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "노출의 3요소로 흔히 묶는 건?",
       "choices": [
@@ -9980,11 +10055,12 @@
         "필터·각도·거리"
       ],
       "answer": 0,
-      "explain": "기본 노출 3요소는 이 셋으로 설명하는 경우가 많아."
+      "explain": "기본 노출 3요소는 이 셋으로 설명하는 경우가 많아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "스마트폰 ‘야간모드’가 하는 일로 가까운 건?",
       "choices": [
@@ -9994,11 +10070,12 @@
         "초점 고정"
       ],
       "answer": 0,
-      "explain": "대개 여러 프레임 합성으로 노이즈를 줄이기도 해."
+      "explain": "대개 여러 프레임 합성으로 노이즈를 줄이기도 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "연사(버스트) 촬영의 장점은?",
       "choices": [
@@ -10008,11 +10085,12 @@
         "줌 자동"
       ],
       "answer": 0,
-      "explain": "움직이는 장면에서 원하는 순간을 건지기 좋아."
+      "explain": "움직이는 장면에서 원하는 순간을 건지기 좋아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "초점 맞추기 어려울 때 유용한 기능은?",
       "choices": [
@@ -10022,11 +10100,12 @@
         "블루투스"
       ],
       "answer": 0,
-      "explain": "초점 지점을 지정하거나 고정하면 도움이 될 때가 있어."
+      "explain": "초점 지점을 지정하거나 고정하면 도움이 될 때가 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_photo_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "사진",
       "q": "사진에서 ‘보케’는 보통 무엇을 말해?",
       "choices": [
@@ -10036,11 +10115,12 @@
         "파노라마"
       ],
       "answer": 0,
-      "explain": "심도/렌즈 특성으로 생기는 배경 흐림 느낌이야."
+      "explain": "심도/렌즈 특성으로 생기는 배경 흐림 느낌이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "캠핑 텐트 안에서 숯불/연료 난로를 피우면 위험한 이유는?",
       "choices": [
@@ -10050,11 +10130,12 @@
         "벌레가 없어져서"
       ],
       "answer": 0,
-      "explain": "환기가 부족하면 일산화탄소가 위험해."
+      "explain": "환기가 부족하면 일산화탄소가 위험해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "침낭의 ‘컴포트 온도’는 보통 무엇을 의미해?",
       "choices": [
@@ -10064,11 +10145,12 @@
         "텐트 크기"
       ],
       "answer": 0,
-      "explain": "표기 기준은 브랜드마다 다르지만 ‘편안’ 기준으로 쓰여."
+      "explain": "표기 기준은 브랜드마다 다르지만 ‘편안’ 기준으로 쓰여.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "캠핑에서 레이어링(겹쳐 입기)이 유리한 이유는?",
       "choices": [
@@ -10078,11 +10160,12 @@
         "바람을 더 맞음"
       ],
       "answer": 0,
-      "explain": "체온/땀 관리에 유리해."
+      "explain": "체온/땀 관리에 유리해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "텐트 결로(물방울)가 심해지는 조건은?",
       "choices": [
@@ -10092,11 +10175,12 @@
         "햇빛이 강함"
       ],
       "answer": 0,
-      "explain": "호흡/조리 습기와 환기 부족이 결로를 키워."
+      "explain": "호흡/조리 습기와 환기 부족이 결로를 키워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "랜턴을 텐트 천장에 걸 때 더 안전한 건?",
       "choices": [
@@ -10106,11 +10190,12 @@
         "천에 밀착"
       ],
       "answer": 0,
-      "explain": "열/화재 위험을 줄여야 해."
+      "explain": "열/화재 위험을 줄여야 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "가스버너 사용 시 더 안전한 건?",
       "choices": [
@@ -10120,11 +10205,12 @@
         "침낭 위"
       ],
       "answer": 0,
-      "explain": "통풍·평탄한 곳이 기본이야."
+      "explain": "통풍·평탄한 곳이 기본이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "캠핑 화로대 주변에 두면 위험한 건?",
       "choices": [
@@ -10134,11 +10220,12 @@
         "금속 집게"
       ],
       "answer": 0,
-      "explain": "불씨로 화재가 날 수 있어."
+      "explain": "불씨로 화재가 날 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "야간에 헤드랜턴의 ‘레드 라이트’가 유용한 이유는?",
       "choices": [
@@ -10148,11 +10235,12 @@
         "곤충 0"
       ],
       "answer": 0,
-      "explain": "눈부심을 줄이고 야간 적응을 덜 깨."
+      "explain": "눈부심을 줄이고 야간 적응을 덜 깨.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "등산·캠핑에서 물 정수 방법으로 흔한 건?",
       "choices": [
@@ -10162,11 +10250,12 @@
         "흙 넣기"
       ],
       "answer": 0,
-      "explain": "오염 가능성이 있으면 정수가 필요해."
+      "explain": "오염 가능성이 있으면 정수가 필요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "바람이 강할 때 텐트 고정에서 중요한 건?",
       "choices": [
@@ -10176,11 +10265,12 @@
         "매트 접기"
       ],
       "answer": 0,
-      "explain": "가이라인과 팩이 바람을 버텨줘."
+      "explain": "가이라인과 팩이 바람을 버텨줘.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "캠핑에서 ‘리브 노 트레이스’는?",
       "choices": [
@@ -10190,11 +10280,12 @@
         "쓰레기 묻기"
       ],
       "answer": 0,
-      "explain": "자연 훼손을 줄이자는 원칙이야."
+      "explain": "자연 훼손을 줄이자는 원칙이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "불을 끌 때 가장 확실한 원칙은?",
       "choices": [
@@ -10204,11 +10295,12 @@
         "물 한 컵만"
       ],
       "answer": 0,
-      "explain": "재발화 방지를 위해 완전 소화가 중요해."
+      "explain": "재발화 방지를 위해 완전 소화가 중요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "캠핑용 칼/도끼 사용 시 안전 수칙으로 맞는 건?",
       "choices": [
@@ -10218,11 +10310,12 @@
         "장난"
       ],
       "answer": 0,
-      "explain": "도구는 ‘사람 없는 방향’이 기본이야."
+      "explain": "도구는 ‘사람 없는 방향’이 기본이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "야외에서 전기(멀티탭) 사용할 때 더 주의할 건?",
       "choices": [
@@ -10232,11 +10325,12 @@
         "높이"
       ],
       "answer": 0,
-      "explain": "물기·누전이 핵심 위험이야."
+      "explain": "물기·누전이 핵심 위험이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "겨울 캠핑에서 결로·동결 줄이려면?",
       "choices": [
@@ -10246,11 +10340,12 @@
         "물 계속 끓이기"
       ],
       "answer": 0,
-      "explain": "습기 줄이고 환기가 중요해."
+      "explain": "습기 줄이고 환기가 중요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "벌레가 많은 곳에서 텐트 출입 시 도움 되는 습관은?",
       "choices": [
@@ -10258,11 +10353,12 @@
         "문을 항상 열어두기"
       ],
       "answer": 0,
-      "explain": "작은 습관이 벌레 유입을 줄여."
+      "explain": "작은 습관이 벌레 유입을 줄여.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "침낭 보관으로 더 나은 건?",
       "choices": [
@@ -10272,11 +10368,12 @@
         "뜨거운 곳"
       ],
       "answer": 0,
-      "explain": "장기 압축은 충전재 복원력에 불리할 수 있어."
+      "explain": "장기 압축은 충전재 복원력에 불리할 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "캠핑에서 ‘바람막이’의 역할은?",
       "choices": [
@@ -10286,11 +10383,12 @@
         "빛만 막음"
       ],
       "answer": 0,
-      "explain": "바람을 줄여 체감과 조리 안정에 도움돼."
+      "explain": "바람을 줄여 체감과 조리 안정에 도움돼.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "야외 조리 후 기름/찌꺼기 처리는?",
       "choices": [
@@ -10300,11 +10398,12 @@
         "불에 태우기"
       ],
       "answer": 0,
-      "explain": "환경 오염을 피해야 해."
+      "explain": "환경 오염을 피해야 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_camp_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "캠핑",
       "q": "캠핑에서 응급처치 키트를 챙기는 이유는?",
       "choices": [
@@ -10314,11 +10413,12 @@
         "벌레 유인"
       ],
       "answer": 0,
-      "explain": "작은 사고는 언제든 생겨."
+      "explain": "작은 사고는 언제든 생겨.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "운동 전에 더 흔히 권장되는 스트레칭은?",
       "choices": [
@@ -10328,11 +10428,12 @@
         "찬물 샤워"
       ],
       "answer": 0,
-      "explain": "운동 전엔 몸을 데우는 동적이 더 맞는 경우가 많아."
+      "explain": "운동 전엔 몸을 데우는 동적이 더 맞는 경우가 많아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "근육통(DOMS)이 있다고 무조건 ‘좋은 운동’이라는 뜻이다",
       "choices": [
@@ -10340,11 +10441,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "근육통은 다양한 원인이라 ‘좋다’로 단정하긴 어려워."
+      "explain": "근육통은 다양한 원인이라 ‘좋다’로 단정하긴 어려워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "근력 향상에 중요한 원칙으로 가까운 건?",
       "choices": [
@@ -10354,11 +10456,12 @@
         "휴식 0"
       ],
       "answer": 0,
-      "explain": "조금씩 강도/볼륨을 올리는 게 핵심이야."
+      "explain": "조금씩 강도/볼륨을 올리는 게 핵심이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "자세가 무너지는데 무게를 더 올리는 건?",
       "choices": [
@@ -10366,11 +10469,12 @@
         "항상 효율↑"
       ],
       "answer": 0,
-      "explain": "기본은 자세·가동범위 우선이야."
+      "explain": "기본은 자세·가동범위 우선이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "유산소에서 ‘말할 수 있을 정도’ 강도는 대체로?",
       "choices": [
@@ -10380,11 +10484,12 @@
         "무조건 고강도"
       ],
       "answer": 0,
-      "explain": "대화 가능 여부로 강도를 가늠하기도 해."
+      "explain": "대화 가능 여부로 강도를 가늠하기도 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "운동 후 회복에 흔히 도움이 되는 건?",
       "choices": [
@@ -10394,11 +10499,12 @@
         "무조건 금식"
       ],
       "answer": 0,
-      "explain": "회복의 최우선은 수면이야."
+      "explain": "회복의 최우선은 수면이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "운동 중 어지럽고 이상하면?",
       "choices": [
@@ -10408,11 +10514,12 @@
         "카페인 추가"
       ],
       "answer": 0,
-      "explain": "안전이 먼저야."
+      "explain": "안전이 먼저야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "체지방 감량에서 가장 큰 축은?",
       "choices": [
@@ -10422,11 +10529,12 @@
         "물만"
       ],
       "answer": 0,
-      "explain": "운동도 중요하지만 전체 균형이 핵심이야."
+      "explain": "운동도 중요하지만 전체 균형이 핵심이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "스쿼트에서 무릎이 약간 앞으로 나가는 건 무조건 잘못이다",
       "choices": [
@@ -10434,11 +10542,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "개인 체형/가동범위에 따라 ‘무조건’으로 말하긴 어려워."
+      "explain": "개인 체형/가동범위에 따라 ‘무조건’으로 말하긴 어려워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "러닝에서 발 통증 예방에 흔히 도움 되는 건?",
       "choices": [
@@ -10448,11 +10557,12 @@
         "휴식 0"
       ],
       "answer": 0,
-      "explain": "급격한 증가가 부상으로 이어지기 쉬워."
+      "explain": "급격한 증가가 부상으로 이어지기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "운동할 때 호흡의 기본으로 가까운 건?",
       "choices": [
@@ -10462,11 +10572,12 @@
         "내숨만"
       ],
       "answer": 0,
-      "explain": "종목마다 다르지만 숨 참기는 혈압 부담이 될 수 있어."
+      "explain": "종목마다 다르지만 숨 참기는 혈압 부담이 될 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "스트렝스 훈련에서 ‘세트 사이 휴식’이 필요한 이유는?",
       "choices": [
@@ -10476,11 +10587,12 @@
         "칼로리 0"
       ],
       "answer": 0,
-      "explain": "회복이 있어야 다음 세트 품질이 올라가."
+      "explain": "회복이 있어야 다음 세트 품질이 올라가.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "폼롤러가 하는 역할로 더 가까운 건?",
       "choices": [
@@ -10490,11 +10602,12 @@
         "뼈를 늘림"
       ],
       "answer": 0,
-      "explain": "회복·이완에 도움을 줄 수 있어."
+      "explain": "회복·이완에 도움을 줄 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "운동 초보가 루틴을 짤 때 더 좋은 건?",
       "choices": [
@@ -10504,11 +10617,12 @@
         "통증 무시"
       ],
       "answer": 0,
-      "explain": "기본 동작 숙련이 중요해."
+      "explain": "기본 동작 숙련이 중요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "단백질은 무조건 많이 먹을수록 좋다",
       "choices": [
@@ -10516,11 +10630,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "개인 상황에 따라 과다 섭취는 불리할 수 있어."
+      "explain": "개인 상황에 따라 과다 섭취는 불리할 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "근력운동에서 ‘복근’은 스쿼트에 필요 없다",
       "choices": [
@@ -10528,11 +10643,12 @@
         "X"
       ],
       "answer": 1,
-      "explain": "코어 안정은 여러 동작에서 도움이 돼."
+      "explain": "코어 안정은 여러 동작에서 도움이 돼.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "운동 중 물을 마시는 건?",
       "choices": [
@@ -10540,11 +10656,12 @@
         "무조건 금지"
       ],
       "answer": 0,
-      "explain": "탈수는 퍼포먼스와 컨디션에 안 좋아."
+      "explain": "탈수는 퍼포먼스와 컨디션에 안 좋아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "하루 종일 앉아 있으면 운동을 해도 허리 부담이 쌓일 수 있다",
       "choices": [
@@ -10552,11 +10669,12 @@
         "X"
       ],
       "answer": 0,
-      "explain": "움직임 부족은 부담을 키울 수 있어."
+      "explain": "움직임 부족은 부담을 키울 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "목표가 근비대(근육 증가)면 보통 중요한 건?",
       "choices": [
@@ -10566,11 +10684,12 @@
         "스트레칭만"
       ],
       "answer": 0,
-      "explain": "여러 요소가 같이 가야 해."
+      "explain": "여러 요소가 같이 가야 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fitness_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "헬스/운동",
       "q": "운동 후 스트레칭은 운동 전보다 더 적합할 때가 많다",
       "choices": [
@@ -10578,11 +10697,12 @@
         "X"
       ],
       "answer": 0,
-      "explain": "운동 후엔 정적 스트레칭을 쓰는 경우가 많아."
+      "explain": "운동 후엔 정적 스트레칭을 쓰는 경우가 많아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "표준 조율에서 ‘A’ 음의 기준 주파수로 흔한 건?",
       "choices": [
@@ -10592,11 +10712,12 @@
         "110Hz"
       ],
       "answer": 0,
-      "explain": "일반적으로 A4=440Hz가 표준으로 많이 쓰여."
+      "explain": "일반적으로 A4=440Hz가 표준으로 많이 쓰여.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "한 옥타브는 무엇을 의미해?",
       "choices": [
@@ -10606,11 +10727,12 @@
         "박자 2개"
       ],
       "answer": 0,
-      "explain": "옥타브는 2배/1/2 관계가 기본이야."
+      "explain": "옥타브는 2배/1/2 관계가 기본이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "4/4 박자는 보통?",
       "choices": [
@@ -10620,11 +10742,12 @@
         "박자 없음"
       ],
       "answer": 0,
-      "explain": "가장 흔한 박자 중 하나야."
+      "explain": "가장 흔한 박자 중 하나야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "메트로놈은 무엇을 도와줘?",
       "choices": [
@@ -10634,11 +10757,12 @@
         "악기 조율"
       ],
       "answer": 0,
-      "explain": "연습 때 박자 유지에 좋아."
+      "explain": "연습 때 박자 유지에 좋아.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "장조/단조의 느낌으로 흔히 말하는 건?",
       "choices": [
@@ -10648,11 +10772,12 @@
         "단조=무음"
       ],
       "answer": 0,
-      "explain": "곡/편곡에 따라 달라지지만 경향 설명이야."
+      "explain": "곡/편곡에 따라 달라지지만 경향 설명이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "기타 표준 튜닝(6현→1현)으로 흔한 건?",
       "choices": [
@@ -10662,11 +10787,12 @@
         "A-D-G-C-E-A"
       ],
       "answer": 0,
-      "explain": "기본 표준 튜닝이야."
+      "explain": "기본 표준 튜닝이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "피아노에서 ‘건반’ 하나 옆으로는 보통?",
       "choices": [
@@ -10676,11 +10802,12 @@
         "박자"
       ],
       "answer": 0,
-      "explain": "검은건반 포함 인접은 반음이야."
+      "explain": "검은건반 포함 인접은 반음이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "코드(화음) ‘3화음’의 기본 구성은?",
       "choices": [
@@ -10690,11 +10817,12 @@
         "리듬만"
       ],
       "answer": 0,
-      "explain": "기본 트라이어드는 1-3-5야."
+      "explain": "기본 트라이어드는 1-3-5야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "템포 BPM은 무엇의 약자?",
       "choices": [
@@ -10704,11 +10832,12 @@
         "Beat Pitch Meter"
       ],
       "answer": 0,
-      "explain": "분당 박자 수를 뜻해."
+      "explain": "분당 박자 수를 뜻해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "악보에서 높은 음을 주로 표기하는 음자리표는?",
       "choices": [
@@ -10718,11 +10847,12 @@
         "테너"
       ],
       "answer": 0,
-      "explain": "일반적으로 멜로디는 트레블을 많이 써."
+      "explain": "일반적으로 멜로디는 트레블을 많이 써.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "다이내믹 ‘p’는 보통?",
       "choices": [
@@ -10732,11 +10862,12 @@
         "느리게"
       ],
       "answer": 0,
-      "explain": "p는 약하게, f는 강하게를 뜻해."
+      "explain": "p는 약하게, f는 강하게를 뜻해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "‘레가토’는?",
       "choices": [
@@ -10746,11 +10877,12 @@
         "더 빠르게"
       ],
       "answer": 0,
-      "explain": "음과 음을 매끄럽게 이어 연주하는 느낌이야."
+      "explain": "음과 음을 매끄럽게 이어 연주하는 느낌이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "‘스타카토’는?",
       "choices": [
@@ -10760,11 +10892,12 @@
         "더 높게"
       ],
       "answer": 0,
-      "explain": "짧고 또렷하게 끊는 주법이야."
+      "explain": "짧고 또렷하게 끊는 주법이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "카포(cap) 사용 목적은?",
       "choices": [
@@ -10774,11 +10907,12 @@
         "튜닝 자동"
       ],
       "answer": 0,
-      "explain": "기타에서 개방현 느낌 유지하며 키를 올릴 때 써."
+      "explain": "기타에서 개방현 느낌 유지하며 키를 올릴 때 써.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "MIDI는 무엇에 가까운 개념?",
       "choices": [
@@ -10788,11 +10922,12 @@
         "이미지"
       ],
       "answer": 0,
-      "explain": "소리 자체보다 ‘연주 데이터’에 가까워."
+      "explain": "소리 자체보다 ‘연주 데이터’에 가까워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "조표(샾/플랫)는 주로 무엇을 나타내?",
       "choices": [
@@ -10802,11 +10937,12 @@
         "가사"
       ],
       "answer": 0,
-      "explain": "그 곡의 조(키)에 해당하는 변화표를 뜻해."
+      "explain": "그 곡의 조(키)에 해당하는 변화표를 뜻해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "전조는 무엇을 의미해?",
       "choices": [
@@ -10816,11 +10952,12 @@
         "악기 교체"
       ],
       "answer": 0,
-      "explain": "곡 진행 중 키가 바뀌는 거야."
+      "explain": "곡 진행 중 키가 바뀌는 거야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "화음 진행(I–V–vi–IV)은?",
       "choices": [
@@ -10830,11 +10967,12 @@
         "악기 이름"
       ],
       "answer": 0,
-      "explain": "팝에서 자주 쓰는 코드 진행 예시로 알려져 있어."
+      "explain": "팝에서 자주 쓰는 코드 진행 예시로 알려져 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "하모닉스(기타)는?",
       "choices": [
@@ -10844,11 +10982,12 @@
         "줄을 자르기"
       ],
       "answer": 0,
-      "explain": "배음을 이용한 주법이야."
+      "explain": "배음을 이용한 주법이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_music_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "악기/음악",
       "q": "연습에서 ‘느리게 정확히’가 중요한 이유는?",
       "choices": [
@@ -10856,11 +10995,12 @@
         "시간 낭비"
       ],
       "answer": 0,
-      "explain": "속도는 나중에 올릴 수 있고, 정확도가 기반이야."
+      "explain": "속도는 나중에 올릴 수 있고, 정확도가 기반이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "낚시에서 ‘드랙’은?",
       "choices": [
@@ -10870,11 +11010,12 @@
         "낚싯대 길이"
       ],
       "answer": 0,
-      "explain": "드랙은 라인이 풀리는 저항을 조절해."
+      "explain": "드랙은 라인이 풀리는 저항을 조절해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "라인 종류 중 늘어남이 상대적으로 큰 편은?",
       "choices": [
@@ -10884,11 +11025,12 @@
         "실크"
       ],
       "answer": 0,
-      "explain": "모노는 신축이 있는 편이야."
+      "explain": "모노는 신축이 있는 편이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "플루오로카본 라인의 특징으로 흔한 건?",
       "choices": [
@@ -10898,11 +11040,12 @@
         "절대 끊김"
       ],
       "answer": 0,
-      "explain": "리더로 많이 쓰이기도 해."
+      "explain": "리더로 많이 쓰이기도 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "바늘이 손에 박혔을 때 가장 안전한 행동은?",
       "choices": [
@@ -10912,11 +11055,12 @@
         "낚싯줄로 흔들기"
       ],
       "answer": 0,
-      "explain": "심하면 즉시 의료 도움을 받는 게 안전해."
+      "explain": "심하면 즉시 의료 도움을 받는 게 안전해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "루어낚시에서 루어 종류로 아닌 건?",
       "choices": [
@@ -10926,11 +11070,12 @@
         "도화지"
       ],
       "answer": 3,
-      "explain": "도화지는 낚시 루어가 아니지."
+      "explain": "도화지는 낚시 루어가 아니지.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "캐스팅할 때 주변 확인이 중요한 이유는?",
       "choices": [
@@ -10940,11 +11085,12 @@
         "물색이 변함"
       ],
       "answer": 0,
-      "explain": "뒤·옆 사람/장비에 걸리면 위험해."
+      "explain": "뒤·옆 사람/장비에 걸리면 위험해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "낚시에서 ‘조과’는?",
       "choices": [
@@ -10954,11 +11100,12 @@
         "날씨"
       ],
       "answer": 0,
-      "explain": "그날 잡은 성과를 뜻해."
+      "explain": "그날 잡은 성과를 뜻해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "조류(물살)가 강하면 대체로 필요한 건?",
       "choices": [
@@ -10968,11 +11115,12 @@
         "릴을 잠그기"
       ],
       "answer": 0,
-      "explain": "흘림이 심해져 채비를 조절해야 해."
+      "explain": "흘림이 심해져 채비를 조절해야 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "갯바위/방파제에서 안전 장비로 도움 되는 건?",
       "choices": [
@@ -10982,11 +11130,12 @@
         "이어폰"
       ],
       "answer": 0,
-      "explain": "추락/미끄럼 대비가 중요해."
+      "explain": "추락/미끄럼 대비가 중요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "바늘 끝이 무뎌지면?",
       "choices": [
@@ -10996,11 +11145,12 @@
         "줄이 자동"
       ],
       "answer": 0,
-      "explain": "끝이 무디면 관통이 어려워질 수 있어."
+      "explain": "끝이 무디면 관통이 어려워질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "물고기를 방생할 때 더 바람직한 건?",
       "choices": [
@@ -11010,11 +11160,12 @@
         "사진 10분"
       ],
       "answer": 0,
-      "explain": "점액 보호와 스트레스 최소화가 중요해."
+      "explain": "점액 보호와 스트레스 최소화가 중요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "합사 라인 사용 시 종종 쓰는 건?",
       "choices": [
@@ -11024,11 +11175,12 @@
         "고무줄"
       ],
       "answer": 0,
-      "explain": "마찰·시인성 등 때문에 리더를 쓰기도 해."
+      "explain": "마찰·시인성 등 때문에 리더를 쓰기도 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "낚시바늘이 옷/가방에 걸리면?",
       "choices": [
@@ -11036,11 +11188,12 @@
         "그냥 돌려서 던지기"
       ],
       "answer": 0,
-      "explain": "훅은 쉽게 더 걸릴 수 있어 조심해야 해."
+      "explain": "훅은 쉽게 더 걸릴 수 있어 조심해야 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "낚시에서 ‘포인트’는?",
       "choices": [
@@ -11050,11 +11203,12 @@
         "낚싯줄 색"
       ],
       "answer": 0,
-      "explain": "낚시하기 좋은 지점을 뜻해."
+      "explain": "낚시하기 좋은 지점을 뜻해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "바람이 강한 날 캐스팅은?",
       "choices": [
@@ -11064,11 +11218,12 @@
         "자동으로 더 멀리감"
       ],
       "answer": 0,
-      "explain": "바람 방향을 고려해야 해."
+      "explain": "바람 방향을 고려해야 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "낚시 중 번개(낙뢰) 위험이 크면?",
       "choices": [
@@ -11076,11 +11231,12 @@
         "낚싯대 더 높이"
       ],
       "answer": 0,
-      "explain": "낚싯대는 도체/높은 물체가 될 수 있어 위험해."
+      "explain": "낚싯대는 도체/높은 물체가 될 수 있어 위험해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "바늘을 바닷물에 쓰고 방치하면?",
       "choices": [
@@ -11088,11 +11244,12 @@
         "항상 새것"
       ],
       "answer": 0,
-      "explain": "염분 때문에 부식이 빨라."
+      "explain": "염분 때문에 부식이 빨라.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "낚시 매너로 더 맞는 건?",
       "choices": [
@@ -11102,11 +11259,12 @@
         "소음 크게"
       ],
       "answer": 0,
-      "explain": "낚시터는 공유 공간이야."
+      "explain": "낚시터는 공유 공간이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "생미끼 보관에서 중요한 건?",
       "choices": [
@@ -11116,11 +11274,12 @@
         "뚜껑 없이 개방"
       ],
       "answer": 0,
-      "explain": "미끼는 조건에 민감해."
+      "explain": "미끼는 조건에 민감해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_fishing_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "낚시",
       "q": "어종 제한·금어기·금지체장은 지켜도 된다",
       "choices": [
@@ -11128,11 +11287,12 @@
         "X"
       ],
       "answer": 0,
-      "explain": "규정 위반은 처벌 대상이 될 수 있어. (지역별 규정 확인 필요)"
+      "explain": "규정 위반은 처벌 대상이 될 수 있어. (지역별 규정 확인 필요)",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "FPS에서 ‘핑(ping)’은 보통?",
       "choices": [
@@ -11142,11 +11302,12 @@
         "그래픽 품질"
       ],
       "answer": 0,
-      "explain": "핑이 높으면 입력 반응이 늦게 느껴질 수 있어."
+      "explain": "핑이 높으면 입력 반응이 늦게 느껴질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "모니터 주사율(Hz)이 높아지면 대체로?",
       "choices": [
@@ -11156,11 +11317,12 @@
         "인터넷이 빨라짐"
       ],
       "answer": 0,
-      "explain": "프레임/환경에 따라 체감이 달라."
+      "explain": "프레임/환경에 따라 체감이 달라.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "VSync의 목적에 가까운 건?",
       "choices": [
@@ -11170,11 +11332,12 @@
         "마우스 DPI 고정"
       ],
       "answer": 0,
-      "explain": "테어링을 줄이는 대신 지연이 늘 수 있어."
+      "explain": "테어링을 줄이는 대신 지연이 늘 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "FOV는 무엇의 약자에 가까워?",
       "choices": [
@@ -11184,11 +11347,12 @@
         "Field of Voice"
       ],
       "answer": 0,
-      "explain": "시야각 설정을 뜻해."
+      "explain": "시야각 설정을 뜻해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "마우스 DPI는 무엇과 관련이 깊어?",
       "choices": [
@@ -11198,11 +11362,12 @@
         "인터넷 속도"
       ],
       "answer": 0,
-      "explain": "DPI가 높으면 같은 이동에 커서가 더 많이 움직여."
+      "explain": "DPI가 높으면 같은 이동에 커서가 더 많이 움직여.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "컨트롤러 ‘데드존’은?",
       "choices": [
@@ -11212,11 +11377,12 @@
         "화면 밝기"
       ],
       "answer": 0,
-      "explain": "드리프트 보정 등에 쓰여."
+      "explain": "드리프트 보정 등에 쓰여.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "2단계 인증(2FA)은?",
       "choices": [
@@ -11226,11 +11392,12 @@
         "저장 공간 증가"
       ],
       "answer": 0,
-      "explain": "로그인 보안을 크게 높여줘."
+      "explain": "로그인 보안을 크게 높여줘.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "클라우드 세이브의 장점은?",
       "choices": [
@@ -11240,11 +11407,12 @@
         "결제 자동"
       ],
       "answer": 0,
-      "explain": "저장 데이터 동기화에 도움돼."
+      "explain": "저장 데이터 동기화에 도움돼.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "게임 패치노트는 보통?",
       "choices": [
@@ -11254,11 +11422,12 @@
         "방송 스케줄"
       ],
       "answer": 0,
-      "explain": "밸런스/버그 수정 내용을 알려줘."
+      "explain": "밸런스/버그 수정 내용을 알려줘.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "멀티플레이에서 ‘매치메이킹’은?",
       "choices": [
@@ -11268,11 +11437,12 @@
         "영상 녹화"
       ],
       "answer": 0,
-      "explain": "비슷한 조건으로 매칭하려는 시스템이야."
+      "explain": "비슷한 조건으로 매칭하려는 시스템이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "프레임 드랍이 심하면 먼저 볼 것 중 하나는?",
       "choices": [
@@ -11282,11 +11452,12 @@
         "의자 높이"
       ],
       "answer": 0,
-      "explain": "과열/백그라운드/설정이 흔한 원인이야."
+      "explain": "과열/백그라운드/설정이 흔한 원인이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "피싱 링크로 계정이 털리는 걸 줄이는 습관은?",
       "choices": [
@@ -11296,11 +11467,12 @@
         "2FA 끄기"
       ],
       "answer": 0,
-      "explain": "공식 채널을 이용하는 게 안전해."
+      "explain": "공식 채널을 이용하는 게 안전해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "게임에서 ‘메타’는?",
       "choices": [
@@ -11310,11 +11482,12 @@
         "서버 위치"
       ],
       "answer": 0,
-      "explain": "현재 패치에서 강한 흐름을 뜻하기도 해."
+      "explain": "현재 패치에서 강한 흐름을 뜻하기도 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "콘솔/PC 통풍이 막히면?",
       "choices": [
@@ -11324,11 +11497,12 @@
         "인터넷이 빨라짐"
       ],
       "answer": 0,
-      "explain": "발열은 성능과 안정성에 영향이 있어."
+      "explain": "발열은 성능과 안정성에 영향이 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "게임 중 손목 통증 예방에 도움 되는 건?",
       "choices": [
@@ -11336,11 +11510,12 @@
         "무시하고 계속"
       ],
       "answer": 0,
-      "explain": "반복 사용 부상은 쉬는 게 중요해."
+      "explain": "반복 사용 부상은 쉬는 게 중요해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "서버 점검 중에는?",
       "choices": [
@@ -11350,11 +11525,12 @@
         "계정이 삭제"
       ],
       "answer": 0,
-      "explain": "점검 중 기능이 제한돼."
+      "explain": "점검 중 기능이 제한돼.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "‘입력 지연’에 영향을 줄 수 있는 건?",
       "choices": [
@@ -11364,11 +11540,12 @@
         "테마색"
       ],
       "answer": 0,
-      "explain": "디스플레이/무선/설정이 지연에 영향 줄 수 있어."
+      "explain": "디스플레이/무선/설정이 지연에 영향 줄 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "온라인 게임에서 닉네임/비번 재사용은?",
       "choices": [
@@ -11376,11 +11553,12 @@
         "항상 안전"
       ],
       "answer": 0,
-      "explain": "재사용은 위험을 키워."
+      "explain": "재사용은 위험을 키워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "게임에서 ‘프레임레이트’는?",
       "choices": [
@@ -11390,11 +11568,12 @@
         "용량"
       ],
       "answer": 0,
-      "explain": "fps가 높을수록 부드럽게 보일 수 있어."
+      "explain": "fps가 높을수록 부드럽게 보일 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_gaming_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "게임",
       "q": "GPU/CPU 온도가 너무 높으면?",
       "choices": [
@@ -11404,11 +11583,12 @@
         "저장공간 증가"
       ],
       "answer": 0,
-      "explain": "과열 시 보호로 성능이 낮아질 수 있어."
+      "explain": "과열 시 보호로 성능이 낮아질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_001",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "마이야르 반응은 주로?",
       "choices": [
@@ -11418,11 +11598,12 @@
         "발효"
       ],
       "answer": 0,
-      "explain": "갈변하면서 풍미가 생기는 반응이야."
+      "explain": "갈변하면서 풍미가 생기는 반응이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_002",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "끓임(boil)과 약한 끓임(simmer)의 차이는?",
       "choices": [
@@ -11432,11 +11613,12 @@
         "그릇만"
       ],
       "answer": 0,
-      "explain": "약한 끓임은 기포가 약하고 조리가 부드러워."
+      "explain": "약한 끓임은 기포가 약하고 조리가 부드러워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_003",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "칼질 안전으로 더 맞는 건?",
       "choices": [
@@ -11446,11 +11628,12 @@
         "미끄러운 도마"
       ],
       "answer": 0,
-      "explain": "손가락을 말아 칼날과 거리를 두는 게 안전해."
+      "explain": "손가락을 말아 칼날과 거리를 두는 게 안전해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_004",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "도마가 미끄러우면?",
       "choices": [
@@ -11460,11 +11643,12 @@
         "바닥에 두기"
       ],
       "answer": 0,
-      "explain": "도마 고정이 안전의 기본이야."
+      "explain": "도마 고정이 안전의 기본이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_005",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "파스타 면수(삶은 물)를 소스에 넣는 이유는?",
       "choices": [
@@ -11474,11 +11658,12 @@
         "면을 차갑게"
       ],
       "answer": 0,
-      "explain": "전분이 소스를 걸쭉하게 하고 잘 붙게 해."
+      "explain": "전분이 소스를 걸쭉하게 하고 잘 붙게 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_006",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "소금 간을 ‘처음부터 조금씩’ 하는 이유는?",
       "choices": [
@@ -11488,11 +11673,12 @@
         "칼이 무뎌져서"
       ],
       "answer": 0,
-      "explain": "간은 과하면 되돌리기 어려워."
+      "explain": "간은 과하면 되돌리기 어려워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_007",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "고기를 굽고 바로 자르면(종종) 생기는 건?",
       "choices": [
@@ -11502,11 +11688,12 @@
         "온도가 즉시 내려감"
       ],
       "answer": 0,
-      "explain": "잠깐 레스팅하면 육즙 재분배에 도움될 수 있어."
+      "explain": "잠깐 레스팅하면 육즙 재분배에 도움될 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_008",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "볶음밥이 질면 흔한 원인은?",
       "choices": [
@@ -11516,11 +11703,12 @@
         "접시가 작음"
       ],
       "answer": 0,
-      "explain": "수분이 많으면 질어지기 쉬워."
+      "explain": "수분이 많으면 질어지기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_009",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "날고기/해산물을 냉장고 맨 위에 두는 건?",
       "choices": [
@@ -11528,11 +11716,12 @@
         "항상 안전"
       ],
       "answer": 0,
-      "explain": "아래로 흐를 수 있어 아래 칸이 더 안전해."
+      "explain": "아래로 흐를 수 있어 아래 칸이 더 안전해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_010",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "베이킹파우더와 베이킹소다 차이로 가까운 건?",
       "choices": [
@@ -11542,11 +11731,12 @@
         "둘 다 설탕"
       ],
       "answer": 0,
-      "explain": "소다는 산이 필요하고, 파우더는 보통 산/염기가 함께 있어."
+      "explain": "소다는 산이 필요하고, 파우더는 보통 산/염기가 함께 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_011",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "달걀을 삶고 찬물에 담그는 이유로 가까운 건?",
       "choices": [
@@ -11556,11 +11746,12 @@
         "색 바꾸기"
       ],
       "answer": 0,
-      "explain": "급랭으로 잔열을 줄이고 벗기기 쉬워지기도 해."
+      "explain": "급랭으로 잔열을 줄이고 벗기기 쉬워지기도 해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_012",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "기름을 적절히 예열하면 유리한 점은?",
       "choices": [
@@ -11570,11 +11761,12 @@
         "염분 증가"
       ],
       "answer": 0,
-      "explain": "적절 예열은 조리 결과를 안정시킬 수 있어."
+      "explain": "적절 예열은 조리 결과를 안정시킬 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_013",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "채소를 씻을 때 기본으로 맞는 건?",
       "choices": [
@@ -11584,11 +11776,12 @@
         "뜨거운 기름"
       ],
       "answer": 0,
-      "explain": "대부분은 물 세척이 기본이야."
+      "explain": "대부분은 물 세척이 기본이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_014",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "양파를 볶아 단맛을 내는 핵심은?",
       "choices": [
@@ -11598,11 +11791,12 @@
         "소금만"
       ],
       "answer": 0,
-      "explain": "천천히 볶아 캐러멜화가 진행돼."
+      "explain": "천천히 볶아 캐러멜화가 진행돼.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_015",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "국/찌개가 너무 짜면 응급으로 할 수 있는 건?",
       "choices": [
@@ -11612,11 +11806,12 @@
         "설탕만"
       ],
       "answer": 0,
-      "explain": "희석하거나 재료를 더 넣는 쪽이 현실적이야."
+      "explain": "희석하거나 재료를 더 넣는 쪽이 현실적이야.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_016",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "튀김에서 기름 온도가 너무 낮으면?",
       "choices": [
@@ -11626,11 +11821,12 @@
         "색이 하얘짐"
       ],
       "answer": 0,
-      "explain": "온도가 낮으면 흡유가 늘기 쉬워."
+      "explain": "온도가 낮으면 흡유가 늘기 쉬워.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_017",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "코팅팬 오래 쓰려면 피할 행동은?",
       "choices": [
@@ -11640,11 +11836,12 @@
         "나무/실리콘 도구 사용"
       ],
       "answer": 0,
-      "explain": "거친 도구가 코팅을 손상시킬 수 있어."
+      "explain": "거친 도구가 코팅을 손상시킬 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_018",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "밥을 상온에 오래 두는 건?",
       "choices": [
@@ -11652,11 +11849,12 @@
         "항상 안전"
       ],
       "answer": 0,
-      "explain": "상온 방치는 위험이 커질 수 있어."
+      "explain": "상온 방치는 위험이 커질 수 있어.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_019",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "간장·된장 등 장류는?",
       "choices": [
@@ -11666,11 +11864,12 @@
         "물에 담가야"
       ],
       "answer": 0,
-      "explain": "염분이 있어도 오염/변질은 가능해."
+      "explain": "염분이 있어도 오염/변질은 가능해.",
+      "origin_mode": "common"
     },
     {
       "id": "c_cooking_020",
-      "mode": "common",
+      "mode": "humanities",
       "topic": "요리",
       "q": "칼은 ‘무딜수록’ 더 안전하다",
       "choices": [
@@ -11678,7 +11877,2611 @@
         "X"
       ],
       "answer": 1,
-      "explain": "무딘 칼은 힘이 더 들어 미끄러져 다칠 수 있어."
+      "explain": "무딘 칼은 힘이 더 들어 미끄러져 다칠 수 있어.",
+      "origin_mode": "common"
+    },
+    {
+      "id": "JH458",
+      "mode": "humanities",
+      "q": "조선 시대 왕의 비서 기관 역할을 했던 곳은?",
+      "choices": [
+        "승정원",
+        "집현전",
+        "의금부",
+        "포도청"
+      ],
+      "answer": 0,
+      "explain": "승정원은 왕명 출납을 담당하던 비서 기관이야.",
+      "origin_id": "H458"
+    },
+    {
+      "id": "JH459",
+      "mode": "humanities",
+      "q": "경제학에서 선택으로 인해 포기한 대안 중 가치가 가장 큰 것은?",
+      "choices": [
+        "기회비용",
+        "매몰비용",
+        "한계비용",
+        "고정비용"
+      ],
+      "answer": 0,
+      "explain": "포기한 가치를 기회비용이라고 해.",
+      "origin_id": "H459"
+    },
+    {
+      "id": "JH460",
+      "mode": "humanities",
+      "q": "프랑스 혁명의 3대 정신은 자유, 평등, 그리고 무엇인가?",
+      "choices": [
+        "박애",
+        "권력",
+        "정의",
+        "평화"
+      ],
+      "answer": 0,
+      "explain": "프랑스 혁명의 정신은 자유, 평등, 박애야.",
+      "origin_id": "H460"
+    },
+    {
+      "id": "H461",
+      "mode": "humanities",
+      "q": "고대 그리스 철학자로 '너 자신을 알라'는 말을 남긴 사람은?",
+      "choices": [
+        "소크라테스",
+        "플라톤",
+        "아리스토텔레스",
+        "피타고라스"
+      ],
+      "answer": 0,
+      "explain": "소크라테스의 유명한 격언이야."
+    },
+    {
+      "id": "H462",
+      "mode": "humanities",
+      "q": "세계에서 가장 큰 섬의 이름은?",
+      "choices": [
+        "그린란드",
+        "마다가스카르",
+        "뉴기니",
+        "보르네오"
+      ],
+      "answer": 0,
+      "explain": "그린란드가 세계에서 면적이 가장 넓은 섬이야."
+    },
+    {
+      "id": "H463",
+      "mode": "humanities",
+      "q": "판소리 다섯 마당 중 하나로 효녀의 이야기를 다룬 것은?",
+      "choices": [
+        "심청가",
+        "춘향가",
+        "흥보가",
+        "수궁가"
+      ],
+      "answer": 0,
+      "explain": "심청이가 아버지의 눈을 뜨게 하는 내용이야."
+    },
+    {
+      "id": "H464",
+      "mode": "humanities",
+      "q": "고려 시대 외적의 침입을 막기 위해 부처의 힘을 빌려 만든 것은?",
+      "choices": [
+        "팔만대장경",
+        "직지심체요절",
+        "삼국유사",
+        "왕오천축국전"
+      ],
+      "answer": 0,
+      "explain": "몽골의 침입을 막기 위해 강화도에서 만들었어."
+    },
+    {
+      "id": "H465",
+      "mode": "humanities",
+      "q": "르네상스 시대를 대표하는 예술가로 '모나리자'를 그린 사람은?",
+      "choices": [
+        "레오나르도 다 빈치",
+        "미켈란젤로",
+        "라파엘로",
+        "도나텔로"
+      ],
+      "answer": 0,
+      "explain": "다 빈치는 예술뿐 아니라 과학 분야에서도 천재였어."
+    },
+    {
+      "id": "H466",
+      "mode": "humanities",
+      "q": "임진왜란 당시 거북선을 앞세워 한산도 대첩을 승리로 이끈 장군은?",
+      "choices": [
+        "이순신",
+        "권율",
+        "곽재우",
+        "김시민"
+      ],
+      "answer": 0,
+      "explain": "성웅 이순신 장군의 대표적인 승리야."
+    },
+    {
+      "id": "H467",
+      "mode": "humanities",
+      "q": "민주주의의 기본 원칙 중 '국민의 뜻에 따라 정치가 이루어져야 함'을 뜻하는 것은?",
+      "choices": [
+        "국민 주권",
+        "입헌주의",
+        "권력 분립",
+        "지방 자치"
+      ],
+      "answer": 0,
+      "explain": "대한민국의 주권은 국민에게 있다는 원칙이야."
+    },
+    {
+      "id": "H468",
+      "mode": "humanities",
+      "q": "베토벤의 교향곡 제9번의 별칭은?",
+      "choices": [
+        "합창",
+        "운명",
+        "전원",
+        "영웅"
+      ],
+      "answer": 0,
+      "explain": "성악이 포함된 '합창 교향곡'으로 유명해."
+    },
+    {
+      "id": "H469",
+      "mode": "humanities",
+      "q": "조선 시대 최고의 법전 이름은?",
+      "choices": [
+        "경국대전",
+        "속대전",
+        "대전통편",
+        "대전회통"
+      ],
+      "answer": 0,
+      "explain": "성종 때 완성된 조선의 기본 법전이야."
+    },
+    {
+      "id": "H470",
+      "mode": "humanities",
+      "q": "미국의 초대 대통령은?",
+      "choices": [
+        "조지 워싱턴",
+        "토머스 제퍼슨",
+        "에이브러햄 링컨",
+        "존 F. 케네디"
+      ],
+      "answer": 0,
+      "explain": "워싱턴은 미국의 건국 아버지로 불려."
+    },
+    {
+      "id": "H471",
+      "mode": "humanities",
+      "q": "시장 경제에서 상품의 가격이 결정되는 원리는?",
+      "choices": [
+        "수요와 공급",
+        "정부의 규제",
+        "생산자의 마음",
+        "은행의 금리"
+      ],
+      "answer": 0,
+      "explain": "사는 사람과 파는 사람의 힘이 만나는 지점에서 결정돼."
+    },
+    {
+      "id": "H472",
+      "mode": "humanities",
+      "q": "세계에서 가장 인구가 많은 나라는? (2024년 기준)",
+      "choices": [
+        "인도",
+        "중국",
+        "미국",
+        "인도네시아"
+      ],
+      "answer": 0,
+      "explain": "인도가 중국을 추월해 세계 1위 인구 대국이 되었어."
+    },
+    {
+      "id": "H473",
+      "mode": "humanities",
+      "q": "발레 '백조의 호수'를 작곡한 사람은?",
+      "choices": [
+        "차이콥스키",
+        "슈베르트",
+        "브람스",
+        "쇼팽"
+      ],
+      "answer": 0,
+      "explain": "차이콥스키는 3대 발레곡으로 유명한 작곡가야."
+    },
+    {
+      "id": "H474",
+      "mode": "humanities",
+      "q": "고려 시대 금속 활자로 찍어낸 세계에서 가장 오래된 책은?",
+      "choices": [
+        "직지심체요절",
+        "무구정광대다라니경",
+        "팔만대장경",
+        "동의보감"
+      ],
+      "answer": 0,
+      "explain": "청주 흥덕사에서 인쇄된 소중한 문화유산이야."
+    },
+    {
+      "id": "H475",
+      "mode": "humanities",
+      "q": "유엔(UN)의 본부가 있는 도시는?",
+      "choices": [
+        "뉴욕",
+        "파리",
+        "제네바",
+        "런던"
+      ],
+      "answer": 0,
+      "explain": "미국 뉴욕에 유엔 본부가 위치해 있어."
+    },
+    {
+      "id": "H476",
+      "mode": "humanities",
+      "q": "음악의 신동이라 불리며 '마술피리'를 작곡한 사람은?",
+      "choices": [
+        "모차르트",
+        "베토벤",
+        "하이든",
+        "리스트"
+      ],
+      "answer": 0,
+      "explain": "천재적인 재능으로 수많은 곡을 남긴 작곡가야."
+    },
+    {
+      "id": "H477",
+      "mode": "humanities",
+      "q": "대한민국의 국보 제1호는?",
+      "choices": [
+        "숭례문",
+        "흥인지문",
+        "석굴암",
+        "다보탑"
+      ],
+      "answer": 0,
+      "explain": "남대문이라고도 불리는 서울의 정문이야."
+    },
+    {
+      "id": "H478",
+      "mode": "humanities",
+      "q": "셰익스피어의 4대 비극에 속하지 않는 것은?",
+      "choices": [
+        "로미오와 줄리엣",
+        "햄릿",
+        "맥베스",
+        "리어왕"
+      ],
+      "answer": 0,
+      "explain": "로미오와 줄리엣은 4대 비극 대신 유명한 비극 작품이야."
+    },
+    {
+      "id": "H479",
+      "mode": "humanities",
+      "q": "태극기의 4괘인 '건, 곤, 감, 리' 중 '땅'을 상징하는 것은?",
+      "choices": [
+        "곤",
+        "건",
+        "감",
+        "리"
+      ],
+      "answer": 0,
+      "explain": "건은 하늘, 곤은 땅, 감은 물, 리는 불을 뜻해."
+    },
+    {
+      "id": "H480",
+      "mode": "humanities",
+      "q": "조선 시대 신분 제도 중 가장 낮은 계층은?",
+      "choices": [
+        "천민",
+        "중인",
+        "평민",
+        "양반"
+      ],
+      "answer": 0,
+      "explain": "노비나 백정 등이 천민에 속했어."
+    },
+    {
+      "id": "H481",
+      "mode": "humanities",
+      "q": "세계에서 가장 긴 강은?",
+      "choices": [
+        "나일강",
+        "아마존강",
+        "미시시피강",
+        "양쯔강"
+      ],
+      "answer": 0,
+      "explain": "아프리카에 있는 나일강이 세계 최장 길이를 자랑해."
+    },
+    {
+      "id": "H482",
+      "mode": "humanities",
+      "q": "훈민정음을 창제하여 반포한 조선의 왕은?",
+      "choices": [
+        "세종대왕",
+        "태조",
+        "정조",
+        "태종"
+      ],
+      "answer": 0,
+      "explain": "집현전 학자들과 함께 한글을 만드셨어."
+    },
+    {
+      "id": "H483",
+      "mode": "humanities",
+      "q": "경제에서 물가가 지속적으로 오르는 현상은?",
+      "choices": [
+        "인플레이션",
+        "디플레이션",
+        "스태그플레이션",
+        "리플레이션"
+      ],
+      "answer": 0,
+      "explain": "돈의 가치가 떨어지고 물가가 오르는 거야."
+    },
+    {
+      "id": "H484",
+      "mode": "humanities",
+      "q": "고대 이집트의 왕을 부르는 칭호는?",
+      "choices": [
+        "파라오",
+        "황제",
+        "칸",
+        "술탄"
+      ],
+      "answer": 0,
+      "explain": "파라오는 신의 아들이자 절대적인 군주였어."
+    },
+    {
+      "id": "H485",
+      "mode": "humanities",
+      "q": "서로 다른 문화를 존중하고 공존하는 사회를 무엇이라 하는가?",
+      "choices": [
+        "다문화 사회",
+        "단일 문화 사회",
+        "계급 사회",
+        "전통 사회"
+      ],
+      "answer": 0,
+      "explain": "다양성을 인정하고 함께 살아가는 사회야."
+    },
+    {
+      "id": "H486",
+      "mode": "humanities",
+      "q": "근대 올림픽이 처음으로 열린 도시는?",
+      "choices": [
+        "아테네",
+        "파리",
+        "런던",
+        "로마"
+      ],
+      "answer": 0,
+      "explain": "1896년 그리스 아테네에서 제1회 대회가 열렸어."
+    },
+    {
+      "id": "H487",
+      "mode": "humanities",
+      "q": "석굴암과 불국사가 만들어진 시기는 어느 나라 때인가?",
+      "choices": [
+        "신라",
+        "백제",
+        "고구려",
+        "고려"
+      ],
+      "answer": 0,
+      "explain": "통일 신라 시대의 찬란한 불교 예술이야."
+    },
+    {
+      "id": "H488",
+      "mode": "humanities",
+      "q": "민주주의 국가에서 법을 집행하고 국가를 운영하는 기관은?",
+      "choices": [
+        "행정부",
+        "입법부",
+        "사법부",
+        "언론사"
+      ],
+      "answer": 0,
+      "explain": "정부를 중심으로 나라 살림을 하는 곳이야."
+    },
+    {
+      "id": "H489",
+      "mode": "humanities",
+      "q": "소설 '어린 왕자'를 쓴 작가는?",
+      "choices": [
+        "생텍쥐페리",
+        "헤르만 헤세",
+        "톨스토이",
+        "도스토옙스키"
+      ],
+      "answer": 0,
+      "explain": "비행기 조종사였던 생텍쥐페리의 대표작이야."
+    },
+    {
+      "id": "H490",
+      "mode": "humanities",
+      "q": "조선 시대 여성 예술가로 오천원권 지폐의 주인공인 이이의 어머니는?",
+      "choices": [
+        "신사임당",
+        "허난설헌",
+        "황진이",
+        "논개"
+      ],
+      "answer": 0,
+      "explain": "신사임당은 오만원권 지폐의 주인공이기도 해."
+    },
+    {
+      "id": "H491",
+      "mode": "humanities",
+      "q": "사람이 태어난 해의 짐승을 따지는 것을 무엇이라 하는가?",
+      "choices": [
+        "띠",
+        "사주",
+        "궁합",
+        "관상"
+      ],
+      "answer": 0,
+      "explain": "십이지신에 따라 12가지 동물의 띠가 있어."
+    },
+    {
+      "id": "H492",
+      "mode": "humanities",
+      "q": "우리나라의 5대 국경일 중 하나로 8월 15일은?",
+      "choices": [
+        "광복절",
+        "삼일절",
+        "제헌절",
+        "개천절"
+      ],
+      "answer": 0,
+      "explain": "일본으로부터 독립을 되찾은 날을 기념해."
+    },
+    {
+      "id": "H493",
+      "mode": "humanities",
+      "q": "불교의 창시자는 누구인가?",
+      "choices": [
+        "석가모니",
+        "예수",
+        "무함마드",
+        "공자"
+      ],
+      "answer": 0,
+      "explain": "고대 인도의 왕자로 태어나 깨달음을 얻었어."
+    },
+    {
+      "id": "H494",
+      "mode": "humanities",
+      "q": "프랑스의 수도는?",
+      "choices": [
+        "파리",
+        "마드리드",
+        "베를린",
+        "비엔나"
+      ],
+      "answer": 0,
+      "explain": "예술과 패션의 도시 파리가 수도야."
+    },
+    {
+      "id": "H495",
+      "mode": "humanities",
+      "q": "조선 시대 전국의 정보를 전달하던 통신 수단은?",
+      "choices": [
+        "봉수제",
+        "파발",
+        "우체국",
+        "전신기"
+      ],
+      "answer": 0,
+      "explain": "산 정상에서 불이나 연기로 소식을 전했어."
+    },
+    {
+      "id": "H496",
+      "mode": "humanities",
+      "q": "영국의 대표적인 극작가로 '로미오와 줄리엣'을 쓴 사람은?",
+      "choices": [
+        "셰익스피어",
+        "밀턴",
+        "바이런",
+        "워즈워스"
+      ],
+      "answer": 0,
+      "explain": "인류 역사상 가장 위대한 극작가 중 한 명이야."
+    },
+    {
+      "id": "H497",
+      "mode": "humanities",
+      "q": "애국가 1절의 가사 중 '동해 물과 ____이 마르고 닳도록'에 들어갈 말은?",
+      "choices": [
+        "백두산",
+        "한라산",
+        "금강산",
+        "지리산"
+      ],
+      "answer": 0,
+      "explain": "백두산은 민족의 영산으로 불리지."
+    },
+    {
+      "id": "H498",
+      "mode": "humanities",
+      "q": "조선 후기 실학자로 '자산어보'를 쓴 정약용의 형은?",
+      "choices": [
+        "정약전",
+        "정약종",
+        "박지원",
+        "박제가"
+      ],
+      "answer": 0,
+      "explain": "흑산도에서 물고기를 연구해 기록을 남겼어."
+    },
+    {
+      "id": "H499",
+      "mode": "humanities",
+      "q": "인간의 기본권을 보장하는 국가의 최상위 법은?",
+      "choices": [
+        "헌법",
+        "민법",
+        "형법",
+        "상법"
+      ],
+      "answer": 0,
+      "explain": "모든 법의 뿌리가 되는 가장 높은 법이야."
+    },
+    {
+      "id": "H500",
+      "mode": "humanities",
+      "q": "예술 작품을 전시하고 보존하는 곳은?",
+      "choices": [
+        "미술관",
+        "도서관",
+        "박물관",
+        "체육관"
+      ],
+      "answer": 0,
+      "explain": "그림이나 조각 같은 예술품을 볼 수 있는 곳이야."
+    },
+    {
+      "id": "H501",
+      "mode": "humanities",
+      "q": "조선의 22대 왕으로 수원 화성을 축조한 왕은?",
+      "choices": [
+        "정조",
+        "영조",
+        "순조",
+        "철종"
+      ],
+      "answer": 0,
+      "explain": "실학을 중시하고 개혁 정치를 펼쳤어."
+    },
+    {
+      "id": "H502",
+      "mode": "humanities",
+      "q": "유럽 연합의 공용 통화는?",
+      "choices": [
+        "유로",
+        "달러",
+        "파운드",
+        "엔"
+      ],
+      "answer": 0,
+      "explain": "많은 유럽 국가들이 유로화를 공통으로 써."
+    },
+    {
+      "id": "H503",
+      "mode": "humanities",
+      "q": "세계 3대 성인으로 꼽히며 '논어'에 가르침이 담긴 인물은?",
+      "choices": [
+        "공자",
+        "맹자",
+        "노자",
+        "장자"
+      ],
+      "answer": 0,
+      "explain": "유교 사상의 기틀을 마련한 분이야."
+    },
+    {
+      "id": "H504",
+      "mode": "humanities",
+      "q": "아프리카 대륙에서 가장 큰 사막은?",
+      "choices": [
+        "사하라 사막",
+        "고비 사막",
+        "고비 사막",
+        "모하비 사막"
+      ],
+      "answer": 0,
+      "explain": "세계에서 가장 넓은 열대 사막이야."
+    },
+    {
+      "id": "H505",
+      "mode": "humanities",
+      "q": "삼국 시대 중 가장 먼저 전성기를 맞이한 나라는?",
+      "choices": [
+        "백제",
+        "고구려",
+        "신라",
+        "가야"
+      ],
+      "answer": 0,
+      "explain": "근초고왕 때 한강 유역을 차지하며 번성했어."
+    },
+    {
+      "id": "H506",
+      "mode": "humanities",
+      "q": "그림 형제가 쓴 동화가 아닌 것은?",
+      "choices": [
+        "미운 오리 새끼",
+        "백설 공주",
+        "헨젤과 그레텔",
+        "신데렐라"
+      ],
+      "answer": 0,
+      "explain": "미운 오리 새끼는 안데르센의 작품이야."
+    },
+    {
+      "id": "H507",
+      "mode": "humanities",
+      "q": "민주주의에서 선거의 4대 원칙이 아닌 것은?",
+      "choices": [
+        "지정 선거",
+        "보통 선거",
+        "평등 선거",
+        "비밀 선거"
+      ],
+      "answer": 0,
+      "explain": "보통, 평등, 직접, 비밀 선거가 4대 원칙이야."
+    },
+    {
+      "id": "H508",
+      "mode": "humanities",
+      "q": "조선 시대 왕의 무덤을 부르는 명칭은?",
+      "choices": [
+        "릉",
+        "총",
+        "묘",
+        "분"
+      ],
+      "answer": 0,
+      "explain": "왕과 왕비의 무덤은 '릉'이라고 불러."
+    },
+    {
+      "id": "H509",
+      "mode": "humanities",
+      "q": "음악의 어머니라고 불리는 독일 출신의 작곡가는?",
+      "choices": [
+        "헨델",
+        "바흐",
+        "하이든",
+        "비발디"
+      ],
+      "answer": 0,
+      "explain": "바흐는 음악의 아버지, 헨델은 음악의 어머니라고 불려."
+    },
+    {
+      "id": "H510",
+      "mode": "humanities",
+      "q": "대한민국 정부의 수반이며 국군 통수권자는?",
+      "choices": [
+        "대통령",
+        "국무총리",
+        "국회의장",
+        "대법원장"
+      ],
+      "answer": 0,
+      "explain": "대통령은 행정부의 수반이자 국군을 통솔해."
+    },
+    {
+      "id": "H511",
+      "mode": "humanities",
+      "q": "인류 역사상 가장 먼저 사용된 금속은?",
+      "choices": [
+        "구리",
+        "철",
+        "금",
+        "은"
+      ],
+      "answer": 0,
+      "explain": "청동기 시대 이전에 구리를 먼저 사용하기 시작했어."
+    },
+    {
+      "id": "H512",
+      "mode": "humanities",
+      "q": "임진왜란 중 육지에서 큰 승리를 거둔 3대 대첩이 아닌 것은?",
+      "choices": [
+        "명량 대첩",
+        "행주 대첩",
+        "진주 대첩",
+        "한산도 대첩"
+      ],
+      "answer": 0,
+      "explain": "명량과 한산도는 바다에서 이룬 승리야."
+    },
+    {
+      "id": "H513",
+      "mode": "humanities",
+      "q": "이탈리아의 수도이자 과거 로마 제국의 중심지는?",
+      "choices": [
+        "로마",
+        "밀라노",
+        "베네치아",
+        "피렌체"
+      ],
+      "answer": 0,
+      "explain": "로마는 '영원한 도시'라는 별명을 가지고 있어."
+    },
+    {
+      "id": "H514",
+      "mode": "humanities",
+      "q": "경제가 어려울 때 정부가 시장에 돈을 푸는 정책은?",
+      "choices": [
+        "재정 확대",
+        "긴축 재정",
+        "금리 인상",
+        "세금 인상"
+      ],
+      "answer": 0,
+      "explain": "경기 부양을 위해 예산을 더 많이 쓰는 거야."
+    },
+    {
+      "id": "H515",
+      "mode": "humanities",
+      "q": "고구려의 전성기를 이끌며 영토를 크게 넓힌 왕은?",
+      "choices": [
+        "광개토대왕",
+        "장수왕",
+        "동명성왕",
+        "고국양왕"
+      ],
+      "answer": 0,
+      "explain": "광개토대왕은 만주 벌판까지 영토를 확장했어."
+    },
+    {
+      "id": "H516",
+      "mode": "humanities",
+      "q": "서양 화가 중 '해바라기', '별이 빛나는 밤'을 그린 사람은?",
+      "choices": [
+        "빈센트 반 고흐",
+        "클로드 모네",
+        "파블로 피카소",
+        "살바도르 달리"
+      ],
+      "answer": 0,
+      "explain": "강렬한 색채와 필치로 유명한 후기 인상주의 화가야."
+    },
+    {
+      "id": "H517",
+      "mode": "humanities",
+      "q": "사법부의 최고 기관으로 재판을 최종적으로 담당하는 곳은?",
+      "choices": [
+        "대법원",
+        "헌법재판소",
+        "고등법원",
+        "지방법원"
+      ],
+      "answer": 0,
+      "explain": "3심제 재판의 마지막을 담당하는 곳이야."
+    },
+    {
+      "id": "H518",
+      "mode": "humanities",
+      "q": "유교에서 부모님께 효도하고 어른을 공경하는 덕목은?",
+      "choices": [
+        "효제",
+        "충의",
+        "예악",
+        "신용"
+      ],
+      "answer": 0,
+      "explain": "효도는 부모님을, 제는 형제와 어른을 공경하는 거야."
+    },
+    {
+      "id": "H519",
+      "mode": "humanities",
+      "q": "남미 대륙에서 가장 면적이 넓은 나라는?",
+      "choices": [
+        "브라질",
+        "아르헨티나",
+        "칠레",
+        "페루"
+      ],
+      "answer": 0,
+      "explain": "브라질은 남미 면적의 절반 가까이를 차지해."
+    },
+    {
+      "id": "H520",
+      "mode": "humanities",
+      "q": "조선 시대 선비들이 학문을 닦고 제사를 지내던 사설 교육 기관은?",
+      "choices": [
+        "서원",
+        "향교",
+        "서당",
+        "성균관"
+      ],
+      "answer": 0,
+      "explain": "성균관은 국립, 서원은 사립 교육 기관이야."
+    },
+    {
+      "id": "H521",
+      "mode": "humanities",
+      "q": "오케스트라에서 악기들의 연주를 조율하고 지휘하는 사람은?",
+      "choices": [
+        "지휘자",
+        "악장",
+        "작곡가",
+        "편곡자"
+      ],
+      "answer": 0,
+      "explain": "지휘봉을 들고 전체 음악을 이끌어가는 역할이야."
+    },
+    {
+      "id": "H522",
+      "mode": "humanities",
+      "q": "세계 4대 성인 중 한 명으로 고대 인도의 철학자는?",
+      "choices": [
+        "석가모니",
+        "공자",
+        "예수",
+        "소크라테스"
+      ],
+      "answer": 0,
+      "explain": "불교를 창시한 고대 인도의 성인이야."
+    },
+    {
+      "id": "H523",
+      "mode": "humanities",
+      "q": "미국 독립 선언서가 발표된 도시이자 자유의 종이 있는 곳은?",
+      "choices": [
+        "필라델피아",
+        "워싱턴 D.C.",
+        "뉴욕",
+        "보스턴"
+      ],
+      "answer": 0,
+      "explain": "미국 건국 초기 정치와 행정의 중심지였어."
+    },
+    {
+      "id": "H524",
+      "mode": "humanities",
+      "q": "돈의 가치가 오르고 물가가 전반적으로 하락하는 현상은?",
+      "choices": [
+        "디플레이션",
+        "인플레이션",
+        "스태그플레이션",
+        "하이퍼인플레이션"
+      ],
+      "answer": 0,
+      "explain": "인플레이션과 반대되는 경제 현상이야."
+    },
+    {
+      "id": "H525",
+      "mode": "humanities",
+      "q": "대한민국의 국화(나라꽃)는?",
+      "choices": [
+        "무궁화",
+        "벚꽃",
+        "진달래",
+        "매화"
+      ],
+      "answer": 0,
+      "explain": "영원히 피고 또 피어서 지지 않는 꽃이라는 뜻이야."
+    },
+    {
+      "id": "H526",
+      "mode": "humanities",
+      "q": "고대 올림픽이 열렸던 신전이 있는 산의 이름은?",
+      "choices": [
+        "올림푸스 산",
+        "에베레스트 산",
+        "알프스 산",
+        "백두산"
+      ],
+      "answer": 0,
+      "explain": "그리스 신화의 신들이 살았다고 전해지는 산이야."
+    },
+    {
+      "id": "H527",
+      "mode": "humanities",
+      "q": "안중근 의사가 이토 히로부미를 저격한 장소는?",
+      "choices": [
+        "하얼빈역",
+        "상하이",
+        "도쿄",
+        "블라디보스토크"
+      ],
+      "answer": 0,
+      "explain": "1909년 중국 하얼빈역에서 거사를 치르셨어."
+    },
+    {
+      "id": "H528",
+      "mode": "humanities",
+      "q": "조선 시대 왕의 일기이자 국정 기록물은?",
+      "choices": [
+        "일성록",
+        "승정원일기",
+        "조선왕조실록",
+        "비변사등록"
+      ],
+      "answer": 0,
+      "explain": "정조 때부터 매일 기록한 국왕의 일기야."
+    },
+    {
+      "id": "H529",
+      "mode": "humanities",
+      "q": "음악가 베토벤이 청력을 잃은 후 작곡한 유명한 교향곡은?",
+      "choices": [
+        "운명 교향곡",
+        "미완성 교향곡",
+        "사계",
+        "수상 음악"
+      ],
+      "answer": 0,
+      "explain": "역경을 딛고 만든 불후의 명곡이야."
+    },
+    {
+      "id": "H530",
+      "mode": "humanities",
+      "q": "사법부에서 헌법을 수호하고 법률의 위헌 여부를 판단하는 곳은?",
+      "choices": [
+        "헌법재판소",
+        "대법원",
+        "법무부",
+        "감사원"
+      ],
+      "answer": 0,
+      "explain": "국가 권력이 헌법에 어긋나는지 감시하는 기관이야."
+    },
+    {
+      "id": "H531",
+      "mode": "humanities",
+      "q": "고구려를 세운 주몽의 아들로 백제를 건국한 왕은?",
+      "choices": [
+        "온조왕",
+        "비류왕",
+        "고이왕",
+        "근초고왕"
+      ],
+      "answer": 0,
+      "explain": "남쪽으로 내려와 한강 유역에 백제를 세웠어."
+    },
+    {
+      "id": "H532",
+      "mode": "humanities",
+      "q": "중동 지역에서 발생한 종교로 '코란'을 경전으로 사용하는 것은?",
+      "choices": [
+        "이슬람교",
+        "힌두교",
+        "불교",
+        "유대교"
+      ],
+      "answer": 0,
+      "explain": "무함마드가 창시한 세계적인 종교야."
+    },
+    {
+      "id": "H533",
+      "mode": "humanities",
+      "q": "독일의 수도이자 분단의 아픔을 상징하는 장벽이 있었던 도시는?",
+      "choices": [
+        "베를린",
+        "뮌헨",
+        "프랑크푸르트",
+        "함부르크"
+      ],
+      "answer": 0,
+      "explain": "베를린 장벽이 무너지며 독일 통일이 시작되었어."
+    },
+    {
+      "id": "H534",
+      "mode": "humanities",
+      "q": "경제 주체 중 가계가 기업에 노동을 제공하고 받는 대가는?",
+      "choices": [
+        "임금",
+        "이자",
+        "배당",
+        "임대료"
+      ],
+      "answer": 0,
+      "explain": "일한 대가로 받는 월급이나 보수를 말해."
+    },
+    {
+      "id": "H535",
+      "mode": "humanities",
+      "q": "조선 시대 한양의 사대문 중 서쪽에 있는 문의 이름은?",
+      "choices": [
+        "돈의문",
+        "흥인지문",
+        "숭례문",
+        "숙정문"
+      ],
+      "answer": 0,
+      "explain": "동쪽은 흥인지문, 남쪽은 숭례문, 서쪽은 돈의문이야."
+    },
+    {
+      "id": "H536",
+      "mode": "humanities",
+      "q": "서양 화가 피카소가 창시한 입체적인 화법은?",
+      "choices": [
+        "입체파",
+        "인상파",
+        "야수파",
+        "초현실주의"
+      ],
+      "answer": 0,
+      "explain": "사물을 여러 각도에서 분석해 한 화면에 담는 방식이야."
+    },
+    {
+      "id": "H537",
+      "mode": "humanities",
+      "q": "고대 그리스에서 시민들이 모여 토론하던 광장은?",
+      "choices": [
+        "아고라",
+        "파르테논",
+        "콜로세움",
+        "포럼"
+      ],
+      "answer": 0,
+      "explain": "민주주의 정치가 싹튼 만남의 장소였어."
+    },
+    {
+      "id": "H538",
+      "mode": "humanities",
+      "q": "우리나라 최초의 근대식 국립 병원 이름은?",
+      "choices": [
+        "광혜원",
+        "세브란스",
+        "보건소",
+        "혜민서"
+      ],
+      "answer": 0,
+      "explain": "나중에 제중원으로 이름을 바꾼 의료 기관이야."
+    },
+    {
+      "id": "H539",
+      "mode": "humanities",
+      "q": "유엔 안전보장이사회 상임이사국이 아닌 나라는?",
+      "choices": [
+        "독일",
+        "미국",
+        "영국",
+        "프랑스"
+      ],
+      "answer": 0,
+      "explain": "상임이사국은 미, 영, 프, 중, 러 5개국이야."
+    },
+    {
+      "id": "H540",
+      "mode": "humanities",
+      "q": "경제학에서 '보이지 않는 손'이라는 개념을 제시한 사람은?",
+      "choices": [
+        "애덤 스미스",
+        "케인스",
+        "마르크스",
+        "리카도"
+      ],
+      "answer": 0,
+      "explain": "시장 경제의 자율적인 조절 능력을 강조했어."
+    },
+    {
+      "id": "H541",
+      "mode": "humanities",
+      "q": "조선 시대 지방 행정과 사법을 담당하던 우두머리는?",
+      "choices": [
+        "사또",
+        "포졸",
+        "이방",
+        "암행어사"
+      ],
+      "answer": 0,
+      "explain": "수령이라고도 하며 백성을 다스리는 역할을 했어."
+    },
+    {
+      "id": "H542",
+      "mode": "humanities",
+      "q": "스페인의 수도이자 예술의 도시인 곳은?",
+      "choices": [
+        "마드리드",
+        "바르셀로나",
+        "리스본",
+        "세비야"
+      ],
+      "answer": 0,
+      "explain": "프라도 미술관 등 유명한 관광지가 많아."
+    },
+    {
+      "id": "H543",
+      "mode": "humanities",
+      "q": "음악의 신동 모차르트가 태어난 나라는?",
+      "choices": [
+        "오스트리아",
+        "독일",
+        "헝가리",
+        "이탈리아"
+      ],
+      "answer": 0,
+      "explain": "잘츠부르크는 모차르트의 고향으로 유명해."
+    },
+    {
+      "id": "H544",
+      "mode": "humanities",
+      "q": "조선 시대 왕의 비서 기관인 승정원의 최고 관직은?",
+      "choices": [
+        "도승지",
+        "영의정",
+        "판서",
+        "참판"
+      ],
+      "answer": 0,
+      "explain": "도승지는 왕의 곁에서 명을 출납하는 핵심 요직이었어."
+    },
+    {
+      "id": "H545",
+      "mode": "humanities",
+      "q": "서로 다른 언어와 풍습을 가진 사람들이 모여 사는 나라는?",
+      "choices": [
+        "다민족 국가",
+        "단일 민족 국가",
+        "연맹 국가",
+        "부족 국가"
+      ],
+      "answer": 0,
+      "explain": "미국이나 캐나다 등이 대표적인 사례야."
+    },
+    {
+      "id": "H546",
+      "mode": "humanities",
+      "q": "고대 로마의 검투사 경기가 열렸던 거대 원형 경기장은?",
+      "choices": [
+        "콜로세움",
+        "판테온",
+        "개선문",
+        "피라미드"
+      ],
+      "answer": 0,
+      "explain": "로마 건축 기술의 정수를 보여주는 유적이야."
+    },
+    {
+      "id": "H547",
+      "mode": "humanities",
+      "q": "경제에서 한 나라의 전체적인 생산 규모를 나타내는 지표는?",
+      "choices": [
+        "GDP",
+        "CPI",
+        "KOSPI",
+        "NASDAQ"
+      ],
+      "answer": 0,
+      "explain": "국내총생산(GDP)은 경제 성장의 척도로 쓰여."
+    },
+    {
+      "id": "H548",
+      "mode": "humanities",
+      "q": "조선 시대 유교 교육을 담당하던 국립 고등 교육 기관은?",
+      "choices": [
+        "성균관",
+        "집현전",
+        "홍문관",
+        "규장각"
+      ],
+      "answer": 0,
+      "explain": "지금의 대학교와 같은 최고의 교육 기관이야."
+    },
+    {
+      "id": "H549",
+      "mode": "humanities",
+      "q": "동화 '안데르센 동화집'의 작가 고향은?",
+      "choices": [
+        "덴마크",
+        "노르웨이",
+        "스웨덴",
+        "핀란드"
+      ],
+      "answer": 0,
+      "explain": "인어공주, 성냥팔이 소녀 등을 쓴 작가야."
+    },
+    {
+      "id": "H550",
+      "mode": "humanities",
+      "q": "대한민국의 입법 기관으로 법률을 만드는 곳은?",
+      "choices": [
+        "국회",
+        "법원",
+        "검찰청",
+        "경찰청"
+      ],
+      "answer": 0,
+      "explain": "국민의 대표인 국회의원들이 모여 법을 만들어."
+    },
+    {
+      "id": "H551",
+      "mode": "humanities",
+      "q": "조선 시대 왕실의 잔치나 행사를 기록한 책은?",
+      "choices": [
+        "의궤",
+        "실록",
+        "승정원일기",
+        "비변사등록"
+      ],
+      "answer": 0,
+      "explain": "그림과 함께 매우 상세하게 기록되어 있어."
+    },
+    {
+      "id": "H552",
+      "mode": "humanities",
+      "q": "세계에서 가장 작은 국가로 로마 안에 위치한 곳은?",
+      "choices": [
+        "바티칸 시국",
+        "모나코",
+        "산마리노",
+        "안도라"
+      ],
+      "answer": 0,
+      "explain": "교황청이 있는 종교와 예술의 중심지야."
+    },
+    {
+      "id": "H553",
+      "mode": "humanities",
+      "q": "경제 주체 중 이윤 극대화를 목적으로 생산 활동을 하는 곳은?",
+      "choices": [
+        "기업",
+        "가계",
+        "정부",
+        "은행"
+      ],
+      "answer": 0,
+      "explain": "상품을 만들고 서비스를 제공하는 주체야."
+    },
+    {
+      "id": "H554",
+      "mode": "humanities",
+      "q": "고려 시대 문신들이 권력을 쥐고 문화를 발전시킨 시기는?",
+      "choices": [
+        "문벌 귀족 사회",
+        "무신 정권",
+        "권문세족 시기",
+        "신진 사대부 시기"
+      ],
+      "answer": 0,
+      "explain": "가문의 힘을 바탕으로 높은 관직을 독점했어."
+    },
+    {
+      "id": "H555",
+      "mode": "humanities",
+      "q": "서양 화법 중 야외에서 빛에 따른 색채 변화를 그린 화파는?",
+      "choices": [
+        "인상주의",
+        "고전주의",
+        "낭만주의",
+        "사실주의"
+      ],
+      "answer": 0,
+      "explain": "모네, 르누아르 등이 대표적인 화가야."
+    },
+    {
+      "id": "H556",
+      "mode": "humanities",
+      "q": "민주 선거의 원칙 중 '누구나 똑같이 한 표씩'을 의미하는 것은?",
+      "choices": [
+        "평등 선거",
+        "보통 선거",
+        "직접 선거",
+        "비밀 선거"
+      ],
+      "answer": 0,
+      "explain": "신분이나 재산에 관계없이 1인 1표를 주는 거야."
+    },
+    {
+      "id": "H557",
+      "mode": "humanities",
+      "q": "대한민국의 상징 중 하나로 나라의 도장(국가 인장)을 부르는 말은?",
+      "choices": [
+        "국새",
+        "어보",
+        "관인",
+        "옥새"
+      ],
+      "answer": 0,
+      "explain": "국가 중요 문서에 찍는 공식 도장이야."
+    },
+    {
+      "id": "S461",
+      "mode": "science",
+      "q": "태양계에서 가장 거대한 고리를 가진 행성은?",
+      "choices": [
+        "토성",
+        "목성",
+        "천왕성",
+        "해왕성"
+      ],
+      "answer": 0,
+      "explain": "토성은 얼음과 먼지로 된 아름다운 고리가 특징이야."
+    },
+    {
+      "id": "S462",
+      "mode": "science",
+      "q": "빛이 매질을 통과할 때 속도 차이로 인해 방향이 꺾이는 현상은?",
+      "choices": [
+        "굴절",
+        "반사",
+        "회절",
+        "간섭"
+      ],
+      "answer": 0,
+      "explain": "매질에 따른 속도 차이로 인해 굴절이 일어나."
+    },
+    {
+      "id": "S463",
+      "mode": "science",
+      "q": "산성도를 나타내는 pH 지수에서 중성을 나타내는 숫자는?",
+      "choices": [
+        "7",
+        "0",
+        "1",
+        "14"
+      ],
+      "answer": 0,
+      "explain": "pH 7이 중성, 7보다 작으면 산성이지."
+    },
+    {
+      "id": "S464",
+      "mode": "science",
+      "q": "우리 몸에서 혈액을 온몸으로 보내는 펌프 역할을 하는 기관은?",
+      "choices": [
+        "심장",
+        "간",
+        "폐",
+        "위"
+      ],
+      "answer": 0,
+      "explain": "심장은 끊임없이 수축과 이완을 하며 혈액을 순환시켜."
+    },
+    {
+      "id": "S465",
+      "mode": "science",
+      "q": "식물이 햇빛을 이용해 영양분을 만드는 과정은?",
+      "choices": [
+        "광합성",
+        "호흡",
+        "증산 작용",
+        "소화"
+      ],
+      "answer": 0,
+      "explain": "엽록체에서 물과 이산화탄소로 포도당을 만들어."
+    },
+    {
+      "id": "S466",
+      "mode": "science",
+      "q": "태양계에서 가장 큰 행성은?",
+      "choices": [
+        "목성",
+        "토성",
+        "지구",
+        "화성"
+      ],
+      "answer": 0,
+      "explain": "목성은 태양계 행성 중 부피와 질량이 가장 커."
+    },
+    {
+      "id": "S467",
+      "mode": "science",
+      "q": "물질의 상태 변화 중 액체가 기체로 변하는 현상은?",
+      "choices": [
+        "기화",
+        "액화",
+        "응고",
+        "융해"
+      ],
+      "answer": 0,
+      "explain": "물이 끓어 수증기가 되는 것이 대표적인 기화야."
+    },
+    {
+      "id": "S468",
+      "mode": "science",
+      "q": "전류의 흐름을 방해하는 정도를 나타내는 물리량은?",
+      "choices": [
+        "저항",
+        "전압",
+        "전류",
+        "전력"
+      ],
+      "answer": 0,
+      "explain": "저항이 클수록 전류가 흐르기 힘들어져."
+    },
+    {
+      "id": "S469",
+      "mode": "science",
+      "q": "지구의 겉면을 둘러싸고 있는 거대한 암석판을 무엇이라 하는가?",
+      "choices": [
+        "판",
+        "핵",
+        "맨틀",
+        "지각"
+      ],
+      "answer": 0,
+      "explain": "지각과 맨틀 상부를 포함한 판들이 움직이며 지각 변동을 일으켜."
+    },
+    {
+      "id": "S470",
+      "mode": "science",
+      "q": "공기 중 가장 많이 포함되어 있는 기체는?",
+      "choices": [
+        "질소",
+        "산소",
+        "이산화탄소",
+        "아르곤"
+      ],
+      "answer": 0,
+      "explain": "질소가 공기의 약 78%를 차지하고 있어."
+    },
+    {
+      "id": "S471",
+      "mode": "science",
+      "q": "곤충의 몸 구조는 머리, 가슴, 그리고 어디로 나뉘는가?",
+      "choices": [
+        "배",
+        "다리",
+        "날개",
+        "꼬리"
+      ],
+      "answer": 0,
+      "explain": "곤충은 머리, 가슴, 배 세 부분으로 이루어져 있어."
+    },
+    {
+      "id": "S472",
+      "mode": "science",
+      "q": "중력을 발견하고 만유인력의 법칙을 정리한 과학자는?",
+      "choices": [
+        "뉴턴",
+        "아인슈타인",
+        "에디슨",
+        "갈릴레이"
+      ],
+      "answer": 0,
+      "explain": "사과가 떨어지는 것을 보고 만유인력을 생각했대."
+    },
+    {
+      "id": "S473",
+      "mode": "science",
+      "q": "원자의 중심에 위치하며 양성자와 중성자로 이루어진 것은?",
+      "choices": [
+        "원자핵",
+        "전자",
+        "분자",
+        "이온"
+      ],
+      "answer": 0,
+      "explain": "원자핵은 원자 질량의 대부분을 차지해."
+    },
+    {
+      "id": "S474",
+      "mode": "science",
+      "q": "물이 얼어서 얼음이 될 때 부피는 어떻게 변하는가?",
+      "choices": [
+        "커진다",
+        "작아진다",
+        "그대로이다",
+        "없어진다"
+      ],
+      "answer": 0,
+      "explain": "물은 얼 때 입자 배열 때문에 부피가 늘어나는 특징이 있어."
+    },
+    {
+      "id": "S475",
+      "mode": "science",
+      "q": "지진의 세기를 나타내는 절대적인 단위는?",
+      "choices": [
+        "규모",
+        "진도",
+        "파스칼",
+        "데시벨"
+      ],
+      "answer": 0,
+      "explain": "규모는 지진 에너지의 총량을 나타내는 수치야."
+    },
+    {
+      "id": "S476",
+      "mode": "science",
+      "q": "우리 눈에서 렌즈 역할을 하며 빛을 모아주는 부위는?",
+      "choices": [
+        "수정체",
+        "망막",
+        "각막",
+        "동공"
+      ],
+      "answer": 0,
+      "explain": "수정체 두께가 조절되면서 초점을 맞춰."
+    },
+    {
+      "id": "S477",
+      "mode": "science",
+      "q": "화석 연료를 태울 때 발생하는 기체로 지구 온난화의 원인은?",
+      "choices": [
+        "이산화탄소",
+        "산소",
+        "헬륨",
+        "수소"
+      ],
+      "answer": 0,
+      "explain": "온실가스인 이산화탄소가 열을 가두어 지구 온도를 높여."
+    },
+    {
+      "id": "S478",
+      "mode": "science",
+      "q": "태양계 행성 중 '붉은 행성'이라 불리며 생명체 탐사가 활발한 곳은?",
+      "choices": [
+        "화성",
+        "금성",
+        "수성",
+        "천왕성"
+      ],
+      "answer": 0,
+      "explain": "표면의 산화철 성분 때문에 붉게 보여."
+    },
+    {
+      "id": "S479",
+      "mode": "science",
+      "q": "액체 물질의 부피를 측정할 때 사용하는 실험 도구는?",
+      "choices": [
+        "눈금실린더",
+        "비커",
+        "스포이트",
+        "시험관"
+      ],
+      "answer": 0,
+      "explain": "메스실린더라고도 하며 정확한 부피 측정을 위해 써."
+    },
+    {
+      "id": "S480",
+      "mode": "science",
+      "q": "금속이 열을 잘 전달하는 성질을 무엇이라 하는가?",
+      "choices": [
+        "열전도",
+        "대류",
+        "복사",
+        "단열"
+      ],
+      "answer": 0,
+      "explain": "고체 내에서 열이 입자를 통해 전달되는 현상이야."
+    },
+    {
+      "id": "S481",
+      "mode": "science",
+      "q": "우리 몸의 유전 정보를 담고 있는 나선형 구조의 물질은?",
+      "choices": [
+        "DNA",
+        "RNA",
+        "단백질",
+        "비타민"
+      ],
+      "answer": 0,
+      "explain": "핵 속에 들어있는 이중 나선 구조의 설계도야."
+    },
+    {
+      "id": "S482",
+      "mode": "science",
+      "q": "달이 지구를 한 바퀴 도는 데 걸리는 시간은 약 얼마인가?",
+      "choices": [
+        "약 한 달",
+        "약 하루",
+        "약 일년",
+        "약 일주일"
+      ],
+      "answer": 0,
+      "explain": "달의 공전 주기는 약 27.3일이야."
+    },
+    {
+      "id": "S483",
+      "mode": "science",
+      "q": "전기를 빛으로 바꾸는 장치를 처음 상용화한 발명가는?",
+      "choices": [
+        "에디슨",
+        "테슬라",
+        "벨",
+        "와트"
+      ],
+      "answer": 0,
+      "explain": "전구를 개량하여 널리 보급한 발명왕이지."
+    },
+    {
+      "id": "S484",
+      "mode": "science",
+      "q": "자석에서 같은 극끼리는 서로 어떻게 되는가?",
+      "choices": [
+        "밀어낸다",
+        "당긴다",
+        "녹는다",
+        "붙는다"
+      ],
+      "answer": 0,
+      "explain": "같은 극 사이에는 척력이 작용해."
+    },
+    {
+      "id": "S485",
+      "mode": "science",
+      "q": "구름에서 떨어진 물방울이 지면에 닿기 전 얼어붙어 내리는 것은?",
+      "choices": [
+        "우박",
+        "눈",
+        "비",
+        "안개"
+      ],
+      "answer": 0,
+      "explain": "강한 상승 기류를 타고 오르내리다 커진 얼음 덩어리야."
+    },
+    {
+      "id": "S486",
+      "mode": "science",
+      "q": "물질을 이루는 가장 작은 화학적 성질을 가진 입자는?",
+      "choices": [
+        "분자",
+        "원자",
+        "세포",
+        "전자"
+      ],
+      "answer": 0,
+      "explain": "원자가 결합하여 물질의 성질을 가진 분자가 돼."
+    },
+    {
+      "id": "S487",
+      "mode": "science",
+      "q": "지구 주위를 돌며 통신이나 기상 관측을 돕는 인공 물체는?",
+      "choices": [
+        "인공위성",
+        "혜성",
+        "유성",
+        "행성"
+      ],
+      "answer": 0,
+      "explain": "지구 궤도를 돌며 다양한 임무를 수행해."
+    },
+    {
+      "id": "S488",
+      "mode": "science",
+      "q": "산성 물질인 식초와 염기성 물질인 소다가 만나면 일어나는 반응은?",
+      "choices": [
+        "중화 반응",
+        "산화 반응",
+        "연소 반응",
+        "침전 반응"
+      ],
+      "answer": 0,
+      "explain": "산과 염기가 만나 성질을 잃고 물과 염이 생겨."
+    },
+    {
+      "id": "S489",
+      "mode": "science",
+      "q": "북극성처럼 밤하늘에서 위치가 변하지 않는 것처럼 보이는 별은?",
+      "choices": [
+        "붙박이별(항성)",
+        "떠돌이별(행성)",
+        "꼬리별(혜성)",
+        "별똥별"
+      ],
+      "answer": 0,
+      "explain": "지구 자전축 연장선에 있어 가만히 있는 것처럼 보여."
+    },
+    {
+      "id": "S490",
+      "mode": "science",
+      "q": "태풍이 주로 발생하는 지역은?",
+      "choices": [
+        "열대 해상",
+        "온대 육지",
+        "냉대 산맥",
+        "한대 평원"
+      ],
+      "answer": 0,
+      "explain": "따뜻한 바다에서 공급받는 수증기가 태풍의 에너지원이야."
+    },
+    {
+      "id": "S491",
+      "mode": "science",
+      "q": "인간의 뼈 개수는 성인 기준 약 몇 개인가?",
+      "choices": [
+        "206개",
+        "100개",
+        "500개",
+        "365개"
+      ],
+      "answer": 0,
+      "explain": "어릴 땐 더 많지만 자라면서 합쳐져 206개가 돼."
+    },
+    {
+      "id": "S492",
+      "mode": "science",
+      "q": "소리의 높낮이를 결정하는 요소는?",
+      "choices": [
+        "진동수",
+        "진폭",
+        "파형",
+        "속도"
+      ],
+      "answer": 0,
+      "explain": "진동수가 많을수록(빨를수록) 높은 소리가 나."
+    },
+    {
+      "id": "S493",
+      "mode": "science",
+      "q": "태양계에서 가장 태양과 가까운 행성은?",
+      "choices": [
+        "수성",
+        "금성",
+        "화성",
+        "목성"
+      ],
+      "answer": 0,
+      "explain": "수성은 크기가 작고 태양에 가장 바짝 붙어 있어."
+    },
+    {
+      "id": "S494",
+      "mode": "science",
+      "q": "물체가 원래의 상태로 되돌아가려는 힘은?",
+      "choices": [
+        "탄성력",
+        "마찰력",
+        "자기력",
+        "전기력"
+      ],
+      "answer": 0,
+      "explain": "용수철이나 고무줄을 당겼을 때 느껴지는 힘이야."
+    },
+    {
+      "id": "S495",
+      "mode": "science",
+      "q": "컴퓨터의 두뇌 역할을 하는 핵심 부품은?",
+      "choices": [
+        "CPU",
+        "RAM",
+        "HDD",
+        "GPU"
+      ],
+      "answer": 0,
+      "explain": "중앙처리장치(CPU)는 연산과 제어를 담당해."
+    },
+    {
+      "id": "S496",
+      "mode": "science",
+      "q": "지구의 자전으로 인해 나타나는 현상은?",
+      "choices": [
+        "낮과 밤",
+        "계절의 변화",
+        "조석 현상",
+        "윤달"
+      ],
+      "answer": 0,
+      "explain": "지구가 스스로 돌기 때문에 햇빛을 받는 쪽이 변해."
+    },
+    {
+      "id": "S497",
+      "mode": "science",
+      "q": "심해나 높은 산에서 압력이 변할 때 나타나는 기체의 부피 변화 법칙은?",
+      "choices": [
+        "보일의 법칙",
+        "샤를의 법칙",
+        "뉴턴의 법칙",
+        "파스칼의 법칙"
+      ],
+      "answer": 0,
+      "explain": "온도가 일정할 때 압력이 커지면 부피는 작아져."
+    },
+    {
+      "id": "S498",
+      "mode": "science",
+      "q": "우리 몸에서 인슐린을 분비하여 혈당을 조절하는 기관은?",
+      "choices": [
+        "이자(췌장)",
+        "간",
+        "신장",
+        "쓸개"
+      ],
+      "answer": 0,
+      "explain": "이자의 인슐린은 당뇨병 예방에 아주 중요해."
+    },
+    {
+      "id": "S499",
+      "mode": "science",
+      "q": "빛의 3원색에 해당하지 않는 색은?",
+      "choices": [
+        "노랑",
+        "빨강",
+        "초록",
+        "파랑"
+      ],
+      "answer": 0,
+      "explain": "빛은 빨강, 초록, 파랑(RGB)이 3원색이야."
+    },
+    {
+      "id": "S500",
+      "mode": "science",
+      "q": "상대성 이론을 발표하여 현대 물리학의 기초를 닦은 인물은?",
+      "choices": [
+        "아인슈타인",
+        "호킹",
+        "보어",
+        "퀴리"
+      ],
+      "answer": 0,
+      "explain": "E=mc²이라는 유명한 공식이 여기서 나왔어."
+    },
+    {
+      "id": "S501",
+      "mode": "science",
+      "q": "액체가 표면에서 기체로 변하는 현상은?",
+      "choices": [
+        "증발",
+        "끓음",
+        "승화",
+        "응결"
+      ],
+      "answer": 0,
+      "explain": "빨래가 마르는 것이 대표적인 증발 현상이야."
+    },
+    {
+      "id": "S502",
+      "mode": "science",
+      "q": "자석의 N극은 지구의 어느 방향을 가리키는가?",
+      "choices": [
+        "북쪽",
+        "남쪽",
+        "동쪽",
+        "서쪽"
+      ],
+      "answer": 0,
+      "explain": "나침반의 N극은 항상 북쪽을 향해."
+    },
+    {
+      "id": "S503",
+      "mode": "science",
+      "q": "금속이 공기 중의 산소와 결합하여 성질이 변하는 것은?",
+      "choices": [
+        "산화",
+        "환원",
+        "합금",
+        "제련"
+      ],
+      "answer": 0,
+      "explain": "철이 녹스는 것이 대표적인 산화 반응이야."
+    },
+    {
+      "id": "S504",
+      "mode": "science",
+      "q": "태양계 행성 중 가장 온도가 높은 행성은?",
+      "choices": [
+        "금성",
+        "수성",
+        "화성",
+        "목성"
+      ],
+      "answer": 0,
+      "explain": "금성은 두꺼운 이산화탄소 대기 때문에 온실효과가 엄청나."
+    },
+    {
+      "id": "S505",
+      "mode": "science",
+      "q": "식물 세포에만 있고 동물 세포에는 없는 구조물은?",
+      "choices": [
+        "세포벽",
+        "핵",
+        "미토콘드리아",
+        "세포질"
+      ],
+      "answer": 0,
+      "explain": "세포벽과 엽록체는 식물 세포의 특징이야."
+    },
+    {
+      "id": "S506",
+      "mode": "science",
+      "q": "지구가 태양 주위를 도는 것을 무엇이라 하는가?",
+      "choices": [
+        "공전",
+        "자전",
+        "자전축",
+        "궤도"
+      ],
+      "answer": 0,
+      "explain": "공전 때문에 지구에 계절의 변화가 생겨."
+    },
+    {
+      "id": "S507",
+      "mode": "science",
+      "q": "귀에서 소리를 진동으로 바꾸어 전달하는 막은?",
+      "choices": [
+        "고막",
+        "달팽이관",
+        "외이도",
+        "귓바퀴"
+      ],
+      "answer": 0,
+      "explain": "공기의 진동이 고막을 울려 소리를 느끼게 돼."
+    },
+    {
+      "id": "S508",
+      "mode": "science",
+      "q": "전기 에너지를 운동 에너지로 바꾸는 장치는?",
+      "choices": [
+        "모터(전동기)",
+        "발전기",
+        "전지",
+        "충전기"
+      ],
+      "answer": 0,
+      "explain": "선풍기나 세탁기 등에 모터가 들어가."
+    },
+    {
+      "id": "S509",
+      "mode": "science",
+      "q": "물질이 연소하기 위해 필요한 세 가지 조건이 아닌 것은?",
+      "choices": [
+        "이산화탄소",
+        "탈 물질",
+        "산소",
+        "발화점 이상의 온도"
+      ],
+      "answer": 0,
+      "explain": "이산화탄소는 불을 끌 때 쓰여."
+    },
+    {
+      "id": "S510",
+      "mode": "science",
+      "q": "지구 대기권 중 구름이 생기고 기상 현상이 일어나는 곳은?",
+      "choices": [
+        "대류권",
+        "성층권",
+        "중간권",
+        "열권"
+      ],
+      "answer": 0,
+      "explain": "우리가 살고 있는 가장 아래쪽 층이야."
+    },
+    {
+      "id": "S511",
+      "mode": "science",
+      "q": "우주에서 가장 흔하고 가벼운 원소는?",
+      "choices": [
+        "수소",
+        "헬륨",
+        "산소",
+        "탄소"
+      ],
+      "answer": 0,
+      "explain": "수소는 우주 전체 질량의 약 75%를 차지해."
+    },
+    {
+      "id": "S512",
+      "mode": "science",
+      "q": "열이 매질 없이 전자기파의 형태로 직접 전달되는 방식은?",
+      "choices": [
+        "복사",
+        "전도",
+        "대류",
+        "단열"
+      ],
+      "answer": 0,
+      "explain": "태양 열이 지구까지 전달되는 방식이 복사야."
+    },
+    {
+      "id": "S513",
+      "mode": "science",
+      "q": "바닷물의 높낮이가 주기적으로 변하는 조석 현상의 주된 원인은?",
+      "choices": [
+        "달의 인력",
+        "지구의 자전",
+        "태양의 열",
+        "해류의 흐름"
+      ],
+      "answer": 0,
+      "explain": "달이 지구를 당기는 힘 때문에 밀물과 썰물이 생겨."
+    },
+    {
+      "id": "S514",
+      "mode": "science",
+      "q": "고체 상태에서 액체를 거치지 않고 바로 기체로 변하는 현상은?",
+      "choices": [
+        "승화",
+        "기화",
+        "액화",
+        "융해"
+      ],
+      "answer": 0,
+      "explain": "드라이아이스가 크기가 줄어드는 것이 승화야."
+    },
+    {
+      "id": "S515",
+      "mode": "science",
+      "q": "혈액 성분 중 상처가 났을 때 피를 멈추게 하는 역할은?",
+      "choices": [
+        "혈소판",
+        "적혈구",
+        "백혈구",
+        "혈장"
+      ],
+      "answer": 0,
+      "explain": "혈소판은 혈액을 응고시켜 지혈을 도와."
+    },
+    {
+      "id": "S516",
+      "mode": "science",
+      "q": "빛을 받으면 전기를 발생하는 반도체 소자는?",
+      "choices": [
+        "태양 전지",
+        "다이오드",
+        "트랜지스터",
+        "저항기"
+      ],
+      "answer": 0,
+      "explain": "광전 효과를 이용하여 전기를 만들어내."
+    },
+    {
+      "id": "S517",
+      "mode": "science",
+      "q": "지구의 자전축은 약 몇 도 기울어져 있는가?",
+      "choices": [
+        "23.5도",
+        "0도",
+        "45도",
+        "90도"
+      ],
+      "answer": 0,
+      "explain": "기울어진 채 공전해서 계절의 변화가 나타나."
+    },
+    {
+      "id": "S518",
+      "mode": "science",
+      "q": "금속을 가열할 때 길이가 늘어나는 현상을 무엇이라 하는가?",
+      "choices": [
+        "열팽창",
+        "열전도",
+        "열수축",
+        "열복사"
+      ],
+      "answer": 0,
+      "explain": "온도가 올라가면 입자의 운동이 활발해져 부피가 커져."
+    },
+    {
+      "id": "S519",
+      "mode": "science",
+      "q": "우리 몸에서 노폐물을 걸러 소변을 만드는 기관은?",
+      "choices": [
+        "신장(콩팥)",
+        "방광",
+        "대장",
+        "간"
+      ],
+      "answer": 0,
+      "explain": "신장은 혈액 속 노폐물을 걸러내는 필터 역할을 해."
+    },
+    {
+      "id": "S520",
+      "mode": "science",
+      "q": "태양계 행성 중 고리가 누워 있는 것처럼 보이는 행성은?",
+      "choices": [
+        "천왕성",
+        "목성",
+        "토성",
+        "해왕성"
+      ],
+      "answer": 0,
+      "explain": "천왕성은 자전축이 거의 누운 상태로 공전해."
+    },
+    {
+      "id": "S521",
+      "mode": "science",
+      "q": "물질이 타면서 빛과 열을 내는 반응은?",
+      "choices": [
+        "연소",
+        "소화",
+        "중화",
+        "부패"
+      ],
+      "answer": 0,
+      "explain": "산소와 빠르게 결합하며 에너지를 내는 거야."
+    },
+    {
+      "id": "S522",
+      "mode": "science",
+      "q": "렌즈 중 빛을 한 점으로 모으는 성질을 가진 것은?",
+      "choices": [
+        "볼록 렌즈",
+        "오목 렌즈",
+        "평면 유리",
+        "거울"
+      ],
+      "answer": 0,
+      "explain": "돋보기처럼 가운데가 두꺼운 렌즈가 빛을 모아."
+    },
+    {
+      "id": "S523",
+      "mode": "science",
+      "q": "지구 대기 중 오존층이 존재하여 자외선을 막아주는 층은?",
+      "choices": [
+        "성층권",
+        "대류권",
+        "중간권",
+        "열권"
+      ],
+      "answer": 0,
+      "explain": "성층권의 오존층은 생명체를 보호하는 방패야."
+    },
+    {
+      "id": "S524",
+      "mode": "science",
+      "q": "생물 분류의 단계 중 가장 큰 범주는?",
+      "choices": [
+        "계",
+        "문",
+        "강",
+        "목"
+      ],
+      "answer": 0,
+      "explain": "계-문-강-목-과-속-종 순서로 분류해."
+    },
+    {
+      "id": "S525",
+      "mode": "science",
+      "q": "전압의 단위로 사용하는 기호는?",
+      "choices": [
+        "V",
+        "A",
+        "W",
+        "Ω"
+      ],
+      "answer": 0,
+      "explain": "전압은 볼트(V)라는 단위를 사용해."
+    },
+    {
+      "id": "S526",
+      "mode": "science",
+      "q": "바닷물이 증발하여 남는 소금의 주성분은?",
+      "choices": [
+        "염화 나트륨",
+        "탄산 칼슘",
+        "황산 마그네슘",
+        "수산화 나트륨"
+      ],
+      "answer": 0,
+      "explain": "우리가 흔히 먹는 소금의 화학 명칭이야."
+    },
+    {
+      "id": "S527",
+      "mode": "science",
+      "q": "별이 수명을 다해 폭발하며 엄청난 빛을 내는 현상은?",
+      "choices": [
+        "초신성",
+        "블랙홀",
+        "성운",
+        "은하"
+      ],
+      "answer": 0,
+      "explain": "무거운 별이 일생을 마감할 때 일어나는 대폭발이야."
+    },
+    {
+      "id": "S528",
+      "mode": "science",
+      "q": "우리 몸에서 소화된 영양분을 주로 흡수하는 곳은?",
+      "choices": [
+        "소장",
+        "대장",
+        "위",
+        "식도"
+      ],
+      "answer": 0,
+      "explain": "소장의 융털을 통해 영양분이 핏속으로 흡수돼."
+    },
+    {
+      "id": "S529",
+      "mode": "science",
+      "q": "액체 표면에서 분자가 튀어나가 기체가 되는 현상은?",
+      "choices": [
+        "증발",
+        "끓음",
+        "응결",
+        "융해"
+      ],
+      "answer": 0,
+      "explain": "증발은 끓는점보다 낮은 온도에서도 일어나."
+    },
+    {
+      "id": "S530",
+      "mode": "science",
+      "q": "자기장의 세기를 측정하는 단위는?",
+      "choices": [
+        "테슬라(T)",
+        "헤르츠(Hz)",
+        "뉴턴(N)",
+        "와트(W)"
+      ],
+      "answer": 0,
+      "explain": "전기차 회사 이름으로도 유명한 과학자의 이름이야."
+    },
+    {
+      "id": "S531",
+      "mode": "science",
+      "q": "꽃의 암술과 수술이 만나 씨앗을 만드는 과정은?",
+      "choices": [
+        "수정",
+        "발아",
+        "광합성",
+        "증산"
+      ],
+      "answer": 0,
+      "explain": "꽃가루가 암술머리에 붙는 수분 후 수정이 일어나."
+    },
+    {
+      "id": "S532",
+      "mode": "science",
+      "q": "물체가 가속도를 얻으려면 무엇이 필요한가?",
+      "choices": [
+        "힘",
+        "속도",
+        "시간",
+        "거리"
+      ],
+      "answer": 0,
+      "explain": "F=ma 법칙에 따라 힘이 가해져야 속도가 변해."
+    },
+    {
+      "id": "S533",
+      "mode": "science",
+      "q": "지구에서 가장 가까운 항성(별)은?",
+      "choices": [
+        "태양",
+        "북극성",
+        "견우성",
+        "직녀성"
+      ],
+      "answer": 0,
+      "explain": "태양도 스스로 빛을 내는 별 중 하나야."
+    },
+    {
+      "id": "S534",
+      "mode": "science",
+      "q": "용액에 녹아 있는 물질을 무엇이라 하는가?",
+      "choices": [
+        "용질",
+        "용매",
+        "용해",
+        "농도"
+      ],
+      "answer": 0,
+      "explain": "설탕물에서 설탕은 용질, 물은 용매야."
+    },
+    {
+      "id": "S535",
+      "mode": "science",
+      "q": "공기 중의 수증기가 찬 물체에 닿아 물방울로 변하는 것은?",
+      "choices": [
+        "응결",
+        "기화",
+        "융해",
+        "승화"
+      ],
+      "answer": 0,
+      "explain": "안경에 김이 서리는 것이 대표적인 응결이야."
+    },
+    {
+      "id": "S536",
+      "mode": "science",
+      "q": "원자 번호 1번인 원소는?",
+      "choices": [
+        "수소",
+        "헬륨",
+        "리튬",
+        "탄소"
+      ],
+      "answer": 0,
+      "explain": "수소는 우주에서 가장 단순한 구조를 가졌어."
+    },
+    {
+      "id": "S537",
+      "mode": "science",
+      "q": "식물 뿌리에서 흡수한 물이 잎의 기공을 통해 나가는 현상은?",
+      "choices": [
+        "증산 작용",
+        "광합성",
+        "호흡",
+        "삼투 현상"
+      ],
+      "answer": 0,
+      "explain": "이를 통해 식물은 체온을 조절하고 물을 끌어올려."
+    },
+    {
+      "id": "S538",
+      "mode": "science",
+      "q": "전기 저항이 0이 되어 전류가 손실 없이 흐르는 현상은?",
+      "choices": [
+        "초전도",
+        "정전기",
+        "과전류",
+        "절연"
+      ],
+      "answer": 0,
+      "explain": "매우 낮은 온도에서 나타나는 신기한 현상이야."
+    },
+    {
+      "id": "S539",
+      "mode": "science",
+      "q": "우리 은하의 모양은 어떤 형태인가?",
+      "choices": [
+        "나선형",
+        "타원형",
+        "불규칙형",
+        "구형"
+      ],
+      "answer": 0,
+      "explain": "중심부에서 팔이 뻗어 나온 막대 나선 은하야."
+    },
+    {
+      "id": "S540",
+      "mode": "science",
+      "q": "물질의 밀도를 구하는 공식은?",
+      "choices": [
+        "질량 / 부피",
+        "질량 * 부피",
+        "부피 / 질량",
+        "힘 / 면적"
+      ],
+      "answer": 0,
+      "explain": "단위 부피당 질량을 밀도라고 해."
+    },
+    {
+      "id": "S541",
+      "mode": "science",
+      "q": "달에는 대기가 없어 나타나지 않는 현상은?",
+      "choices": [
+        "풍화와 침식",
+        "운석 충돌",
+        "중력",
+        "일식"
+      ],
+      "answer": 0,
+      "explain": "바람이나 비가 없어서 발자국이 오래 보존돼."
+    },
+    {
+      "id": "S542",
+      "mode": "science",
+      "q": "혈액 순환의 원동력이 되는 심장의 박동을 조절하는 신경은?",
+      "choices": [
+        "자율 신경",
+        "운동 신경",
+        "감각 신경",
+        "중추 신경"
+      ],
+      "answer": 0,
+      "explain": "우리가 의식하지 않아도 스스로 조절되는 신경이야."
+    },
+    {
+      "id": "S543",
+      "mode": "science",
+      "q": "빛이 거울에 부딪혀 튕겨 나가는 현상은?",
+      "choices": [
+        "반사",
+        "굴절",
+        "회절",
+        "분산"
+      ],
+      "answer": 0,
+      "explain": "입사각과 반사각은 항상 같다는 법칙이 있어."
+    },
+    {
+      "id": "S544",
+      "mode": "science",
+      "q": "지구 온난화로 인해 북극의 빙하가 녹으면 나타나는 현상은?",
+      "choices": [
+        "해수면 상승",
+        "해수면 하강",
+        "강수량 감소",
+        "지각 변동"
+      ],
+      "answer": 0,
+      "explain": "바닷물이 늘어나 낮은 지대의 섬들이 잠길 수 있어."
+    },
+    {
+      "id": "S545",
+      "mode": "science",
+      "q": "인류 최초로 달에 발을 디딘 우주선은?",
+      "choices": [
+        "아폴로 11호",
+        "보이저 1호",
+        "허블 망원경",
+        "스카이라브"
+      ],
+      "answer": 0,
+      "explain": "1969년 닐 암스트롱이 달 표면을 밟았어."
+    },
+    {
+      "id": "S546",
+      "mode": "science",
+      "q": "자석을 반으로 자르면 어떻게 되는가?",
+      "choices": [
+        "N극과 S극이 둘 다 생긴다",
+        "N극만 남는다",
+        "S극만 남는다",
+        "자성이 사라진다"
+      ],
+      "answer": 0,
+      "explain": "자석은 아무리 작게 잘라도 항상 두 극을 가져."
+    },
+    {
+      "id": "S547",
+      "mode": "science",
+      "q": "소리가 전달될 수 없는 곳은?",
+      "choices": [
+        "진공 상태",
+        "물속",
+        "철판 안",
+        "나무 뒤"
+      ],
+      "answer": 0,
+      "explain": "소리는 매질이 있어야 전달되므로 진공에선 안 들려."
+    },
+    {
+      "id": "S548",
+      "mode": "science",
+      "q": "금속에 다른 원소를 섞어 성질을 개선한 물질은?",
+      "choices": [
+        "합금",
+        "순물질",
+        "비금속",
+        "반도체"
+      ],
+      "answer": 0,
+      "explain": "청동, 황동, 스테인리스강 등이 합금이야."
+    },
+    {
+      "id": "S549",
+      "mode": "science",
+      "q": "지구 내부 구조 중 가장 두꺼운 층은?",
+      "choices": [
+        "맨틀",
+        "지각",
+        "외핵",
+        "내핵"
+      ],
+      "answer": 0,
+      "explain": "맨틀은 지구 전체 부피의 약 80%를 차지해."
+    },
+    {
+      "id": "S550",
+      "mode": "science",
+      "q": "전기 회로에서 전류의 세기를 측정하는 장치는?",
+      "choices": [
+        "전류계",
+        "전압계",
+        "검전기",
+        "축전기"
+      ],
+      "answer": 0,
+      "explain": "회로에 직렬로 연결해서 측정해."
+    },
+    {
+      "id": "S551",
+      "mode": "science",
+      "q": "우리 몸에서 평형 감각을 담당하는 부위는?",
+      "choices": [
+        "귀(반고리관)",
+        "눈",
+        "코",
+        "피부"
+      ],
+      "answer": 0,
+      "explain": "귀 안의 전정 기관과 반고리관이 몸의 중심을 잡아."
+    },
+    {
+      "id": "S552",
+      "mode": "science",
+      "q": "물질이 상태 변화를 할 때 온도가 일정하게 유지되는 이유는?",
+      "choices": [
+        "에너지를 상태 변화에 써서",
+        "에너지가 없어져서",
+        "주변 온도가 같아서",
+        "물질이 굳어서"
+      ],
+      "answer": 0,
+      "explain": "흡수하거나 방출하는 열을 상태 변화에 다 소모하기 때문이야."
+    },
+    {
+      "id": "S553",
+      "mode": "science",
+      "q": "태양계 행성 중 가장 밀도가 낮은 행성은?",
+      "choices": [
+        "토성",
+        "목성",
+        "천왕성",
+        "해왕성"
+      ],
+      "answer": 0,
+      "explain": "토성은 물보다 밀도가 낮아 물에 뜰 수도 있대."
+    },
+    {
+      "id": "S554",
+      "mode": "science",
+      "q": "빛이 여러 가지 색깔로 나누어지는 현상은?",
+      "choices": [
+        "분산",
+        "반사",
+        "굴절",
+        "회절"
+      ],
+      "answer": 0,
+      "explain": "무지개는 햇빛이 물방울에서 분산되어 나타나는 거야."
+    },
+    {
+      "id": "S555",
+      "mode": "science",
+      "q": "컴퓨터에서 데이터를 영구적으로 저장하는 장치는?",
+      "choices": [
+        "SSD/HDD",
+        "CPU",
+        "RAM",
+        "파워"
+      ],
+      "answer": 0,
+      "explain": "전원을 꺼도 데이터가 사라지지 않는 저장소야."
+    },
+    {
+      "id": "S556",
+      "mode": "science",
+      "q": "지진이 발생한 지점의 바로 위 지표면을 무엇이라 하는가?",
+      "choices": [
+        "진앙",
+        "진원",
+        "단층",
+        "습곡"
+      ],
+      "answer": 0,
+      "explain": "땅속의 지점은 진원, 그 바로 위 지표는 진앙이야."
+    },
+    {
+      "id": "S557",
+      "mode": "science",
+      "q": "금속 막대의 한쪽 끝을 가열하면 반대쪽까지 뜨거워지는 방식은?",
+      "choices": [
+        "전도",
+        "대류",
+        "복사",
+        "증발"
+      ],
+      "answer": 0,
+      "explain": "고체 입자를 통해 열이 이동하는 전도 현상이야."
+    },
+    {
+      "id": "S558",
+      "mode": "science",
+      "q": "우리 몸에서 해독 작용을 담당하는 장기는?",
+      "choices": [
+        "간",
+        "심장",
+        "폐",
+        "콩팥"
+      ],
+      "answer": 0,
+      "explain": "간은 독소를 분해하고 담즙을 만드는 화학 공장이야."
+    },
+    {
+      "id": "S559",
+      "mode": "science",
+      "q": "화합물을 이루는 원소들의 질량비가 일정하다는 법칙은?",
+      "choices": [
+        "일정 성분비 법칙",
+        "질량 보존 법칙",
+        "기체 반응 법칙",
+        "아보가드로 법칙"
+      ],
+      "answer": 0,
+      "explain": "물(H2O)을 만들 때 수소와 산소의 질량비는 항상 일정해."
+    },
+    {
+      "id": "S560",
+      "mode": "science",
+      "q": "우주가 팽창하고 있다는 증거를 발견한 과학자는?",
+      "choices": [
+        "허블",
+        "뉴턴",
+        "케플러",
+        "코페르니쿠스"
+      ],
+      "answer": 0,
+      "explain": "멀리 있는 은하들이 더 빨리 멀어진다는 것을 알아냈어."
     }
   ]
 }
